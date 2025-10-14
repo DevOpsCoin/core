@@ -1,3 +1,4 @@
+@import url("../v1site/assets/style.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,7 +1,7 @@
 import "./globals.css";
-import { WalletProvider } from "@/lib/wagmi";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Providers from "./providers";
+import V1Header from "@/components/V1Header";
+import V1Footer from "@/components/V1Footer";
 
 export const metadata = {
   title: "DevOpsCoin DApp",
@@ -12,11 +12,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <WalletProvider>
-          <Header />
+        <Providers>
+          <V1Header />
           <main className="min-h-[70vh]">{children}</main>
-          <Footer />
-        </WalletProvider>
+          <V1Footer />
+        </Providers>
       </body>
     </html>
   );

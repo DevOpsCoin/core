@@ -21,6 +21,7 @@ export default function MintPage() {
         address: CONTRACT_ADDRESS,
         abi: ABI as any,
         functionName: "mintBadge",
+        args: [],
         value: parseEther(process.env.NEXT_PUBLIC_MINT_PRICE_ETH || "0.0833"),
       });
       setStatus("Mint submitted. Waiting for confirmation...");
