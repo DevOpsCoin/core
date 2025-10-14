@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { @apply bg-gray-950 text-gray-100; }
+a { @apply text-cyan-400 hover:text-cyan-300; }
+.container-card { @apply container max-w-4xl mx-auto p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg; }
+.btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-semibold bg-cyan-600 hover:bg-cyan-500 text-white transition; }
