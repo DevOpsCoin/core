@@ -27,13 +27,45 @@ export default function V1Header() {
 
   return (
     <header className="relative w-full mt-4">
-      {/* Sticky Mobile Header: logo + $DEVOPS + hamburger */}
+      {/* Sticky Mobile Header: logo + $DEVOPS + hamburger (always visible) */}
       <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between px-4 py-2 border-b border-cyan-800 shadow-lg">
         <div className="flex items-center gap-2">
           <Image src="/logo.svg" alt="$DEVOPS Logo" width={36} height={36} className="h-9 w-9" />
           <span className="text-cyan-300 font-extrabold text-xl tracking-wide">$DEVOPS</span>
         </div>
         <MobileNav />
+      </div>
+
+      {/* Wallet + Balance (mobile only, below sticky header) */}
+      <div className="md:hidden flex flex-col items-end gap-2 w-full px-4 pt-2 bg-gray-950 z-40">
+        <WalletConnect />
+        <div className="bg-gray-800 text-cyan-300 rounded-lg px-3 py-1 text-sm shadow border border-cyan-700/40 flex items-center justify-end gap-2 whitespace-nowrap min-w-[13rem]">
+          {balanceLoading ? (
+            <div className="h-4 w-24 bg-cyan-700/30 rounded shimmer"></div>
+          ) : (
+            <>
+              <span className="font-semibold">
+                {parseFloat(balanceData?.formatted || "0").toLocaleString(
+                  undefined,
+                  { maximumFractionDigits: 2 }
+                )}{" "}
+                {DEVOPS_TOKEN.symbol}
+              </span>
+              {priceLoading ? (
+                <span className="h-3 w-10 bg-cyan-700/20 rounded shimmer"></span>
+              ) : (
+                usdValue !== null && (
+                  <span className="text-gray-400 text-xs ml-1">
+                    ≈ $
+                    {usdValue.toLocaleString(undefined, {
+                      maximumFractionDigits: 2,
+                    })}
+                  </span>
+                )
+              )}
+            </>
+          )}
+        </div>
       </div>
       {/* Desktop Banner */}
       <div className="hidden md:block w-full max-w-5xl mx-auto">
