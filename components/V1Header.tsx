@@ -33,7 +33,10 @@ export default function V1Header() {
         <img
           src="/mobile_logo.png"
           alt="$DEVOPS Mobile Logo"
+          className="h-9 w-auto object-contain align-middle"
+          loading="lazy"
         />
+
         <span className="text-cyan-300 font-extrabold text-xl tracking-wide">$DEVOPS</span>
       </div>
       <MobileNav />
