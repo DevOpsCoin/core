@@ -44,7 +44,9 @@ export default function V1Header() {
                 fallback.id = 'logo-fallback';
                 fallback.innerText = '[logo missing]';
                 fallback.style.color = 'red';
-                e.currentTarget.parentNode.appendChild(fallback);
+                if (e.currentTarget.parentNode) {
+                  e.currentTarget.parentNode.appendChild(fallback);
+                }
               }
               // eslint-disable-next-line no-console
               console.error('MOBILE LOGO NOT FOUND: /mobile_logo.png');
