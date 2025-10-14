@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function RoadmapPage() {
   return (
-    <div className="container max-w-4xl mx-auto mt-8 p-8 bg-gray-900 rounded-xl shadow-lg text-gray-100">
+  <div className="max-w-4xl mx-auto mt-8 p-8 bg-gray-900 rounded-xl shadow-lg text-gray-100">
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-4 flex items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -76,12 +76,12 @@ export default function RoadmapPage() {
             <p>Refining tokenomics, testing automation, and aligning long-term governance before public exposure. Invite-only early community with internal GitHub coordination.</p>
           </div>
           <div>
-            <h3 className="text-cyan-400 font-semibold text-lg mb-1">Phase 3 — Public Launch (January 2026)</h3>
+            <h3 className="text-cyan-400 font-semibold text-lg mb-1">Phase 3 — Public Launch (Winter 2025-2026)</h3>
             <p>Deployment and verification of the $DEVOPS BNB contracts. Public liquidity event, community expansion, and active marketing rollout.</p>
           </div>
           <div>
             <h3 className="text-cyan-400 font-semibold text-lg mb-1">Phase 4 — Ship-It Fund Activation</h3>
-            <p>Open submissions for microgrants to support fun, useful, and innovative open-source projects. Funded through Treasury and on-chain allocations.</p>
+            <p>Open submissions for microgrants to support fun, useful, and innovative open-source projects. Funded through dedicated Ship-It Fund wallet and on-chain allocations.</p>
           </div>
           <div>
             <h3 className="text-cyan-400 font-semibold text-lg mb-1">Phase 5 — Growth & Integration</h3>

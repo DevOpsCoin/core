@@ -31,7 +31,7 @@ export default function MintPage() {
   };
 
   return (
-    <section className="container-card mt-10 text-center">
+  <section className="max-w-2xl mx-auto mt-10 p-8 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
       <h1 className="text-3xl font-bold text-cyan-400 mb-3">Ship-It Badge NFT</h1>
       <p className="text-gray-300 mb-6">
         Each mint funds open-source DevOps projects via the Ship-It Fund.

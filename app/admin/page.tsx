@@ -90,7 +90,7 @@ export default function AdminPage() {
   }
 
   return (
-    <section className="container max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
+  <section className="max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
       <h1 className="text-3xl font-bold text-cyan-400 mb-6">Admin Dashboard</h1>
 
       {/* GitHub Auth */}
@@ -100,12 +100,12 @@ export default function AdminPage() {
             <span className="text-cyan-300 mr-2">
               Signed in as {session.user?.email}
             </span>
-            <button onClick={() => signOut()} className="nav-btn glow-cyan">
+            <button onClick={() => signOut()} className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition ring-2 ring-cyan-400/40 hover:ring-cyan-300">
               Sign out
             </button>
           </div>
         ) : (
-          <button onClick={() => signIn("github")} className="nav-btn glow-cyan">
+          <button onClick={() => signIn("github")} className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition ring-2 ring-cyan-400/40 hover:ring-cyan-300">
             Sign in with GitHub
           </button>
         )}
@@ -117,7 +117,7 @@ export default function AdminPage() {
           <p className="text-gray-400 mb-4">
             Please verify ownership of your admin wallet to continue.
           </p>
-          <button onClick={verifyWallet} className="nav-btn glow-cyan">
+          <button onClick={verifyWallet} className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition ring-2 ring-cyan-400/40 hover:ring-cyan-300">
             Verify Wallet
           </button>
           <p className="mt-3 text-cyan-300">{status}</p>
@@ -134,7 +134,7 @@ export default function AdminPage() {
               <li>Review verified mints</li>
               <li>Post announcements to X / Telegram (coming soon)</li>
             </ul>
-            <button onClick={runAdminAction} className="nav-btn glow-cyan">
+            <button onClick={runAdminAction} className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition ring-2 ring-cyan-400/40 hover:ring-cyan-300">
               Run Admin Action
             </button>
             <p className="mt-3 text-cyan-300">{actionStatus}</p>
