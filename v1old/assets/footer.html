@@ -1,0 +1,61 @@
+<!-- Shared Site Footer -->
+<footer class="mt-16 border-t border-gray-800 py-6 text-sm text-gray-400 text-center relative overflow-hidden">
+  <!-- Subtle cyan gradient line -->
+  <div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600 animate-pulse"></div>
+
+  <!-- Launch Countdown Footer Line -->
+  <div id="footer-launch" class="mb-3 text-cyan-300 font-medium flex justify-center items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3" />
+    </svg>
+    <span id="footer-countdown">Coming Soon — Winter 2025–2026</span>
+  </div>
+
+  <!-- Core Footer Text -->
+  <p class="mb-1">
+    © <span id="year"></span> DevOpsCoin LLC · 
+    <a href="legal.html" class="text-cyan-400 hover:underline">Legal</a> · 
+    <a href="mailto:team@devopscoin.ai" class="text-cyan-400 hover:underline">team@devopscoin.ai</a>
+  </p>
+  <p class="text-xs text-gray-500 italic">
+    Built by Devs. Fueled by Memes. Powered by Community.
+  </p>
+</footer>
+
+<script>
+  // === Footer Logic ===
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Use same targetDate as header if defined, otherwise fallback
+  // Example: const targetDate = "2025-12-15T00:00:00Z"; or leave null
+  if (typeof targetDate === "undefined") var targetDate = null;
+
+  const footerCountdownEl = document.getElementById('footer-countdown');
+
+  function updateFooterCountdown() {
+    if (!targetDate) {
+      footerCountdownEl.textContent = "Coming Soon — Winter 2025–2026";
+      return;
+    }
+
+    const now = Date.now();
+    const diff = new Date(targetDate).getTime() - now;
+
+    if (diff <= 0) {
+      footerCountdownEl.textContent = "🚀 Now Live on BNB Smart Chain!";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+
+    if (days < 10) {
+      footerCountdownEl.textContent = `🧑‍🚀 Final Prep — Launch in ${days}d ${hours}h`;
+    } else {
+      footerCountdownEl.textContent = `Launch in ${days}d ${hours}h`;
+    }
+  }
+
+  updateFooterCountdown();
+  setInterval(updateFooterCountdown, 3600000); // update hourly
+</script>

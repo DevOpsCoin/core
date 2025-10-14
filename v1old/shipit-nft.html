@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ship-It Badge NFT | DevOpsCoin</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.0/dist/ethers.min.js"></script>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <div id="header-placeholder"></div>
+  <script src="assets/load-header.js"></script>
+
+  <section class="container max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
+    <h1 class="text-3xl font-bold text-cyan-400 mb-4">Ship-It Badge NFT</h1>
+    <p class="text-gray-300 mb-6">
+      Mint your limited-edition <strong>Ship-It Badge</strong> and help fund open-source DevOps projects.
+      Each badge contributes directly to the <a href="shipit.html" class="text-cyan-400 underline">Ship-It Fund</a>.
+    </p>
+
+    <!-- PROJECT BLURB -->
+    <div class="bg-gray-800 border border-cyan-700/40 rounded-lg shadow-inner p-6 text-left mb-10">
+      <h2 class="text-2xl font-semibold text-cyan-300 mb-3">Ship-It Badge — The First Commit</h2>
+      <p class="text-gray-300 mb-4">
+        The <strong>Ship-It Badge</strong> series represents the earliest supporters of the DevOpsCoin ecosystem — engineers, builders, and believers in open collaboration.
+        Each NFT mint directly funds the <strong>Ship-It Fund</strong>, which provides micro-grants to open-source DevOps projects and contributors.
+      </p>
+      <p class="text-gray-400 mb-4">
+        Holding a badge means more than collecting a token. It signifies you helped ship real infrastructure for the next generation of DevOps innovation.
+        Every on-chain mint leaves a verifiable mark of early support — a digital commit in the ledger of builders who shipped first.
+      </p>
+      <div class="text-center mt-6">
+        <a href="#mint-section" class="nav-btn glow-cyan text-lg px-6 py-3 inline-block">
+          Mint Yours — Fund the Future of Open DevOps
+        </a>
+      </div>
+    </div>
+
+    <div id="wallet-status" class="mb-4 text-cyan-400">Not connected</div>
+    <button id="connect" class="nav-btn glow-cyan">Connect Wallet</button>
+
+    <div id="mint-section" class="hidden mt-8">
+      <p class="text-gray-300 mb-2">Mint Price: <span id="mint-price">Loading...</span> BNB</p>
+      <button id="mint" class="nav-btn glow-cyan">Mint Ship-It Badge</button>
+      <p id="mint-status" class="mt-4 text-cyan-300"></p>
+    </div>
+
+    <div id="nft-gallery" class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+  </section>
+
+  <script>
+    const CONTRACT_ADDRESS = "0xYOUR_DEPLOYED_NFT_CONTRACT";
+    const ABI = [
+      "function mintPrice() view returns (uint256)",
+      "function mintBadge() payable",
+      "function balanceOf(address owner) view returns (uint256)",
+      "function tokenOfOwnerByIndex(address owner, uint256 index) view returns (uint256)",
+      "function tokenURI(uint256) view returns (string)",
+      "event Minted(address indexed to, uint256 tokenId)"
+    ];
+
+    let provider, signer, contract;
+    const connectBtn = document.getElementById("connect");
+    const walletStatus = document.getElementById("wallet-status");
+    const mintSection = document.getElementById("mint-section");
+    const mintBtn = document.getElementById("mint");
+    const mintPriceEl = document.getElementById("mint-price");
+    const mintStatus = document.getElementById("mint-status");
+    const gallery = document.getElementById("nft-gallery");
+
+    // === CONNECT WALLET ===
+    connectBtn.onclick = async () => {
+      if (!window.ethereum) {
+        walletStatus.textContent = "MetaMask not detected.";
+        return;
+      }
+      provider = new ethers.BrowserProvider(window.ethereum);
+      await provider.send("eth_requestAccounts", []);
+      signer = await provider.getSigner();
+      const address = await signer.getAddress();
+      walletStatus.textContent = `Connected: ${address}`;
+
+      contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, signer);
+      mintSection.classList.remove("hidden");
+
+      const mintPrice = await contract.mintPrice();
+      mintPriceEl.textContent = ethers.formatEther(mintPrice);
+
+      // Load owned NFTs
+      await loadOwnedNFTs(address);
+    };
+
+    // === MINT NFT ===
+    mintBtn.onclick = async () => {
+      try {
+        mintStatus.textContent = "Minting... please confirm in MetaMask.";
+        const mintPrice = await contract.mintPrice();
+        const tx = await contract.mintBadge({ value: mintPrice });
+        await tx.wait();
+        mintStatus.textContent = "✅ Mint successful! Refreshing gallery...";
+        const address = await signer.getAddress();
+        await loadOwnedNFTs(address);
+      } catch (err) {
+        console.error(err);
+        mintStatus.textContent = "❌ Mint failed or canceled.";
+      }
+    };
+
+    // === LOAD OWNED NFTs ===
+    async function loadOwnedNFTs(address) {
+      gallery.innerHTML = "<p class='text-gray-400 col-span-full'>Loading your badges...</p>";
+      try {
+        const balance = await contract.balanceOf(address);
+        if (balance == 0n) {
+          gallery.innerHTML = "<p class='text-gray-400 col-span-full'>You don’t own any Ship-It Badges yet.</p>";
+          return;
+        }
+        gallery.innerHTML = "";
+
+        for (let i = 0n; i < balance; i++) {
+          const tokenId = await contract.tokenOfOwnerByIndex(address, i);
+          const uri = await contract.tokenURI(tokenId);
+          const meta = await fetch(uri).then(r => r.json());
+          gallery.innerHTML += `
+            <div class="bg-gray-800 border border-cyan-700/40 rounded-lg shadow-md p-3 text-center">
+              <img src="${meta.image}" alt="${meta.name}" class="rounded-lg mb-3 glow-cyan" />
+              <h3 class="text-cyan-300 font-semibold">${meta.name}</h3>
+              <p class="text-sm text-gray-400 mb-2">${meta.description}</p>
+              <p class="text-xs text-gray-500">Token ID: ${tokenId}</p>
+            </div>`;
+        }
+      } catch (err) {
+        console.error(err);
+        gallery.innerHTML = "<p class='text-gray-400 col-span-full'>Failed to load NFTs.</p>";
+      }
+    }
+  </script>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("assets/footer.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("footer-placeholder").innerHTML = html; });
+  </script>
+</body>
+</html>

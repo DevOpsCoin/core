@@ -14,7 +14,6 @@ export default function V1Header() {
   const { data: balanceData, isLoading: balanceLoading } = useBalance({
     address,
     token: DEVOPS_TOKEN.address as `0x${string}`,
-    watch: true,
   });
 
   const { devopsUsd, isLoading: priceLoading } = useDevopsPrice();
