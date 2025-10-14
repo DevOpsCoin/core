@@ -33,9 +33,6 @@ export default function V1Header() {
         <img
           src="/mobile_logo.png"
           alt="$DEVOPS Mobile Logo"
-          width={36}
-          height={36}
-          className="h-9 w-9 object-contain align-middle border border-red-500"
         />
         <span className="text-cyan-300 font-extrabold text-xl tracking-wide">$DEVOPS</span>
       </div>
