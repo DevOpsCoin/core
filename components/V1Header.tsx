@@ -37,9 +37,9 @@ export default function V1Header() {
       </div>
 
       {/* Wallet + Balance (mobile only, below sticky header) */}
-      <div className="md:hidden flex flex-col items-end gap-2 w-full px-4 pt-2 bg-gray-950 z-40">
+      <div className="md:hidden flex flex-col items-end gap-2 w-full px-4 pt-2 bg-gray-950 z-50">
         <WalletConnect />
-        <div className="bg-gray-800 text-cyan-300 rounded-lg px-3 py-1 text-sm shadow border border-cyan-700/40 flex items-center justify-end gap-2 whitespace-nowrap min-w-[13rem]">
+        <div className="devops-balance-box">
           {balanceLoading ? (
             <div className="h-4 w-24 bg-cyan-700/30 rounded shimmer"></div>
           ) : (
