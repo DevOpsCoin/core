@@ -30,7 +30,30 @@ export default function V1Header() {
       {/* Sticky Mobile Header: logo + $DEVOPS + hamburger (always visible) */}
       <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between px-4 py-2 border-b border-cyan-800 shadow-lg">
         <div className="flex items-center gap-2">
-          <img src="/mobile_logo.png" alt="$DEVOPS Mobile Logo" width={36} height={36} className="h-9 w-9" style={{ display: 'block' }} />
+          <img
+            src="/mobile_logo.png"
+            alt="$DEVOPS Mobile Logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 border-2 border-red-500"
+            style={{ display: 'block' }}
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              if (!document.getElementById('logo-fallback')) {
+                const fallback = document.createElement('span');
+                fallback.id = 'logo-fallback';
+                fallback.innerText = '[logo missing]';
+                fallback.style.color = 'red';
+                e.currentTarget.parentNode.appendChild(fallback);
+              }
+              // eslint-disable-next-line no-console
+              console.error('MOBILE LOGO NOT FOUND: /mobile_logo.png');
+            }}
+            onLoad={() => {
+              // eslint-disable-next-line no-console
+              console.log('MOBILE LOGO LOADED: /mobile_logo.png');
+            }}
+          />
           <span className="text-cyan-300 font-extrabold text-xl tracking-wide">$DEVOPS</span>
         </div>
         <MobileNav />
