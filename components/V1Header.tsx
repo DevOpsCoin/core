@@ -27,8 +27,16 @@ export default function V1Header() {
 
   return (
     <header className="relative w-full mt-4">
-      {/* Banner */}
-      <div className="w-full max-w-5xl mx-auto">
+      {/* Sticky Mobile Header: logo + $DEVOPS + hamburger */}
+      <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between px-4 py-2 border-b border-cyan-800 shadow-lg">
+        <div className="flex items-center gap-2">
+          <Image src="/logo.svg" alt="$DEVOPS Logo" width={36} height={36} className="h-9 w-9" />
+          <span className="text-cyan-300 font-extrabold text-xl tracking-wide">$DEVOPS</span>
+        </div>
+        <MobileNav />
+      </div>
+      {/* Desktop Banner */}
+      <div className="hidden md:block w-full max-w-5xl mx-auto">
         <Image
           src="/banner.png"
           alt="$DEVOPS Banner"
@@ -56,12 +64,10 @@ export default function V1Header() {
         </div>
       </div>
 
-      {/* Responsive Navigation Row */}
-      <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row md:items-start md:justify-between mt-6 px-2 gap-4 relative">
-        {/* Hamburger for mobile - top left, overlays content when open */}
-        <MobileNav />
+      {/* Responsive Navigation Row (desktop only) */}
+      <div className="hidden md:flex w-full max-w-5xl mx-auto flex-row items-start justify-between mt-6 px-2 gap-4 relative">
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-3 order-2 md:order-1 items-center">
+        <nav className="flex gap-3 order-2 md:order-1 items-center">
           <Link href="/" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Home</Link>
           <Link href="/shipit" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-400 hover:from-cyan-400 hover:to-teal-300 text-white shadow-lg animate-pulse-slow justify-center">Ship-It Fund</Link>
           <Link href="/roadmap" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Roadmap</Link>
