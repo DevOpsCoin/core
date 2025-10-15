@@ -29,15 +29,13 @@ export default function V1Header() {
     <header className="relative w-full mt-4">
       {/* Sticky Mobile Header: logo + $DEVOPS + hamburger (always visible) */}
     <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between px-4 py-2 border-b border-cyan-800 shadow-lg">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center">
         <img
           src="/mobile_logo.png"
           alt="$DEVOPS Mobile Logo"
-          className="h-9 w-auto object-contain align-middle"
+          className="h-8 w-auto max-w-[150px] object-contain"
           loading="lazy"
         />
-
-        <span className="text-cyan-300 font-extrabold text-xl tracking-wide">$DEVOPS</span>
       </div>
       <MobileNav />
     </div>
