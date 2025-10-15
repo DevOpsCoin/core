@@ -3,59 +3,78 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      {/* Hero / Intro Section */}
-  <section className="max-w-4xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-left">
-        <h1 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-3 flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <rect x="3" y="4" width="18" height="16" rx="2" className="fill-gray-800"/>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 4v4m8-4v4M3 10h18" />
-          </svg>
-          $DEVOPS
-        </h1>
-  <span className="text-base md:text-lg text-gray-200 block flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-yellow-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m4 0h-1v-4h-1m-4 0h-1v-4h-1" />
-          </svg>
-          Dev culture meets degen.
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0v10l6 3" />
-          </svg>
-          Pipelines meet moon missions.
-        </span>
-  <p className="text-gray-400 mb-6 text-sm uppercase tracking-wide text-left">
-          Built by DevOps. Fueled by memes.
-        </p>
-  <p className="text-lg text-gray-200 mb-6 text-left">
-          $DEVOPS brings <strong>DevOps culture</strong> to the memecoin world — combining pipelines, automation, and hacker energy with meme-driven growth.
-        </p>
-  <p className="text-gray-300 mb-8 text-left">
-          We're assembling builders, hackers, and creators who understand both <strong>pipelines and meme culture</strong>.
-          Join us to help shape something the degen world hasn’t seen before.
-        </p>
-  <div className="flex flex-col sm:flex-row gap-4">
-          <Link href="/join" className="inline-block px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition flex items-center gap-2 justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-            Join the Movement
-          </Link>
-          <a href="https://x.com/DevOpsCoin" target="_blank" rel="noopener" className="inline-block px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition flex items-center gap-2 justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M17.53 7.47a.75.75 0 00-1.06 0l-7 7a.75.75 0 001.06 1.06l7-7a.75.75 0 000-1.06z" />
-            </svg>
-            Follow on X
-          </a>
-          <a href="https://t.me/TheDevOpsCoin" target="_blank" rel="noopener" className="inline-block px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition flex items-center gap-2 justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M9.04 14.86l-.38 5.38c.54 0 .78-.23 1.06-.5l2.55-2.43 5.29 3.88c.97.53 1.66.25 1.91-.9l3.46-16.2h.01c.31-1.43-.51-2-.9-2.2-.38-.19-1.12-.41-2.06.15l-20.14 7.8c-1.37.54-1.35 1.31-.23 1.66l5.16 1.6L19.11 6.1c.45-.27.86-.12.52.15"/>
-            </svg>
-            Join Telegram
-          </a>
+      <section className="relative max-w-4xl mx-auto mt-12 p-8 rounded-xl overflow-hidden text-left shadow-lg">
+        {/* Background layer */}
+        <div className="absolute inset-0">
+          {/* Solid background color at base layer */}
+          <div className="absolute inset-0 bg-gray-900" />
+          {/* Background image above solid bg */}
+          <img
+            src="/home/hero.png"
+            alt="DevOps Coin Hero"
+            className="absolute right-0 top-0 h-full max-w-[50%] object-contain opacity-50 pointer-events-none select-none"
+            aria-hidden="true"
+          />
         </div>
-  <p className="text-gray-400 text-xs mt-2 italic text-left">
-          Telegram access is invite only at this time.
-        </p>
+
+        {/* Foreground text content */}
+  <div className="relative" style={{ zIndex: 3 }}>
+          <h1 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-3 flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 text-cyan-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <rect x="3" y="4" width="18" height="16" rx="2" className="fill-gray-800" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M8 4v4m8-4v4M3 10h18"
+              />
+            </svg>
+            $DEVOPS
+          </h1>
+
+          <p className="text-gray-300 mb-1">
+            ⚙️ Dev culture meets degen. 🚀 Pipelines meet moon missions.
+          </p>
+          <p className="text-gray-500 mb-6 uppercase text-sm tracking-wide">
+            Built by DevOps. Fueled by Memes.
+          </p>
+
+          <p className="text-gray-300 mb-4">
+            $DEVOPS brings <strong>DevOps culture</strong> to the memecoin world, combining pipelines,
+            automation, and hacker energy with meme-driven growth.
+          </p>
+
+          <p className="text-gray-400 mb-6">
+            We're assembling builders, hackers, and creators who understand both{" "}
+            <strong>pipelines and meme culture</strong>. Join us to help shape something the degen world
+            hasn’t seen before.
+          </p>
+
+          <div className="flex flex-wrap gap-3">
+            <button className="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md">
+              → Join the Movement
+            </button>
+            <button className="bg-sky-600 hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md">
+              ✦ Follow on X
+            </button>
+            <button className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md">
+              📡 Join Telegram
+            </button>
+          </div>
+
+          <p className="text-sm text-gray-500 mt-2 italic">
+            Telegram access is invite only at this time.
+          </p>
+        </div>
       </section>
+
+
 
       {/* Ship It Fund Section */}
   <section className="container max-w-4xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-left border border-cyan-700/40">
