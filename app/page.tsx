@@ -12,7 +12,7 @@ export default function HomePage() {
           <img
             src="/home/hero.png"
             alt="DevOps Coin Hero"
-            className="absolute right-0 top-0 h-full max-w-[50%] object-contain opacity-50 pointer-events-none select-none"
+            className="absolute right-0 top-0 max-w-[50%] w-auto h-auto object-contain opacity-30 pointer-events-none select-none"
             aria-hidden="true"
           />
         </div>
