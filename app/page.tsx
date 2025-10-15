@@ -99,7 +99,7 @@ export default function HomePage() {
   <section className="container max-w-4xl mx-auto mt-8 px-3 sm:px-6 py-4 bg-gray-800 rounded-lg text-left border border-cyan-700/40">
         <p className="text-gray-300 text-base sm:text-lg">
           <strong>$DEVOPS is currently in a stealth builder phase.</strong><br />
-          Public launch and trading will begin post-audit on BNB Smart Chain. Reserve (10%) and liquidity (40%) pools will be partially locked at TGE for transparency and trust.
+          Public launch and trading will begin post-audit on BNB Smart Chain.
         </p>
         <p className="text-gray-400 text-xs sm:text-sm mt-2 italic">
           Early contributors have informational access during this phase. Marketing will ramp up closer to TGE.
@@ -115,7 +115,7 @@ export default function HomePage() {
           Wallet Structure
         </h2>
   <p className="text-gray-300 text-base mb-3 text-left">
-          $DEVOPS maintains a transparent, multi-wallet setup: Founder (10%), Treasury (10%), Community (15%), Ship-It Fund (5%), Reserve (10%, locked), and Public Supply (40%).  
+          $DEVOPS maintains a transparent, multi-wallet setup: Founder (10%), Treasury (10%), Community (10%), Ship-It Fund (15%), and Public Supply (55%).  
           Wallet addresses will be published after deployment.
         </p>
   <p className="text-gray-400 text-sm italic text-left">
@@ -153,6 +153,26 @@ export default function HomePage() {
         </p>
       </section>
 
+      {/* Ship-It Fund Wallet */}
+      <section className="container max-w-4xl mx-auto mt-6 p-4 bg-gray-800 rounded-lg text-left border border-cyan-700/40">
+        <h2 className="text-2xl font-semibold text-cyan-300 mb-2 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3" />
+          </svg>
+          Ship-It Fund Wallet
+        </h2>
+        <p className="text-gray-300 mb-3 text-base text-left">
+          Holds the <strong>15% Ship-It Fund allocation</strong>is dedicated to supporting open-source innovation, grants, and community-driven projects. All fund activity is public and on-chain for full transparency.
+        </p>
+        <div className="bg-gray-900 rounded p-4 border border-cyan-800 mt-2">
+          <span className="block text-xs text-gray-400 mb-1">Wallet Address</span>
+          <span className="font-mono text-cyan-400 text-sm select-all">[ShipItFundWalletAddressHere]</span>
+        </div>
+        <p className="text-gray-400 text-xs mt-2 italic">
+          You can track all Ship-It Fund transactions and grants on BscScan and our GitHub.
+        </p>
+      </section>
+
       {/* Community Wallet */}
   <section className="container max-w-4xl mx-auto mt-6 p-4 bg-gray-800 rounded-lg text-left border border-cyan-700/40">
   <h2 className="text-2xl font-semibold text-cyan-300 mb-2 flex items-center gap-2">
@@ -163,7 +183,7 @@ export default function HomePage() {
           Community Distribution Wallet
         </h2>
   <p className="text-gray-300 mb-3 text-left">
-          Holds the <strong>15% Community allocation</strong> for bounties, airdrops, and ecosystem rewards.  
+          Holds the <strong>10% Community allocation</strong> for bounties, airdrops, and ecosystem rewards.  
           Transparent on-chain activity once live on BNB Smart Chain.
         </p>
       </section>
