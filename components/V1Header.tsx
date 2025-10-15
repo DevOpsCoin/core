@@ -109,6 +109,7 @@ export default function V1Header() {
           <Link href="/shipit" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-400 hover:from-cyan-400 hover:to-teal-300 text-white shadow-lg animate-pulse-slow justify-center">Ship-It Fund</Link>
           <Link href="/roadmap" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Roadmap</Link>
           <Link href="/whitepaper" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Whitepaper</Link>
+          <Link href="/join" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Join</Link>
           <NavMoreDropdown />
         </nav>
         {/* Wallet + Balance (always right, under banner) */}
@@ -183,6 +184,7 @@ function MobileNav() {
               <Link href="/shipit" className="block px-4 py-3 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-400 text-white font-semibold text-lg hover:from-cyan-400 hover:to-teal-300 transition" onClick={() => setOpen(false)}>Ship-It Fund</Link>
               <Link href="/roadmap" className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition" onClick={() => setOpen(false)}>Roadmap</Link>
               <Link href="/whitepaper" className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition" onClick={() => setOpen(false)}>Whitepaper</Link>
+              <Link href="/join" className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition" onClick={() => setOpen(false)}>Join</Link>
               <NavMoreDropdown />
             </nav>
           </div>

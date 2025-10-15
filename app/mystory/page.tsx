@@ -44,8 +44,8 @@ export default function MyStoryPage() {
         <img
           src="/mystory/p5.png"
           alt="shipping with purpose and fun"
-          className="w-28 h-28 object-cover rounded-lg shadow-md border border-cyan-800 mt-1 ml-4 float-right flex-shrink-0 hidden sm:block"
-          style={{ float: 'right', marginLeft: '1rem', marginBottom: '0.5rem' }}
+          className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-2xl shadow-xl border-2 border-cyan-700/70 bg-gray-800/80 p-2 mt-2 ml-8 float-right flex-shrink-0 hidden sm:block"
+          style={{ float: 'right', marginLeft: '2rem', marginBottom: '1rem', backgroundClip: 'padding-box' }}
         />
         DevOps Coin isn't about chasing hype. It's about turning a joke into a thank you. It's about taking the same spirit that drives developers to stay up late fixing someone else's bug and channeling it into something that helps others do the same. If you've ever shipped something that broke, fixed it, and shipped again anyway, you already understand what this project stands for. It's about shipping with purpose, and maybe having a little fun while we do it.
       </p>
