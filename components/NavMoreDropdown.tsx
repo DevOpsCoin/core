@@ -37,6 +37,16 @@ export default function NavMoreDropdown() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
+                  <Link
+                    href="/mystory"
+                    className={`block px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-800/40 ${active ? "bg-cyan-800/40" : ""}`}
+                  >
+                    My Story
+                  </Link>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
                 <Link
                   href="/updates"
                   className={`block px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-800/40 ${active ? "bg-cyan-800/40" : ""}`}
