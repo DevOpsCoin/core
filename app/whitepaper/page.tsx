@@ -4,7 +4,22 @@ import Link from "next/link";
 
 export default function WhitepaperPage() {
   return (
-    <div className="container max-w-4xl mx-auto mt-8 p-8 bg-gray-900 rounded-xl shadow-lg text-gray-100">
+    <section className="relative max-w-4xl mx-auto mt-8 p-8 rounded-xl overflow-hidden text-left shadow-lg">
+      {/* Background layer */}
+      <div className="absolute inset-0">
+        {/* Solid background color at base layer */}
+        <div className="absolute inset-0 bg-gray-900" />
+        {/* Background image in upper right corner */}
+        <img
+          src="/whitepaper/image1.png"
+          alt="Whitepaper Hero"
+          className="absolute right-0 top-0 max-w-[50%] w-auto h-auto object-contain opacity-30 pointer-events-none select-none"
+          aria-hidden="true"
+        />
+      </div>
+
+      {/* Foreground text content */}
+      <div className="relative" style={{ zIndex: 3 }}>
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-3 flex items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -208,6 +223,7 @@ export default function WhitepaperPage() {
         </svg>
         Back to Home
       </Link>
-    </div>
+      </div>
+    </section>
   );
 }

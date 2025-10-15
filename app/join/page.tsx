@@ -2,8 +2,22 @@ import React from "react";
 import Link from "next/link";
 export default function JoinPage() {
   return (
-    <section className="container max-w-4xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-center">
-      <main className="max-w-2xl mx-auto px-4 py-12 text-gray-100">
+    <section className="relative max-w-4xl mx-auto mt-12 p-8 rounded-xl overflow-hidden text-left shadow-lg">
+      {/* Background layer */}
+      <div className="absolute inset-0">
+        {/* Solid background color at base layer */}
+        <div className="absolute inset-0 bg-gray-900" />
+        {/* Background image in upper right corner */}
+        <img
+          src="/join/image1.png"
+          alt="Join Hero"
+          className="absolute right-0 top-0 max-w-[50%] w-auto h-auto object-contain opacity-30 pointer-events-none select-none"
+          aria-hidden="true"
+        />
+      </div>
+
+      {/* Foreground text content */}
+      <main className="max-w-2xl mx-auto px-4 py-12 text-gray-100 text-left relative" style={{ zIndex: 3 }}>
       <h1 className="text-4xl font-bold text-cyan-300 mb-6 flex items-center gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0v10l6 3" />
