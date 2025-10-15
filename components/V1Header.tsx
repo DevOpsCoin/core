@@ -28,17 +28,17 @@ export default function V1Header() {
   return (
     <header className="relative w-full mt-4">
       {/* Sticky Mobile Header: logo + $DEVOPS + hamburger (always visible) */}
-    <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between px-4 py-2 border-b border-cyan-800 shadow-lg">
-      <div className="flex items-center">
-        <img
-          src="/mobile_logo.png"
-          alt="$DEVOPS Mobile Logo"
-          className="h-8 w-auto max-w-[150px] object-contain"
-          loading="lazy"
-        />
+      <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between pl-12 pr-4 py-2 border-b border-cyan-800 shadow-lg">
+        <div className="flex items-center">
+          <img
+            src="/mobile_logo.png"
+            alt="$DEVOPS Mobile Logo"
+            className="h-8 w-auto max-w-[150px] object-contain"
+            loading="lazy"
+          />
+        </div>
+        <MobileNav />
       </div>
-      <MobileNav />
-    </div>
 
       {/* Wallet + Balance (mobile only, below sticky header) */}
       <div className="md:hidden flex flex-col items-end gap-2 w-full px-4 pt-2 bg-gray-950 z-50">
