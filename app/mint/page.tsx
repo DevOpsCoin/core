@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useAccount, useWriteContract } from "wagmi";
+import ComingSoonComponent from "@/components/ComingSoon";
 import { parseEther } from "viem";
 
 const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS as `0x${string}`;
@@ -13,6 +14,11 @@ export default function MintPage() {
   const [status, setStatus] = useState<string>("");
 
   const { writeContract, isPending } = useWriteContract();
+
+  const TRADING_LIVE = process.env.NEXT_PUBLIC_TRADING_LIVE === "true" || process.env.NODE_ENV !== "production";
+
+  // shared component
+  const ComingSoon = <ComingSoonComponent />;
 
   const onMint = async () => {
     try {
@@ -30,8 +36,10 @@ export default function MintPage() {
     }
   };
 
+  if (!TRADING_LIVE) return ComingSoon;
+
   return (
-  <section className="max-w-2xl mx-auto mt-10 p-8 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
+    <section className="max-w-2xl mx-auto mt-10 p-8 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
       <h1 className="text-3xl font-bold text-cyan-400 mb-3">Ship-It Badge NFT</h1>
       <p className="text-gray-300 mb-6">
         Each mint funds open-source DevOps projects via the Ship-It Fund.

@@ -10,6 +10,7 @@ import {
 import { formatUnits } from "viem";
 
 import WalletConnect from "@/components/WalletConnect";
+import ComingSoon from "@/components/ComingSoon";
 import { DEVOPS_TOKEN } from "@/lib/constants";
 import { useDevopsPrice } from "@/lib/hooks/useDevopsPrice";
 
@@ -227,6 +228,11 @@ export default function InvestorPortalPage() {
   };
 
   // --- UI -------------------------------------------------------------------
+  const TRADING_LIVE = process.env.NEXT_PUBLIC_TRADING_LIVE === "true" || process.env.NODE_ENV !== "production";
+
+  // using shared ComingSoon component
+  const comingSoonEl = <ComingSoon />;
+
   return (
     <section className="container max-w-4xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-center">
       <h1 className="text-3xl font-bold text-teal-400 mb-6">$DEVOPS Investor Portal</h1>
@@ -255,7 +261,9 @@ export default function InvestorPortalPage() {
         )}
       </div>
 
-      {!isConnected ? (
+      {!TRADING_LIVE ? (
+        comingSoonEl
+      ) : !isConnected ? (
         <p className="text-cyan-300">Connect your wallet to continue</p>
       ) : vestingCount === 0 ? (
         <p className="text-gray-400">No vesting schedules found for this wallet.</p>

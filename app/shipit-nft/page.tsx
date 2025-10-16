@@ -8,6 +8,7 @@ import {
   useWaitForTransactionReceipt,
 } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import ComingSoon from "@/components/ComingSoon";
 
 const CONTRACT_ADDRESS = "0xYOUR_DEPLOYED_NFT_CONTRACT";
 const ABI = [
@@ -124,6 +125,14 @@ export default function ShipItNFTPage() {
   useEffect(() => {
     if (isConnected) loadOwnedNFTs();
   }, [isConnected, address, loadOwnedNFTs]);
+
+  const TRADING_LIVE = process.env.NEXT_PUBLIC_TRADING_LIVE === "true" || process.env.NODE_ENV !== "production";
+
+  const comingSoonEl = (
+    <ComingSoon />
+  );
+
+  if (!TRADING_LIVE) return comingSoonEl;
 
   return (
     <section className="container max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
