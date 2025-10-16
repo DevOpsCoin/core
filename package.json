@@ -7,11 +7,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit",
-    "verify": "pnpm run lint && pnpm run typecheck && pnpm run build",
-    "prepare": "husky",
-    "lint": "eslint app components lib --ext .ts,.tsx || true",
-    "lint:fix": "eslint app components lib --ext .ts,.tsx --fix"
+    "lint": "eslint app components lib --ext .ts,.tsx",
+    "lint:fix": "eslint app components lib --ext .ts,.tsx --fix",
+    "format": "prettier --write .",
+    "verify": "pnpm run lint && pnpm run build",
+    "clean": "rm -rf node_modules/.cache && rm -rf .next && rm -rf dist",
+    "ci:check": "eslint app components lib --ext .ts,.tsx --max-warnings=0 && prettier --check .",
+    "ci:format": "prettier --write .",
+    "precommit": "lint-staged",
+    "prepare": "husky"
   },
   "engines": {
     "node": ">=22 <23"
