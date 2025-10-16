@@ -2,10 +2,25 @@
   "name": "devopscoin-dapp",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "pnpm dev",
-    "build": "pnpm build",
-    "start": "pnpm start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "verify": "pnpm run lint && pnpm run typecheck && pnpm run build",
+    "prepare": "husky",
+    "lint": "eslint app components lib --ext .ts,.tsx || true",
+    "lint:fix": "eslint app components lib --ext .ts,.tsx --fix"
+  },
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,json,css}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
@@ -24,14 +39,25 @@
     "wagmi": "^2.10.5"
   },
   "devDependencies": {
+    "@eslint/js": "^9.37.0",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "autoprefixer": "^10.4.17",
     "eslint": "^9.37.0",
+    "eslint-config-next": "15.5.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-formatter-compact": "^8.40.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.4",
     "pino-pretty": "^13.1.2",
     "postcss": "^8.4.35",
     "prettier": "^3.6.2",
-    "typescript": "^5.4.0"
+    "typescript": "^5.4.0",
+    "typescript-eslint": "^8.46.1"
   }
 }
