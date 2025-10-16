@@ -2,6 +2,7 @@ import "./globals.css";
 import Providers from "./providers";
 import V1Header from "@/components/V1Header";
 import V1Footer from "@/components/V1Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: "DevOpsCoin DApp",

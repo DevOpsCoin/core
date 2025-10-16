@@ -1,29 +1,14 @@
 "use client";
 import Link from "next/link";
 import NavMoreDropdown from "@/components/NavMoreDropdown";
+import NavInvestorsDropdown from "@/components/NavInvestorsDropdown";
 import Image from "next/image";
-import { useAccount, useBalance } from "wagmi";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import WalletConnect from "@/components/WalletConnect";
-import { useDevopsPrice } from "@/lib/hooks/useDevopsPrice";
-import { DEVOPS_TOKEN } from "@/lib/constants";
 
 
 export default function V1Header() {
-  const { address, isConnected } = useAccount();
-  const { data: balanceData, isLoading: balanceLoading } = useBalance({
-    address,
-    token: DEVOPS_TOKEN.address as `0x${string}`,
-  });
-
-  const { devopsUsd, isLoading: priceLoading } = useDevopsPrice();
   const [usdValue, setUsdValue] = useState<number | null>(null);
-
-  useEffect(() => {
-    if (!devopsUsd || !balanceData?.formatted) return;
-    const value = parseFloat(balanceData.formatted) * devopsUsd;
-    setUsdValue(value);
-  }, [devopsUsd, balanceData]);
 
   return (
     <header className="relative w-full mt-4">
@@ -43,34 +28,7 @@ export default function V1Header() {
 
       {/* Wallet + Balance (mobile only, below sticky header) */}
       <div className="md:hidden flex flex-col items-end gap-2 w-full px-4 pt-2 bg-gray-950 z-50">
-        <WalletConnect />
-        <div className="devops-balance-box">
-          {balanceLoading ? (
-            <div className="h-4 w-24 bg-cyan-700/30 rounded shimmer"></div>
-          ) : (
-            <>
-              <span className="font-semibold">
-                {parseFloat(balanceData?.formatted || "0").toLocaleString(
-                  undefined,
-                  { maximumFractionDigits: 2 }
-                )}{" "}
-                {DEVOPS_TOKEN.symbol}
-              </span>
-              {priceLoading ? (
-                <span className="h-3 w-10 bg-cyan-700/20 rounded shimmer"></span>
-              ) : (
-                usdValue !== null && (
-                  <span className="text-gray-400 text-xs ml-1">
-                    ≈ $
-                    {usdValue.toLocaleString(undefined, {
-                      maximumFractionDigits: 2,
-                    })}
-                  </span>
-                )
-              )}
-            </>
-          )}
-        </div>
+    <div />
       </div>
       {/* Desktop Banner */}
       <div className="hidden md:block w-full max-w-5xl mx-auto">
@@ -110,38 +68,12 @@ export default function V1Header() {
           <Link href="/roadmap" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Roadmap</Link>
           <Link href="/whitepaper" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Whitepaper</Link>
           <Link href="/join" className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">Join</Link>
+          <NavInvestorsDropdown />
           <NavMoreDropdown />
         </nav>
         {/* Wallet + Balance (always right, under banner) */}
         <div className="order-1 md:order-2 flex flex-col items-end gap-2 w-full md:w-auto">
-          <WalletConnect />
-          <div className="bg-gray-800 text-cyan-300 rounded-lg px-3 py-1 text-sm shadow border border-cyan-700/40 flex items-center justify-end gap-2 whitespace-nowrap min-w-[13rem]">
-            {balanceLoading ? (
-              <div className="h-4 w-24 bg-cyan-700/30 rounded shimmer"></div>
-            ) : (
-              <>
-                <span className="font-semibold">
-                  {parseFloat(balanceData?.formatted || "0").toLocaleString(
-                    undefined,
-                    { maximumFractionDigits: 2 }
-                  )}{" "}
-                  {DEVOPS_TOKEN.symbol}
-                </span>
-                {priceLoading ? (
-                  <span className="h-3 w-10 bg-cyan-700/20 rounded shimmer"></span>
-                ) : (
-                  usdValue !== null && (
-                    <span className="text-gray-400 text-xs ml-1">
-                      ≈ $
-                      {usdValue.toLocaleString(undefined, {
-                        maximumFractionDigits: 2,
-                      })}
-                    </span>
-                  )
-                )}
-              </>
-            )}
-          </div>
+            <div />
         </div>
       </div>
     </header>

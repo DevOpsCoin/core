@@ -32,14 +32,11 @@ export function useDevopsPrice(): PriceResult {
             }
           }`;
 
-        const subgraphRes = await fetch(
-          "https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v2",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ query: subgraphQuery }),
-          }
-        );
+        const subgraphRes = await fetch(`/api/subgraph`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: subgraphQuery }),
+        });
 
         const subgraphData = await subgraphRes.json();
         const pair = subgraphData?.data?.pairs?.[0];

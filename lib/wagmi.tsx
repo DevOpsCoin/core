@@ -1,14 +1,15 @@
 "use client";
+
+import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultConfig, RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
 
-import React from "react";
 
-
-
-// BNB Smart Chain (BSC) mainnet and testnet definitions for wagmi v2+
+// ---------------------------------------------
+// BNB Smart Chain mainnet & testnet configs
+// ---------------------------------------------
 const bsc = {
   id: 56,
   name: "BNB Smart Chain",
@@ -47,9 +48,20 @@ const bscTestnet = {
   contracts: {},
 } as const;
 
+const rawProjectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "";
+
+// Accept UUID-style IDs in env (with dashes) and normalize to 32-char no-dash ID
+const projectId = rawProjectId.replace(/[^a-fA-F0-9]/g, "");
+
+if (!projectId || projectId.length !== 32) {
+  throw new Error(
+    "Invalid WalletConnect projectId. Ensure NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID is set to your 32-character project id (no dashes)."
+  );
+}
+
 export const config = getDefaultConfig({
   appName: "DevOpsCoin DApp",
-  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_ID || "demo",
+  projectId,
   chains: [bsc, bscTestnet],
   ssr: true,
 });
