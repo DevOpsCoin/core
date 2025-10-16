@@ -53,7 +53,8 @@ function BalanceDisplay() {
 }
 
 // --- Core vesting setup ------------------------------------------------------
-const CONTRACT_ADDRESS = "0x790Bd6F4E790Db60Bb35611e678b33bbF09E9372" as `0x${string}`;
+const CONTRACT_ADDRESS = process.env
+  .NEXT_PUBLIC_CONTRACT_ADDRESS as `0x${string}`;
 
 const vestingAbi = [
   {

@@ -117,6 +117,17 @@ function MobileNav() {
               <Link href="/roadmap" className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition" onClick={() => setOpen(false)}>Roadmap</Link>
               <Link href="/whitepaper" className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition" onClick={() => setOpen(false)}>Whitepaper</Link>
               <Link href="/join" className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition" onClick={() => setOpen(false)}>Join</Link>
+              {/* Investors grouped section (mobile) */}
+              <div className="w-full mt-2 p-3 rounded-xl border border-cyan-700/40 bg-gradient-to-r from-cyan-900 to-cyan-800 shadow-lg">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-cyan-100 font-bold">Investors</span>
+                  <span className="text-xs text-cyan-200/80">Quick links</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <Link href="/investor-portal" className="block px-3 py-2 rounded-lg bg-cyan-700 text-white font-semibold hover:bg-cyan-500 transition" onClick={() => setOpen(false)}>Portal</Link>
+                  <Link href="/howtobuy" className="block px-3 py-2 rounded-lg bg-cyan-700 text-white font-semibold hover:bg-cyan-500 transition" onClick={() => setOpen(false)}>How to Buy</Link>
+                </div>
+              </div>
               <NavMoreDropdown />
             </nav>
           </div>
