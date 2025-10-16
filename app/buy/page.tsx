@@ -3,10 +3,10 @@
 import Link from "next/link";
 import ComingSoon from "@/components/ComingSoon";
 import { useAccount, useChainId, useSwitchChain } from "wagmi";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
+import { useDevopsTokenAddress } from "@/lib/useDevopsTokenAddress";
 
-const TOKEN_ADDRESS = process.env.NEXT_PUBLIC_DEVOPS_TOKEN as `0x${string}` | undefined;
-// 56 = BSC mainnet, 97 = BSC testnet
+// Environment-based config
 const TARGET_CHAIN_ID = Number(process.env.NEXT_PUBLIC_BSC_CHAIN_ID || 56);
 
 // Global flag controlling whether trading is live
@@ -21,11 +21,47 @@ export default function BuyPage() {
   const [adding, setAdding] = useState(false);
 
   const isOnTargetChain = chainId === TARGET_CHAIN_ID;
-  const isTestnet = TARGET_CHAIN_ID === 97;
+  const isTestnet = chainId === 97;
+  const TOKEN_ADDRESS = useDevopsTokenAddress();
 
+  // 🧩 Add + Switch to BSC (Mainnet/Testnet)
+  const addBscNetwork = useCallback(async () => {
+    const eth = (window as any)?.ethereum;
+    if (!eth) return alert("MetaMask not detected.");
+
+    const params = isTestnet
+      ? {
+          chainId: "0x61",
+          chainName: "BNB Smart Chain Testnet",
+          nativeCurrency: { name: "tBNB", symbol: "tBNB", decimals: 18 },
+          rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
+          blockExplorerUrls: ["https://testnet.bscscan.com"],
+        }
+      : {
+          chainId: "0x38",
+          chainName: "BNB Smart Chain",
+          nativeCurrency: { name: "BNB", symbol: "BNB", decimals: 18 },
+          rpcUrls: ["https://bsc-dataseed.binance.org/"],
+          blockExplorerUrls: ["https://bscscan.com/"],
+        };
+
+    try {
+      await eth.request({ method: "wallet_addEthereumChain", params: [params] });
+      await eth.request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: params.chainId }],
+      });
+      alert(`${params.chainName} added and selected in MetaMask.`);
+    } catch (err: any) {
+      console.error("Failed to add/switch network:", err);
+      alert(err?.message ?? "Failed to add BNB Smart Chain.");
+    }
+  }, [isTestnet]);
+
+  // 🧩 Add DEVOPS token to MetaMask
   const addTokenToMetaMask = useCallback(async () => {
     if (!TOKEN_ADDRESS) {
-      alert("Token address is not configured. Please set NEXT_PUBLIC_DEVOPS_TOKEN.");
+      alert("Token address is not configured. Please set your env vars.");
       return;
     }
     const eth = (window as any)?.ethereum;
@@ -52,7 +88,7 @@ export default function BuyPage() {
     } finally {
       setAdding(false);
     }
-  }, []);
+  }, [TOKEN_ADDRESS]);
 
   return (
     <section className="container max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-center">
@@ -61,12 +97,10 @@ export default function BuyPage() {
       {/* Connection / Network status */}
       <div className="mb-6 space-y-3">
         {!isConnected ? (
-          <p className="text-cyan-300">
-            Connect your wallet (top-right) to get started.
-          </p>
+          <p className="text-cyan-300">Connect your wallet (top-right) to get started.</p>
         ) : !isOnTargetChain ? (
           <div className="flex flex-col items-center gap-3">
-            <p className="text-yellow-300">
+            <p className="text-yellow-300 text-sm">
               You’re on the wrong network. Please switch to{" "}
               {isTestnet ? "BSC Testnet" : "BNB Smart Chain"}.
             </p>
@@ -75,6 +109,12 @@ export default function BuyPage() {
               className="px-4 py-2 bg-amber-400 hover:bg-amber-300 text-black font-semibold rounded"
             >
               Switch Network
+            </button>
+            <button
+              onClick={addBscNetwork}
+              className="px-4 py-2 bg-yellow-500 hover:bg-yellow-400 text-black font-semibold rounded"
+            >
+              Add & Switch to {isTestnet ? "BSC Testnet" : "BNB Smart Chain"}
             </button>
           </div>
         ) : (
@@ -113,23 +153,22 @@ export default function BuyPage() {
             />
 
             <p className="text-xs text-gray-400 mt-3">
-              Tip: You’ll need a little BNB for gas. If your swap fails, try
-              slightly higher slippage (0.5–1%).
+              Tip: You’ll need a little BNB for gas. If your swap fails, try slightly higher
+              slippage (0.5–1%).
             </p>
           </div>
         ) : (
-          // 🚧 Coming Soon message
           <ComingSoon>
             <p className="text-sm text-gray-500">
-              Stay tuned to {" "}
+              Stay tuned to{" "}
               <Link href="/" className="text-cyan-300 underline">
                 devopscoin.ai
-              </Link>
-              {" "}and the {" "}
+              </Link>{" "}
+              and the{" "}
               <Link href="/investor-portal" className="text-cyan-300 underline">
                 Investor Portal
-              </Link>
-              {" "}for the official launch announcement.
+              </Link>{" "}
+              for the official launch announcement.
             </p>
           </ComingSoon>
         )}
@@ -140,8 +179,7 @@ export default function BuyPage() {
             Make $DEVOPS visible in your wallet
           </h3>
           <p className="text-gray-300">
-            After your first purchase, add the token to your wallet so your balance
-            shows up.
+            After your first purchase, add the token to your wallet so your balance shows up.
           </p>
           <div className="mt-3 flex flex-wrap items-center gap-3">
             <button
@@ -157,12 +195,12 @@ export default function BuyPage() {
           </div>
           {!TOKEN_ADDRESS && (
             <p className="text-red-400 text-xs mt-2">
-              NEXT_PUBLIC_DEVOPS_TOKEN is not set. Add it in your environment variables.
+              Token address not configured — check your environment variables.
             </p>
           )}
         </div>
 
-        {/* Manual flow link back to detailed guide */}
+        {/* Manual flow link */}
         <div className="text-gray-300">
           Prefer a step-by-step guide?{" "}
           <Link href="/how-to-buy" className="text-cyan-300 underline">

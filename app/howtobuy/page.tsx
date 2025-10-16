@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useDevopsTokenAddress } from "@/lib/useDevopsTokenAddress";
 
 export default function HowToBuyPage() {
+  const tokenAddress = useDevopsTokenAddress();
+
   return (
     <section className="container max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-left">
       <h1 className="text-3xl font-bold text-teal-400 mb-6 text-center">
@@ -87,7 +92,7 @@ export default function HowToBuyPage() {
           <span className="font-semibold text-teal-400">Import the $DEVOPS Token:</span>{" "}
           Paste the official contract address into PancakeSwap’s “Select Token” field:
           <pre className="bg-gray-800 text-cyan-300 p-3 rounded-lg text-sm mt-2">
-            {process.env.NEXT_PUBLIC_DEVOPS_TOKEN || "0xYOUR_TOKEN_ADDRESS"}
+            {tokenAddress || "0xYOUR_TOKEN_ADDRESS"}
           </pre>
           <p className="mt-2 text-sm text-gray-400 italic">
             (The official address is displayed above and on{" "}
@@ -164,3 +169,4 @@ export default function HowToBuyPage() {
     </section>
   );
 }
+

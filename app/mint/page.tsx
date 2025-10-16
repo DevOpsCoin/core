@@ -4,7 +4,7 @@ import { useAccount, useWriteContract } from "wagmi";
 import ComingSoonComponent from "@/components/ComingSoon";
 import { parseEther } from "viem";
 
-const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS as `0x${string}`;
+const CONTRACT_ADDRESS = process.env.NEXT_MINT_CONTRACT_ADDRESS as `0x${string}`;
 const ABI = [
   { name: "mintBadge", type: "function", stateMutability: "payable", inputs: [], outputs: [] }
 ] as const;
