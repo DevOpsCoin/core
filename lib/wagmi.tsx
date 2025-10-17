@@ -61,10 +61,6 @@ export function WalletProvider({ children }: { children: React.ReactNode }) {
         const projectId = rawProjectId.replace(/[^a-fA-F0-9]/g, "")
 
         if (!projectId || projectId.length !== 32) {
-          // Don't throw at module evaluation time; warn and skip wallet providers.
-          // This keeps builds from failing while allowing the site to render.
-          // The maintainers should set NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID to a
-          // valid 32-char id for full wallet functionality.
           console.warn(
             "Invalid or missing NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID; skipping wallet providers.",
           )
@@ -72,18 +68,28 @@ export function WalletProvider({ children }: { children: React.ReactNode }) {
           return
         }
 
-        const results = await Promise.all([import("@rainbow-me/rainbowkit"), import("wagmi")])
-        type RainbowKitModule = {
-          getDefaultConfig: (opts: unknown) => unknown
-          // allow unknown props (theme, children, etc.)
-          RainbowKitProvider: React.ComponentType<Record<string, unknown>>
-          darkTheme: (opts?: unknown) => unknown
-        }
-        type WagmiModule = { WagmiProvider: React.ComponentType<Record<string, unknown>> }
+        // Dynamically import RainbowKit + wagmi modules and RainbowKit CSS on client.
+        const [rainbowkitMod, wagmiMod] = await Promise.all([
+          import("@rainbow-me/rainbowkit"),
+          import("wagmi"),
+        ])
 
-        const { getDefaultConfig, RainbowKitProvider, darkTheme } =
-          results[0] as unknown as RainbowKitModule
-        const wagmiModule = results[1] as unknown as WagmiModule
+        // Load RainbowKit stylesheet at runtime to ensure styles are present when ConnectButton mounts.
+        // Some bundlers or server builds may omit CSS imports executed at module scope, so load dynamically.
+        try {
+          // @ts-expect-error - dynamic CSS import; runtime asset provided by the package
+          await import("@rainbow-me/rainbowkit/styles.css")
+        } catch (cssErr) {
+          // Non-fatal — if CSS fails to load, layout may be degraded but app remains functional.
+          console.warn("Unable to load RainbowKit CSS dynamically:", cssErr)
+        }
+
+        /* eslint-disable @typescript-eslint/no-explicit-any */
+        const rk = rainbowkitMod as unknown as any
+        const wg = wagmiMod as unknown as any
+        const { getDefaultConfig, RainbowKitProvider, darkTheme } = rk
+        const WagmiProvider = wg.WagmiProvider
+        /* eslint-enable @typescript-eslint/no-explicit-any */
 
         const config = getDefaultConfig({
           appName: "DevOpsCoin DApp",
@@ -91,8 +97,6 @@ export function WalletProvider({ children }: { children: React.ReactNode }) {
           chains: [bsc, bscTestnet],
           ssr: true,
         })
-
-        const WagmiProvider = wagmiModule.WagmiProvider
 
         if (!mounted) return
 
