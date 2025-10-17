@@ -2,7 +2,7 @@ import { ESLint } from "eslint"
 process.env.RUSHSTACK_ESLINT_PATCH_DISABLE = "1"
 
 const eslint = new ESLint({
-  overrideConfigFile: "./.eslintrc.cjs",
+  overrideConfigFile: "./eslint.config.cjs",
 })
 
 async function run() {
