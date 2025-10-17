@@ -1,7 +1,7 @@
-"use client";
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import Link from "next/link";
+"use client"
+import { Fragment } from "react"
+import { Menu, Transition } from "@headlessui/react"
+import Link from "next/link"
 
 export default function NavInvestorsDropdown() {
   return (
@@ -9,7 +9,13 @@ export default function NavInvestorsDropdown() {
       <div>
         <Menu.Button className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">
           Investors
-          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <svg
+            className="w-4 h-4 ml-1"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </Menu.Button>
@@ -49,5 +55,5 @@ export default function NavInvestorsDropdown() {
         </Menu.Items>
       </Transition>
     </Menu>
-  );
+  )
 }

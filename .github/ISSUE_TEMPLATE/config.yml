@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Community Chat
+    url: https://t.me/devopscoin
+    about: Discuss ideas and report quick feedback in the community Telegram.
+  - name: 🌐 Website
+    url: https://devopscoin.ai
+    about: Visit the DevOpsCoin website for documentation and updates.

@@ -3,4 +3,4 @@ module.exports = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: { extend: { colors: { cyanbrand: { DEFAULT: "#1dd3c6" } } } },
   plugins: [],
-};
+}

@@ -1,0 +1,35 @@
+{
+  "recommendations": [
+    // --- Core Linting & Formatting ---
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+
+    // --- TypeScript / React / Next.js ---
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+
+    // --- Markdown / Docs ---
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+
+    // --- JSON / YAML / Config ---
+    "redhat.vscode-yaml",
+    "mrmlnc.vscode-json5",
+    "EditorConfig.EditorConfig",
+
+    // --- Git / Workflow ---
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+
+    // --- Optional Quality-of-Life Tools ---
+    "wix.vscode-import-cost", // see bundle size of imports
+    "oderwat.indent-rainbow", // visualize indentation levels
+    "usernamehw.errorlens" // inline ESLint + TS diagnostics
+  ],
+  "unwantedRecommendations": [
+    "ms-python.python",
+    "ms-vscode.cpptools",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag"
+  ]
+}

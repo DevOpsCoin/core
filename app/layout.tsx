@@ -1,13 +1,13 @@
-import "./globals.css";
-import Providers from "./providers";
-import V1Header from "@/components/V1Header";
-import V1Footer from "@/components/V1Footer";
-import { Analytics } from "@vercel/analytics/next"
+import "./globals.css"
+import Providers from "./providers"
+import V1Header from "@/components/V1Header"
+import V1Footer from "@/components/V1Footer"
+// Analytics not used in layout to avoid build lint warnings
 
 export const metadata = {
   title: "DevOpsCoin DApp",
   description: "Wallet-linked actions for the DevOpsCoin ecosystem",
-};
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,5 +20,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Providers>
       </body>
     </html>
-  );
+  )
 }

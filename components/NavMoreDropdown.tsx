@@ -1,16 +1,22 @@
-"use client";
+"use client"
 // ...existing code...
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import Link from "next/link";
+import { Fragment } from "react"
+import { Menu, Transition } from "@headlessui/react"
+import Link from "next/link"
 
 export default function NavMoreDropdown() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-  <Menu.Button className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">
+        <Menu.Button className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition">
           More
-          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <svg
+            className="w-4 h-4 ml-1"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </Menu.Button>
@@ -38,12 +44,12 @@ export default function NavMoreDropdown() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                  <Link
-                    href="/mystory"
-                    className={`block px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-800/40 ${active ? "bg-cyan-800/40" : ""}`}
-                  >
-                    My Story
-                  </Link>
+                <Link
+                  href="/mystory"
+                  className={`block px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-800/40 ${active ? "bg-cyan-800/40" : ""}`}
+                >
+                  My Story
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
@@ -66,9 +72,19 @@ export default function NavMoreDropdown() {
                 </Link>
               )}
             </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <Link
+                  href="/security"
+                  className={`block px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-800/40 ${active ? "bg-cyan-800/40" : ""}`}
+                >
+                  Security
+                </Link>
+              )}
+            </Menu.Item>
           </div>
         </Menu.Items>
       </Transition>
     </Menu>
-  );
+  )
 }

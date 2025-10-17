@@ -1,1 +1,9 @@
-pnpm test
+#!/usr/bin/env sh
+. "$(dirname "$0")/husky.sh"
+
+echo "🔍 Running lint-staged pre-commit checks..."
+pnpm exec lint-staged --no-stash || {
+  echo "❌ lint-staged failed — commit aborted."
+  exit 1
+}
+
