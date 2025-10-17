@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint app components lib --ext .ts,.tsx",
+    "lint:node": "node ./scripts/run-eslint.mjs",
     "lint:fix": "eslint app components lib --ext .ts,.tsx --fix",
     "format": "prettier --write .",
     "verify": "pnpm run lint && pnpm run build",
