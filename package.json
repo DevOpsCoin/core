@@ -12,7 +12,7 @@
     "format": "prettier --write .",
     "verify": "pnpm run lint && pnpm run build",
     "clean": "rm -rf node_modules/.cache && rm -rf .next && rm -rf dist",
-    "ci:check": "eslint app components lib --ext .ts,.tsx --max-warnings=0 && prettier --check .",
+    "ci:check": "RUSHSTACK_ESLINT_PATCH_DISABLE=1 next lint --max-warnings=0 && prettier --check .",
     "ci:format": "prettier --write .",
     "precommit": "lint-staged",
     "prepare": "husky"
@@ -49,7 +49,8 @@
     "@types/react-dom": "^18.2.22",
     "autoprefixer": "^10.4.17",
     "eslint": "^9.37.0",
-    "eslint-config-next": "15.5.5",
+    "@typescript-eslint/parser": "^6.17.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-formatter-compact": "^8.40.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
