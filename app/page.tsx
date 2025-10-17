@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -44,14 +44,14 @@ export default function HomePage() {
           </p>
 
           <p className="text-gray-300 mb-4">
-            $DEVOPS brings <strong>DevOps culture</strong> to the memecoin world, combining pipelines,
-            automation, and hacker energy with meme-driven growth.
+            $DEVOPS brings <strong>DevOps culture</strong> to the memecoin world, combining
+            pipelines, automation, and hacker energy with meme-driven growth.
           </p>
 
           <p className="text-gray-400 mb-6">
             We're assembling builders, hackers, and creators who understand both{" "}
-            <strong>pipelines and meme culture</strong>. Join us to help shape something the degen world
-            hasn’t seen before.
+            <strong>pipelines and meme culture</strong>. Join us to help shape something the degen
+            world hasn’t seen before.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -75,17 +75,28 @@ export default function HomePage() {
       {/* Ship It Fund Section */}
       <section className="container max-w-4xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-left border border-cyan-700/40">
         <h2 className="text-3xl font-bold text-cyan-300 mb-4 flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 text-cyan-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
           </svg>
           The Ship-It Fund — Powering Open-Source Innovation
         </h2>
         <p className="text-gray-300 text-lg mb-6 text-left">
-          The <strong>Ship-It Fund</strong> fuels <strong>fun, useful, and innovative open-source projects</strong>.  
-          Every transaction in the $DEVOPS ecosystem contributes to grants for creators, hackers, and builders who ship cool things at the intersection of automation, culture, and creativity.
+          The <strong>Ship-It Fund</strong> fuels{" "}
+          <strong>fun, useful, and innovative open-source projects</strong>. Every transaction in
+          the $DEVOPS ecosystem contributes to grants for creators, hackers, and builders who ship
+          cool things at the intersection of automation, culture, and creativity.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link href="/shipit" className="inline-block px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition">
+          <Link
+            href="/shipit"
+            className="inline-block px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition"
+          >
             Learn More
           </Link>
         </div>
@@ -94,30 +105,49 @@ export default function HomePage() {
       {/* Stealth Launch Section */}
       <section className="container max-w-4xl mx-auto mt-8 px-3 sm:px-6 py-4 bg-gray-800 rounded-lg text-left border border-cyan-700/40">
         <p className="text-gray-300 text-base sm:text-lg">
-          <strong>$DEVOPS is currently in a stealth builder phase.</strong><br />
+          <strong>$DEVOPS is currently in a stealth builder phase.</strong>
+          <br />
           Public launch and trading will begin post-audit on BNB Smart Chain.
         </p>
         <p className="text-gray-400 text-xs sm:text-sm mt-2 italic">
-          Early contributors have informational access during this phase. Marketing will ramp up closer to TGE.
+          Early contributors have informational access during this phase. Marketing will ramp up
+          closer to TGE.
         </p>
       </section>
 
       {/* Transparency Section */}
       <section className="container max-w-4xl mx-auto mt-8 px-3 sm:px-6 py-6 bg-gray-900 rounded-lg text-left border border-cyan-700/40">
         <h2 className="text-2xl font-bold text-cyan-300 mb-3 flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17v-6h6v6m2 0H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2z" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-cyan-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 17v-6h6v6m2 0H7a2 2 0 01-2-2V7a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2z"
+            />
           </svg>
           Transparent by Design
         </h2>
         <p className="text-gray-300 text-base mb-3">
-          DevOpsCoin follows the same principles that drive modern DevOps — <strong>visibility, accountability, and automation</strong>.
-          All smart contracts will be verified on BscScan, and both the front-end and vesting code will be made public after launch.
+          DevOpsCoin follows the same principles that drive modern DevOps —{" "}
+          <strong>visibility, accountability, and automation</strong>. All smart contracts will be
+          verified on BscScan, and both the front-end and vesting code will be made public after
+          launch.
         </p>
         <p className="text-gray-400 text-sm mb-2">
-          Until launch, repositories remain private to protect against impersonation or pre-launch clones.
-          Once mainnet deployment is live, everything will be open-source under the{" "}
-          <Link href="https://github.com/devopscoin-llc" target="_blank" className="underline text-cyan-400 hover:text-cyan-300">
+          Until launch, repositories remain private to protect against impersonation or pre-launch
+          clones. Once mainnet deployment is live, everything will be open-source under the{" "}
+          <Link
+            href="https://github.com/devopscoin-llc"
+            target="_blank"
+            className="underline text-cyan-400 hover:text-cyan-300"
+          >
             devopscoin-llc
           </Link>{" "}
           GitHub organization.
@@ -130,21 +160,32 @@ export default function HomePage() {
       {/* Wallet Structure Intro */}
       <section className="container max-w-4xl mx-auto mt-12 mb-6 p-6 bg-gray-900 rounded-xl text-center border border-cyan-700/40">
         <h2 className="text-2xl font-bold text-cyan-300 mb-3 flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 text-cyan-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3" />
           </svg>
           Wallet Structure
         </h2>
         <p className="text-gray-300 text-base mb-3 text-left">
-          $DEVOPS maintains a transparent, multi-wallet setup: Founder (10%), Treasury (10%), Community (10%), Ship-It Fund (15%), and Public Supply (55%).  
-          Wallet addresses will be published after deployment.
+          $DEVOPS maintains a transparent, multi-wallet setup: Founder (10%), Treasury (10%),
+          Community (10%), Ship-It Fund (15%), and Public Supply (55%). Wallet addresses will be
+          published after deployment.
         </p>
         <p className="text-gray-400 text-sm italic text-left">
-          For full tokenomics and fee structure, see the <Link href="/whitepaper" className="underline text-cyan-400 hover:text-cyan-300">whitepaper</Link>.
+          For full tokenomics and fee structure, see the{" "}
+          <Link href="/whitepaper" className="underline text-cyan-400 hover:text-cyan-300">
+            whitepaper
+          </Link>
+          .
         </p>
       </section>
 
       {/* ...rest of your sections unchanged... */}
     </>
-  );
+  )
 }

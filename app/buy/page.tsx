@@ -1,33 +1,39 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import ComingSoon from "@/components/ComingSoon";
-import { useAccount, useChainId, useSwitchChain } from "wagmi";
-import { useCallback, useState } from "react";
-import { useDevopsTokenAddress } from "@/lib/useDevopsTokenAddress";
+import Link from "next/link"
+import ComingSoon from "@/components/ComingSoon"
+import { useAccount, useChainId, useSwitchChain } from "wagmi"
+import { useCallback, useState } from "react"
+
+type EthereumProvider = {
+  request: (args: { method: string; params?: unknown[] }) => Promise<unknown>
+}
+import { useDevopsTokenAddress } from "@/lib/useDevopsTokenAddress"
 
 // Environment-based config
-const TARGET_CHAIN_ID = Number(process.env.NEXT_PUBLIC_BSC_CHAIN_ID || 56);
+const TARGET_CHAIN_ID = Number(process.env.NEXT_PUBLIC_BSC_CHAIN_ID || 56)
 
 // Global flag controlling whether trading is live
 const TRADING_LIVE =
-  process.env.NEXT_PUBLIC_TRADING_LIVE === "true" ||
-  process.env.NODE_ENV !== "production"; // auto true in local dev
+  process.env.NEXT_PUBLIC_TRADING_LIVE === "true" || process.env.NODE_ENV !== "production" // auto true in local dev
 
 export default function BuyPage() {
-  const { isConnected } = useAccount();
-  const chainId = useChainId();
-  const { switchChain } = useSwitchChain();
-  const [adding, setAdding] = useState(false);
+  const { isConnected } = useAccount()
+  const chainId = useChainId()
+  const { switchChain } = useSwitchChain()
+  const [adding, setAdding] = useState(false)
 
-  const isOnTargetChain = chainId === TARGET_CHAIN_ID;
-  const isTestnet = chainId === 97;
-  const TOKEN_ADDRESS = useDevopsTokenAddress();
+  const isOnTargetChain = chainId === TARGET_CHAIN_ID
+  const isTestnet = chainId === 97
+  const TOKEN_ADDRESS = useDevopsTokenAddress()
 
   // 🧩 Add + Switch to BSC (Mainnet/Testnet)
   const addBscNetwork = useCallback(async () => {
-    const eth = (window as any)?.ethereum;
-    if (!eth) return alert("MetaMask not detected.");
+    const eth =
+      typeof window !== "undefined"
+        ? (window as unknown as { ethereum?: EthereumProvider }).ethereum
+        : undefined
+    if (!eth) return alert("MetaMask not detected.")
 
     const params = isTestnet
       ? {
@@ -43,37 +49,40 @@ export default function BuyPage() {
           nativeCurrency: { name: "BNB", symbol: "BNB", decimals: 18 },
           rpcUrls: ["https://bsc-dataseed.binance.org/"],
           blockExplorerUrls: ["https://bscscan.com/"],
-        };
+        }
 
     try {
-      await eth.request({ method: "wallet_addEthereumChain", params: [params] });
+      await eth.request({ method: "wallet_addEthereumChain", params: [params] })
       await eth.request({
         method: "wallet_switchEthereumChain",
         params: [{ chainId: params.chainId }],
-      });
-      alert(`${params.chainName} added and selected in MetaMask.`);
-    } catch (err: any) {
-      console.error("Failed to add/switch network:", err);
-      alert(err?.message ?? "Failed to add BNB Smart Chain.");
+      })
+      alert(`${params.chainName} added and selected in MetaMask.`)
+    } catch (err) {
+      const e = err as { message?: string } | undefined
+      console.error("Failed to add/switch network:", err)
+      alert(e?.message ?? "Failed to add BNB Smart Chain.")
     }
-  }, [isTestnet]);
+  }, [isTestnet])
 
   // 🧩 Add DEVOPS token to MetaMask
   const addTokenToMetaMask = useCallback(async () => {
     if (!TOKEN_ADDRESS) {
-      alert("Token address is not configured. Please set your env vars.");
-      return;
+      alert("Token address is not configured. Please set your env vars.")
+      return
     }
-    const eth = (window as any)?.ethereum;
+    const eth =
+      typeof window !== "undefined"
+        ? (window as unknown as { ethereum?: EthereumProvider }).ethereum
+        : undefined
     if (!eth) {
-      alert("MetaMask (or a compatible wallet) was not detected in this browser.");
-      return;
+      alert("MetaMask (or a compatible wallet) was not detected in this browser.")
+      return
     }
     try {
-      setAdding(true);
-      await eth.request({
-        method: "wallet_watchAsset",
-        params: {
+      setAdding(true)
+      const watchParams: unknown[] = [
+        {
           type: "ERC20",
           options: {
             address: TOKEN_ADDRESS,
@@ -81,14 +90,17 @@ export default function BuyPage() {
             decimals: 18,
           },
         },
-      });
-    } catch (err: any) {
-      console.error("Failed to add token:", err);
-      alert(err?.message ?? "Failed to add token to MetaMask.");
+      ]
+
+      await eth.request({ method: "wallet_watchAsset", params: watchParams })
+    } catch (err) {
+      const e = err as { message?: string } | undefined
+      console.error("Failed to add token:", err)
+      alert(e?.message ?? "Failed to add token to MetaMask.")
     } finally {
-      setAdding(false);
+      setAdding(false)
     }
-  }, [TOKEN_ADDRESS]);
+  }, [TOKEN_ADDRESS])
 
   return (
     <section className="container max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-center">
@@ -129,13 +141,11 @@ export default function BuyPage() {
         {TRADING_LIVE ? (
           // ✅ Embedded PancakeSwap Widget
           <div className="bg-gray-800 border border-cyan-700/40 rounded-lg p-5">
-            <h2 className="text-teal-400 font-semibold mb-2">
-              Buy via PancakeSwap (Recommended)
-            </h2>
+            <h2 className="text-teal-400 font-semibold mb-2">Buy via PancakeSwap (Recommended)</h2>
             <p className="text-gray-300 mb-4">
-              Use the embedded PancakeSwap widget below to swap BNB → $DEVOPS
-              directly on this page. Confirm your wallet is connected to{" "}
-              {isTestnet ? "BSC Testnet" : "BNB Smart Chain"} before swapping.
+              Use the embedded PancakeSwap widget below to swap BNB → $DEVOPS directly on this page.
+              Confirm your wallet is connected to {isTestnet ? "BSC Testnet" : "BNB Smart Chain"}{" "}
+              before swapping.
             </p>
 
             <iframe
@@ -175,9 +185,7 @@ export default function BuyPage() {
 
         {/* Add token to wallet */}
         <div className="bg-gray-800 border border-cyan-700/40 rounded-lg p-5">
-          <h3 className="text-teal-400 font-semibold mb-2">
-            Make $DEVOPS visible in your wallet
-          </h3>
+          <h3 className="text-teal-400 font-semibold mb-2">Make $DEVOPS visible in your wallet</h3>
           <p className="text-gray-300">
             After your first purchase, add the token to your wallet so your balance shows up.
           </p>
@@ -210,5 +218,5 @@ export default function BuyPage() {
         </div>
       </div>
     </section>
-  );
+  )
 }

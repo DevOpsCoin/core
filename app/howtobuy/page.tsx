@@ -1,25 +1,22 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { useDevopsTokenAddress } from "@/lib/useDevopsTokenAddress";
+import Link from "next/link"
+import { useDevopsTokenAddress } from "@/lib/useDevopsTokenAddress"
 
 export default function HowToBuyPage() {
-  const tokenAddress = useDevopsTokenAddress();
+  const tokenAddress = useDevopsTokenAddress()
 
   return (
     <section className="container max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-left">
-      <h1 className="text-3xl font-bold text-teal-400 mb-6 text-center">
-        How to Buy $DEVOPS
-      </h1>
+      <h1 className="text-3xl font-bold text-teal-400 mb-6 text-center">How to Buy $DEVOPS</h1>
 
       <p className="text-gray-300 mb-8">
         You can now purchase $DEVOPS directly through our{" "}
         <Link href="/buy" className="text-cyan-400 underline font-semibold">
           official Buy Portal
         </Link>
-        , or follow the step-by-step manual instructions below if you prefer
-        using PancakeSwap directly. Both methods perform the same on-chain swap
-        using PancakeSwap liquidity.
+        , or follow the step-by-step manual instructions below if you prefer using PancakeSwap
+        directly. Both methods perform the same on-chain swap using PancakeSwap liquidity.
       </p>
 
       <div className="bg-gray-800 border border-cyan-700/40 rounded-lg p-5 mb-10">
@@ -31,13 +28,12 @@ export default function HowToBuyPage() {
           <Link href="/buy" className="text-cyan-300 underline">
             /buy
           </Link>{" "}
-          page. It connects directly to PancakeSwap and lets you swap BNB → $DEVOPS
-          without leaving the site.
+          page. It connects directly to PancakeSwap and lets you swap BNB → $DEVOPS without leaving
+          the site.
         </p>
         <p className="text-gray-400 text-sm">
-          You’ll confirm each transaction in your wallet (MetaMask, Trust Wallet,
-          etc.). After your first swap, you can add the token to your wallet so your
-          balance appears automatically.
+          You’ll confirm each transaction in your wallet (MetaMask, Trust Wallet, etc.). After your
+          first swap, you can add the token to your wallet so your balance appears automatically.
         </p>
       </div>
 
@@ -47,19 +43,27 @@ export default function HowToBuyPage() {
 
       <ol className="list-decimal list-inside space-y-5 text-gray-300">
         <li>
-          <span className="font-semibold text-teal-400">Set Up a Wallet:</span>{" "}
-          You’ll need a wallet compatible with the BNB Smart Chain (BSC). The{" "}
-          <strong>Connect Wallet</strong> button on this site supports:
+          <span className="font-semibold text-teal-400">Set Up a Wallet:</span> You’ll need a wallet
+          compatible with the BNB Smart Chain (BSC). The <strong>Connect Wallet</strong> button on
+          this site supports:
           <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
             <li>
-              <strong className="text-teal-300">MetaMask (Recommended)</strong> — easiest for most users.  
-              Add the BNB Smart Chain manually under{" "}
+              <strong className="text-teal-300">MetaMask (Recommended)</strong> — easiest for most
+              users. Add the BNB Smart Chain manually under{" "}
               <em>Settings → Networks → Add Network</em>:
               <div className="mt-2 ml-4 text-sm text-gray-400">
-                <p><strong>Network Name:</strong> BNB Smart Chain</p>
-                <p><strong>RPC URL:</strong> https://bsc-dataseed.binance.org/</p>
-                <p><strong>Chain ID:</strong> 56</p>
-                <p><strong>Currency Symbol:</strong> BNB</p>
+                <p>
+                  <strong>Network Name:</strong> BNB Smart Chain
+                </p>
+                <p>
+                  <strong>RPC URL:</strong> https://bsc-dataseed.binance.org/
+                </p>
+                <p>
+                  <strong>Chain ID:</strong> 56
+                </p>
+                <p>
+                  <strong>Currency Symbol:</strong> BNB
+                </p>
                 <p>
                   <strong>Block Explorer:</strong>{" "}
                   <a href="https://bscscan.com" target="_blank" className="text-cyan-400 underline">
@@ -68,54 +72,66 @@ export default function HowToBuyPage() {
                 </p>
               </div>
             </li>
-            <li><strong>Rainbow Wallet:</strong> Mobile wallet via WalletConnect.</li>
-            <li><strong>Coinbase / Base Wallet:</strong> Works via WalletConnect as well.</li>
-            <li><strong>WalletConnect (Universal):</strong> Supports Trust Wallet, SafePal, OKX, etc.</li>
+            <li>
+              <strong>Rainbow Wallet:</strong> Mobile wallet via WalletConnect.
+            </li>
+            <li>
+              <strong>Coinbase / Base Wallet:</strong> Works via WalletConnect as well.
+            </li>
+            <li>
+              <strong>WalletConnect (Universal):</strong> Supports Trust Wallet, SafePal, OKX, etc.
+            </li>
           </ul>
         </li>
 
         <li>
-          <span className="font-semibold text-teal-400">Fund Your Wallet:</span>{" "}
-          Add some <strong>BNB</strong> to cover your swap and gas fees.
+          <span className="font-semibold text-teal-400">Fund Your Wallet:</span> Add some{" "}
+          <strong>BNB</strong> to cover your swap and gas fees.
         </li>
 
         <li>
-          <span className="font-semibold text-teal-400">Buy via PancakeSwap:</span>{" "}
-          Visit{" "}
-          <a href="https://pancakeswap.finance/swap" target="_blank" className="text-cyan-400 underline">
+          <span className="font-semibold text-teal-400">Buy via PancakeSwap:</span> Visit{" "}
+          <a
+            href="https://pancakeswap.finance/swap"
+            target="_blank"
+            className="text-cyan-400 underline"
+          >
             pancakeswap.finance/swap
           </a>{" "}
           and connect your wallet. Verify you’re on the official site before swapping.
         </li>
 
         <li>
-          <span className="font-semibold text-teal-400">Import the $DEVOPS Token:</span>{" "}
-          Paste the official contract address into PancakeSwap’s “Select Token” field:
+          <span className="font-semibold text-teal-400">Import the $DEVOPS Token:</span> Paste the
+          official contract address into PancakeSwap’s “Select Token” field:
           <pre className="bg-gray-800 text-cyan-300 p-3 rounded-lg text-sm mt-2">
             {tokenAddress || "0xYOUR_TOKEN_ADDRESS"}
           </pre>
           <p className="mt-2 text-sm text-gray-400 italic">
             (The official address is displayed above and on{" "}
-            <Link href="/" className="text-cyan-400 underline">devopscoin.ai</Link>.)
+            <Link href="/" className="text-cyan-400 underline">
+              devopscoin.ai
+            </Link>
+            .)
           </p>
         </li>
 
         <li>
-          <span className="font-semibold text-teal-400">Swap BNB for $DEVOPS:</span>{" "}
-          Enter the amount of BNB, set “To” as $DEVOPS, adjust slippage to ~0.5–1%,
-          click “Swap,” and confirm in your wallet.
+          <span className="font-semibold text-teal-400">Swap BNB for $DEVOPS:</span> Enter the
+          amount of BNB, set “To” as $DEVOPS, adjust slippage to ~0.5–1%, click “Swap,” and confirm
+          in your wallet.
         </li>
 
         <li>
-          <span className="font-semibold text-teal-400">Make $DEVOPS Visible:</span>{" "}
-          If your wallet doesn’t automatically show the token, click{" "}
-          <strong>“Import Tokens”</strong> and paste the same contract address above.
-          MetaMask will detect <code>DEVOPS</code> and 18 decimals automatically.
+          <span className="font-semibold text-teal-400">Make $DEVOPS Visible:</span> If your wallet
+          doesn’t automatically show the token, click <strong>“Import Tokens”</strong> and paste the
+          same contract address above. MetaMask will detect <code>DEVOPS</code> and 18 decimals
+          automatically.
         </li>
 
         <li>
-          <span className="font-semibold text-teal-400">Verify Your Balance:</span>{" "}
-          Check your wallet or{" "}
+          <span className="font-semibold text-teal-400">Verify Your Balance:</span> Check your
+          wallet or{" "}
           <a href="https://bscscan.com" target="_blank" className="text-cyan-400 underline">
             bscscan.com
           </a>{" "}
@@ -124,9 +140,7 @@ export default function HowToBuyPage() {
       </ol>
 
       <div className="mt-12 border-t border-gray-700 pt-8">
-        <h2 className="text-2xl font-bold text-teal-400 mb-4 text-center">
-          Troubleshooting & FAQ
-        </h2>
+        <h2 className="text-2xl font-bold text-teal-400 mb-4 text-center">Troubleshooting & FAQ</h2>
 
         <div className="space-y-6 text-gray-300">
           <div>
@@ -134,8 +148,11 @@ export default function HowToBuyPage() {
               I don’t see $DEVOPS in my wallet
             </h3>
             <p>
-              That’s normal the first time. Use the “Add $DEVOPS to MetaMask” button
-              on the <Link href="/buy" className="text-cyan-300 underline">Buy page</Link> or manually import the contract address.
+              That’s normal the first time. Use the “Add $DEVOPS to MetaMask” button on the{" "}
+              <Link href="/buy" className="text-cyan-300 underline">
+                Buy page
+              </Link>{" "}
+              or manually import the contract address.
             </p>
           </div>
 
@@ -144,8 +161,8 @@ export default function HowToBuyPage() {
               Can I buy directly from my wallet later?
             </h3>
             <p>
-              Yes. Once you’ve swapped once, most wallets will automatically route future
-              swaps through PancakeSwap’s $DEVOPS liquidity pool.
+              Yes. Once you’ve swapped once, most wallets will automatically route future swaps
+              through PancakeSwap’s $DEVOPS liquidity pool.
             </p>
           </div>
 
@@ -154,8 +171,8 @@ export default function HowToBuyPage() {
               What wallets are supported?
             </h3>
             <p>
-              The site supports <strong>MetaMask (recommended)</strong>, Rainbow,
-              Base/CB Wallet, and any WalletConnect-compatible option.
+              The site supports <strong>MetaMask (recommended)</strong>, Rainbow, Base/CB Wallet,
+              and any WalletConnect-compatible option.
             </p>
           </div>
         </div>
@@ -167,6 +184,5 @@ export default function HowToBuyPage() {
         </Link>
       </div>
     </section>
-  );
+  )
 }
-

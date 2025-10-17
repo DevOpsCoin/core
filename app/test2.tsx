@@ -1,1 +1,0 @@
-const y = { bar: "baz" }

@@ -1,13 +1,13 @@
-"use client";
-import Link from "next/link";
-import NavMoreDropdown from "@/components/NavMoreDropdown";
-import NavInvestorsDropdown from "@/components/NavInvestorsDropdown";
-import Image from "next/image";
-import { useState } from "react";
-import WalletConnect from "@/components/WalletConnect";
+"use client"
+import Link from "next/link"
+import NavMoreDropdown from "@/components/NavMoreDropdown"
+import NavInvestorsDropdown from "@/components/NavInvestorsDropdown"
+import Image from "next/image"
+import { useState } from "react"
+import WalletConnect from "@/components/WalletConnect"
 
 export default function V1Header() {
-  const [usdValue, setUsdValue] = useState<number | null>(null);
+  const [_usdValue, _setUsdValue] = useState<number | null>(null)
 
   return (
     <header className="relative w-full mt-4">
@@ -56,9 +56,7 @@ export default function V1Header() {
           <strong id="launch-date-label">Winter 2025–2026</strong>
         </p>
         <div className="mt-2">
-          <span className="block text-base text-cyan-200 font-semibold">
-            Current Phase:
-          </span>
+          <span className="block text-base text-cyan-200 font-semibold">Current Phase:</span>
           <span className="inline-flex items-center gap-2 text-cyan-300 text-lg font-bold mt-1">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
             Phase 1 — Foundation
@@ -104,11 +102,11 @@ export default function V1Header() {
         </nav>
       </div>
     </header>
-  );
+  )
 
   // ✅ Mobile Navigation (unchanged)
   function MobileNav() {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false)
     return (
       <>
         {!open && (
@@ -117,12 +115,7 @@ export default function V1Header() {
             onClick={() => setOpen(true)}
             aria-label="Open navigation menu"
           >
-            <svg
-              className="h-7 w-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -144,12 +137,7 @@ export default function V1Header() {
                 onClick={() => setOpen(false)}
                 aria-label="Close navigation menu"
               >
-                <svg
-                  className="h-7 w-7"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -200,9 +188,7 @@ export default function V1Header() {
                 <div className="w-full mt-2 p-3 rounded-xl border border-cyan-700/40 bg-gradient-to-r from-cyan-900 to-cyan-800 shadow-lg">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-cyan-100 font-bold">Investors</span>
-                    <span className="text-xs text-cyan-200/80">
-                      Quick links
-                    </span>
+                    <span className="text-xs text-cyan-200/80">Quick links</span>
                   </div>
                   <div className="flex flex-col gap-2">
                     <Link
@@ -228,6 +214,6 @@ export default function V1Header() {
           </>
         )}
       </>
-    );
+    )
   }
 }

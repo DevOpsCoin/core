@@ -68,14 +68,14 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## ⚙️ Environment Variables
 
-| Variable | Description |
-|-----------|-------------|
-| `NEXT_PUBLIC_TRADING_LIVE` | Enables production buy/claim logic |
-| `NEXT_PUBLIC_DEVOPS_TOKEN_MAINNET` | BSC mainnet token address |
-| `NEXT_PUBLIC_DEVOPS_TOKEN_TESTNET` | BSC testnet token address |
-| `NEXT_PUBLIC_VESTING_CONTRACT_MAINNET` | Vesting contract (mainnet) |
-| `NEXT_PUBLIC_VESTING_CONTRACT_TESTNET` | Vesting contract (testnet) |
-| `NEXT_PUBLIC_API_BASE` | Optional API endpoint for pricing / analytics |
+| Variable                               | Description                                   |
+| -------------------------------------- | --------------------------------------------- |
+| `NEXT_PUBLIC_TRADING_LIVE`             | Enables production buy/claim logic            |
+| `NEXT_PUBLIC_DEVOPS_TOKEN_MAINNET`     | BSC mainnet token address                     |
+| `NEXT_PUBLIC_DEVOPS_TOKEN_TESTNET`     | BSC testnet token address                     |
+| `NEXT_PUBLIC_VESTING_CONTRACT_MAINNET` | Vesting contract (mainnet)                    |
+| `NEXT_PUBLIC_VESTING_CONTRACT_TESTNET` | Vesting contract (testnet)                    |
+| `NEXT_PUBLIC_API_BASE`                 | Optional API endpoint for pricing / analytics |
 
 Example configuration can be found in [`/.env.example`](./.env.example).
 
@@ -85,9 +85,9 @@ Example configuration can be found in [`/.env.example`](./.env.example).
 
 All contracts are verified and public on BscScan:
 
-| Network | Contract | Explorer |
-|----------|-----------|-----------|
-| **Mainnet** | `DISCLOSED_ON_LAUNCH` | [BscScan](https://bscscan.com/address/DISCLOSED_ON_LAUNCH) |
+| Network     | Contract              | Explorer                                                                   |
+| ----------- | --------------------- | -------------------------------------------------------------------------- |
+| **Mainnet** | `DISCLOSED_ON_LAUNCH` | [BscScan](https://bscscan.com/address/DISCLOSED_ON_LAUNCH)                 |
 | **Testnet** | `DISCLOSED_ON_LAUNCH` | [BscScan Testnet](https://testnet.bscscan.com/address/DISCLOSED_ON_LAUNCH) |
 
 ---
@@ -112,16 +112,35 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
 ## 🧩 Transparency
 
-This repo intentionally showcases how a decentralized project can operate openly and responsibly.
+This repo intentionally showcases how a decentralized project can operate openly and responsibly.  
+All financial and on-chain activity related to the project is documented under [TRANSPARENCY.md](./TRANSPARENCY.md).
 
-For full details, see [TRANSPARENCY.md](./TRANSPARENCY.md).
+**Active Wallets:**
+
+```
+Founder (Vesting):  DISCLOSED_ON_LAUNCH
+Treasury:           DISCLOSED_ON_LAUNCH
+Community Wallet:   DISCLOSED_ON_LAUNCH
+Ship-It Fund:       DISCLOSED_ON_LAUNCH
+Support NFT:        CONTRIBUTION_LEDGER_ON_LAUNCH
+```
+
+> The Founder wallet follows a vesting schedule (3-month cliff, 20-month linear release).  
+> The Support NFT provides a voluntary contribution path that funds the Ship-It Fund.
+
+---
+
+## 🧭 Governance
+
+Governance is structured under **DevOpsCoin LLC**, built around automation and verifiable transparency.  
+Key details and policies are outlined in [GOVERNANCE.md](./GOVERNANCE.md).
 
 ---
 
 ## 🔐 Security Policy
 
-Please report security vulnerabilities via responsible disclosure:  
-[See SECURITY.md →](./SECURITY.md)
+Please report vulnerabilities responsibly via  
+[SECURITY.md →](./SECURITY.md)
 
 ---
 
@@ -133,27 +152,17 @@ You are free to **fork, modify, and build upon** this codebase in accordance wit
 However, please note:
 
 - Only builds and deployments from the **official domain** [https://devopscoin.ai](https://devopscoin.ai)  
-  and verified wallets listed below are recognized as **authentic DevOpsCoin**:
-  
-  ```
-  Founder Wallet:    DISCLOSED_ON_LAUNCH
-  Treasury Wallet:   DISCLOSED_ON_LAUNCH
-  Community Wallet:  DISCLOSED_ON_LAUNCH
-  Ship-It Fund:      DISCLOSED_ON_LAUNCH
-  ```
-
+  and verified wallets listed above are recognized as **authentic DevOpsCoin**.
 - Any clones, forks, or redeployments using different wallet addresses or branding **are not affiliated**  
   with DevOpsCoin LLC, RootSignal, or the Ship-It Fund initiative.
+- Users should always **verify contract addresses on BscScan** before interacting with any derivative project.
 
-- Users should **verify contract addresses on BscScan** before interacting with any forked or derivative versions.
-
-This open-source release is intended as a **reference implementation and educational resource**  
-for DevOps engineers exploring blockchain automation — not an endorsement of third-party token sales or relaunches.
+This open-source release serves as a **reference implementation** and **educational resource**  
+for DevOps engineers exploring blockchain automation — not an endorsement of third-party token launches.
 
 ---
 
 ## 🪙 License
 
 This project is licensed under the [MIT License](./LICENSE).  
-© 2025 DevOpsCoin LLC — *Where pipelines meet protocols.*
-
+© 2025 DevOpsCoin LLC — _Where pipelines meet protocols._

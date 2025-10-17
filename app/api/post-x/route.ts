@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from "next/server"
 
-export async function POST(req: Request) {
-  return NextResponse.json({ ok: true, note: "Stub endpoint" });
+export async function POST(_req: Request) {
+  return NextResponse.json({ ok: true, note: "Stub endpoint" })
 }

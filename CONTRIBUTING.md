@@ -1,33 +1,84 @@
-# Contributing to DevOpsCoin
+# CONTRIBUTING.md
 
-We welcome open-source contributions that improve the website, documentation, or tooling.
+We welcome open-source contributions that improve **DevOpsCoin** — whether that’s the DApp, documentation, or developer experience.
 
-## Getting Started
+---
 
-1. Fork the repo  
-2. Clone your fork locally  
-3. Copy `.env.example` → `.env.local`  
-4. Run locally  
-   ```bash
-   npm install
-   npm run dev
-   ```
-5. Submit a pull request once your feature or fix is ready.
+## Quickstart
 
-## Code Style
+### 1. Fork & clone
 
-- Use TypeScript and follow Next.js conventions  
-- Prefer functional components and hooks  
-- Tailwind for styling  
-- Avoid external state managers unless necessary
+```bash
+git clone https://github.com/YOUR-USERNAME/website-v2.git
+cd website-v2
+pnpm install
+pnpm run dev
+```
 
-## Pull Requests
+### 2. Create a branch
 
-Every PR should:
-- Reference an open issue (if applicable)
-- Include a short description of what it changes
-- Pass `npm run build` without errors
+Use a short, descriptive name:
+
+```
+feature/add-nft-banner
+fix/wallet-timeout
+```
+
+### 3. Commit convention
+
+Follow [Conventional Commits](https://www.conventionalcommits.org/):
+
+| Type      | Meaning                                  |
+| --------- | ---------------------------------------- |
+| feat:     | new feature                              |
+| fix:      | bug fix                                  |
+| docs:     | documentation change                     |
+| chore:    | tooling or dependency update             |
+| refactor: | code improvement without behavior change |
+
+Examples:
+
+```bash
+git commit -m "feat: add Ship-It NFT mint page"
+git commit -m "fix: correct RPC chain ID handling"
+```
+
+---
+
+## Lint & Format
+
+We use **ESLint v9 (flat config)** and **Prettier** for code quality.
+
+Run before committing:
+
+```bash
+pnpm run lint
+pnpm run format
+```
+
+Pre-commit hooks automatically format and lint your code.  
+If you see an error, fix it before pushing.
+
+---
+
+## Submitting a Pull Request
+
+1. Push your branch to your fork
+2. Open a PR against `main`
+3. Ensure your PR:
+   - Passes `pnpm run verify`
+   - Describes the change clearly
+   - References an issue if applicable
+
+---
 
 ## License
 
-By contributing, you agree that your contributions are licensed under the MIT License.
+By contributing, you agree that your work is licensed under the **MIT License**.  
+See [LICENSE](./LICENSE) for details.
+
+---
+
+**Maintained by:**  
+**RootSignal / DevOpsCoin Engineering**  
+_Where pipelines meet protocols._
