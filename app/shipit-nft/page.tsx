@@ -1,16 +1,12 @@
-"use client";
-import React, { useState, useEffect, useCallback } from "react";
-import Link from "next/link";
-import {
-  useAccount,
-  useContractRead,
-  useContractWrite,
-  useWaitForTransactionReceipt,
-} from "wagmi";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import ComingSoon from "@/components/ComingSoon";
+"use client"
+export const dynamic = "force-dynamic"
+import React, { useState, useEffect, useCallback } from "react"
+import Link from "next/link"
+import { useAccount, useContractRead, useContractWrite, useWaitForTransactionReceipt } from "wagmi"
+import { ConnectButton } from "@rainbow-me/rainbowkit"
+import ComingSoon from "@/components/ComingSoon"
 
-const CONTRACT_ADDRESS = "0xYOUR_DEPLOYED_NFT_CONTRACT";
+const CONTRACT_ADDRESS = "0xYOUR_DEPLOYED_NFT_CONTRACT"
 const ABI = [
   {
     inputs: [],
@@ -50,96 +46,95 @@ const ABI = [
     stateMutability: "view",
     type: "function",
   },
-];
+]
 
 export default function ShipItNFTPage() {
-  const { address, isConnected } = useAccount();
-  const [mintStatus, setMintStatus] = useState("");
-  const [gallery, setGallery] = useState<any[]>([]);
-  const [loadingGallery, setLoadingGallery] = useState(false);
+  const { address, isConnected } = useAccount()
+  const [mintStatus, setMintStatus] = useState("")
+  const [gallery, setGallery] = useState<Array<Record<string, unknown>>>([])
+  const [loadingGallery, setLoadingGallery] = useState(false)
 
   const { data: mintPriceData } = useContractRead({
     abi: ABI,
     address: CONTRACT_ADDRESS,
     functionName: "mintPrice",
     query: { enabled: isConnected },
-  });
-  const mintPrice = mintPriceData ? (Number(mintPriceData) / 1e18).toString() : null;
+  })
+  const mintPrice = mintPriceData ? (Number(mintPriceData) / 1e18).toString() : null
 
   const {
     data: mintTxData,
     isPending: isMinting,
     writeContract: mintBadge,
     error: mintError,
-  } = useContractWrite();
+  } = useContractWrite()
 
-  const { data: txReceipt, isSuccess: txSuccess, isError: txError } =
-    useWaitForTransactionReceipt({
-      hash: mintTxData,
-      query: { enabled: Boolean(mintTxData) },
-    });
+  const {
+    data: _txReceipt,
+    isSuccess: txSuccess,
+    isError: txError,
+  } = useWaitForTransactionReceipt({
+    hash: mintTxData,
+    query: { enabled: Boolean(mintTxData) },
+  })
 
   useEffect(() => {
     if (txSuccess) {
-      setMintStatus("✅ Mint successful! Refreshing gallery...");
-      loadOwnedNFTs();
+      setMintStatus("✅ Mint successful! Refreshing gallery...")
+      loadOwnedNFTs()
     } else if (txError) {
-      setMintStatus("❌ Mint failed or canceled.");
+      setMintStatus("❌ Mint failed or canceled.")
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [txSuccess, txError]);
+  }, [txSuccess, txError])
 
   const loadOwnedNFTs = useCallback(async () => {
-    if (!isConnected || !address) return;
-    setLoadingGallery(true);
+    if (!isConnected || !address) return
+    setLoadingGallery(true)
     try {
-      const balanceResult = await fetch(`/api/nft-balance?address=${address}`).then((r) =>
-        r.json()
-      );
-      const balance = balanceResult.balance;
+      const balanceResult = await fetch(`/api/nft-balance?address=${address}`).then((r) => r.json())
+      const balance = balanceResult.balance
       if (!balance || balance === 0) {
-        setGallery([]);
-        setLoadingGallery(false);
-        return;
+        setGallery([])
+        setLoadingGallery(false)
+        return
       }
-      const nfts = [];
+      const nfts = []
       for (let i = 0; i < balance; i++) {
-        const tokenIdResult = await fetch(
-          `/api/nft-tokenid?address=${address}&index=${i}`
-        ).then((r) => r.json());
-        const tokenId = tokenIdResult.tokenId;
-        const tokenURIResult = await fetch(
-          `/api/nft-tokenuri?tokenId=${tokenId}`
-        ).then((r) => r.json());
-        const uri = tokenURIResult.tokenURI;
-        const meta = await fetch(uri).then((r) => r.json());
-        nfts.push({ tokenId, ...meta });
+        const tokenIdResult = await fetch(`/api/nft-tokenid?address=${address}&index=${i}`).then(
+          (r) => r.json(),
+        )
+        const tokenId = tokenIdResult.tokenId
+        const tokenURIResult = await fetch(`/api/nft-tokenuri?tokenId=${tokenId}`).then((r) =>
+          r.json(),
+        )
+        const uri = tokenURIResult.tokenURI
+        const meta = await fetch(uri).then((r) => r.json())
+        nfts.push({ tokenId, ...meta })
       }
-      setGallery(nfts);
+      setGallery(nfts)
     } catch {
-      setGallery([]);
+      setGallery([])
     }
-    setLoadingGallery(false);
-  }, [isConnected, address]);
+    setLoadingGallery(false)
+  }, [isConnected, address])
 
   useEffect(() => {
-    if (isConnected) loadOwnedNFTs();
-  }, [isConnected, address, loadOwnedNFTs]);
+    if (isConnected) loadOwnedNFTs()
+  }, [isConnected, address, loadOwnedNFTs])
 
-  const TRADING_LIVE = process.env.NEXT_PUBLIC_TRADING_LIVE === "true" || process.env.NODE_ENV !== "production";
+  const TRADING_LIVE =
+    process.env.NEXT_PUBLIC_TRADING_LIVE === "true" || process.env.NODE_ENV !== "production"
 
-  const comingSoonEl = (
-    <ComingSoon />
-  );
+  const comingSoonEl = <ComingSoon />
 
-  if (!TRADING_LIVE) return comingSoonEl;
+  if (!TRADING_LIVE) return comingSoonEl
 
   return (
     <section className="container max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center">
       <h1 className="text-3xl font-bold text-cyan-400 mb-4">Ship-It Badge — The First Commit</h1>
       <p className="text-gray-300 mb-6">
-        Mint your limited-edition <strong>The First Commit</strong> badge — the very first entry
-        in the <strong>Ship-It Badge</strong> series. Each mint supports the{" "}
+        Mint your limited-edition <strong>The First Commit</strong> badge — the very first entry in
+        the <strong>Ship-It Badge</strong> series. Each mint supports the{" "}
         <Link href="/shipit" className="text-cyan-400 underline">
           Ship-It Fund
         </Link>{" "}
@@ -191,13 +186,13 @@ export default function ShipItNFTPage() {
         </p>
         <button
           onClick={() => {
-            setMintStatus("");
+            setMintStatus("")
             mintBadge?.({
               abi: ABI,
               address: CONTRACT_ADDRESS,
               functionName: "mintBadge",
               value: mintPriceData ? BigInt(mintPriceData as string) : undefined,
-            });
+            })
           }}
           className="nav-btn glow-cyan"
           disabled={isMinting || !mintBadge}
@@ -212,27 +207,28 @@ export default function ShipItNFTPage() {
         {loadingGallery ? (
           <p className="text-gray-400 col-span-full">Loading your badges...</p>
         ) : gallery.length === 0 ? (
-          <p className="text-gray-400 col-span-full">
-            You don’t own any Ship-It Badges yet.
-          </p>
+          <p className="text-gray-400 col-span-full">You don’t own any Ship-It Badges yet.</p>
         ) : (
-          gallery.map((nft) => (
-            <div
-              key={nft.tokenId}
-              className="bg-gray-800 border border-cyan-700/40 rounded-lg shadow-md p-3 text-center"
-            >
-              <img
-                src={nft.image}
-                alt={nft.name}
-                className="rounded-lg mb-3 glow-cyan"
-              />
-              <h3 className="text-cyan-300 font-semibold">{nft.name}</h3>
-              <p className="text-sm text-gray-400 mb-2">{nft.description}</p>
-              <p className="text-xs text-gray-500">Token ID: {nft.tokenId}</p>
-            </div>
-          ))
+          gallery.map((nft) => {
+            const tokenId = String(nft["tokenId"] ?? nft["id"] ?? "")
+            const image = String(nft["image"] ?? "")
+            const name = String(nft["name"] ?? "")
+            const description = String(nft["description"] ?? "")
+
+            return (
+              <div
+                key={tokenId}
+                className="bg-gray-800 border border-cyan-700/40 rounded-lg shadow-md p-3 text-center"
+              >
+                <img src={image} alt={name} className="rounded-lg mb-3 glow-cyan" />
+                <h3 className="text-cyan-300 font-semibold">{name}</h3>
+                <p className="text-sm text-gray-400 mb-2">{description}</p>
+                <p className="text-xs text-gray-500">Token ID: {tokenId}</p>
+              </div>
+            )
+          })
         )}
       </div>
     </section>
-  );
+  )
 }
