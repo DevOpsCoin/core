@@ -1,15 +1,41 @@
 # DevOpsCoin — $DEVOPS
 
-Where pipelines meet protocols.
+**Where pipelines meet protocols.**
 
 ---
 
 ## Overview
 
-**DevOpsCoin ($DEVOPS)** merges *Dev Culture with Degen Energy* — a transparent, fixed-supply token designed to fund open-source DevOps innovation through the **Ship-It Fund**.  
-Every transaction contributes 0.5% toward sustaining real developers and real tools that keep modern infrastructure shipping.
+**DevOpsCoin ($DEVOPS)** merges *Dev culture with degen energy* — a transparent, fixed-supply **Solana SPL token** that celebrates the builders who keep the internet running.  
+It funds open-source DevOps innovation through the **Ship-It / Operations Wallet**, sustained long-term by **creator rewards** earned from on-chain volume.
 
 > Transparency isn’t marketing — it’s infrastructure.
+
+---
+
+## Funding Model
+
+Unlike traditional tokens with embedded transaction fees, DevOpsCoin relies on **creator rewards** from Pump.fun and PumpSwap trading activity.  
+A portion of those creator rewards continuously replenishes the **Ship-It / Operations Wallet**, which supports:
+
+- Open-source DevOps project grants  
+- Ecosystem growth and liquidity operations  
+- Transparency tooling and on-chain reporting  
+
+The fund is **bootstrapped with 5% (50M $DEVOPS)** plus **≈ $2,000 in SOL** to provide early operational liquidity.  
+No additional token fees or taxes are imposed.
+
+---
+
+## Token Allocation
+
+| Wallet | Allocation | Notes |
+|---------|-------------|-------|
+| **Founder Vesting Wallet** | **10 %** | 3-month cliff, 5 % monthly linear release (20 months) |
+| **Ship-It / Operations Wallet** | **5 %** | Open-source grants, liquidity ops, creator reward cycles |
+| **Public / Circulating Supply** | **85 %** | Public ownership and Raydium liquidity |
+
+> All wallet addresses and activity are publicly viewable on Solana explorers and mirrored to the transparency ledger.
 
 ---
 
@@ -17,9 +43,9 @@ Every transaction contributes 0.5% toward sustaining real developers and real to
 
 ```
 root/
-├── apps/website/     → Public web DApp, documentation, and marketing
-├── contracts/        → Solidity contracts and Hardhat deployment scripts
-└── docs/             → Technical specifications, tokenomics, and governance
+├── apps/website/     → Public DApp, docs, and marketing site
+├── contracts/        → Solana/Anchor programs and token scripts
+└── docs/             → Tokenomics, vesting, and transparency policies
 ```
 
 ---
@@ -55,12 +81,11 @@ Visit [http://localhost:3000](http://localhost:3000) to preview the site.
 
 | Component | Verification |
 |------------|--------------|
-| **Smart Contracts** | Verified on BscScan |
-| **Founder Vesting** | On-chain via `FounderVesting.sol` |
-| **Ship-It Fund** | [![Ledger Integrity](https://github.com/DevOpsCoin/shipit-fund/actions/workflows/verify-ledger.yml/badge.svg)](https://github.com/DevOpsCoin/shipit-fund/actions/workflows/verify-ledger.yml) — see [DevOpsCoin/shipit-fund](https://github.com/DevOpsCoin/shipit-fund) |
+| **Token Contract** | Verified SPL deployment (Solana mainnet) |
+| **Founder Vesting** | On-chain linear release (immutable contract) |
+| **Ship-It / Operations** | [Transparency Ledger →](https://github.com/DevOpsCoin-LLC/shipit-fund) (tracked monthly) |
 
-The **Ship-It Fund** repository maintains transparent on-chain ledgers for all grants and token-health operations.  
-Ledger verification runs automatically on every commit to ensure integrity and auditability.
+Ledger verification workflows run automatically to ensure accuracy of all Ship-It distributions and fund inflows.
 
 ---
 
@@ -68,13 +93,20 @@ Ledger verification runs automatically on every commit to ensure integrity and a
 
 Full project documentation lives in [`/docs`](./docs):
 
-- [Project Overview](./docs/project/README.md)
-- [Smart Contracts Reference](./docs/contracts/README.md)
-- [Contributor Handbook](./docs/handbook/README.md)
+- [Tokenomics](./docs/TOKENOMICS.md)  
+- [Wallet Structure](./docs/WALLET_STRUCTURE.md)  
+- [Founder Vesting](./docs/FOUNDER_VESTING.md)  
+- [Ship-It Fund Policy](./docs/SHIPIT_FUND.md)  
 
 ---
 
 ## Maintainer
 
-**RootSignal / DevOpsCoin LLC**  
-Website: [https://devopscoin.ai](https://devopscoin.ai)
+**RootSignal — DevOpsCoin LLC**  
+Website: [https://devopscoin.ai](https://devopscoin.ai)  
+Telegram: [https://t.me/TheDevOpsCoin](https://t.me/TheDevOpsCoin)
+
+---
+
+*“Built by DevOps. Fueled by transparency.”*
+
