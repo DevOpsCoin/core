@@ -23,8 +23,6 @@ dist/
 **/.next/
 out/
 **/out/
-.vercel/
-**/.vercel/
 
 # ----------------------------
 # Environment and Config
