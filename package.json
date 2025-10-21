@@ -13,7 +13,7 @@
     "test:contracts": "cd contracts && cargo test"
   },
   "engines": {
-    "node": ">=20 <21"
+    "node": ">=22 <23"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
