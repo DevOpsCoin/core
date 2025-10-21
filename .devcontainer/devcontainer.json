@@ -1,11 +1,11 @@
 {
-  "name": "DevOpsCoin (web + db)",
+  "name": "DevOpsCoin (website + db)",
   "dockerComposeFile": [
-    "../docker-compose.yml"
+    "./docker-compose.yml"
   ],
   "service": "web",
   "workspaceFolder": "/usr/src/app",
-  "runServices": ["db", "web", "pgadmin"],
+  "runServices": ["web", "db", "pgadmin"],
   "shutdownAction": "stopCompose",
   "customizations": {
     "vscode": {
@@ -16,11 +16,12 @@
         "bradlc.vscode-tailwindcss"
       ],
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/sh",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "terminal.integrated.shell.linux": "/bin/sh"
       }
     }
   },
   "postCreateCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install",
   "remoteUser": "node"
 }
+
