@@ -64,9 +64,7 @@ export default function MintPage() {
       <p className="text-gray-300 mb-2">
         Each mint funds open-source DevOps projects via the Ship-It Fund.
       </p>
-      <p className="text-gray-400 text-sm mb-6">
-        Mint Price: {mintPrice} BNB
-      </p>
+      <p className="text-gray-400 text-sm mb-6">Mint Price: {mintPrice} BNB</p>
 
       {!isConnected ? (
         <p className="text-cyan-300">
@@ -86,4 +84,3 @@ export default function MintPage() {
     </section>
   );
 }
-

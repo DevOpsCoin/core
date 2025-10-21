@@ -6,7 +6,7 @@
 **Symbol:** DEVOPS  
 **Network:** Solana  
 **Total Supply:** 1,000,000,000 DEVOPS  
-**Ownership:** Creator authority revoked post-launch (pump.fun graduation)  
+**Ownership:** Creator authority revoked post-launch (pump.fun graduation)
 
 ---
 
@@ -22,11 +22,11 @@ The project operates with **two core wallets** and one circulating supply pool.
 
 ## Wallet Allocations
 
-| Wallet Type | Address | Allocation | Amount (DEVOPS) | Description |
-|--------------|----------|-------------|------------------|--------------|
-| **Founder Wallet** | *(to be published post-deployment)* | **10 %** | 100,000,000 | Founder allocation (RootSignal). Locked with a 3-month cliff and 5 % monthly vesting for 20 months. |
-| **Ship-It / Operations Wallet** | *(to be published post-deployment)* | **5 %** | 50,000,000 | Bootstrap fund supporting open-source DevOps projects **and** maintaining token health (buybacks, liquidity, creator-reward cycles). Sustained long-term by creator-reward inflows from pump.fun. |
-| **Public Supply (Circulating + LP)** | *pump.fun + Raydium liquidity* | **85 %** | 850,000,000 | Distributed to the public through the pump.fun launch and subsequent Raydium market liquidity. |
+| Wallet Type                          | Address                             | Allocation | Amount (DEVOPS) | Description                                                                                                                                                                                       |
+| ------------------------------------ | ----------------------------------- | ---------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Founder Wallet**                   | _(to be published post-deployment)_ | **10 %**   | 100,000,000     | Founder allocation (RootSignal). Locked with a 3-month cliff and 5 % monthly vesting for 20 months.                                                                                               |
+| **Ship-It / Operations Wallet**      | _(to be published post-deployment)_ | **5 %**    | 50,000,000      | Bootstrap fund supporting open-source DevOps projects **and** maintaining token health (buybacks, liquidity, creator-reward cycles). Sustained long-term by creator-reward inflows from pump.fun. |
+| **Public Supply (Circulating + LP)** | _pump.fun + Raydium liquidity_      | **85 %**   | 850,000,000     | Distributed to the public through the pump.fun launch and subsequent Raydium market liquidity.                                                                                                    |
 
 All wallet addresses will be published and verified via **Solscan** upon token deployment.
 
@@ -34,10 +34,10 @@ All wallet addresses will be published and verified via **Solscan** upon token d
 
 ## Vesting Contracts
 
-| Contract | Purpose | Description |
-|-----------|----------|-------------|
-| **Founder Vesting Program** | Founder | Enforces a 3-month cliff and 5 % monthly vesting thereafter (20-month linear release). Immutable once deployed. |
-| *(Future Option)* Ship-It Grants | Contributors | Potential Solana-based programs may extend Ship-It Fund grants into time-locked vesting for recurring contributors. |
+| Contract                         | Purpose      | Description                                                                                                         |
+| -------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| **Founder Vesting Program**      | Founder      | Enforces a 3-month cliff and 5 % monthly vesting thereafter (20-month linear release). Immutable once deployed.     |
+| _(Future Option)_ Ship-It Grants | Contributors | Potential Solana-based programs may extend Ship-It Fund grants into time-locked vesting for recurring contributors. |
 
 All vesting implementations will be published and verified in this repository once deployed.
 
@@ -45,11 +45,11 @@ All vesting implementations will be published and verified in this repository on
 
 ## Ownership & Control
 
-| Category | Description |
-|-----------|-------------|
-| **Renounce Policy** | Creator authority is permanently revoked after launch; no admin keys or variable controls remain. |
-| **Liquidity** | LP tokens are locked automatically through the pump.fun → Raydium graduation process. |
-| **Transparency** | All wallet addresses, contract sources, and fund movements are logged in `/docs/ledger/TRANSPARENCY_LOG.md` for public verification. |
+| Category            | Description                                                                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Renounce Policy** | Creator authority is permanently revoked after launch; no admin keys or variable controls remain.                                    |
+| **Liquidity**       | LP tokens are locked automatically through the pump.fun → Raydium graduation process.                                                |
+| **Transparency**    | All wallet addresses, contract sources, and fund movements are logged in `/docs/ledger/TRANSPARENCY_LOG.md` for public verification. |
 
 ---
 
@@ -65,11 +65,11 @@ See the full breakdown here:
 
 ## Summary
 
-| Wallet | Allocation | Purpose |
-|---------|-------------|----------|
-| **Founder (Vested)** | 10 % | Long-term alignment and accountability |
-| **Ship-It / Operations** | 5 % | Bootstrap + ongoing creator-reward funding |
-| **Public Supply** | 85 % | Circulating + Raydium liquidity |
+| Wallet                   | Allocation | Purpose                                    |
+| ------------------------ | ---------- | ------------------------------------------ |
+| **Founder (Vested)**     | 10 %       | Long-term alignment and accountability     |
+| **Ship-It / Operations** | 5 %        | Bootstrap + ongoing creator-reward funding |
+| **Public Supply**        | 85 %       | Circulating + Raydium liquidity            |
 
 ---
 

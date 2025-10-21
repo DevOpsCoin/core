@@ -11,8 +11,8 @@ Please review the checklist below before submitting your PR.
 
 > Briefly describe the change:
 
-- What does this PR add, fix, or improve?  
-- Why is it needed?  
+- What does this PR add, fix, or improve?
+- Why is it needed?
 
 Example:
 
@@ -24,27 +24,27 @@ Example:
 
 ### Code & Lint
 
-- [ ] Code compiles and runs locally  
-- [ ] Ran `pnpm run lint` and fixed all warnings/errors  
-- [ ] Ran `pnpm run format` (Prettier)  
+- [ ] Code compiles and runs locally
+- [ ] Ran `pnpm run lint` and fixed all warnings/errors
+- [ ] Ran `pnpm run format` (Prettier)
 - [ ] Passed `pnpm run verify` (lint + build)
 
 ### Commit & Branch Hygiene
 
-- [ ] Commit messages follow **Conventional Commits** (`feat:`, `fix:`, `chore:`, `docs:`)  
-- [ ] Branch name follows convention (`feature/...`, `fix/...`, `chore/...`)  
+- [ ] Commit messages follow **Conventional Commits** (`feat:`, `fix:`, `chore:`, `docs:`)
+- [ ] Branch name follows convention (`feature/...`, `fix/...`, `chore/...`)
 - [ ] Each commit is focused (prefer squash merges)
 
 ### Tests / Behavior
 
-- [ ] Verified behavior manually in the browser  
-- [ ] Added or updated tests where appropriate  
+- [ ] Verified behavior manually in the browser
+- [ ] Added or updated tests where appropriate
 - [ ] Confirmed no regressions introduced
 
 ### Documentation
 
-- [ ] Updated relevant docs (`README.md`, `DEVELOPMENT.md`, or `CONTRIBUTING.md`)  
-- [ ] Added inline code comments where useful  
+- [ ] Updated relevant docs (`README.md`, `DEVELOPMENT.md`, or `CONTRIBUTING.md`)
+- [ ] Added inline code comments where useful
 
 ---
 

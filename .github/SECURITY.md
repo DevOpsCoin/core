@@ -35,10 +35,10 @@ The following do **not** qualify as vulnerabilities:
 
 DevOpsCoin follows strict operational and code-security standards:
 
-- **No private keys or secrets** are ever committed to repositories  
-- **Client-side only** wallet interactions — all transactions require explicit user signature  
-- All **contracts are verified** and publicly viewable via **Solana Explorer** or **Solscan**  
-- **Only two wallets exist:** the **Ship-It Fund** and **Founder Vesting Program** — both publicly documented and auditable  
+- **No private keys or secrets** are ever committed to repositories
+- **Client-side only** wallet interactions — all transactions require explicit user signature
+- All **contracts are verified** and publicly viewable via **Solana Explorer** or **Solscan**
+- **Only two wallets exist:** the **Ship-It Fund** and **Founder Vesting Program** — both publicly documented and auditable
 
 ---
 
@@ -46,8 +46,8 @@ DevOpsCoin follows strict operational and code-security standards:
 
 This policy covers all smart contracts and associated programs deployed under the **DevOpsCoin namespace**, including:
 
-- SPL token contract for `$DEVOPS`  
-- Founder Vesting Program (3-month cliff + 20-month linear vesting)  
+- SPL token contract for `$DEVOPS`
+- Founder Vesting Program (3-month cliff + 20-month linear vesting)
 - Ship-It Fund wallet operations and associated automation programs (when active)
 
 All smart contracts are open-source, auditable, and designed for immutability once deployed.

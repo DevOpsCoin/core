@@ -25,10 +25,10 @@ What problem does it solve or what opportunity does it create for the community 
 
 Outline how this could work technically or visually (optional):
 
-- [ ] Frontend component(s):  
-- [ ] Backend or API integration:  
-- [ ] Solana / Wallet interaction:  
-- [ ] Governance or Ship-It Fund ledger update:  
+- [ ] Frontend component(s):
+- [ ] Backend or API integration:
+- [ ] Solana / Wallet interaction:
+- [ ] Governance or Ship-It Fund ledger update:
 - [ ] Other notes:
 
 ---
@@ -43,13 +43,14 @@ Attach sketches, mockups, or screenshots to illustrate your proposal.
 
 List what must be true for this feature to be considered complete:
 
-- [ ] Passes `pnpm run verify` (lint + build)  
-- [ ] Includes documentation updates if applicable  
-- [ ] Code reviewed and merged into `main`  
+- [ ] Passes `pnpm run verify` (lint + build)
+- [ ] Includes documentation updates if applicable
+- [ ] Code reviewed and merged into `main`
 - [ ] Aligns with project values — **Transparency, Automation, Open Source**
 
 ---
 
 **Maintainer Note:**  
-All features should support the DevOpsCoin mission —  
+All features should support the DevOpsCoin mission —
+
 > _“Funding open-source DevOps through transparent pipelines.”_

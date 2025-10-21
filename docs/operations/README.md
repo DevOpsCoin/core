@@ -8,10 +8,10 @@ This section documents how the project is governed, developed, and maintained wi
 
 ## 🧭 Purpose
 
-The Handbook defines *how* DevOpsCoin operates — not just the codebase, but the culture.  
+The Handbook defines _how_ DevOpsCoin operates — not just the codebase, but the culture.  
 It reflects our commitment to open contribution, responsible governance, and technical rigor.
 
-If the [Tokenomics](../project/TOKENOMICS.md) explain *what* DevOpsCoin is, the Handbook explains *how we run it*.
+If the [Tokenomics](../project/TOKENOMICS.md) explain _what_ DevOpsCoin is, the Handbook explains _how we run it_.
 
 ---
 
@@ -46,18 +46,18 @@ Intended for developers working under DevOpsCoin LLC or verified contributors.
 
 ## ⚙️ Contribution Workflow
 
-1. **Fork the Repository** → Start from `main`, create feature branches per scope.  
-2. **Run Tests and Linters** → `pnpm lint && pnpm test` ensures uniform code quality.  
-3. **Submit a Pull Request** → PRs trigger automated checks and review by maintainers.  
+1. **Fork the Repository** → Start from `main`, create feature branches per scope.
+2. **Run Tests and Linters** → `pnpm lint && pnpm test` ensures uniform code quality.
+3. **Submit a Pull Request** → PRs trigger automated checks and review by maintainers.
 4. **Transparency Tagging** → All merges that affect tokenomics or vesting must include the `#transparency` tag for audit visibility.
 
 ---
 
 ## 🛡️ Principles
 
-- **Open Source First** — All core contracts and site code remain public.  
-- **Immutable Fairness** — Smart contract logic is transparent and renounced post-launch.  
-- **Ship-It Culture** — A portion of token fees supports real DevOps projects through grants and NFT rewards.  
+- **Open Source First** — All core contracts and site code remain public.
+- **Immutable Fairness** — Smart contract logic is transparent and renounced post-launch.
+- **Ship-It Culture** — A portion of token fees supports real DevOps projects through grants and NFT rewards.
 - **No Speculation without Substance** — Memecoin energy, but developer integrity.
 
 ---

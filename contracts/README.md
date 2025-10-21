@@ -35,10 +35,10 @@ As of **October 2025**, the project has **migrated to Solana**, and all Ethereum
 
 ## 🗃️ Archived Artifacts
 
-- `scripts/` – Hardhat deploy and verification scripts  
-- `contracts/` – Solidity sources (`DevOpsCoinV2.sol`, `FounderVesting.sol`, etc.)  
-- `deployments/` – JSON deployment logs (testnet/mainnet)  
-- `docs/` – Reference documents retained for transparency  
+- `scripts/` – Hardhat deploy and verification scripts
+- `contracts/` – Solidity sources (`DevOpsCoinV2.sol`, `FounderVesting.sol`, etc.)
+- `deployments/` – JSON deployment logs (testnet/mainnet)
+- `docs/` – Reference documents retained for transparency
 
 You can safely archive this entire directory (`contracts/`) into a `/legacy/` folder if you want to keep the history clean.
 
@@ -63,7 +63,7 @@ contracts/
 
 ## ⚙️ Notes
 
-- The Solana version will **not** use BNB or Hardhat — only `anchor build` / `anchor deploy`.  
+- The Solana version will **not** use BNB or Hardhat — only `anchor build` / `anchor deploy`.
 - The **Ship-It Fund** will serve both as:
   - A **community grant wallet** for open-source DevOps projects.
   - A **stabilization fund** for buybacks, liquidity, and ecosystem health.

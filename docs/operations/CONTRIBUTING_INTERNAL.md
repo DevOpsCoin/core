@@ -7,9 +7,9 @@ All maintainers and core collaborators should follow these rules to keep the rep
 
 ## 🧰 Local Setup
 
-- **Node.js:** v22.x  
-- **pnpm:** v10+ (`corepack enable && corepack prepare pnpm@latest --activate`)  
-- **OS:** macOS, Linux, or WSL  
+- **Node.js:** v22.x
+- **pnpm:** v10+ (`corepack enable && corepack prepare pnpm@latest --activate`)
+- **OS:** macOS, Linux, or WSL
 
 ```bash
 pnpm install
@@ -52,9 +52,9 @@ pnpm run format
 
 All commits trigger **Husky + lint-staged**:
 
-- Runs ESLint autofix on staged TS/JS/React files  
-- Runs Prettier on Markdown, JSON, and YAML  
-- Skips large report files and build artifacts  
+- Runs ESLint autofix on staged TS/JS/React files
+- Runs Prettier on Markdown, JSON, and YAML
+- Skips large report files and build artifacts
 
 Manually run:
 
@@ -76,7 +76,7 @@ chmod +x .husky/pre-commit .husky/husky.sh
 ### Branch Naming
 
 | Type    | Format Example               |
-| -------- | ---------------------------- |
+| ------- | ---------------------------- |
 | Feature | `feature/shipit-ui-update`   |
 | Fix     | `fix/wallet-connect-timeout` |
 | Chore   | `chore/update-husky-v10`     |
@@ -87,7 +87,7 @@ chmod +x .husky/pre-commit .husky/husky.sh
 Follow **Conventional Commits**:
 
 | Type        | Description               |
-| ------------ | ------------------------- |
+| ----------- | ------------------------- |
 | `feat:`     | New feature               |
 | `fix:`      | Bug fix                   |
 | `chore:`    | Tooling or dependency     |
@@ -120,8 +120,8 @@ This runs:
 
 In CI (Vercel or GitHub Actions):
 
-- Warnings are ignored only for stylistic rules  
-- Errors always block deployment  
+- Warnings are ignored only for stylistic rules
+- Errors always block deployment
 
 ---
 
@@ -129,11 +129,11 @@ In CI (Vercel or GitHub Actions):
 
 Every PR must:
 
-- Be small and atomic (≤300 LOC preferred)  
-- Pass all local checks  
-- Include a clear title and description  
-- Follow Conventional Commit message rules  
-- Reference related issues or tickets  
+- Be small and atomic (≤300 LOC preferred)
+- Pass all local checks
+- Include a clear title and description
+- Follow Conventional Commit message rules
+- Reference related issues or tickets
 
 Use **squash merges** to keep `main` history clean.
 

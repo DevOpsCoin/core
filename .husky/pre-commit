@@ -1,9 +1,4 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/husky.sh"
-
-echo "🔍 Running lint-staged pre-commit checks..."
-pnpm exec lint-staged --no-stash || {
-  echo "❌ lint-staged failed — commit aborted."
-  exit 1
-}
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+pnpm run lint
 

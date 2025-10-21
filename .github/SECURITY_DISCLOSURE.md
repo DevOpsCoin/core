@@ -25,15 +25,15 @@ This policy covers:
 
 ## 🔒 How to Report
 
-1. **Do not disclose publicly.**  
+1. **Do not disclose publicly.**
 2. Contact us via one of the following private channels:
-   - **Email:** [security@devopscoin.ai](mailto:security@devopscoin.ai)  
+   - **Email:** [security@devopscoin.ai](mailto:security@devopscoin.ai)
    - **Disclosure Form:** [https://devopscoin.ai/security](https://devopscoin.ai/security)
 3. Include:
-   - A clear description of the issue  
-   - Steps to reproduce  
-   - Potential impact or exploit scenario  
-   - Optional suggested mitigation or patch  
+   - A clear description of the issue
+   - Steps to reproduce
+   - Potential impact or exploit scenario
+   - Optional suggested mitigation or patch
 
 ---
 
@@ -41,11 +41,11 @@ This policy covers:
 
 We will:
 
-- Acknowledge reports within **48 hours**  
-- Investigate responsibly and transparently  
-- Provide an expected mitigation timeline within **7 business days**  
-- Offer public credit (if desired) once the issue is remediated  
-- Refrain from legal action against good-faith research compliant with this policy  
+- Acknowledge reports within **48 hours**
+- Investigate responsibly and transparently
+- Provide an expected mitigation timeline within **7 business days**
+- Offer public credit (if desired) once the issue is remediated
+- Refrain from legal action against good-faith research compliant with this policy
 
 ---
 
@@ -55,8 +55,8 @@ While DevOpsCoin does **not** run a formal bug bounty program, significant secur
 
 Eligible researchers may receive:
 
-- **DEVOPS token grants** proportional to the finding’s impact  
-- **Public acknowledgment** in the `/docs/ledger/TRANSPARENCY_LOG.md`  
+- **DEVOPS token grants** proportional to the finding’s impact
+- **Public acknowledgment** in the `/docs/ledger/TRANSPARENCY_LOG.md`
 - Optional **Ship-It Contributor Badge** or limited NFT recognition (if issued in future cycles)
 
 All grants are discretionary and evaluated based on severity, reproducibility, and contribution to ecosystem safety.

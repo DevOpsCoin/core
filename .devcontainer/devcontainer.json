@@ -1,8 +1,6 @@
 {
   "name": "DevOpsCoin (website + db)",
-  "dockerComposeFile": [
-    "./docker-compose.yml"
-  ],
+  "dockerComposeFile": ["./docker-compose.yml"],
   "service": "web",
   "workspaceFolder": "/usr/src/app",
   "runServices": ["web", "db", "pgadmin"],
@@ -24,4 +22,3 @@
   "postCreateCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install",
   "remoteUser": "node"
 }
-

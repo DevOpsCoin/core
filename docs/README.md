@@ -28,4 +28,3 @@ Outlines how DevOpsCoin LLC operates — governance, transparency, and contribut
 ---
 
 > “Where pipelines meet protocols.”
-

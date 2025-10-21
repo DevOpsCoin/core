@@ -13,8 +13,8 @@ There are **no transaction taxes or embedded fees** in the token contract — in
 
 Each funding cycle supports two key objectives:
 
-1. **Open-Source Grants** — Tools, dashboards, scripts, bots, and educational projects that advance DevOps culture  
-2. **Ecosystem Health** — Activities that strengthen the $DEVOPS token, such as liquidity support and sustainability efforts  
+1. **Open-Source Grants** — Tools, dashboards, scripts, bots, and educational projects that advance DevOps culture
+2. **Ecosystem Health** — Activities that strengthen the $DEVOPS token, such as liquidity support and sustainability efforts
 
 Funding activity directly depends on token trading volume.  
 If rewards are low in a given month, grant disbursements are **deferred** to the next active period — ensuring transparency and long-term sustainability.
@@ -25,19 +25,20 @@ If rewards are low in a given month, grant disbursements are **deferred** to the
 
 Every Ship-It Fund disbursement is **publicly logged and verifiable**.
 
-| Channel | Purpose |
-|----------|----------|
-| **Ledger** | All allocations recorded in YAML under [`/ledger/`](https://github.com/DevOpsCoin/shipit-fund/tree/main/ledger) |
+| Channel                 | Purpose                                                                                                                   |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Ledger**              | All allocations recorded in YAML under [`/ledger/`](https://github.com/DevOpsCoin/shipit-fund/tree/main/ledger)           |
 | **Verification Script** | [`verify-ledger.sh`](https://github.com/DevOpsCoin/shipit-fund/blob/main/verify-ledger.sh) validates hashes and integrity |
-| **Project Board** | [View Funded Projects →](https://github.com/orgs/DevOpsCoin/projects/1) |
-| **Public Repo** | [Ship-It Fund GitHub →](https://github.com/DevOpsCoin/shipit-fund) |
+| **Project Board**       | [View Funded Projects →](https://github.com/orgs/DevOpsCoin/projects/1)                                                   |
+| **Public Repo**         | [Ship-It Fund GitHub →](https://github.com/DevOpsCoin/shipit-fund)                                                        |
 
 Each ledger entry includes:
-- Project name and purpose  
-- Amount of $DEVOPS allocated  
-- Recipient Solana wallet  
-- Transaction hash  
-- Verification signature  
+
+- Project name and purpose
+- Amount of $DEVOPS allocated
+- Recipient Solana wallet
+- Transaction hash
+- Verification signature
 
 No private disbursements or off-chain accounting are ever performed.
 
@@ -45,10 +46,10 @@ No private disbursements or off-chain accounting are ever performed.
 
 ## 🧰 How to Apply
 
-1. Visit the [Ship-It Fund repo](https://github.com/DevOpsCoin/shipit-fund).  
-2. Click **New Project Submission** to open the structured issue form.  
-3. Fill in project details, roadmap, and contact info.  
-4. Review happens publicly in the issue thread.  
+1. Visit the [Ship-It Fund repo](https://github.com/DevOpsCoin/shipit-fund).
+2. Click **New Project Submission** to open the structured issue form.
+3. Fill in project details, roadmap, and contact info.
+4. Review happens publicly in the issue thread.
 5. Funded projects are added to the [DevOpsCoin Project Board](https://github.com/orgs/DevOpsCoin/projects/1).
 
 👉 **Submit a Project:**  
@@ -60,9 +61,9 @@ No private disbursements or off-chain accounting are ever performed.
 
 The Ship-It Fund operates under **DevOpsCoin LLC** governance and follows the core **Ship → Show → Verify** principle:
 
-1. **Ship** — Prepare a proposal or transaction.  
-2. **Show** — Publish rationale and record in the ledger.  
-3. **Verify** — Execute on-chain and confirm transaction hash.  
+1. **Ship** — Prepare a proposal or transaction.
+2. **Show** — Publish rationale and record in the ledger.
+3. **Verify** — Execute on-chain and confirm transaction hash.
 
 All activity aligns with the broader [Governance Framework](./handbook/GOVERNANCE.md) and transparency policies within the DevOpsCoin project.
 
@@ -70,14 +71,14 @@ All activity aligns with the broader [Governance Framework](./handbook/GOVERNANC
 
 ## 🧭 Key Links
 
-| Resource | Description |
-|-----------|-------------|
-| 🌐 [Ship-It Fund Website](https://devopscoin.ai/shipit.html) | Public-facing overview |
-| 🧠 [Core DevOpsCoin Docs](https://github.com/DevOpsCoin/core/tree/main/docs) | Tokenomics, governance, and technical specs |
-| 📜 [Ship-It Fund Repo](https://github.com/DevOpsCoin/shipit-fund) | Grant management and ledger |
-| 📊 [Project Board](https://github.com/orgs/DevOpsCoin/projects/1) | Active and past grants |
-| 🪙 [Transparency Ledger](https://github.com/DevOpsCoin/shipit-fund/tree/main/ledger) | Funding records |
-| 🧩 [Review Process](https://github.com/DevOpsCoin/shipit-fund/blob/main/docs/REVIEW_PROCESS.md) | Maintainer review flow |
+| Resource                                                                                        | Description                                 |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| 🌐 [Ship-It Fund Website](https://devopscoin.ai/shipit.html)                                    | Public-facing overview                      |
+| 🧠 [Core DevOpsCoin Docs](https://github.com/DevOpsCoin/core/tree/main/docs)                    | Tokenomics, governance, and technical specs |
+| 📜 [Ship-It Fund Repo](https://github.com/DevOpsCoin/shipit-fund)                               | Grant management and ledger                 |
+| 📊 [Project Board](https://github.com/orgs/DevOpsCoin/projects/1)                               | Active and past grants                      |
+| 🪙 [Transparency Ledger](https://github.com/DevOpsCoin/shipit-fund/tree/main/ledger)            | Funding records                             |
+| 🧩 [Review Process](https://github.com/DevOpsCoin/shipit-fund/blob/main/docs/REVIEW_PROCESS.md) | Maintainer review flow                      |
 
 ---
 
@@ -92,4 +93,3 @@ Its model is simple, sustainable, and honest:
 
 _Last updated: October 2025_  
 _Maintainer: RootSignal (DevOpsCoin LLC)_
-

@@ -68,14 +68,14 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## ⚙️ Environment Variables
 
-| Variable | Description |
-|-----------|--------------|
-| `NEXT_PUBLIC_TRADING_LIVE` | Enables production buy / claim logic |
-| `NEXT_PUBLIC_DEVOPS_TOKEN_MAINNET` | BSC mainnet token address |
-| `NEXT_PUBLIC_DEVOPS_TOKEN_TESTNET` | BSC testnet token address |
-| `NEXT_PUBLIC_VESTING_CONTRACT_MAINNET` | Vesting contract (mainnet) |
-| `NEXT_PUBLIC_VESTING_CONTRACT_TESTNET` | Vesting contract (testnet) |
-| `NEXT_PUBLIC_API_BASE` | Optional API endpoint for pricing / analytics |
+| Variable                               | Description                                   |
+| -------------------------------------- | --------------------------------------------- |
+| `NEXT_PUBLIC_TRADING_LIVE`             | Enables production buy / claim logic          |
+| `NEXT_PUBLIC_DEVOPS_TOKEN_MAINNET`     | BSC mainnet token address                     |
+| `NEXT_PUBLIC_DEVOPS_TOKEN_TESTNET`     | BSC testnet token address                     |
+| `NEXT_PUBLIC_VESTING_CONTRACT_MAINNET` | Vesting contract (mainnet)                    |
+| `NEXT_PUBLIC_VESTING_CONTRACT_TESTNET` | Vesting contract (testnet)                    |
+| `NEXT_PUBLIC_API_BASE`                 | Optional API endpoint for pricing / analytics |
 
 Example configuration can be found in [`/.env.example`](./.env.example).
 
@@ -85,9 +85,9 @@ Example configuration can be found in [`/.env.example`](./.env.example).
 
 All contracts are verified and public on BscScan:
 
-| Network | Contract | Explorer |
-|----------|-----------|-----------|
-| **Mainnet** | `DISCLOSED_ON_LAUNCH` | [BscScan](https://bscscan.com/address/DISCLOSED_ON_LAUNCH) |
+| Network     | Contract              | Explorer                                                                   |
+| ----------- | --------------------- | -------------------------------------------------------------------------- |
+| **Mainnet** | `DISCLOSED_ON_LAUNCH` | [BscScan](https://bscscan.com/address/DISCLOSED_ON_LAUNCH)                 |
 | **Testnet** | `DISCLOSED_ON_LAUNCH` | [BscScan Testnet](https://testnet.bscscan.com/address/DISCLOSED_ON_LAUNCH) |
 
 ---
@@ -141,8 +141,8 @@ You are free to **fork, modify, and build upon** this codebase under those terms
 
 However:
 
-- Only builds and deployments from [https://devopscoin.ai](https://devopscoin.ai) and verified wallets above are **authentic DevOpsCoin**.  
-- Forks or redeployments using different wallets / branding are **not affiliated** with DevOpsCoin LLC or RootSignal.  
+- Only builds and deployments from [https://devopscoin.ai](https://devopscoin.ai) and verified wallets above are **authentic DevOpsCoin**.
+- Forks or redeployments using different wallets / branding are **not affiliated** with DevOpsCoin LLC or RootSignal.
 - Always verify contract addresses on BscScan before interacting with any derivative project.
 
 This repo serves as a **reference implementation** for transparency and blockchain-driven DevOps automation.
@@ -170,8 +170,8 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 Notes:
 
-- The `web` service mounts the project directory for live reload.  
-- The `db` service exposes PostgreSQL on port 5432.  
+- The `web` service mounts the project directory for live reload.
+- The `db` service exposes PostgreSQL on port 5432.
 - Set `DATABASE_URL` in `.env.docker` to `db:5432`.
 
 ---

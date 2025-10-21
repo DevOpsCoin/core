@@ -67,9 +67,9 @@ If you have ideas for fixing it, describe them here.
 
 ## ✅ Checklist
 
-- [ ] I’ve searched existing issues to avoid duplicates  
-- [ ] I can reproduce this issue consistently  
-- [ ] I included all relevant logs, screenshots, and environment info  
+- [ ] I’ve searched existing issues to avoid duplicates
+- [ ] I can reproduce this issue consistently
+- [ ] I included all relevant logs, screenshots, and environment info
 
 ---
 

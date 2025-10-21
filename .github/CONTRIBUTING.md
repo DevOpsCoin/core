@@ -35,13 +35,13 @@ docs/update-governance
 
 Follow the [Conventional Commits](https://www.conventionalcommits.org/) format:
 
-| Type      | Meaning                                  |
-| ---------- | ---------------------------------------- |
-| `feat:`    | new feature                              |
-| `fix:`     | bug fix                                  |
-| `docs:`    | documentation change                     |
-| `chore:`   | tooling or dependency update             |
-| `refactor:`| code improvement without behavior change |
+| Type        | Meaning                                  |
+| ----------- | ---------------------------------------- |
+| `feat:`     | new feature                              |
+| `fix:`      | bug fix                                  |
+| `docs:`     | documentation change                     |
+| `chore:`    | tooling or dependency update             |
+| `refactor:` | code improvement without behavior change |
 
 Examples:
 
@@ -70,8 +70,8 @@ Fix all errors locally before pushing to avoid CI failures.
 
 ## ✅ Submitting a Pull Request
 
-1. Push your branch to your fork  
-2. Open a PR against `main`  
+1. Push your branch to your fork
+2. Open a PR against `main`
 3. Confirm that your PR:
    - Passes `pnpm run verify`
    - Clearly describes the change and intent
@@ -84,9 +84,9 @@ Pull requests are reviewed for clarity, maintainability, and alignment with the 
 
 ## ⚙️ Development Notes
 
-- **Stack:** Next.js 15 + TypeScript + Tailwind + pnpm 10  
-- **Node version:** 22 (LTS)  
-- **OS:** macOS / Linux / WSL2  
+- **Stack:** Next.js 15 + TypeScript + Tailwind + pnpm 10
+- **Node version:** 22 (LTS)
+- **OS:** macOS / Linux / WSL2
 - Environment variables (`NEXT_PUBLIC_*`) are safe to expose and documented in `.env.example`.
 
 ---

@@ -11,7 +11,8 @@
     "format": "pnpm exec prettier --write .",
     "build:contracts": "cd contracts && cargo build-bpf",
     "test:contracts": "cd contracts && cargo test",
-    "postinstall": "corepack prepare pnpm@9.12.3 --activate"
+    "postinstall": "corepack prepare pnpm@9.12.3 --activate",
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">=22 <23"
@@ -20,15 +21,14 @@
     "typescript": "^5.9.3",
     "prettier": "^3.6.2",
     "eslint": "^9.38.0",
-
     "@next/eslint-plugin-next": "^15.5.6",
     "@typescript-eslint/parser": "^8.46.1",
     "@typescript-eslint/eslint-plugin": "^8.46.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.5.4"
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^8.0.0"
   },
   "packageManager": "pnpm@9.12.0"
 }
-
