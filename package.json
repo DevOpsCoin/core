@@ -12,11 +12,9 @@
     "build:contracts": "cd contracts && cargo build-bpf",
     "test:contracts": "cd contracts && cargo test"
   },
-  "workspaces": [
-    "apps/*",
-    "contracts",
-    "docs"
-  ],
+  "engines": {
+    "node": ">=20 <21"
+  },
   "devDependencies": {
     "typescript": "^5.9.3",
     "prettier": "^3.6.2",
