@@ -1,0 +1,10 @@
+# Ignore build artifacts and reports
+.next
+dist
+coverage
+public
+node_modules
+eslint-report.json
+eslint-summary.json
+pnpm-lock.yaml
+

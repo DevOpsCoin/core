@@ -1,0 +1,28 @@
+# Ignore documentation and local dev files
+docs/
+README.md
+LICENSE
+CHANGELOG.md
+*.md
+
+# Build artifacts
+*.log
+*.tmp
+.cache/
+coverage/
+dist/
+out/
+build/
+
+# Node and Vercel internals
+node_modules/
+.vercel/
+.next/
+pnpm-lock.yaml
+
+# Local configuration
+.env*
+.vscode/
+.devcontainer/
+.husky/
+

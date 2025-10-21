@@ -1,0 +1,9 @@
+node_modules
+.next
+dist
+coverage
+tmp
+.vercel
+contracts
+docs
+
