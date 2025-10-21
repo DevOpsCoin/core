@@ -1,6 +1,12 @@
 {
   "buildCommand": "pnpm run build",
   "installCommand": "pnpm install",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "build": {
+    "env": {
+      "NODE_VERSION": "22.8.0",
+      "PNPM_VERSION": "9.12.3"
+    }
+  }
 }
 
