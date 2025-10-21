@@ -11,14 +11,13 @@ const nextPlugin = require('@next/eslint-plugin-next');
 module.exports = [
   {
     ignores: [
+      '**/.next/**',
+      '**/dist/**',
+      '**/build/**',
+      '**/node_modules/**',
+      'apps/website/app/bnb-deprecated/**',
+      'apps/website/types/next-auth.d.ts',
       'node_modules',
-      '.next',
-      'dist',
-      'out',
-      'coverage',
-      'public',
-      'build',
-      'types/**/*.d.ts',
     ],
   },
   {
