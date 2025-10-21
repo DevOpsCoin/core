@@ -10,7 +10,8 @@
     "lint:fix": "pnpm exec eslint apps/website --ext .ts,.tsx --fix",
     "format": "pnpm exec prettier --write .",
     "build:contracts": "cd contracts && cargo build-bpf",
-    "test:contracts": "cd contracts && cargo test"
+    "test:contracts": "cd contracts && cargo test",
+    "postinstall": "corepack prepare pnpm@9.12.3 --activate"
   },
   "engines": {
     "node": ">=22 <23"
