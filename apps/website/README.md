@@ -6,8 +6,8 @@
   <a href="https://nextjs.org/">
     <img src="https://img.shields.io/badge/Built%20with-Next.js-000?style=flat&logo=nextdotjs" alt="Built with Next.js">
   </a>
-  <a href="https://bscscan.com/address/DISCLOSED_AT_LAUNCH">
-    <img src="https://img.shields.io/badge/Chain-BNB%20Smart%20Chain-F3BA2F?logo=binance" alt="BNB Smart Chain">
+  <a href="https://solscan.io/token/DISCLOSED_AT_LAUNCH">
+    <img src="https://img.shields.io/badge/Chain-Solana-9945FF?logo=solana" alt="Solana">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
