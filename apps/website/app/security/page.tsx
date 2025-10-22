@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function SecurityPage() {
   return (
-    <section className="relative max-w-4xl mx-auto mt-10 p-8 rounded-xl text-left bg-gray-900/80 shadow-lg border border-cyan-800">
+    <section className="relative max-w-5xl mx-auto mt-10 px-6 py-12 text-left bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 opacity-80 -z-10" />
 
       <h1 className="text-3xl md:text-4xl font-extrabold text-cyan-300 mb-6">

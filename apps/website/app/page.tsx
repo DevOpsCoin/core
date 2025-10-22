@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function HomePage() {
   return (
-    <section className="relative max-w-5xl mx-auto mt-10 px-6 py-12 text-center rounded-xl shadow-lg overflow-hidden">
+    <section className="relative max-w-5xl mx-auto mt-10 px-6 py-12 text-left bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg overflow-hidden">
       {/* Background Layer */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gray-950" />
