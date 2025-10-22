@@ -1,9 +1,0 @@
-{
-  "framework": "nextjs",
-  "installCommand": "npx --yes corepack enable && npx --yes corepack prepare pnpm@9.12.3 --activate && pnpm install",
-  "buildCommand": "pnpm run build",
-  "env": {
-    "NODE_VERSION": "22.8.0",
-    "PNPM_VERSION": "9.12.3"
-  }
-}
