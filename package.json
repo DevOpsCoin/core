@@ -11,7 +11,6 @@
     "format": "pnpm exec prettier --write .",
     "build:contracts": "cd contracts && cargo build-bpf",
     "test:contracts": "cd contracts && cargo test",
-    "postinstall": "corepack prepare pnpm@9.12.3 --activate",
     "prepare": "husky install"
   },
   "engines": {
@@ -29,6 +28,6 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.5.4",
     "husky": "^8.0.0"
-  },
-  "packageManager": "pnpm@9.12.0"
+  }
 }
+
