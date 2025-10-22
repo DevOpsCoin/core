@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import MainContent from '../components/MainContent';
 
 export default function HowToBuyPage() {
   const tokenAddress =
@@ -15,7 +16,7 @@ export default function HowToBuyPage() {
   const hasGraduated = false; // toggle true after Raydium listing
 
   return (
-    <section className="container max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-left">
+    <MainContent className="container max-w-3xl mx-auto mt-12 p-8 text-left">
       <h1 className="text-3xl font-bold text-teal-400 mb-6 text-center">
         How to Buy $DEVOPS
       </h1>
@@ -202,6 +203,6 @@ export default function HowToBuyPage() {
           Return Home
         </Link>
       </div>
-    </section>
+    </MainContent>
   );
 }

@@ -1,15 +1,13 @@
 // app/about/page.tsx — Updated for Solana Relaunch & Three-Wallet Model
 'use client';
 import Image from 'next/image';
+import MainContent from '../components/MainContent';
 
 export default function AboutPage() {
   return (
     <>
       {/* ABOUT SECTION */}
-      <section
-        id="team"
-        className="max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg text-center"
-      >
+      <MainContent id="team" className="text-center max-w-4xl p-6">
         <h1 className="text-3xl font-bold text-cyan-400 mb-4 flex items-center justify-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,13 +82,10 @@ export default function AboutPage() {
         >
           GitHub Profile
         </a>
-      </section>
+      </MainContent>
 
       {/* SOCIALS SECTION */}
-      <section
-        id="community"
-        className="max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg"
-      >
+      <MainContent id="community" className="max-w-4xl p-6 mt-12">
         <h2 className="text-2xl font-bold text-cyan-400 mb-4 text-center flex items-center justify-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -141,13 +136,10 @@ export default function AboutPage() {
             GitHub Org
           </a>
         </div>
-      </section>
+      </MainContent>
 
       {/* LEGAL SECTION */}
-      <section
-        id="legal"
-        className="max-w-4xl mx-auto mt-12 p-6 bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg mb-16"
-      >
+      <MainContent id="legal" className="max-w-4xl p-6 mt-12 mb-16">
         <h2 className="text-2xl font-bold text-cyan-400 mb-4 text-center flex items-center justify-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +183,7 @@ export default function AboutPage() {
           © 2025 DevOpsCoin. Open source under MIT License. <br />
           Built where pipelines meet protocols.
         </p>
-      </section>
+      </MainContent>
     </>
   );
 }

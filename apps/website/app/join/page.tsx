@@ -1,13 +1,14 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
+import MainContent from '../components/MainContent';
 
 export default function JoinPage() {
   return (
-    <section className="relative max-w-4xl mx-auto mt-12 p-8 rounded-xl overflow-hidden text-left shadow-lg">
+    <MainContent className="relative max-w-4xl p-8 overflow-hidden text-left">
       {/* Background layer */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gray-900" />
+        <div className="absolute inset-0 bg-transparent" />
         <img
           src="/join/image1.png"
           alt="Join Hero"
@@ -210,6 +211,6 @@ export default function JoinPage() {
           Back to Home
         </Link>
       </main>
-    </section>
+    </MainContent>
   );
 }

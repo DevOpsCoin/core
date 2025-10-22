@@ -3,10 +3,11 @@ export const dynamic = 'force-dynamic';
 export const fetchCache = 'force-no-store';
 
 import React from 'react';
+import MainContent from '../components/MainContent';
 
 export default function SecurityPage() {
   return (
-    <section className="relative max-w-5xl mx-auto mt-10 px-6 py-12 text-left bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg overflow-hidden">
+    <MainContent className="text-center px-6 py-12">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 opacity-80 -z-10" />
 
       <h1 className="text-3xl md:text-4xl font-extrabold text-cyan-300 mb-6">
@@ -154,6 +155,6 @@ export default function SecurityPage() {
         <br />
         <span className="text-cyan-300">“Where pipelines meet protocols.”</span>
       </p>
-    </section>
+    </MainContent>
   );
 }

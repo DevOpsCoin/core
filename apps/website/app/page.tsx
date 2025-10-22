@@ -1,14 +1,14 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import MainContent from './components/MainContent';
 
 export default function HomePage() {
   return (
-    <section className="relative max-w-5xl mx-auto mt-10 px-6 py-12 text-left bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg overflow-hidden">
+    <MainContent className="text-left">
       {/* Background Layer */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gray-950" />
+        <div className="absolute inset-0 bg-transparent" />
         <img
           src="/home/hero.png"
           alt="DevOpsCoin Background"
@@ -110,6 +110,6 @@ export default function HomePage() {
           </Link>
         </div>
       </div>
-    </section>
+    </MainContent>
   );
 }

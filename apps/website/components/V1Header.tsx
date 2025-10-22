@@ -4,9 +4,29 @@ import NavMoreDropdown from '@/components/NavMoreDropdown';
 import NavInvestorsDropdown from '@/components/NavInvestorsDropdown';
 import Image from 'next/image';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function V1Header() {
   const [_usdValue, _setUsdValue] = useState<number | null>(null);
+  const pathname = usePathname() || '/';
+
+  const desktopLinkClass = (to: string) => {
+    const base =
+      'inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg text-white shadow transition';
+    const active = to === '/' ? pathname === '/' : pathname.startsWith(to);
+    return active
+      ? `${base} bg-cyan-400`
+      : `${base} bg-cyan-700 hover:bg-cyan-400`;
+  };
+
+  const mobileLinkClass = (to: string) => {
+    const base =
+      'block px-4 py-3 rounded-lg text-white font-semibold text-lg transition';
+    const active = to === '/' ? pathname === '/' : pathname.startsWith(to);
+    return active
+      ? `${base} bg-cyan-400`
+      : `${base} bg-cyan-700 hover:bg-cyan-400`;
+  };
 
   return (
     <header className="relative w-full mt-4">
@@ -62,34 +82,19 @@ export default function V1Header() {
       {/* Main Navigation (desktop) */}
       <div className="hidden md:flex w-full max-w-5xl mx-auto flex-row items-start justify-center mt-6 px-2 gap-4 relative">
         <nav className="flex gap-3 items-center justify-center">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition"
-          >
+          <Link href="/" className={desktopLinkClass('/')}>
             Home
           </Link>
-          <Link
-            href="/shipit"
-            className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-400 hover:from-cyan-400 hover:to-teal-300 text-white shadow-lg animate-pulse-slow justify-center"
-          >
+          <Link href="/shipit" className={desktopLinkClass('/shipit')}>
             Ship-It Fund
           </Link>
-          <Link
-            href="/roadmap"
-            className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition"
-          >
+          <Link href="/roadmap" className={desktopLinkClass('/roadmap')}>
             Roadmap
           </Link>
-          <Link
-            href="/whitepaper"
-            className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition"
-          >
+          <Link href="/whitepaper" className={desktopLinkClass('/whitepaper')}>
             Whitepaper
           </Link>
-          <Link
-            href="/join"
-            className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition"
-          >
+          <Link href="/join" className={desktopLinkClass('/join')}>
             Join
           </Link>
           <NavInvestorsDropdown />
@@ -159,7 +164,7 @@ export default function V1Header() {
               <nav className="w-full max-w-xs bg-gray-900 border border-cyan-700/40 rounded-xl shadow-lg flex flex-col gap-3 p-6 mt-2 pb-8">
                 <Link
                   href="/"
-                  className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition"
+                  className={mobileLinkClass('/')}
                   onClick={() => setOpen(false)}
                 >
                   Home
@@ -167,7 +172,7 @@ export default function V1Header() {
 
                 <Link
                   href="/shipit"
-                  className="block px-4 py-3 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-400 text-white font-semibold text-lg hover:from-cyan-400 hover:to-teal-300 transition"
+                  className={mobileLinkClass('/shipit')}
                   onClick={() => setOpen(false)}
                 >
                   Ship-It Fund
@@ -178,21 +183,21 @@ export default function V1Header() {
 
                 <Link
                   href="/roadmap"
-                  className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition"
+                  className={mobileLinkClass('/roadmap')}
                   onClick={() => setOpen(false)}
                 >
                   Roadmap
                 </Link>
                 <Link
                   href="/whitepaper"
-                  className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition"
+                  className={mobileLinkClass('/whitepaper')}
                   onClick={() => setOpen(false)}
                 >
                   Whitepaper
                 </Link>
                 <Link
                   href="/join"
-                  className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition"
+                  className={mobileLinkClass('/join')}
                   onClick={() => setOpen(false)}
                 >
                   Join

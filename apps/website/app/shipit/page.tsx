@@ -1,13 +1,14 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
+import MainContent from '../components/MainContent';
 
 export default function ShipItFundPage() {
   return (
-    <section className="relative max-w-5xl mx-auto mt-10 px-6 py-12 text-left bg-gray-900 rounded-xl border border-cyan-700/40 shadow-lg overflow-hidden">
+    <MainContent className="text-left">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gray-900" />
+        <div className="absolute inset-0 bg-transparent" />
         <img
           src="/shipit/image1.png"
           alt="Ship It Fund Hero"
@@ -347,6 +348,6 @@ export default function ShipItFundPage() {
           </Link>
         </div>
       </div>
-    </section>
+    </MainContent>
   );
 }

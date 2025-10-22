@@ -47,7 +47,7 @@ That file serves as your single entry point to the full DevOpsCoin documentation
 
 Please report vulnerabilities responsibly via:
 
-- [`SECURITY.md`](.github/SECURITY.md) — general security policy  
+- [`SECURITY.md`](.github/SECURITY.md) — general security policy
 - [`SECURITY_DISCLOSURE.md`](.github/SECURITY_DISCLOSURE.md) — coordinated disclosure and contact process
 
 GitHub’s “Security Advisories” workflow is also enabled for private coordination.
@@ -58,8 +58,8 @@ GitHub’s “Security Advisories” workflow is also enabled for private coordi
 
 We welcome pull requests that improve documentation, automation, or transparency.
 
-- Contribution guidelines: [`CONTRIBUTING.md`](.github/CONTRIBUTING.md)  
-- Issue templates: `.github/ISSUE_TEMPLATE/`  
+- Contribution guidelines: [`CONTRIBUTING.md`](.github/CONTRIBUTING.md)
+- Issue templates: `.github/ISSUE_TEMPLATE/`
 - Pull request template: [`PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md)
 
 ```bash
@@ -71,3 +71,4 @@ cd core
 
 MIT License © 2025 DevOpsCoin LLC
 Where pipelines meet protocols.
+```

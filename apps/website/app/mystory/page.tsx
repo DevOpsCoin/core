@@ -1,10 +1,11 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import MainContent from '../components/MainContent';
 
 export default function MyStoryPage() {
   return (
-    <div className="max-w-4xl mx-auto mt-8 p-8 bg-gray-900 rounded-xl shadow-lg text-gray-100">
+    <MainContent className="max-w-4xl p-6 text-center">
       <h1 className="text-3xl font-bold mb-6 text-cyan-300">
         My Story{' '}
         <span className="text-gray-400 text-lg font-normal">
@@ -115,6 +116,6 @@ export default function MyStoryPage() {
       </p>
 
       <p className="mb-4">— RootSignal</p>
-    </div>
+    </MainContent>
   );
 }
