@@ -4,14 +4,15 @@ import Link from 'next/link';
 
 export default function WhitepaperPage() {
   return (
-    <section className="relative max-w-4xl mx-auto mt-8 p-8 rounded-xl overflow-hidden text-left shadow-lg bg-gray-950">
+    <section className="relative max-w-5xl mx-auto mt-10 px-6 py-12 text-left rounded-xl shadow-lg overflow-hidden">
       {/* Background Layer */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0">
+        {/* Slightly translucent overlay so image shows through */}
         <div className="absolute inset-0 bg-gray-950/90" />
         <img
           src="/whitepaper/image1.png"
-          alt="Whitepaper Background"
-          className="absolute right-0 top-0 w-[60%] md:max-w-[50%] h-auto object-contain opacity-20 pointer-events-none select-none"
+          alt="DevOpsCoin Background"
+          className="absolute right-0 top-0 max-w-[60%] w-auto h-auto object-contain opacity-25 pointer-events-none select-none"
           aria-hidden="true"
           loading="lazy"
           decoding="async"

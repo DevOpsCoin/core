@@ -19,15 +19,6 @@ export default function HomePage() {
 
       {/* Foreground Content */}
       <div className="relative z-10">
-        <Image
-          src="/logo.png"
-          alt="DevOpsCoin Logo"
-          width={180}
-          height={180}
-          className="mx-auto mb-6 opacity-90"
-          priority
-        />
-
         <h1 className="text-4xl sm:text-5xl font-extrabold text-cyan-300 mb-4">
           $DEVOPS — Where Pipelines Meet Protocols
         </h1>
