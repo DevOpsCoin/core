@@ -1,4 +1,17 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-pnpm run lint
+
+# Run Prettier in --check mode to ensure staged changes are formatted
+# This will fail the commit if files are not formatted. Use --ignore-path
+# if you have files/folders to skip (e.g., .gitignore is respected by Prettier).
+pnpm exec prettier --check . || {
+	echo "Prettier failed. Run 'pnpm run format' to fix formatting." >&2
+	exit 1
+}
+
+# Run ESLint on the website workspace. Use exit code to block commit on lint errors.
+pnpm run lint || {
+	echo "ESLint failed. Run 'pnpm run lint:fix' or fix errors manually." >&2
+	exit 1
+}
 

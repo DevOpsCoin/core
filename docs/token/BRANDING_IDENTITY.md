@@ -16,17 +16,17 @@
 
 ### Primary (for headers, banners, and social)
 
-**The Memecoin That Funds Open Source.**
+The Memecoin That Funds Open Source.
 
 ### Secondary (mission-oriented, for site + whitepaper)
 
-**Built by Devs. Fueled by Transparency.**
+Built by Devs. Fueled by Transparency.
 
 ### Alternate Variants (for campaigns or creative use)
 
-- Dev Culture Meets Degen — Fueling Open Source.  
-- Pipelines Meet Protocols.  
-- Built by Devs. Funding Open Source.  
+- Dev Culture Meets Degen — Fueling Open Source.
+- Pipelines Meet Protocols.
+- Built by Devs. Funding Open Source.
 - Where Automation Meets Acceleration.
 
 > Use alternates selectively across marketing and community assets; keep tone professional and technically grounded.
@@ -35,11 +35,11 @@
 
 ## Mission Statement
 
-**One-liner**
+### One-liner
 
 > Build a sustainable memecoin economy that directly funds open-source innovation.
 
-**Three-liner (for press, site, and investor decks)**
+### Three-liner (for press, site, and investor decks)
 
 > DevOpsCoin is an engineer-founded memecoin that applies DevOps discipline to crypto culture.  
 > The Ship-It Fund fuels open-source grants, while the TreasuryOps wallet powers ecosystem sustainability.  
@@ -85,12 +85,12 @@
 
 ---
 
-**Summary**
+## Summary
 
 DevOpsCoin is where DevOps principles meet crypto mechanics.  
 No gimmicks — just a self-sustaining cycle where every meme, trade, and pull request funds the next wave of open-source innovation.
 
-> **“Ship fast. Show receipts.”**
+> “Ship fast. Show receipts.”
 
 ---
 

@@ -36,11 +36,11 @@ Every Ship-It Fund disbursement is **publicly logged and verifiable**.
 
 Each ledger entry includes:
 
-- Project name and purpose  
-- Amount of $DEVOPS allocated  
-- Recipient Solana wallet  
-- Transaction hash  
-- Verification signature  
+- Project name and purpose
+- Amount of $DEVOPS allocated
+- Recipient Solana wallet
+- Transaction hash
+- Verification signature
 
 No private disbursements or off-chain accounting are ever performed.
 
@@ -48,11 +48,11 @@ No private disbursements or off-chain accounting are ever performed.
 
 ## 🧰 How to Apply
 
-1. Visit the [Ship-It Fund repository](https://github.com/DevOpsCoin/shipit-fund).  
-2. Click **New Project Submission** to open the structured issue form.  
-3. Provide project details, roadmap, and contact information.  
-4. Review occurs publicly in the issue thread.  
-5. Approved projects are added to the [DevOpsCoin Project Board](https://github.com/orgs/DevOpsCoin/projects/1).  
+1. Visit the [Ship-It Fund repository](https://github.com/DevOpsCoin/shipit-fund).
+2. Click **New Project Submission** to open the structured issue form.
+3. Provide project details, roadmap, and contact information.
+4. Review occurs publicly in the issue thread.
+5. Approved projects are added to the [DevOpsCoin Project Board](https://github.com/orgs/DevOpsCoin/projects/1).
 
 👉 **Submit a Project:**  
 [Create Submission →](https://github.com/DevOpsCoin/shipit-fund/issues/new?assignees=&labels=submission&template=project_submission.yml)
@@ -65,9 +65,9 @@ The Ship-It Fund operates under **DevOpsCoin LLC** governance and adheres to the
 
 > **Ship → Show → Verify**
 
-1. **Ship** — Prepare the proposal or transaction.  
-2. **Show** — Publish rationale and record in the ledger.  
-3. **Verify** — Execute on-chain and confirm transaction hash.  
+1. **Ship** — Prepare the proposal or transaction.
+2. **Show** — Publish rationale and record in the ledger.
+3. **Verify** — Execute on-chain and confirm transaction hash.
 
 All activity aligns with the broader [Governance Framework](../operations/GOVERNANCE.md) and [Transparency Policy](../project/TRANSPARENCY.md).
 

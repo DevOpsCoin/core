@@ -1,5 +1,3 @@
-# CREATOR_REWARDS.md
-
 # DevOpsCoin Creator Rewards Allocation
 
 **Network:** Solana  
@@ -16,8 +14,8 @@ Instead, ecosystem sustainability comes from **creator rewards** earned on **pum
 
 All creator rewards are distributed through a **three-wallet system**:
 
-1. **Founder Vesting Wallet (10%)** — trustless vesting contract with a 3-month cliff and 20-month linear release.  
-2. **TreasuryOps Wallet (SOL)** — receives and manages all creator rewards redeemed in SOL.  
+1. **Founder Vesting Wallet (10%)** — trustless vesting contract with a 3-month cliff and 20-month linear release.
+2. **TreasuryOps Wallet (SOL)** — receives and manages all creator rewards redeemed in SOL.
 3. **Ship-It Fund Wallet (5% DEVOPS)** — receives DEVOPS top-ups from TreasuryOps to fund open-source grants.
 
 This approach ties DevOpsCoin’s sustainability to community engagement and trading activity, rather than perpetual on-chain fees.
@@ -44,12 +42,12 @@ Pump.fun Creator Rewards (SOL)
 
 ## Allocation Breakdown
 
-| Source                        | Portion / Type                | Destination             | Purpose                                                                 |
-| ----------------------------- | ----------------------------- | ----------------------- | ----------------------------------------------------------------------- |
-| **Creator Reward (pump.fun)** | Variable per trading volume   | TreasuryOps Wallet (SOL) | Receives SOL creator rewards from pump.fun                              |
-| **Treasury Top-Up**           | Periodic, volume-dependent    | Ship-It Fund (DEVOPS)   | Converts or transfers reserves to support grant issuance                |
-| **Ship-It Fund Grants**       | 5% of total token supply      | Public Recipients       | Monthly open-source DevOps grants, with rollover when volume is low     |
-| **Founder Vesting**           | 10% of total token supply     | Founder Vesting Program | Long-term linear vesting to align incentives and credibility            |
+| Source                        | Portion / Type              | Destination              | Purpose                                                             |
+| ----------------------------- | --------------------------- | ------------------------ | ------------------------------------------------------------------- |
+| **Creator Reward (pump.fun)** | Variable per trading volume | TreasuryOps Wallet (SOL) | Receives SOL creator rewards from pump.fun                          |
+| **Treasury Top-Up**           | Periodic, volume-dependent  | Ship-It Fund (DEVOPS)    | Converts or transfers reserves to support grant issuance            |
+| **Ship-It Fund Grants**       | 5% of total token supply    | Public Recipients        | Monthly open-source DevOps grants, with rollover when volume is low |
+| **Founder Vesting**           | 10% of total token supply   | Founder Vesting Program  | Long-term linear vesting to align incentives and credibility        |
 
 > The Ship-It Fund never sells DEVOPS. All buybacks, liquidity adjustments, and market operations occur exclusively from the TreasuryOps wallet.
 
@@ -61,17 +59,17 @@ All creator-reward inflows and redistributions are publicly verifiable.
 
 Each transaction record includes:
 
-- Date and purpose  
-- Amount and direction  
-- Wallets involved  
-- Solana transaction hash  
-- Verification signature  
+- Date and purpose
+- Amount and direction
+- Wallets involved
+- Solana transaction hash
+- Verification signature
 
 Records are published and auditable through:
 
-- `/docs/ledger/TRANSPARENCY_LOG.md` — monthly transaction summaries  
-- [`shipit-fund`](https://github.com/DevOpsCoin/shipit-fund) — on-chain grant ledger  
-- [`treasury-ledger`](https://github.com/DevOpsCoin/treasury-ledger) — SOL inflow and top-up records  
+- `/docs/ledger/TRANSPARENCY_LOG.md` — monthly transaction summaries
+- [`shipit-fund`](https://github.com/DevOpsCoin/shipit-fund) — on-chain grant ledger
+- [`treasury-ledger`](https://github.com/DevOpsCoin/treasury-ledger) — SOL inflow and top-up records
 
 ---
 
