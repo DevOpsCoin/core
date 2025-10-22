@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    optimizePackageImports: ['@rainbow-me/rainbowkit', 'wagmi', 'viem'],
+    optimizePackageImports: ['@rainbow-me/rainbowkit', 'viem'],
   },
   images: {
     remotePatterns: [

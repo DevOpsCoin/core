@@ -1,10 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import { useDevopsTokenAddress } from '@/lib/useDevopsTokenAddress';
 
 export default function HowToBuyPage() {
-  const tokenAddress = useDevopsTokenAddress();
+  const tokenAddress =
+    process.env.NEXT_PUBLIC_DEVOPS_TOKEN_PUMPFUN ||
+    '7EwFPVX1PPYzyrNZ4fPsZDZ8LuePinHCrWx5jPCxpump';
+
+  const jupiterUrl =
+    typeof window !== 'undefined'
+      ? `https://jup.ag/swap/SOL-${tokenAddress}`
+      : null;
+
+  const hasGraduated = false; // toggle true after launch
 
   return (
     <section className="container max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg text-left">
@@ -72,6 +80,7 @@ export default function HowToBuyPage() {
               <a
                 href="https://phantom.app"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-cyan-400 underline"
               >
                 Download Phantom
@@ -102,7 +111,7 @@ export default function HowToBuyPage() {
           Visit the official Pump.fun page for $DEVOPS:
           <pre className="bg-gray-800 text-cyan-300 p-3 rounded-lg text-sm mt-2">
             https://pump.fun/
-            {tokenAddress || '7EwFPVX1PPYzyrNZ4fPsZDZ8LuePinHCrWx5jPCxpump'}
+            {tokenAddress}
           </pre>
           Connect your wallet, choose how much SOL you want to spend, and
           approve the transaction in your wallet. Your $DEVOPS tokens will
@@ -115,7 +124,7 @@ export default function HowToBuyPage() {
           </span>{' '}
           Always confirm the mint address before buying:
           <pre className="bg-gray-800 text-cyan-300 p-3 rounded-lg text-sm mt-2">
-            7EwFPVX1PPYzyrNZ4fPsZDZ8LuePinHCrWx5jPCxpump
+            {tokenAddress}
           </pre>
         </li>
 
@@ -127,13 +136,20 @@ export default function HowToBuyPage() {
             Buy page
           </Link>{' '}
           or directly via{' '}
-          <a
-            href={`https://jup.ag/swap/SOL-${tokenAddress}`}
-            target="_blank"
-            className="text-cyan-400 underline"
-          >
-            Jupiter
-          </a>
+          {hasGraduated && jupiterUrl ? (
+            <a
+              href={jupiterUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 underline"
+            >
+              Jupiter
+            </a>
+          ) : (
+            <span className="text-gray-500 italic">
+              (Jupiter link will be available after launch)
+            </span>
+          )}
           .
         </li>
       </ol>

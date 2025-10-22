@@ -4,18 +4,12 @@ import NavMoreDropdown from '@/components/NavMoreDropdown';
 import NavInvestorsDropdown from '@/components/NavInvestorsDropdown';
 import Image from 'next/image';
 import { useState } from 'react';
-import WalletConnect from '@/components/WalletConnect';
 
 export default function V1Header() {
   const [_usdValue, _setUsdValue] = useState<number | null>(null);
 
   return (
     <header className="relative w-full mt-4">
-      {/* ✅ Floating Wallet (desktop only) */}
-      <div className="hidden md:flex absolute top-4 right-6 z-50">
-        <WalletConnect />
-      </div>
-
       {/* Sticky Mobile Header */}
       <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between pl-16 pr-4 py-2 border-b border-cyan-800 shadow-lg">
         <div className="flex items-center">
@@ -27,11 +21,6 @@ export default function V1Header() {
           />
         </div>
         <MobileNav />
-      </div>
-
-      {/* Wallet placeholder (mobile) */}
-      <div className="md:hidden flex flex-col items-end gap-2 w-full px-4 pt-2 bg-gray-950 z-50">
-        <WalletConnect />
       </div>
 
       {/* Desktop Banner */}

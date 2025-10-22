@@ -42,7 +42,7 @@ This repo powers all public-facing components of the DevOpsCoin ecosystem — in
 
 ## 🌐 Overview
 
-- Built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, and **wagmi**
+- Built with **Next.js 15**, **TypeScript**, **Tailwind CSS**
 - Fully client-side wallet integrations (MetaMask / RainbowKit)
 - Dynamic BSC Mainnet / Testnet detection
 - PancakeSwap widget integration and token import helpers

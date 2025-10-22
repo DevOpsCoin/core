@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 export default function MyStoryPage() {
   return (
@@ -12,11 +13,13 @@ export default function MyStoryPage() {
       </h1>
 
       <p className="mb-4">
-        <img
+        <Image
           src="/mystory/p1.png"
           alt="early devops photo"
-          className="w-28 h-28 object-cover rounded-lg shadow-md border border-cyan-800 mt-1 ml-4 float-right flex-shrink-0"
-          style={{ float: 'right', marginLeft: '1rem', marginBottom: '0.5rem' }}
+          width={112}
+          height={112}
+          className="object-cover rounded-lg shadow-md border border-cyan-800 mt-1 ml-4 float-right flex-shrink-0"
+          style={{ marginLeft: '1rem', marginBottom: '0.5rem' }}
         />
         I've been in software development for over 25 years, with the last 15
         spent deep in DevOps. When I look back, open source has been at the
@@ -30,11 +33,13 @@ export default function MyStoryPage() {
       </p>
 
       <p className="mb-4">
-        <img
+        <Image
           src="/mystory/p2.png"
           alt="crypto and memecoin chaos"
-          className="w-28 h-28 object-cover rounded-lg shadow-md border border-cyan-800 mt-1 mr-4 float-left flex-shrink-0"
-          style={{ float: 'left', marginRight: '1rem', marginBottom: '0.5rem' }}
+          width={112}
+          height={112}
+          className="object-cover rounded-lg shadow-md border border-cyan-800 mt-1 mr-4 float-left flex-shrink-0"
+          style={{ marginRight: '1rem', marginBottom: '0.5rem' }}
         />
         A few years ago, I got into crypto. Like most, I started trading,
         learning, experimenting, and, of course, laughing at the chaos of the
@@ -50,11 +55,13 @@ export default function MyStoryPage() {
       </p>
 
       <p className="mb-4">
-        <img
+        <Image
           src="/mystory/p3.png"
           alt="DevOps Coin origin and Ship-It Fund"
-          className="w-28 h-28 object-cover rounded-lg shadow-md border border-cyan-800 mt-1 ml-4 float-right flex-shrink-0"
-          style={{ float: 'right', marginLeft: '1rem', marginBottom: '0.5rem' }}
+          width={112}
+          height={112}
+          className="object-cover rounded-lg shadow-md border border-cyan-800 mt-1 ml-4 float-right flex-shrink-0"
+          style={{ marginLeft: '1rem', marginBottom: '0.5rem' }}
         />
         That's where DevOps Coin came from — now built on the{' '}
         <strong>Solana blockchain</strong>. It's part tribute, part experiment,
@@ -71,11 +78,13 @@ export default function MyStoryPage() {
       </p>
 
       <p className="mb-4">
-        <img
+        <Image
           src="/mystory/p4.png"
           alt="builders and community support"
-          className="w-28 h-28 object-cover rounded-lg shadow-md border border-cyan-800 mt-1 mr-4 float-left flex-shrink-0"
-          style={{ float: 'left', marginRight: '1rem', marginBottom: '0.5rem' }}
+          width={112}
+          height={112}
+          className="object-cover rounded-lg shadow-md border border-cyan-800 mt-1 mr-4 float-left flex-shrink-0"
+          style={{ marginRight: '1rem', marginBottom: '0.5rem' }}
         />
         We're still early, still building, still figuring things out as we go.
         There's no big company here, no massive marketing team — just a belief
@@ -87,11 +96,13 @@ export default function MyStoryPage() {
       </p>
 
       <p className="mb-4">
-        <img
+        <Image
           src="/mystory/p5.png"
           alt="shipping with purpose and fun"
-          className="w-28 h-28 object-cover rounded-lg shadow-md border border-cyan-800 mt-1 ml-4 float-right flex-shrink-0"
-          style={{ float: 'right', marginLeft: '1rem', marginBottom: '0.5rem' }}
+          width={112}
+          height={112}
+          className="object-cover rounded-lg shadow-md border border-cyan-800 mt-1 ml-4 float-right flex-shrink-0"
+          style={{ marginLeft: '1rem', marginBottom: '0.5rem' }}
         />
         DevOpsCoin isn’t about chasing hype — it’s about turning a joke into a
         thank-you. It takes the same spirit that drives engineers to fix what’s
@@ -111,3 +122,4 @@ export default function MyStoryPage() {
     </div>
   );
 }
+
