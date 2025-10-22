@@ -48,10 +48,10 @@ export default function NavInvestorsDropdown() {
             <Menu.Item>
               {({ active }) => (
                 <Link
-                  href="/investor-portal"
+                  href="/buy"
                   className={`block px-4 py-2 text-sm text-cyan-200 hover:bg-cyan-800/40 ${active ? 'bg-cyan-800/40' : ''}`}
                 >
-                  Portal
+                  Buy $DEVOPS
                 </Link>
               )}
             </Menu.Item>

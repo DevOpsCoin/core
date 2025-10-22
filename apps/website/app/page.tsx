@@ -10,7 +10,7 @@ export default function HomePage() {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gray-950" />
         <img
-          src="/home/hero_bg.png"
+          src="/home/hero.png"
           alt="DevOpsCoin Background"
           className="absolute right-0 top-0 max-w-[60%] w-auto h-auto object-contain opacity-20 pointer-events-none select-none"
           aria-hidden="true"
