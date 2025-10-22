@@ -1,8 +1,8 @@
 # Ship-It Fund
 
-The **Ship-It Fund** is the beating heart of the **DevOpsCoin ($DEVOPS)** ecosystem — a transparent grant program that transforms community momentum into real support for open-source DevOps builders.
+The **Ship-It Fund** is the beating heart of the **DevOpsCoin ($DEVOPS)** ecosystem — a transparent grant program that transforms community momentum into real support for open-source builders.
 
-It funds automators, tinkerers, and open-source maintainers who embody the spirit of **“Ship it, don’t hype it.”**
+It funds automators, creators, and open-source maintainers who embody the spirit of **“Ship it, don’t hype it.”**
 
 ---
 
@@ -13,7 +13,7 @@ There are **no transaction taxes or embedded fees** in the token contract — in
 
 Each monthly funding cycle supports one clear mission:
 
-1. **Open-Source Grants** — Tools, dashboards, scripts, bots, educational content, and infrastructure projects that advance DevOps culture.
+1. **Open-Source Grants** — Tools, dashboards, scripts, bots, educational content, creative software, or infrastructure projects that advance the open-source ecosystem.
 
 The Ship-It Fund **never sells DEVOPS** or performs liquidity operations.  
 All market, buyback, and operational activity is handled separately by the **TreasuryOps wallet** to maintain clean accounting boundaries.

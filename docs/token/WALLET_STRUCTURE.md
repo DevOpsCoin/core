@@ -1,5 +1,3 @@
-# WALLET_STRUCTURE.md
-
 # DevOpsCoin Wallet Structure
 
 **Token Name:** DevOpsCoin  
@@ -19,7 +17,7 @@ There are **no multisig treasuries**, **no hidden developer wallets**, and **no 
 The project operates with three distinct wallets, each with a single purpose:
 
 1. **Founder Vesting Wallet (10%)** — Trustless vesting with a 3-month cliff and 20-month linear release.  
-2. **Ship-It Fund Wallet (5% DEVOPS)** — Dedicated grant treasury supporting open-source DevOps projects.  
+2. **Ship-It Fund Wallet (5% DEVOPS)** — Dedicated grant treasury supporting open-source projects and community initiatives.  
 3. **TreasuryOps Wallet (SOL)** — Operations wallet for marketing, liquidity, and buybacks; also funds Ship-It top-ups.  
 
 ---
@@ -74,7 +72,7 @@ All TreasuryOps activity is publicly logged and auditable on Solscan and in the 
 ## Ship-It Fund Transparency
 
 The **Ship-It Fund** begins with a **5 % DEVOPS bootstrap allocation**, then continues to grow through top-ups provided by TreasuryOps.  
-It supports open-source DevOps grants exclusively and never performs token sales or swaps.  
+It supports open-source grants exclusively and never performs token sales or swaps.  
 When trading volume slows, grant cycles are **deferred and rolled forward** to maintain fiscal stability and transparency.
 
 See the full breakdown here:  
@@ -87,6 +85,11 @@ See the full breakdown here:
 | Wallet                | Allocation | Purpose                                           |
 | ---------------------- | ---------- | ------------------------------------------------- |
 | **Founder Vesting**    | 10 %       | Long-term alignment and accountability            |
-| **Ship-It Fund**       | 5 %        | Grants and open-source DevOps ecosystem funding   |
+| **Ship-It Fund**       | 5 %        | Grants and open-source ecosystem funding          |
 | **TreasuryOps (SOL)**  | —          | Operational, liquidity, and marketing management  |
 | **Public Supply**      | 85 %       | Circulating supply and Raydium liquidity          |
+
+---
+
+_Last updated: October 2025 — Three-Wallet Alignment_  
+_Maintainer: RootSignal (DevOpsCoin LLC)_

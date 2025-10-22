@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'DevOpsCoin — Where Pipelines Meet Protocols',
     description:
-      'A Solana-based ecosystem funding open-source DevOps builders through transparent grants.',
+      'A Solana-based ecosystem funding open-source builders through transparent grants and TreasuryOps support.',
     url: 'https://devopscoin.ai',
     siteName: 'DevOpsCoin',
     images: [
@@ -34,7 +34,7 @@ export const metadata = {
     site: '@DevOpsCoin',
     title: 'DevOpsCoin — Where Pipelines Meet Protocols',
     description:
-      'A Solana-powered token supporting open-source DevOps projects via the Ship-It Fund.',
+      'A Solana-powered token supporting open-source builders via the Ship-It Fund.',
     images: ['https://devopscoin.ai/banner.png'],
   },
   robots: {

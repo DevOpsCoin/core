@@ -8,7 +8,7 @@
 ## Core Brand Positioning
 
 > **DevOpsCoin ($DEVOPS)** — the transparent, engineer-founded memecoin that merges developer culture with degen energy.  
-> Every trading cycle fuels the **Ship-It Fund**, which supports open-source DevOps projects, while the **TreasuryOps wallet** sustains liquidity, marketing, and ecosystem operations.
+> Every trading cycle fuels the **Ship-It Fund**, which supports **open-source projects**, while the **TreasuryOps wallet** sustains liquidity, marketing, and ecosystem operations.
 
 ---
 
@@ -37,7 +37,7 @@
 
 **One-liner**
 
-> Build a sustainable memecoin economy that directly funds open-source DevOps innovation.
+> Build a sustainable memecoin economy that directly funds open-source innovation.
 
 **Three-liner (for press, site, and investor decks)**
 

@@ -57,14 +57,15 @@ export default function ShipItFundPage() {
             Mission & Purpose
           </h2>
           <p className="text-gray-300 text-lg mb-2">
-            The <strong>Ship-It Fund</strong> is a dedicated community pool that
-            fuels open-source DevOps innovation. It exists solely to provide{' '}
-            <strong>micro-grants and sponsorships</strong> to developers,
-            maintainers, and projects advancing automation, reliability, and
-            developer culture.
+            The <strong>Ship-It Fund</strong> is a community-driven grant pool
+            that fuels open-source innovation across all domains — from DevOps
+            automation and developer tools to creative software, AI utilities,
+            and educational projects. It exists solely to provide{' '}
+            <strong>micro-grants and sponsorships</strong> to builders who make
+            the open internet better.
           </p>
           <p className="text-gray-400 italic">
-            One fund. One purpose — empower the open-source DevOps ecosystem.
+            One fund. One purpose — empower the open-source builders who ship.
           </p>
         </section>
 
@@ -89,7 +90,7 @@ export default function ShipItFundPage() {
           </h2>
           <ul className="list-disc pl-6 text-gray-300 space-y-2 mb-4">
             <li>
-              <strong>Bootstrap allocation:</strong> 5 % of total supply (50 M
+              <strong>Bootstrap allocation:</strong> 5% of total supply (50 M
               DEVOPS) permanently allocated to the Ship-It Fund wallet.
             </li>
             <li>
@@ -98,13 +99,13 @@ export default function ShipItFundPage() {
               sustain consistent grant cycles.
             </li>
             <li>
-              <strong>Grant cadence:</strong> Initial open-source grants issued
-              monthly, rolling forward transparently if market volume doesn’t
+              <strong>Grant cadence:</strong> Grants are reviewed monthly,
+              rolling forward transparently if market volume or inflows don’t
               meet sustainability targets.
             </li>
             <li>
               <strong>Transparency:</strong> All inflows, disbursements, and
-              approvals recorded publicly in the{' '}
+              approvals are recorded publicly in the{' '}
               <a
                 href="https://github.com/DevOpsCoin-LLC/shipit-fund/tree/main/ledger"
                 target="_blank"
@@ -138,17 +139,18 @@ export default function ShipItFundPage() {
             Who & What We Fund
           </h2>
           <p className="text-gray-300 mb-4">
-            The Ship-It Fund supports individuals and small teams who live the
-            DevOps ethos — automating, improving, or democratizing the
-            infrastructure behind modern software.
+            The Ship-It Fund supports individuals and small teams building
+            meaningful open-source projects — improving automation, creating
+            developer and creative tools, advancing AI, or producing educational
+            and cultural projects that strengthen the open internet.
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-2">
-            <li>Open-source DevOps tools and infrastructure frameworks</li>
+            <li>Developer tools, frameworks, and automation systems</li>
+            <li>Creative and AI-driven open-source software</li>
+            <li>Educational content and open knowledge platforms</li>
             <li>
-              Automation libraries, CI/CD utilities, and observability tooling
+              Community, cultural, or meme-inspired open-source initiatives
             </li>
-            <li>Educational DevOps content and OSS training initiatives</li>
-            <li>Creative or meme-driven projects celebrating DevOps culture</li>
           </ul>
         </section>
 
@@ -186,8 +188,8 @@ export default function ShipItFundPage() {
             funding round archives.
           </p>
           <p className="text-gray-400 text-sm">
-            One transparent wallet. No staking. No liquidity management. 100 %
-            open-source support.
+            One transparent wallet. No staking. No liquidity management. 100%
+            focused on open-source grants.
           </p>
         </section>
 
@@ -211,8 +213,9 @@ export default function ShipItFundPage() {
             Submit a Project
           </h2>
           <p className="text-gray-300 mb-4">
-            Have something worth funding? Submit your open-source project or
-            proposal via GitHub. Reviews and approvals happen fully in the open.
+            Have something worth funding? Submit your open-source project
+            proposal via GitHub. Reviews and approvals happen transparently — in
+            public, for everyone to see.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -298,11 +301,11 @@ export default function ShipItFundPage() {
             Disclaimer
           </h2>
           <p className="text-gray-400 text-sm">
-            The Ship-It Fund is for community and open-source development only.
-            It does not engage in trading, buybacks, or liquidity operations.
-            All funding is discretionary and subject to available allocations
-            and TreasuryOps top-ups. No investment contracts — just transparent
-            support for builders who ship.
+            The Ship-It Fund is for open-source grants only. It does not engage
+            in trading, buybacks, or liquidity operations. All funding is
+            discretionary and depends on available allocations and TreasuryOps
+            top-ups. No investment contracts — just transparent support for
+            builders who ship.
           </p>
         </section>
 

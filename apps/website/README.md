@@ -3,22 +3,16 @@
 </p>
 
 <p align="center">
-  <a href="https://nextjs.org/">
-    <img src="https://img.shields.io/badge/Built%20with-Next.js-000?style=flat&logo=nextdotjs" alt="Built with Next.js">
-  </a>
-  <a href="https://solscan.io/token/DISCLOSED_AT_LAUNCH">
+  <a href="https://solana.com/">
     <img src="https://img.shields.io/badge/Chain-Solana-9945FF?logo=solana" alt="Solana">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
   </a>
-  <a href="https://github.com/devopscoin-llc/devopscoin-website">
-    <img src="https://img.shields.io/badge/Open-Source-blue.svg" alt="Open Source">
+  <a href="https://github.com/DevOpsCoin-LLC/core">
+    <img src="https://img.shields.io/badge/Repo-core-blue.svg" alt="core repo">
   </a>
-  <a href="https://vercel.com">
-    <img src="https://img.shields.io/badge/Deployed%20on-Vercel-black?style=flat&logo=vercel" alt="Deployed on Vercel">
-  </a>
-  <a href="./SECURITY.md">
+  <a href=".github/SECURITY.md">
     <img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-orange.svg" alt="Security Policy">
   </a>
 </p>
@@ -26,157 +20,54 @@
 ---
 
 <p align="center">
-  <strong>Where Pipelines Meet Protocols</strong>
-  <br />
-  Transparent DevOps culture meets decentralized innovation.
+  <strong>Where Pipelines Meet Protocols</strong><br/>
+  Transparent engineering culture meets on-chain verification.
 </p>
 
 ---
 
-# DevOpsCoin Website
+# DevOpsCoin — Core
 
-The official **DevOpsCoin website and investor portal**, designed to showcase how automation, DevOps culture, and blockchain transparency can coexist.  
-This repo powers all public-facing components of the DevOpsCoin ecosystem — including token onboarding, vesting visibility, and Ship-It Fund integrations.
-
----
-
-## 🌐 Overview
-
-- Built with **Next.js 15**, **TypeScript**, **Tailwind CSS**
-- Fully client-side wallet integrations (MetaMask / RainbowKit)
-- Dynamic BSC Mainnet / Testnet detection
-- PancakeSwap widget integration and token import helpers
-- Investor Portal with on-chain vesting visibility and claim interface
-- “Add Network” + “Add Token” one-click helpers for MetaMask users
-- Environment-driven token / vesting contract configuration
+This is the **core repository** for DevOpsCoin — the canonical home for all official documentation, transparency policies, and governance definitions.  
+It defines how the project operates across wallets, grants, and public reporting on the **Solana blockchain**.
 
 ---
 
-## 🚀 Quick Start
+## 📘 Documentation
 
-```bash
-git clone https://github.com/devopscoin-llc/devopscoin-website.git
-cd devopscoin-website
-npm install
-cp .env.example .env.local
-npm run dev
-```
+All primary documentation — including tokenomics, vesting, wallet structure, Ship-It Fund policy, and governance — lives in:
 
-Then open [http://localhost:3000](http://localhost:3000).
+👉 [`docs/README.md`](./docs/README.md)
+
+That file serves as your single entry point to the full DevOpsCoin documentation suite.
 
 ---
 
-## ⚙️ Environment Variables
+## 🔐 Security & Disclosure
 
-| Variable                               | Description                                   |
-| -------------------------------------- | --------------------------------------------- |
-| `NEXT_PUBLIC_TRADING_LIVE`             | Enables production buy / claim logic          |
-| `NEXT_PUBLIC_DEVOPS_TOKEN_MAINNET`     | BSC mainnet token address                     |
-| `NEXT_PUBLIC_DEVOPS_TOKEN_TESTNET`     | BSC testnet token address                     |
-| `NEXT_PUBLIC_VESTING_CONTRACT_MAINNET` | Vesting contract (mainnet)                    |
-| `NEXT_PUBLIC_VESTING_CONTRACT_TESTNET` | Vesting contract (testnet)                    |
-| `NEXT_PUBLIC_API_BASE`                 | Optional API endpoint for pricing / analytics |
+Please report vulnerabilities responsibly via:
 
-Example configuration can be found in [`/.env.example`](./.env.example).
+- [`SECURITY.md`](.github/SECURITY.md) — general security policy  
+- [`SECURITY_DISCLOSURE.md`](.github/SECURITY_DISCLOSURE.md) — coordinated disclosure and contact process
 
----
-
-## 🔗 Smart Contracts
-
-All contracts are verified and public on BscScan:
-
-| Network     | Contract              | Explorer                                                                   |
-| ----------- | --------------------- | -------------------------------------------------------------------------- |
-| **Mainnet** | `DISCLOSED_ON_LAUNCH` | [BscScan](https://bscscan.com/address/DISCLOSED_ON_LAUNCH)                 |
-| **Testnet** | `DISCLOSED_ON_LAUNCH` | [BscScan Testnet](https://testnet.bscscan.com/address/DISCLOSED_ON_LAUNCH) |
+GitHub’s “Security Advisories” workflow is also enabled for private coordination.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome open-source contributions that improve documentation, UI / UX, or developer tooling.
+We welcome pull requests that improve documentation, automation, or transparency.
+
+- Contribution guidelines: [`CONTRIBUTING.md`](.github/CONTRIBUTING.md)  
+- Issue templates: `.github/ISSUE_TEMPLATE/`  
+- Pull request template: [`PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md)
 
 ```bash
-# Fork and clone
-git clone https://github.com/YOUR_USERNAME/devopscoin-website.git
-cd devopscoin-website
-npm install
-npm run dev
-```
+git clone https://github.com/DevOpsCoin-LLC/core.git
+cd core
+# edit docs or open governance proposals
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+## 🧾 License
 
----
-
-## 🧩 Transparency
-
-This repo intentionally showcases how a decentralized project can operate openly and responsibly.  
-All fund and on-chain activity related to $DEVOPS is tracked through the **Ship-It Fund** and **Founder Vesting** contracts.
-
-**Active Wallets**
-
-```
-Founder (Vesting):  DISCLOSED_ON_LAUNCH
-Ship-It Fund:        DISCLOSED_ON_LAUNCH
-```
-
-> The Founder wallet follows a 3-month cliff and 5% monthly vesting over 20 months.  
-> The Ship-It Fund is a dual-purpose pool supporting open-source DevOps projects and token health operations.
-
-Full transparency and governance details are in [GOVERNANCE.md](./GOVERNANCE.md).
-
----
-
-## 🔐 Security Policy
-
-Please report vulnerabilities responsibly via  
-[SECURITY.md →](./SECURITY.md)
-
----
-
-## 🧾 Open Source Disclosure
-
-This project is licensed under the [MIT License](./LICENSE) to promote transparency and open DevOps collaboration.  
-You are free to **fork, modify, and build upon** this codebase under those terms.
-
-However:
-
-- Only builds and deployments from [https://devopscoin.ai](https://devopscoin.ai) and verified wallets above are **authentic DevOpsCoin**.
-- Forks or redeployments using different wallets / branding are **not affiliated** with DevOpsCoin LLC or RootSignal.
-- Always verify contract addresses on BscScan before interacting with any derivative project.
-
-This repo serves as a **reference implementation** for transparency and blockchain-driven DevOps automation.
-
----
-
-## 🐳 Docker (Development with Postgres)
-
-A Docker Compose setup is included for local Next.js + Postgres development.
-
-Files included:
-
-- `Dockerfile` — multi-stage build (builder + runner targets)
-- `docker-compose.yml` — runs `web` (Next) and `db` (Postgres)
-- `.env.docker.example` — example environment variables for Compose
-
-### Quick Start
-
-```bash
-cp .env.docker.example .env.docker
-docker compose up --build
-```
-
-Visit [http://localhost:3000](http://localhost:3000)
-
-Notes:
-
-- The `web` service mounts the project directory for live reload.
-- The `db` service exposes PostgreSQL on port 5432.
-- Set `DATABASE_URL` in `.env.docker` to `db:5432`.
-
----
-
-## 🪙 License
-
-MIT License © 2025 DevOpsCoin LLC  
-_Where pipelines meet protocols._
+MIT License © 2025 DevOpsCoin LLC
+Where pipelines meet protocols.

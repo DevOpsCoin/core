@@ -82,7 +82,7 @@ contracts/
   | Wallet / Program        | Purpose                                                |
   | ------------------------ | ------------------------------------------------------ |
   | **Founder Vesting**      | Enforces long-term founder alignment (10 %)           |
-  | **Ship-It Fund**         | DEVOPS-based grants for open-source DevOps projects   |
+  | **Ship-It Fund**         | DEVOPS-based grants for open-source projects and builders |
   | **TreasuryOps (SOL)**    | SOL inflows from Pump.fun; handles ops & top-ups      |
 
 - All program events will emit standardized logs for ingestion by off-chain indexers and the transparency dashboard.  

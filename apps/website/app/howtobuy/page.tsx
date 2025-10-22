@@ -58,7 +58,8 @@ export default function HowToBuyPage() {
           <strong>creator rewards</strong>. TreasuryOps (SOL) funds project
           operations, liquidity, and periodic top-ups of the{' '}
           <span className="text-cyan-400 font-semibold">Ship-It Fund</span> —
-          the DEVOPS grant treasury supporting open-source DevOps builders.
+          the DEVOPS grant treasury supporting open-source builders and
+          community contributors.
         </p>
       </div>
 
@@ -189,7 +190,8 @@ export default function HowToBuyPage() {
               Creator rewards from trading volume are collected in SOL within
               the TreasuryOps wallet. TreasuryOps funds operations and provides
               top-ups to the Ship-It Fund, which issues verified monthly grants
-              to open-source DevOps projects.
+              to open-source builders and contributors who keep the ecosystem
+              growing.
             </p>
           </div>
         </div>

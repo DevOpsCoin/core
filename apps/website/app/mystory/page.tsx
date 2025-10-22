@@ -68,9 +68,9 @@ export default function MyStoryPage() {
         possible. DevOpsCoin exists to give something back. That’s the purpose
         behind the <strong>Ship-It Fund</strong> — a transparent mechanism that
         channels creator rewards from trading volume (through the{' '}
-        <strong>TreasuryOps wallet</strong>) into grants for open-source DevOps
-        builders and maintainers. Every trade helps fund the people who keep the
-        internet running quietly behind the curtain.
+        <strong>TreasuryOps wallet</strong>) into grants for open-source
+        builders, maintainers, and contributors. Every trade helps fund the
+        people who keep the internet running quietly behind the curtain.
       </p>
 
       <p className="mb-4">
@@ -86,7 +86,7 @@ export default function MyStoryPage() {
         company, no marketing machine — just a belief that a token can have
         purpose. Over time, I hope this grows into more than a coin: a
         self-sustaining fund for tools, contributors, and new projects that keep
-        DevOps culture alive. If it stays small, that’s fine. If it scales,
+        open-source culture alive. If it stays small, that’s fine. If it scales,
         that’s even better. The goal is simple: keep shipping, keep improving,
         and keep supporting the builders who make all of this possible.
       </p>
@@ -103,10 +103,10 @@ export default function MyStoryPage() {
         DevOpsCoin isn’t about chasing hype — it’s about turning a joke into a
         thank-you. It carries the same mindset that drives engineers to fix
         what’s broken and rebuild what’s better, and channels that into funding
-        the next generation of open-source DevOps tooling. If you’ve ever
-        shipped something that failed, fixed it, and shipped again anyway, you
-        already understand this project. It’s about shipping with purpose — and
-        having some fun along the way.
+        the next generation of open-source tools, contributors, and creative
+        projects. If you’ve ever shipped something that failed, fixed it, and
+        shipped again anyway, you already understand this project. It’s about
+        shipping with purpose — and having some fun along the way.
       </p>
 
       <p className="mb-4 text-gray-300 italic">

@@ -98,10 +98,10 @@ export default function SecurityPage() {
         The Ship-It Fund is initially allocated{' '}
         <strong>5 % of total supply (50 million DEVOPS)</strong> and sustained
         by periodic top-ups from the <strong>TreasuryOps wallet</strong>.
-        Funding supports open-source DevOps tools, audits, and community
-        security contributions. In months where market activity is below
-        threshold, grants may be <strong>deferred and rolled forward</strong> to
-        maintain fiscal transparency.
+        Funding supports open-source tools, audits, and community security
+        contributions. In months where market activity is below threshold,
+        grants may be <strong>deferred and rolled forward</strong> to maintain
+        fiscal transparency.
       </p>
 
       <p className="text-gray-300 mb-6">

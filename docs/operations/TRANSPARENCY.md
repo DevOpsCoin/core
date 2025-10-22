@@ -24,7 +24,7 @@ All fund operations are executed by **DevOpsCoin LLC** and recorded either on-ch
 
 | Wallet / Program            | Purpose                                                                                  | Transparency Mechanism                                                  |
 | ---------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| **Ship-It Fund (DEVOPS)**    | Dedicated to open-source DevOps grants and ecosystem support. Issues monthly grants; rolls over if volume falls short. Never sells DEVOPS. | Public Solana wallet + on-chain transactions + monthly ledger reports |
+| **Ship-It Fund (DEVOPS)**    | Dedicated to open-source grants and community sponsorships. Issues monthly grants; rolls over if volume falls short. Never sells DEVOPS. | Public Solana wallet + on-chain transactions + monthly ledger reports |
 | **TreasuryOps (SOL)**        | Holds SOL from creator rewards; funds marketing, liquidity, operations, and buybacks. Periodically tops up Ship-It reserves. | On-chain SOL transactions + transparency ledger + periodic summaries |
 | **Founder Vesting**          | 10% founder allocation with 3-month cliff and 20-month linear vesting. Ensures long-term alignment and trust. | On-chain vesting contract + public vesting log |
 
@@ -34,7 +34,7 @@ All fund operations are executed by **DevOpsCoin LLC** and recorded either on-ch
 
 ## 🪙 Ship-It Fund Transparency
 
-The **Ship-It Fund** operates as a dedicated grant treasury for open-source DevOps innovation.  
+The **Ship-It Fund** operates as a dedicated grant treasury for open-source innovation.  
 
 - Issues **monthly grants** when ecosystem trading volume supports it  
 - Rolls grants forward when volume dips below the threshold  

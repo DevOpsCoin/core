@@ -53,6 +53,10 @@ export default function V1Header() {
             Stealth Build → DevNet Testing
           </span>
         </div>
+        <p className="mt-3 text-sm text-cyan-200/80">
+          Building the ecosystem that funds open-source builders — from
+          automation to creativity.
+        </p>
       </div>
 
       {/* Main Navigation (desktop) */}
@@ -95,7 +99,7 @@ export default function V1Header() {
     </header>
   );
 
-  // Mobile Navigation
+  // ✅ Mobile Navigation
   function MobileNav() {
     const [open, setOpen] = useState(false);
     return (
@@ -160,13 +164,18 @@ export default function V1Header() {
                 >
                   Home
                 </Link>
+
                 <Link
                   href="/shipit"
                   className="block px-4 py-3 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-400 text-white font-semibold text-lg hover:from-cyan-400 hover:to-teal-300 transition"
                   onClick={() => setOpen(false)}
                 >
                   Ship-It Fund
+                  <span className="block text-xs text-cyan-100/80 font-normal mt-1">
+                    Open-source grants for builders and creators
+                  </span>
                 </Link>
+
                 <Link
                   href="/roadmap"
                   className="block px-4 py-3 rounded-lg bg-cyan-700 text-white font-semibold text-lg hover:bg-cyan-400 transition"

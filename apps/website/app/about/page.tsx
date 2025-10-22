@@ -61,8 +61,8 @@ export default function AboutPage() {
               a 3-month cliff and 20-month linear release.
             </li>
             <li>
-              <strong>Ship-It Fund:</strong> 5% DEVOPS treasury dedicated to
-              open-source grants — never sells tokens.
+              <strong>Ship-It Fund:</strong> 5% DEVOPS treasury supporting
+              open-source builders and contributors — never sells tokens.
             </li>
             <li>
               <strong>TreasuryOps:</strong> SOL-based wallet for operations,
@@ -112,7 +112,7 @@ export default function AboutPage() {
         <p className="text-gray-300 text-center mb-6">
           Connect with the DevOpsCoin community and follow project updates
           across our official channels. We welcome engineers, open-source
-          maintainers, and DevOps practitioners to get involved early.
+          maintainers, and contributors to get involved early.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

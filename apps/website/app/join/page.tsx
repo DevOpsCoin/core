@@ -87,8 +87,8 @@ export default function JoinPage() {
             </li>
             <li>
               <strong>Strategic Builders</strong> — people who understand both
-              DevOps culture and tokenized ecosystems, helping guide the{' '}
-              <strong>Ship-It Fund</strong> toward long-term open-source impact.
+              open-source culture and tokenized ecosystems, helping guide the{' '}
+              <strong>Ship-It Fund</strong> toward long-term community impact.
             </li>
             <li>
               <strong>Community Builders</strong> — moderators, curators, and
@@ -121,10 +121,10 @@ export default function JoinPage() {
             A portion of <strong>creator rewards</strong> from Pump.fun and
             Raydium trading flows into the <strong>TreasuryOps wallet</strong>.
             TreasuryOps periodically tops up the <strong>Ship-It Fund</strong> —
-            the DEVOPS grant treasury supporting open-source DevOps tools,
-            maintainers, and contributors. Grants are distributed monthly (or
-            rolled forward) as volume allows, with all disbursements
-            transparently logged on-chain.
+            the DEVOPS grant treasury supporting open-source tools, maintainers,
+            and contributors. Grants are distributed monthly (or rolled forward)
+            as volume allows, with all disbursements transparently logged
+            on-chain.
           </p>
         </section>
 
@@ -151,8 +151,8 @@ export default function JoinPage() {
             <li>People chasing short-term profits or hype cycles.</li>
             <li>Low-effort meme farming or airdrop hunters.</li>
             <li>
-              Speculators focused solely on token price, not the DevOps culture
-              or the mission.
+              Speculators focused solely on token price, not the open-source
+              mission or culture.
             </li>
             <li>
               Anyone unwilling to work transparently or collaborate in open
@@ -182,8 +182,8 @@ export default function JoinPage() {
           </h2>
           <p className="text-gray-300 mb-4">
             Whether you’re an engineer, creative, or strategist, you can help
-            shape a token that fuels real open-source DevOps innovation. Join
-            early. Build transparently. Ship constantly.
+            shape a token that fuels real open-source innovation. Join early.
+            Build transparently. Ship constantly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

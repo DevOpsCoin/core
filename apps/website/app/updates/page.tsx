@@ -31,8 +31,9 @@ export default function UpdatesPage() {
             Recent updates to the <strong>$DEVOPS</strong> wallet structure
             introduced clearer boundaries between community and operational
             funding. The <strong>Ship-It Fund</strong> is now confirmed as a
-            single-purpose pool strictly dedicated to open-source DevOps grants
-            and community sponsorships.
+            single-purpose pool strictly dedicated to{' '}
+            <strong>open-source grants and community sponsorships</strong> —
+            supporting builders, maintainers, and creators across the ecosystem.
           </p>
           <p className="text-gray-300 leading-relaxed mb-3">
             The <strong>TreasuryOps</strong> wallet handles all liquidity,
@@ -102,9 +103,10 @@ export default function UpdatesPage() {
           </p>
           <p className="text-gray-300 leading-relaxed">
             The Ship-It Fund is the backbone of $DEVOPS — a transparent,
-            community-driven wallet that fuels open-source DevOps innovation.
-            Powered by a fixed allocation and periodic TreasuryOps top-ups,
-            every grant is traceable and every payout verifiable on-chain.
+            community-driven wallet that fuels{' '}
+            <strong>open-source innovation</strong>. Powered by a fixed
+            allocation and periodic TreasuryOps top-ups, every grant is
+            traceable and every payout verifiable on-chain.
           </p>
         </article>
 

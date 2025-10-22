@@ -23,7 +23,7 @@ Governance is treated like infrastructure: predictable, testable, and open.
 
 | Fund | Purpose | Controlled By | Transparency Mechanism |
 |------|----------|---------------|------------------------|
-| **Ship-It Fund (DEVOPS)** | Dedicated to open-source grants and ecosystem support. Issues monthly grants as long as volume supports it; rolls over otherwise. Never sells DEVOPS. | DevOpsCoin LLC (custodial until DAO-ready) | Public Solana wallet + verifiable on-chain distributions |
+| **Ship-It Fund (DEVOPS)** | Dedicated to open-source grants and community sponsorships. Issues monthly grants as long as volume supports it; rolls over otherwise. Never sells DEVOPS. | DevOpsCoin LLC (custodial until DAO-ready) | Public Solana wallet + verifiable on-chain distributions |
 | **TreasuryOps (SOL)** | Receives Pump.fun creator rewards in SOL. Funds marketing, exchange liquidity, operations, and buybacks. Tops up the Ship-It Fund when reserves run low. | DevOpsCoin LLC | On-chain SOL transactions + monthly ledger entries |
 | **Founder Vesting** | Founder allocation (10%) with 3-month cliff and 20-month linear vesting. | Smart-contract vesting program | On-chain vesting record + verified repo source |
 
@@ -45,7 +45,7 @@ Every governance event leaves a traceable record both on-chain and in-repo.
 
 ## 🪙 Ship-It Fund Governance
 
-The **Ship-It Fund** operates as a transparent grant treasury focused solely on funding open-source DevOps projects.  
+The **Ship-It Fund** operates as a transparent grant treasury focused solely on **open-source projects**.  
 
 - Grants are issued **monthly**, contingent on trading volume and available reserves.  
 - If volume drops below the operational threshold, the grant is **deferred and rolled forward** to the following month.  
@@ -98,7 +98,7 @@ Tokens unlock trustlessly through the vesting contract and can be claimed only b
 
 - **Contribute** — open PRs, code, or docs to strengthen the ecosystem  
 - **Verify** — audit Ship-It and TreasuryOps transactions directly on Solscan  
-- **Support** — build, share, or collaborate on DevOps projects funded by the Ship-It Fund  
+- **Support** — build, share, or collaborate on open-source projects funded by the Ship-It Fund  
 - **Discuss** — join GitHub Discussions or Telegram for roadmap feedback  
 
 ---

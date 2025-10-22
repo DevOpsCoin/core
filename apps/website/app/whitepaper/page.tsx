@@ -25,17 +25,18 @@ export default function WhitepaperPage() {
         <strong>$DEVOPS</strong> is where{' '}
         <strong>pipelines meet protocols</strong> — a token that blends DevOps
         culture, open-source collaboration, and Solana’s speed into one mission:
-        funding the builders who keep the internet running.
+        funding the builders who keep the internet running and expanding what
+        open-source can become.
       </p>
 
       {/* PURPOSE */}
       <h2 className="text-2xl font-bold text-cyan-400 mt-10 mb-3">Purpose</h2>
       <p className="text-gray-300 mb-6">
         DevOpsCoin is more than a memecoin — it’s a cultural token for the
-        people who ship software. Built on <strong>Solana</strong>, it rewards
-        open-source maintainers, engineers, and automation pioneers who power
-        modern digital infrastructure. Every transaction and initiative helps
-        sustain open-source DevOps through transparent community funding.
+        people who build and automate. Built on <strong>Solana</strong>, it
+        supports open-source maintainers, developers, creators, and innovators
+        across all domains. Every transaction and initiative helps sustain
+        open-source development through transparent, community-driven funding.
       </p>
 
       {/* TOKEN OVERVIEW */}
@@ -73,9 +74,9 @@ export default function WhitepaperPage() {
 
         <li>
           <strong>Ship-It Fund Wallet (5%):</strong> A dedicated, single-purpose
-          grant pool used exclusively for
-          <strong> open-source DevOps projects</strong>, OSS tooling, and
-          community grants. It begins with a 5% bootstrap allocation (50 M
+          grant pool used exclusively for <strong>open-source grants</strong> —
+          spanning DevOps tools, creative software, AI utilities, and
+          educational projects. It begins with a 5% bootstrap allocation (50 M
           DEVOPS) and may be replenished periodically by the TreasuryOps wallet.
           All grants and disbursements are recorded in the{' '}
           <a
@@ -91,9 +92,9 @@ export default function WhitepaperPage() {
 
         <li>
           <strong>TreasuryOps Wallet (10%):</strong> Used for liquidity,
-          exchange listings, operations, marketing, and
-          <strong> buybacks</strong> when justified by market conditions.
-          TreasuryOps may also top-up the Ship-It Fund to maintain regular grant
+          exchange listings, operations, marketing, and{' '}
+          <strong>buybacks</strong> when justified by market conditions.
+          TreasuryOps may also top up the Ship-It Fund to maintain regular grant
           cycles. This wallet operates transparently under a
           “refill-when-needed” policy.
         </li>
@@ -109,24 +110,25 @@ export default function WhitepaperPage() {
         Ship-It Fund
       </h2>
       <p className="text-gray-300 mb-6">
-        The <strong>Ship-It Fund</strong> fuels open-source DevOps innovation —
-        from CI/CD frameworks and automation libraries to developer education
-        and infrastructure tools. It operates entirely on-chain, with every
-        inflow and disbursement publicly recorded.
+        The <strong>Ship-It Fund</strong> fuels open-source innovation of all
+        kinds — from automation frameworks and open DevOps tooling to AI
+        utilities, creative applications, and educational resources. It operates
+        entirely on-chain, with every inflow and disbursement publicly recorded.
       </p>
 
       <p className="text-gray-300 mb-6">
         Ship-It Fund grants are issued on a monthly cadence when volume and
-        TreasuryOps resources allow. If trading activity falls below threshold,
-        payouts are deferred and rolled forward transparently.
+        TreasuryOps resources allow. If trading activity or inflows drop,
+        payouts are deferred and rolled forward transparently to maintain
+        sustainability.
       </p>
 
       <p className="text-gray-300 mb-6">
         No Ship-It Fund tokens are ever sold or used for liquidity.
         <strong>
-          Buybacks and market operations are handled exclusively by TreasuryOps
+          Buybacks and market operations are handled exclusively by TreasuryOps.
         </strong>
-        . The Ship-It Fund remains 100 % dedicated to open-source grants and
+        The Ship-It Fund remains 100 % dedicated to open-source grants and
         community programs.
       </p>
 
