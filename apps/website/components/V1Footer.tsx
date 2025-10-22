@@ -10,10 +10,10 @@ export default function V1Footer() {
 
   return (
     <footer className="mt-16 border-t border-gray-800 py-6 text-sm text-gray-400 text-center relative overflow-hidden">
-      {/* Subtle cyan gradient line */}
-      <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600 animate-pulse"></div>
+      {/* Cyan gradient line */}
+      <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-cyan-600 via-cyan-400 to-cyan-600" />
 
-      {/* Launch Countdown Footer Line */}
+      {/* Phase Notice */}
       <div
         id="footer-launch"
         className="mb-3 text-cyan-300 font-medium flex justify-center items-center gap-2"
@@ -24,6 +24,7 @@ export default function V1Footer() {
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          aria-hidden="true"
         >
           <path
             strokeLinecap="round"
@@ -37,7 +38,7 @@ export default function V1Footer() {
 
       {/* Core Footer Text */}
       <p className="mb-1">
-        © <span id="year"></span> DevOpsCoin ·{' '}
+        © <span id="year"></span> DevOpsCoin&nbsp;·{' '}
         <Link href="/legal" className="text-cyan-400 hover:underline">
           Legal
         </Link>{' '}
@@ -50,9 +51,10 @@ export default function V1Footer() {
         </a>
       </p>
 
+      {/* Tagline */}
       <p className="text-xs text-gray-500 italic">
-        Where pipelines meet protocols. Built on Solana. Sustained by the
-        Ship-It Fund.
+        Where pipelines meet protocols.&nbsp;Built on Solana.&nbsp;Sustained by
+        TreasuryOps and the Ship-It Fund.
       </p>
     </footer>
   );

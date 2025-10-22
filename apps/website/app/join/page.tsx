@@ -38,11 +38,12 @@ export default function JoinPage() {
           </svg>
           Join the DevOpsCoin Builder Collective
         </h1>
+
         <p className="mb-8 text-lg text-gray-300">
-          We’re assembling a collective of builders, meme lords, and open-source
-          contributors shaping the future of DevOpsCoin on the{' '}
-          <strong>Solana blockchain</strong>. If you want to help us build,
-          meme, and ship it — read on!
+          We’re assembling a collective of builders, meme engineers, and
+          open-source contributors defining the future of DevOps culture on the{' '}
+          <strong>Solana blockchain</strong>. If you can ship code, design
+          memes, or craft systems that scale — this is where you belong.
         </p>
 
         {/* What We Need */}
@@ -66,117 +67,33 @@ export default function JoinPage() {
           </h2>
           <ul className="list-disc pl-6 text-gray-300 space-y-2">
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-cyan-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 4h16v16H4z M8 8h8v8H8z"
-                />
-              </svg>
-              <strong>DevOps Engineers</strong> — People who understand CI/CD,
-              automation, and infrastructure, and want to bring those skills
-              into the on-chain space.
+              <strong>DevOps Engineers</strong> — experts in CI/CD, automation,
+              or observability who want to apply real DevOps principles to
+              decentralized ecosystems.
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-purple-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 7h18M3 12h18M3 17h18"
-                />
-              </svg>
-              <strong>Solana Developers</strong> — Builders familiar with Rust,
-              Anchor, or TypeScript SDKs who can extend our contracts, bots, and
-              integrations.
+              <strong>Solana Developers</strong> — builders fluent in Rust,
+              Anchor, and TypeScript SDKs to extend our smart programs, bots,
+              and telemetry tooling.
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-yellow-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 8v8l5 3V5l-5 3zM4 10v4h4l5 5V5l-5 5H4z"
-                />
-              </svg>
-              <strong>Marketing Experts</strong> — People who know how to grow
-              communities and launch crypto projects with strategy and
-              integrity.
+              <strong>Marketing & Growth Strategists</strong> — storytellers who
+              can grow communities and shape a sustainable ecosystem with data,
+              integrity, and authenticity.
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-pink-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 20h9M3 4v16a2 2 0 002 2h14a2 2 0 002-2V4"
-                />
-              </svg>
-              <strong>Copywriters</strong> — Writers who blend technical
-              precision with meme energy to craft compelling narratives.
+              <strong>Technical Copywriters</strong> — writers who can merge
+              engineering precision with meme-driven storytelling.
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-yellow-300 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 16h-1v-4h-1m4 0h-1v-4h-1m-4 0h-1v-4h-1"
-                />
-              </svg>
-              <strong>Strategic Thinkers</strong> — Builders and organizers who
-              see both the cultural and technical sides of Web3, and want to
-              shape a sustainable ecosystem around the{' '}
-              <strong>Ship-It Fund</strong> and open-source DevOps grants.
+              <strong>Strategic Builders</strong> — people who understand both
+              DevOps culture and tokenized ecosystems, helping guide the{' '}
+              <strong>Ship-It Fund</strong> toward long-term open-source impact.
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-green-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M12 12a4 4 0 100-8 4 4 0 000 8z"
-                />
-              </svg>
-              <strong>Community Builders</strong> — Moderators, organizers, and
-              contributors who can cultivate authentic, high-signal communities.
+              <strong>Community Builders</strong> — moderators, curators, and
+              contributors who can maintain high-signal, low-noise communities
+              rooted in trust and transparency.
             </li>
           </ul>
         </section>
@@ -198,13 +115,16 @@ export default function JoinPage() {
                 d="M12 8v4l3 3M4 12a8 8 0 1116 0 8 8 0 01-16 0z"
               />
             </svg>
-            Ship-It Fund & Open-Source Grants
+            The Ship-It Fund & Open-Source Grants
           </h2>
           <p className="text-gray-300">
-            A portion of creator rewards from Solana trading volume fuels the{' '}
-            <strong>Ship-It Fund</strong> — micro-grants for open-source DevOps
-            tools, maintainers, and contributors. Builders can propose, vote,
-            and help decide how these funds are distributed.
+            A portion of <strong>creator rewards</strong> from Pump.fun and
+            Raydium trading flows into the <strong>TreasuryOps wallet</strong>.
+            TreasuryOps periodically tops up the <strong>Ship-It Fund</strong> —
+            the DEVOPS grant treasury supporting open-source DevOps tools,
+            maintainers, and contributors. Grants are distributed monthly (or
+            rolled forward) as volume allows, with all disbursements
+            transparently logged on-chain.
           </p>
         </section>
 
@@ -228,78 +148,15 @@ export default function JoinPage() {
             What We’re Not Looking For
           </h2>
           <ul className="list-disc pl-6 text-gray-300 space-y-2">
+            <li>People chasing short-term profits or hype cycles.</li>
+            <li>Low-effort meme farming or airdrop hunters.</li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-yellow-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 9v3m0 4h.01M12 2a10 10 0 110 20 10 10 0 010-20z"
-                />
-              </svg>
-              People looking for a <strong>quick buck</strong> without
-              contributing real value.
+              Speculators focused solely on token price, not the DevOps culture
+              or the mission.
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-cyan-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              People chasing <strong>quick hype</strong> — DevOpsCoin is
-              building long-term infrastructure on Solana, not another
-              flash-launch memecoin.
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-green-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 17l6-6 4 4 8-8"
-                />
-              </svg>
-              Speculators focused only on token price, not the culture or the
-              mission.
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="inline w-5 h-5 text-red-400 align-text-bottom mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-              Anyone who doesn’t respect open collaboration, transparency, or
-              community-driven building.
+              Anyone unwilling to work transparently or collaborate in open
+              repositories and public discussions.
             </li>
           </ul>
         </section>
@@ -324,10 +181,9 @@ export default function JoinPage() {
             Ready to Join?
           </h2>
           <p className="text-gray-300 mb-4">
-            Whether you’re a DevOps engineer, designer, or creative marketer,
-            this is your chance to help shape a token that funds real
-            open-source work. Let’s bring DevOps culture to Solana — and ship it
-            together.
+            Whether you’re an engineer, creative, or strategist, you can help
+            shape a token that fuels real open-source DevOps innovation. Join
+            early. Build transparently. Ship constantly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -335,45 +191,14 @@ export default function JoinPage() {
               target="_blank"
               className="inline-block px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition flex items-center gap-2 justify-center"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M17.53 7.47a.75.75 0 00-1.06 0l-7 7a.75.75 0 001.06 1.06l7-7a.75.75 0 000-1.06z" />
-              </svg>
               Contact Us on X
             </a>
             <a
-              href="https://github.com/orgs/DevOpsCoin/discussions/47"
+              href="https://github.com/orgs/DevOpsCoin-LLC/discussions/47"
               target="_blank"
               className="inline-block px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition flex items-center gap-2 justify-center"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <rect
-                  x="4"
-                  y="4"
-                  width="16"
-                  height="16"
-                  rx="2"
-                  className="fill-gray-800"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 9h6v6H9z"
-                />
-              </svg>
-              Reply to our GitHub Recruitment Discussion
+              Join the GitHub Discussion
             </a>
           </div>
         </section>
@@ -382,28 +207,6 @@ export default function JoinPage() {
           href="/"
           className="px-4 py-2 bg-cyan-700 text-white rounded-lg font-semibold shadow hover:bg-cyan-400 transition inline-block mt-8 flex items-center gap-2 justify-center"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <rect
-              x="3"
-              y="4"
-              width="18"
-              height="16"
-              rx="2"
-              className="fill-gray-800"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M8 4v4m8-4v4M3 10h18"
-            />
-          </svg>
           Back to Home
         </Link>
       </main>

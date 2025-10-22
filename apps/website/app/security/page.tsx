@@ -15,34 +15,36 @@ export default function SecurityPage() {
 
       <p className="text-gray-300 leading-relaxed mb-8">
         DevOpsCoin welcomes responsible disclosure of security vulnerabilities.
-        We value collaboration with researchers and engineers who help keep our
-        ecosystem secure and transparent.
+        We value collaboration with engineers and researchers who help keep our
+        ecosystem secure, auditable, and transparent.
       </p>
 
       <h2 className="text-2xl font-bold text-cyan-400 mt-8 mb-3">Scope</h2>
       <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
         <li>
-          The DevOpsCoin dApp and website (<code>https://devopscoin.ai</code>)
+          The official website and dApp (<code>https://devopscoin.ai</code>)
         </li>
         <li>
-          Smart contracts and programs deployed under the{' '}
-          <strong>DevOpsCoin</strong> namespace on the{' '}
-          <strong>Solana blockchain</strong>
+          Smart contracts, Solana programs, and associated wallet logic under
+          the <strong>DevOpsCoin</strong> namespace
         </li>
-        <li>Official APIs, web services, and hosted domains</li>
+        <li>
+          APIs, hosted services, and GitHub automation under DevOpsCoin-LLC
+        </li>
       </ul>
 
       <p className="text-gray-400 mb-6">
-        <strong>Out of scope:</strong> third-party wallets, RPC nodes, pump.fun
-        infrastructure, exchanges, or issues unrelated to security (UI bugs,
-        text errors, or public <code>NEXT_PUBLIC_*</code> variables).
+        <strong>Out of scope:</strong> third-party exchanges, RPC nodes,
+        pump.fun infrastructure, or wallet providers not operated by DevOpsCoin.
+        Cosmetic issues, text typos, or public <code>NEXT_PUBLIC_*</code>{' '}
+        variables are also excluded.
       </p>
 
       <h2 className="text-2xl font-bold text-cyan-400 mt-8 mb-3">
         How to Report
       </h2>
       <ol className="list-decimal list-inside text-gray-300 space-y-2 mb-6">
-        <li>Do not post vulnerabilities publicly.</li>
+        <li>Do not publicly disclose vulnerabilities before coordination.</li>
         <li>
           Email:{' '}
           <a
@@ -53,31 +55,33 @@ export default function SecurityPage() {
           </a>
         </li>
         <li>
-          Or submit via:{' '}
+          Or submit privately through{' '}
           <a
-            href="https://devopscoin.ai/security"
-            className="text-cyan-400 underline"
+            href="https://github.com/DevOpsCoin-LLC/devopscoin/security/advisories"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-cyan-400 underline"
           >
-            devopscoin.ai/security
+            GitHub Security Advisories
           </a>
+          .
         </li>
       </ol>
 
       <p className="text-gray-300 mb-6">
-        Include a clear description, reproduction steps, impact summary, and any
-        suggested mitigations or patches.
+        Include a clear description, reproduction steps, estimated impact, and
+        suggested mitigation or patch. Anonymous reports are accepted but
+        credited only if identity is verified.
       </p>
 
       <h2 className="text-2xl font-bold text-cyan-400 mt-8 mb-3">
         Our Commitment
       </h2>
       <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
-        <li>Acknowledge reports within 48 hours</li>
-        <li>Validate and investigate findings</li>
-        <li>Provide an estimated resolution timeline</li>
-        <li>Credit researchers publicly (if desired)</li>
+        <li>Acknowledge valid reports within 48 hours</li>
+        <li>Investigate and confirm findings quickly</li>
+        <li>Provide estimated remediation or patch timelines</li>
+        <li>Credit researchers publicly (opt-in)</li>
         <li>No legal action for good-faith, policy-compliant research</li>
       </ul>
 
@@ -85,26 +89,26 @@ export default function SecurityPage() {
         Recognition & DEVOPS Grants
       </h2>
       <p className="text-gray-300 mb-4">
-        DevOpsCoin does not operate a traditional bug bounty program. Instead,
-        impactful disclosures and ecosystem improvements may qualify for
-        recognition through the <strong>DEVOPS Grants</strong> program or{' '}
-        <strong>Ship-It Fund</strong> rewards.
+        DevOpsCoin does not run a traditional bug bounty. Instead, meaningful
+        disclosures and technical improvements may receive recognition through
+        the <strong>DEVOPS Grants</strong> program or rewards from the{' '}
+        <strong>Ship-It Fund</strong>.
       </p>
       <p className="text-gray-300 mb-6">
-        The Ship-It Fund is bootstrapped with{' '}
-        <strong>5% of total supply</strong> (50 million DEVOPS) and sustained by
-        a portion of <strong>creator rewards</strong> from pump.fun trading
-        activity. These inflows are used to support open-source DevOps projects
-        and token health operations. In months where creator reward volume is
-        below threshold, open-source grants are <strong>deferred</strong> and
-        rolled forward to maintain fiscal transparency.
+        The Ship-It Fund is initially allocated{' '}
+        <strong>5 % of total supply (50 million DEVOPS)</strong> and sustained
+        by periodic top-ups from the <strong>TreasuryOps wallet</strong>.
+        Funding supports open-source DevOps tools, audits, and community
+        security contributions. In months where market activity is below
+        threshold, grants may be <strong>deferred and rolled forward</strong> to
+        maintain fiscal transparency.
       </p>
 
       <p className="text-gray-300 mb-6">
-        All grants, funding rounds, and ledger entries are published publicly in
+        All grants, transactions, and ledger entries are published publicly in
         the{' '}
         <a
-          href="https://github.com/DevOpsCoin/shipit-fund"
+          href="https://github.com/DevOpsCoin-LLC/shipit-fund"
           target="_blank"
           rel="noopener noreferrer"
           className="text-cyan-400 underline"
@@ -113,7 +117,7 @@ export default function SecurityPage() {
         </a>{' '}
         and its{' '}
         <a
-          href="https://github.com/DevOpsCoin/shipit-fund/tree/main/ledger"
+          href="https://github.com/DevOpsCoin-LLC/shipit-fund/tree/main/ledger"
           target="_blank"
           rel="noopener noreferrer"
           className="text-cyan-400 underline"
@@ -128,8 +132,8 @@ export default function SecurityPage() {
       </h2>
       <p className="text-gray-300 leading-relaxed mb-6">
         DevOpsCoin practices <strong>open security</strong> — merging DevOps
-        culture with blockchain transparency. All Solana programs are publicly
-        verified and auditable through{' '}
+        culture with blockchain transparency. All Solana programs are verified
+        and auditable via{' '}
         <a
           href="https://solscan.io"
           className="text-cyan-400 underline"
@@ -138,13 +142,15 @@ export default function SecurityPage() {
         >
           Solscan
         </a>
-        , and the dApp frontend is fully open-source for community review.
+        , and the dApp frontend is fully open-source for review. Security
+        patches and contract verifications are announced publicly in the
+        <code> #security-updates </code> channel and GitHub changelogs.
       </p>
 
       <p className="text-gray-400 italic text-sm border-t border-cyan-900 pt-6">
-        Smart contracts are immutable once deployed. Any upgradeable components
-        use time-locked governance and multi-sig controls to ensure security and
-        transparency.
+        All production contracts are non-upgradeable or secured by multisig
+        governance with 24-hour time-locks. Deployment keys are hardware-backed
+        and never reused across environments.
         <br />
         <span className="text-cyan-300">“Where pipelines meet protocols.”</span>
       </p>

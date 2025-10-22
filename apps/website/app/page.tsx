@@ -9,7 +9,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gray-900" />
           <img
             src="/home/hero.png"
-            alt="DevOps Coin Hero"
+            alt="DevOpsCoin Hero"
             className="absolute right-0 top-0 max-w-[50%] w-auto h-auto object-contain opacity-30 pointer-events-none select-none"
             aria-hidden="true"
           />
@@ -46,20 +46,20 @@ export default function HomePage() {
             ⚙️ Dev culture meets degen. 🚀 Pipelines meet moon missions.
           </p>
           <p className="text-gray-500 mb-6 uppercase text-sm tracking-wide">
-            Built by DevOps. Fueled by Memes.
+            Built by DevOps. Fueled by Transparency.
           </p>
 
           <p className="text-gray-300 mb-4">
-            <strong>$DEVOPS</strong> blends <strong>DevOps culture</strong> with
-            meme-driven growth — where pipelines, automation, and hacker energy
+            <strong>$DEVOPS</strong> merges <strong>DevOps culture</strong> with
+            meme-driven growth — where pipelines, automation, and builder energy
             meet crypto creativity.
           </p>
 
           <p className="text-gray-400 mb-6">
-            We're building a community of{' '}
-            <strong>engineers, builders, and open-source hackers</strong> who
-            understand both automation and culture. Together we’re proving that
-            DevOps can move markets — not just deployments.
+            We’re building a community of{' '}
+            <strong>engineers, open-source maintainers, and builders</strong>{' '}
+            who understand both automation and culture. Together we’re proving
+            that DevOps can move markets — not just deployments.
           </p>
 
           <div className="flex flex-wrap gap-3">
@@ -108,14 +108,16 @@ export default function HomePage() {
               d="M12 4v16m8-8H4"
             />
           </svg>
-          The Ship-It Fund — Fueling Builders & Sustainability
+          The Ship-It Fund — Fueling Builders
         </h2>
         <p className="text-gray-300 text-lg mb-6">
           The <strong>Ship-It Fund</strong> is a{' '}
-          <strong>dual-purpose wallet</strong> powering both open-source DevOps
-          innovation and the long-term health of the $DEVOPS ecosystem. It
-          supports grants, builder bounties, liquidity boosts, and cultural
-          initiatives — all transparently on-chain.
+          <strong>DEVOPS-denominated grant treasury</strong> dedicated to
+          funding open-source DevOps innovation. It issues monthly grants to
+          builders, toolmakers, and contributors — fully transparent on-chain.
+          The fund never sells DEVOPS; it’s replenished through
+          <strong> TreasuryOps-funded top-ups</strong> as creator rewards
+          accumulate.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
@@ -163,8 +165,8 @@ export default function HomePage() {
         <p className="text-gray-300 text-base mb-3">
           $DEVOPS follows DevOps principles —{' '}
           <strong>visibility, accountability, and automation</strong>. All smart
-          contracts and fund activity are verifiable on-chain, with open-source
-          code published after launch under the{' '}
+          contracts, fund movements, and grant transactions are verifiable
+          on-chain through the{' '}
           <a
             href="https://github.com/DevOpsCoin-LLC"
             target="_blank"
@@ -175,7 +177,7 @@ export default function HomePage() {
           organization.
         </p>
         <p className="text-gray-500 text-xs italic">
-          Transparency isn’t marketing — it’s engineering culture.
+          Transparency isn’t marketing — it’s infrastructure.
         </p>
       </section>
 
@@ -199,25 +201,29 @@ export default function HomePage() {
           Wallet Structure
         </h2>
         <p className="text-gray-300 text-base mb-3 text-left">
-          $DEVOPS maintains a simplified and transparent structure:
+          $DEVOPS maintains a transparent three-wallet model:
         </p>
         <ul className="text-gray-300 text-left list-disc pl-6 mb-3 space-y-1">
           <li>
-            <strong>Founder Vesting:</strong> 10% — time-locked with a 3-month
-            cliff and 20-month linear release.
+            <strong>Founder Vesting:</strong> 10 % — 3-month cliff and 20-month
+            linear release for long-term alignment.
           </li>
           <li>
-            <strong>Ship-It Fund:</strong> 20% — dual-purpose wallet for
-            open-source grants and ecosystem health.
+            <strong>Ship-It Fund:</strong> 5 % DEVOPS — grant treasury for
+            open-source builders, sustained through TreasuryOps top-ups.
           </li>
           <li>
-            <strong>Public Supply:</strong> 70% — circulating tokens for
-            community, builders, and liquidity.
+            <strong>TreasuryOps:</strong> SOL-based — receives creator rewards
+            and funds marketing, liquidity, and Ship-It replenishment.
+          </li>
+          <li>
+            <strong>Public Supply:</strong> 85 % — circulating tokens for
+            community ownership and Raydium liquidity.
           </li>
         </ul>
         <p className="text-gray-400 text-sm italic text-left">
           All wallets are public and verifiable on Solana explorers. Contract
-          ownership is renounced; no admin privileges remain. For complete
+          authority is renounced; no admin privileges remain. For complete
           tokenomics, see the{' '}
           <Link
             href="/whitepaper"

@@ -1,4 +1,4 @@
-// app/about/page.tsx - Updated for Solana relaunch
+// app/about/page.tsx — Updated for Solana Relaunch & Three-Wallet Model
 'use client';
 import Image from 'next/image';
 
@@ -44,16 +44,36 @@ export default function AboutPage() {
 
         <p className="text-gray-300 max-w-2xl mx-auto mb-6 leading-relaxed">
           DevOps engineer, system architect, and founder of{' '}
-          <strong>DevOpsCoin</strong>.<br />
+          <strong>DevOpsCoin ($DEVOPS)</strong>.<br />
           Operating under the pseudonym <strong>RootSignal</strong>, I build at
-          the intersection of automation, open-source, and on-chain culture —
-          where pipelines meet protocols and every deploy fuels the community.
+          the intersection of automation, open source, and on-chain culture —
+          where <strong>pipelines meet protocols</strong> and transparency is
+          infrastructure.
           <br />
           <br />
-          The project runs on the <strong>Solana blockchain</strong>, and a
-          small portion of creator rewards helps seed the{' '}
-          <strong>Ship-It Fund</strong> — micro-grants supporting open-source
-          DevOps tooling and contributors.
+          The project runs on the <strong>Solana blockchain</strong> and uses a{' '}
+          <strong>three-wallet model</strong> for sustainable transparency:
+          <br />
+          <br />
+          <ul className="text-left list-disc pl-8 text-gray-400 space-y-1">
+            <li>
+              <strong>Founder Vesting:</strong> 10% of supply, time-locked with
+              a 3-month cliff and 20-month linear release.
+            </li>
+            <li>
+              <strong>Ship-It Fund:</strong> 5% DEVOPS treasury dedicated to
+              open-source grants — never sells tokens.
+            </li>
+            <li>
+              <strong>TreasuryOps:</strong> SOL-based wallet for operations,
+              marketing, liquidity, and Ship-It top-ups.
+            </li>
+          </ul>
+          <br />
+          Creator rewards earned from <strong>pump.fun</strong> flow into
+          TreasuryOps, which periodically tops up the Ship-It Fund to keep
+          monthly open-source grants flowing — or rolling forward when volume
+          dips.
         </p>
 
         <a
@@ -91,7 +111,7 @@ export default function AboutPage() {
 
         <p className="text-gray-300 text-center mb-6">
           Connect with the DevOpsCoin community and follow project updates
-          across our official channels. We welcome builders, open-source
+          across our official channels. We welcome engineers, open-source
           maintainers, and DevOps practitioners to get involved early.
         </p>
 
@@ -158,17 +178,17 @@ export default function AboutPage() {
           DevOpsCoin is a transparent, community-driven project exploring how
           DevOps culture and open-source collaboration can extend onto the
           Solana blockchain. It is not a registered security or investment
-          instrument, and carries no financial guarantees or obligations.
+          instrument and carries no financial guarantees or obligations.
         </p>
 
         <p className="text-gray-400 mb-4 leading-relaxed">
-          Always verify official mint addresses and links published by the
-          DevOpsCoin team. Smart contracts are immutable once deployed, and all
-          activity occurs transparently on-chain.
+          Always verify official mint addresses and wallet links published by
+          the DevOpsCoin team. Smart contracts are immutable once deployed, and
+          all wallet activity is visible on-chain.
         </p>
 
         <p className="text-gray-400 italic text-sm">
-          © 2025 DevOpsCoin. Open-source under MIT License. <br />
+          © 2025 DevOpsCoin. Open source under MIT License. <br />
           Built where pipelines meet protocols.
         </p>
       </section>

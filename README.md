@@ -7,7 +7,7 @@
 ## Overview
 
 **DevOpsCoin ($DEVOPS)** merges _Dev culture with degen energy_ — a transparent, fixed-supply **Solana SPL token** that celebrates the builders who keep the internet running.  
-It funds open-source DevOps innovation through the **Ship-It / Operations Wallet**, sustained long-term by **creator rewards** earned from on-chain volume.
+It funds open-source DevOps innovation through a transparent two-wallet model designed for clarity, sustainability, and long-term community trust.
 
 > Transparency isn’t marketing — it’s infrastructure.
 
@@ -15,25 +15,37 @@ It funds open-source DevOps innovation through the **Ship-It / Operations Wallet
 
 ## Funding Model
 
-Unlike traditional tokens with embedded transaction fees, DevOpsCoin relies on **creator rewards** from Pump.fun and PumpSwap trading activity.  
-A portion of those creator rewards continuously replenishes the **Ship-It / Operations Wallet**, which supports:
+DevOpsCoin operates without embedded transaction taxes or hidden fees.  
+Instead, the ecosystem is powered by **creator rewards** earned from Pump.fun and PumpSwap trading activity.  
+Those rewards flow into two clearly defined wallets with distinct purposes:
 
-- Open-source DevOps project grants
-- Ecosystem growth and liquidity operations
-- Transparency tooling and on-chain reporting
+### **1. Ship-It Fund Wallet (5% DEVOPS)**
 
-The fund is **bootstrapped with 5% (50M $DEVOPS)** plus **≈ $2,000 in SOL** to provide early operational liquidity.  
-No additional token fees or taxes are imposed.
+- Dedicated solely to open-source DevOps grants and ecosystem support.  
+- Issues **monthly grants** as long as trading volume supports it.  
+- If volume falls short, the grant **rolls over** to the following month.  
+- Periodically **topped up** from the TreasuryOps wallet to maintain reserves.  
+- **Never sells DEVOPS** — it only distributes tokens as grants.
+
+### **2. TreasuryOps Wallet (SOL-based)**
+
+- Holds SOL from redeemed creator rewards.  
+- Funds operations, marketing, liquidity management, and buybacks.  
+- Replenishes the Ship-It Fund when reserves run low.  
+- Acts as the operational engine sustaining the ecosystem.
+
+This structure ensures grants remain purely token-based while financial operations remain strictly in SOL — maintaining clean accounting, tax transparency, and a simple audit trail.
 
 ---
 
 ## Token Allocation
 
-| Wallet                          | Allocation | Notes                                                    |
-| ------------------------------- | ---------- | -------------------------------------------------------- |
-| **Founder Vesting Wallet**      | **10 %**   | 3-month cliff, 5 % monthly linear release (20 months)    |
-| **Ship-It / Operations Wallet** | **5 %**    | Open-source grants, liquidity ops, creator reward cycles |
-| **Public / Circulating Supply** | **85 %**   | Public ownership and Raydium liquidity                   |
+| Wallet                   | Allocation | Notes                                                    |
+| ------------------------- | ---------- | -------------------------------------------------------- |
+| **Founder Vesting Wallet** | **10 %**   | 3-month cliff, 5 % monthly linear release (20 months)    |
+| **Ship-It Fund Wallet**    | **5 %**    | Open-source DevOps grants (monthly with rollover)        |
+| **TreasuryOps Wallet**     | **—**      | Funded dynamically in SOL from creator rewards           |
+| **Public / Circulating**   | **85 %**   | Public ownership and Raydium liquidity                   |
 
 > All wallet addresses and activity are publicly viewable on Solana explorers and mirrored to the transparency ledger.
 
@@ -79,13 +91,14 @@ Visit [http://localhost:3000](http://localhost:3000) to preview the site.
 
 ## Transparency & Verification
 
-| Component                | Verification                                                                             |
-| ------------------------ | ---------------------------------------------------------------------------------------- |
-| **Token Contract**       | Verified SPL deployment (Solana mainnet)                                                 |
-| **Founder Vesting**      | On-chain linear release (immutable contract)                                             |
-| **Ship-It / Operations** | [Transparency Ledger →](https://github.com/DevOpsCoin-LLC/shipit-fund) (tracked monthly) |
+| Component            | Verification                                                                             |
+| -------------------- | ---------------------------------------------------------------------------------------- |
+| **Token Contract**   | Verified SPL deployment (Solana mainnet)                                                 |
+| **Founder Vesting**  | On-chain linear release (immutable contract)                                             |
+| **Ship-It Fund**     | [Transparency Ledger →](https://github.com/DevOpsCoin-LLC/shipit-fund) (tracked monthly) |
+| **TreasuryOps**      | On-chain SOL inflow/outflow logs (auditable)                                             |
 
-Ledger verification workflows run automatically to ensure accuracy of all Ship-It distributions and fund inflows.
+Automated ledger workflows validate every grant, transfer, and top-up — ensuring accuracy and full on-chain accountability.
 
 ---
 
@@ -95,8 +108,9 @@ Full project documentation lives in [`/docs`](./docs):
 
 - [Tokenomics](./docs/TOKENOMICS.md)
 - [Wallet Structure](./docs/WALLET_STRUCTURE.md)
-- [Founder Vesting](./docs/FOUNDER_VESTING.md)
+- [Treasury Refill Policy](./docs/TREASURY_REFILL_POLICY.md)
 - [Ship-It Fund Policy](./docs/SHIPIT_FUND.md)
+- [Founder Vesting](./docs/FOUNDER_VESTING.md)
 
 ---
 

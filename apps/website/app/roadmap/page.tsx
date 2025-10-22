@@ -37,11 +37,18 @@ export default function RoadmapPage() {
         </h1>
 
         <p className="text-gray-300 mb-6 text-lg">
-          <strong>$DEVOPS</strong> isn’t just another memecoin — it’s built like
-          a real DevOps product. Every phase is structured, versioned, and
-          shipped with the same discipline used in production software. Our
-          roadmap lives publicly on GitHub, so anyone can follow progress, open
-          issues, or contribute.
+          <strong>$DEVOPS</strong> isn’t another flash-launch token — it’s
+          structured like a real DevOps product. Every phase follows the same
+          versioned, incremental discipline used in production engineering.
+          Progress is tracked publicly on{' '}
+          <a
+            href="https://github.com/orgs/DevOpsCoin-LLC/projects/2"
+            target="_blank"
+            className="text-cyan-400 hover:underline"
+          >
+            GitHub Projects
+          </a>
+          , so anyone can follow commits, raise issues, or contribute.
         </p>
 
         {/* How We're Building */}
@@ -64,95 +71,26 @@ export default function RoadmapPage() {
             How We Build
           </h2>
           <ul className="list-disc pl-6 space-y-2 text-gray-300">
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-cyan-400 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              Built on <strong>Solana</strong> for speed, accessibility, and
-              community-first growth.
+            <li>
+              Built on <strong>Solana</strong> for scalability, low fees, and
+              transparent on-chain visibility.
             </li>
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-cyan-400 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4"
-                />
-              </svg>
-              Roadmap managed transparently on GitHub Projects — visible to the
-              entire community.
+            <li>
+              <strong>Roadmap managed on GitHub</strong> — community can propose
+              milestones, PRs, or grants.
             </li>
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-cyan-400 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3"
-                />
-              </svg>
-              Iterative approach: Concept → Testnet → Launch → Fund Activation →
-              Ecosystem Growth.
+            <li>
+              <strong>Iterative lifecycle:</strong> Concept → Testnet → Launch →
+              Fund Activation → Governance.
             </li>
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-cyan-400 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l2-2m0 0l7 7 7-7m-9 9V5"
-                />
-              </svg>
-              Tasks move through plan → build → test → ship — just like a real
-              CI/CD pipeline.
+            <li>
+              <strong>CI/CD-inspired delivery:</strong> plan → build → test →
+              ship → measure → iterate.
             </li>
-            <li className="flex items-start gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5 text-cyan-400 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
-              Open-source ethos: every milestone evolves through community input
-              and Ship-It Fund support.
+            <li>
+              <strong>Ship-It Fund</strong> and <strong>TreasuryOps</strong>{' '}
+              wallets operate transparently, with periodic reporting and
+              verifiable transactions.
             </li>
           </ul>
         </section>
@@ -183,10 +121,10 @@ export default function RoadmapPage() {
                 Phase 1 — Foundation (Q3–Q4 2025)
               </h3>
               <p>
-                Brand identity, token creation, and early community formation on{' '}
-                <strong>Solana</strong>. Pump.fun fair-launch established
-                initial liquidity and community discovery. Internal builder
-                recruitment and early contributor alignment.
+                Brand identity, contract creation, and initial Solana launch via{' '}
+                <strong>Pump.fun</strong>. Establish base liquidity, community
+                wallet transparency, and founder vesting schedule. Begin
+                internal builder onboarding and repo setup.
               </p>
             </div>
 
@@ -195,9 +133,10 @@ export default function RoadmapPage() {
                 Phase 2 — Stealth Builder Period (Late 2025)
               </h3>
               <p>
-                Private contributor onboarding, website v2 rollout, and Ship-It
-                Fund wallet setup. Focused content and code polishing before
-                public amplification.
+                Private contributor recruitment and alignment. Deployment of the{' '}
+                <strong>TreasuryOps</strong> and <strong>Ship-It Fund</strong>{' '}
+                wallets. Website v2 release with live buy/swap interface and
+                transparency dashboard prototype.
               </p>
             </div>
 
@@ -206,34 +145,35 @@ export default function RoadmapPage() {
                 Phase 3 — Public Launch (January 2026)
               </h3>
               <p>
-                Token graduates to open liquidity pools on Solana DEXs (e.g.,
-                Jupiter, Raydium). Website buy module transitions from Pump.fun
-                embed to full swap widget integration. Broader marketing, social
-                campaigns, and ecosystem outreach.
+                Token graduates from Pump.fun to Solana DEXs (
+                <strong>Raydium</strong>, <strong>Jupiter</strong>). Public
+                roadmap and contributor programs go live. Ecosystem partnerships
+                and awareness campaigns begin.
               </p>
             </div>
 
             <div>
               <h3 className="text-cyan-400 font-semibold text-lg mb-1">
-                Phase 4 — Ship-It Fund Activation
+                Phase 4 — Ship-It Fund Activation (Q1 2026)
               </h3>
               <p>
-                The Ship-It Fund goes live — a small percentage of trading
-                volume and donations fund open-source DevOps tools. Community
-                can nominate and vote on supported projects. Transparency
-                dashboards published on-chain and via GitHub.
+                The <strong>Ship-It Fund</strong> officially launches, issuing
+                its first open-source micro-grants. TreasuryOps wallet begins
+                periodic refills based on trading volume. Public dashboards
+                display wallet flow and funding history.
               </p>
             </div>
 
             <div>
               <h3 className="text-cyan-400 font-semibold text-lg mb-1">
-                Phase 5 — Growth & Integration (Mid 2026+)
+                Phase 5 — Growth & Governance (Mid–Late 2026)
               </h3>
               <p>
-                NFT-based “Ship-It Badges” for contributors, community grants,
-                and on-chain reputation. Potential DAO governance for fund
-                allocation. Continuous tooling, dashboards, and automation to
-                strengthen the DevOpsCoin ecosystem.
+                NFT-based <strong>Ship-It Badges</strong> debut as reputation
+                and reward tokens. Community proposal system and lightweight
+                governance model tested. Future cross-chain expansion to{' '}
+                <strong>BNB Smart Chain</strong> evaluated for liquidity scaling
+                and additional grant channels.
               </p>
             </div>
           </div>
@@ -271,8 +211,8 @@ export default function RoadmapPage() {
             View the Live Roadmap on GitHub
           </a>
           <p className="text-gray-500 text-sm mt-4 italic">
-            Updated October 2025 — Solana relaunch, Pump.fun integration, and
-            Ship-It Fund rollout.
+            Updated October 2025 · Solana mainline build · Ship-It Fund +
+            TreasuryOps rollout
           </p>
         </div>
 

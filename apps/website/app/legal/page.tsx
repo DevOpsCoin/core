@@ -43,9 +43,10 @@ export default function LegalPage() {
         <p>Entity ID / Record #: 0008053527</p>
         <p>Effective Date: October 3, 2025</p>
         <p className="mt-2">
-          DevOpsCoin LLC is a legally registered business entity under the New
-          Mexico Limited Liability Company Act (Chapter 53, Article 19, NMSA
-          1978).
+          DevOpsCoin LLC is a registered business entity under the New Mexico
+          Limited Liability Company Act (Chapter 53, Article 19, NMSA 1978). It
+          operates transparently as the organizing entity behind the
+          <strong> $DEVOPS</strong> token and the <strong>Ship-It Fund</strong>.
         </p>
       </section>
 
@@ -56,9 +57,9 @@ export default function LegalPage() {
         </h2>
         <p className="text-gray-300 mb-4">
           The official Certificate of Organization issued by the New Mexico
-          Secretary of State is available for verification below. All materials
-          in the <code>/assets</code> directory are official documents hosted
-          directly by DevOpsCoin LLC.
+          Secretary of State is available below. All documents within the{' '}
+          <code>/assets</code> directory are authentic files hosted directly by
+          DevOpsCoin LLC.
         </p>
         <a
           href="/assets/devopscoin_llc.pdf"
@@ -89,32 +90,38 @@ export default function LegalPage() {
           Legal Disclaimers
         </h2>
         <p>
-          The information provided on this website, including any linked
-          documents, is for informational purposes only and does not constitute
-          financial, investment, legal, or tax advice. DevOpsCoin LLC makes no
-          representations or warranties of any kind, express or implied,
-          regarding the accuracy or completeness of this information.
+          The information provided on this website and in linked documentation
+          is for informational and educational purposes only. Nothing contained
+          herein constitutes financial, investment, legal, or tax advice.
         </p>
         <p className="mt-3">
-          The DevOpsCoin ($DEVOPS) token does not represent equity, ownership,
-          voting rights, or financial interest in DevOpsCoin LLC or any
-          affiliated entity. Tokens are not investment contracts and should not
-          be considered securities. Participation in the $DEVOPS ecosystem is
-          entirely at your own risk.
+          The <strong>$DEVOPS</strong> token is a fixed-supply Solana SPL token.
+          It does not represent equity, ownership, voting rights, profit-sharing
+          arrangements, or any financial interest in DevOpsCoin LLC or its
+          affiliates. Tokens are a utility and cultural asset used to support
+          the open-source <strong>Ship-It Fund</strong>.
+        </p>
+        <p className="mt-3">
+          The <strong>Ship-It Fund</strong> and <strong>TreasuryOps</strong>{' '}
+          wallets are operational accounts used to distribute transparent
+          community grants, marketing resources, and liquidity support. They are
+          not custodial, pooled investment vehicles, or yield-bearing accounts.
         </p>
         <p className="mt-3">
           DevOpsCoin LLC is not a financial institution, broker, or investment
-          advisor. No regulatory body has reviewed or approved any content on
-          this site or related documentation.
+          advisor. No regulatory agency has reviewed or endorsed any part of
+          this project or documentation.
         </p>
         <p className="mt-3">
-          By accessing or using this website, you agree to the terms outlined in
-          this Legal & Disclosures page.
+          By using this website or interacting with the $DEVOPS token, you agree
+          to these terms and acknowledge that blockchain transactions are
+          immutable and non-reversible.
         </p>
         <p className="mt-3 italic text-yellow-300">
-          Any previous token deployments on Solana were experimental and are no
-          longer active. The official $DEVOPS token will launch on the BNB Smart
-          Chain in January 2026.
+          The official network for $DEVOPS is currently{' '}
+          <strong>Solana (SPL)</strong>. A future cross-chain deployment to{' '}
+          <strong>BNB Smart Chain</strong> may occur for liquidity expansion,
+          but the Solana contract remains the primary and authoritative version.
         </p>
       </section>
 
@@ -124,10 +131,10 @@ export default function LegalPage() {
           Trademarks & Intellectual Property
         </h2>
         <p>
-          "$DEVOPS," "DevOpsCoin," and associated brand marks, logos, and
-          taglines (including “Dev Culture Meets Degen” and “Ship It To The
-          Moon”) are trademarks of DevOpsCoin LLC. Unauthorized use,
-          reproduction, or misrepresentation of these materials is prohibited.
+          “$DEVOPS,” “DevOpsCoin,” “Ship-It Fund,” and associated logos,
+          wordmarks, and taglines (“Dev Culture Meets Degen,” “Where Pipelines
+          Meet Protocols”) are trademarks of DevOpsCoin LLC. Unauthorized use or
+          misrepresentation of these materials is prohibited.
         </p>
       </section>
 
@@ -137,23 +144,30 @@ export default function LegalPage() {
           Contact & Verification
         </h2>
         <p>
-          To verify any official materials, filings, or third-party listings,
-          please contact DevOpsCoin LLC through our official GitHub organization
-          or via our{' '}
+          To verify any official materials or wallet addresses, contact
+          DevOpsCoin LLC via our{' '}
           <a
             href="https://x.com/DevOpsCoin"
             target="_blank"
             className="text-cyan-400 hover:underline"
           >
-            X account
-          </a>
-          . You may also open a verification issue at
+            official X account
+          </a>{' '}
+          or through our{' '}
           <a
-            href="https://github.com/DevOpsCoin/DevOpsCoin/issues"
+            href="https://github.com/DevOpsCoin-LLC"
             target="_blank"
             className="text-cyan-400 hover:underline"
           >
-            github.com/DevOpsCoin/DevOpsCoin
+            GitHub organization
+          </a>
+          . You may also open a verification issue at{' '}
+          <a
+            href="https://github.com/DevOpsCoin-LLC/devopscoin/issues"
+            target="_blank"
+            className="text-cyan-400 hover:underline"
+          >
+            github.com/DevOpsCoin-LLC/devopscoin
           </a>
           .
         </p>

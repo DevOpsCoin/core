@@ -45,7 +45,7 @@ export default function DevOpsBuyCard() {
           <p className="text-gray-400 mb-4 text-sm leading-relaxed">
             $DEVOPS has graduated from Pump.fun and is now trading on{' '}
             <span className="text-cyan-400 font-semibold">Raydium</span>. You
-            can buy or swap directly using the Jupiter interface below.
+            can buy or swap directly using the embedded Jupiter interface below.
           </p>
           <div className="h-[460px] overflow-hidden rounded-xl border border-cyan-800 shadow-inner">
             <iframe
@@ -61,12 +61,17 @@ export default function DevOpsBuyCard() {
           <p className="text-gray-400 mb-5 text-sm leading-relaxed">
             $DEVOPS is currently live on{' '}
             <span className="text-cyan-400 font-semibold">Pump.fun</span> during
-            its initial launch phase. A small portion of creator rewards from
-            early trading activity helps seed the{' '}
-            <span className="text-cyan-400 font-semibold">Ship-It Fund</span> —
-            a grant pool supporting open-source DevOps tools. Once $DEVOPS
-            graduates to Raydium, this page will automatically update with a
-            direct swap interface.
+            its launch phase. Trading volume from early supporters generates{' '}
+            <strong>creator rewards</strong> that flow into the{' '}
+            <strong>TreasuryOps wallet</strong> — the SOL-based operations fund
+            that periodically tops up the{' '}
+            <span className="text-cyan-400 font-semibold">Ship-It Fund</span>.
+            <br />
+            <br />
+            The Ship-It Fund distributes{' '}
+            <strong>monthly open-source grants</strong> to DevOps builders and
+            contributors. If volume dips, grants simply roll over to the next
+            active month.
           </p>
           <a
             href={PUMPFUN_URL}

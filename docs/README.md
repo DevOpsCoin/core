@@ -8,11 +8,12 @@ This repository is the single source of truth for everything related to **DevOps
 
 Defines how the $DEVOPS token functions — its supply, wallets, vesting, and fee structure.
 
+- [Branding Identity](./token/BRANDING_IDENTITY.md)
+- [Creator Rewards](./token/CREATOR_REWARDS.md)
+- [Founder Vesting](./token/FOUNDER_VESTING.md)
+- [ShipIt Fund](./token/SHIPIT_FUND.md)
 - [Tokenomics](./token/TOKENOMICS.md)
 - [Wallet Structure](./token/WALLET_STRUCTURE.md)
-- [Founder Vesting](./token/FOUNDER_VESTING.md)
-- [Fees Cheatsheet](./token/FEES_CHEATSHEET.md)
-- [Branding Identity](./token/BRANDING_IDENTITY.md)
 
 ---
 
@@ -20,10 +21,10 @@ Defines how the $DEVOPS token functions — its supply, wallets, vesting, and fe
 
 Outlines how DevOpsCoin LLC operates — governance, transparency, and contributor practices.
 
+- [Internal Contributing Standards](./operations/CONTRIBUTING_INTERNAL.md)
+- [Development](./operations/DEVELOPMENT.md)
 - [Governance](./operations/GOVERNANCE.md)
 - [Transparency Policy](./operations/TRANSPARENCY.md)
-- [Development Guide](./operations/DEVELOPMENT.md)
-- [Internal Contributing Standards](./operations/CONTRIBUTING_INTERNAL.md)
 
 ---
 

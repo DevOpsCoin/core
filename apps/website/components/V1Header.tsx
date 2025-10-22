@@ -41,7 +41,7 @@ export default function V1Header() {
         className="max-w-4xl mx-auto mt-4 mb-2 p-4 bg-cyan-900/30 border border-cyan-700 text-cyan-100 rounded-lg text-center shadow-inner backdrop-blur-sm"
       >
         <p className="font-semibold text-lg mb-1">
-          🚀 <span className="text-cyan-300">$DEVOPS</span> — Relaunching on{' '}
+          <span className="text-cyan-300">$DEVOPS</span> — Relaunching on{' '}
           <strong className="text-cyan-200">Solana Q1 2026</strong>
         </p>
         <div className="mt-2">
@@ -95,7 +95,7 @@ export default function V1Header() {
     </header>
   );
 
-  // ✅ Mobile Navigation
+  // Mobile Navigation
   function MobileNav() {
     const [open, setOpen] = useState(false);
     return (
@@ -189,7 +189,7 @@ export default function V1Header() {
                   Join
                 </Link>
 
-                {/* Investors block (optional) */}
+                {/* Investors Section */}
                 <div className="w-full mt-2 p-3 rounded-xl border border-cyan-700/40 bg-gradient-to-r from-cyan-900 to-cyan-800 shadow-lg">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-cyan-100 font-bold">Investors</span>

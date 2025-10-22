@@ -1,5 +1,3 @@
-# FOUNDER_VESTING.md
-
 # Founder Vesting Schedule
 
 **Token Name:** DevOpsCoin  
@@ -79,9 +77,3 @@ fn claim(ctx: Context<Claim>) -> Result<()> {
 - **Transparent:** Vesting contract code and deployment address will be published publicly.
 - **Trustless:** Only the founder wallet may claim vested tokens; no admin control exists.
 - **Aligned:** Vesting ensures the founder’s incentives are tied to long-term community growth and token health.
-
----
-
-**Next:**  
-➡ [Tokenomics →](./TOKENOMICS.md)  
-➡ [Governance →](./GOVERNANCE.md)
