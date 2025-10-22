@@ -1,8 +1,0 @@
-{
-  "build": {
-    "env": {
-      "PNPM_VERSION": "9.12.3"
-    }
-  },
-  "installCommand": "corepack enable && pnpm install"
-}
