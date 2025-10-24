@@ -119,12 +119,21 @@ export default function JoinPage() {
             The Ship-It Fund & Open-Source Grants
           </h2>
           <p className="text-gray-300">
-            A portion of <strong>creator rewards</strong> from Pump.fun and
-            Raydium trading flows into the <strong>TreasuryOps wallet</strong>.
-            TreasuryOps periodically tops up the <strong>Ship-It Fund</strong> —
-            the DEVOPS grant treasury supporting open-source tools, maintainers,
-            and contributors. Grants are distributed monthly (or rolled forward)
-            as volume allows, with all disbursements transparently logged
+            The <strong>Ship-It Fund</strong> is a 5% bootstrap allocation of
+            DEVOPS reserved for open-source grants and DevOps tooling. After
+            launch, its balance becomes variable — sustained through periodic
+            top-ups from the <strong>TreasuryOps wallet</strong>.
+            <br />
+            <br />
+            TreasuryOps is a SOL-based operations fund initially seeded with 2%
+            DEVOPS and SOL for liquidity, marketing, and operations. It receives
+            ongoing inflows from <strong>creator rewards</strong> — 50% are
+            retained to fund operations and Ship-It grants, while 50% are
+            withdrawn for business operations.
+            <br />
+            <br />
+            Ship-It grants are distributed monthly (or rolled forward) depending
+            on trading volume, with all disbursements transparently logged
             on-chain.
           </p>
         </section>

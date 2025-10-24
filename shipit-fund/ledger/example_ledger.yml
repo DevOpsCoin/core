@@ -1,0 +1,69 @@
+# Ship-It Fund Ledger — Q4 2025
+#
+# All approved Ship-It Fund grants and disbursements are logged here.
+# Each record is time-stamped, reviewer-signed, and linked to an on-chain Solana transaction once executed.
+#
+# Status values:
+#   - pending: approved but not yet disbursed
+#   - complete: transaction executed and verified
+#   - rejected: proposal reviewed but not funded
+#
+# All entries are immutable once marked "complete."
+
+# example_ledger.yml
+# Template showing format and expected fields for future Ship-It Fund ledger entries.
+# This file is excluded from automated verification.
+
+meta:
+  quarter: 'YYYYQX'
+  fund_wallet: 'ShipItFundPublicKey'
+  reviewer: 'RootSignal'
+  network: 'solana-devnet'
+
+---
+meta:
+  period: 'Q4 2025'
+  network: 'Solana Mainnet'
+  fund_wallet: 'to_be_announced_post_deployment'
+  reviewed_by: 'RootSignal'
+  generated_on: '2025-10-19'
+  version: '1.0'
+---
+grants:
+  - project: 'Example Project — Pipeline Generator'
+    repo: 'https://github.com/example/pipeline-generator'
+    description: 'CLI utility that auto-generates GitHub Actions pipelines for multiple languages.'
+    applicant: '@exampledev'
+    amount: 12_500
+    token: 'DEVOPS'
+    wallet: 'To be filled by grantee'
+    tx_hash: null
+    status: 'pending'
+    approved_on: '2025-10-19'
+    reviewed_by: 'RootSignal'
+    notes: 'Initial batch grant — awaiting Solana program deployment.'
+
+  - project: 'CI/CD Dashboard'
+    repo: 'https://github.com/example/cicd-dashboard'
+    description: 'Web dashboard that visualizes pipeline runs, build times, and release metrics from multiple CI providers.'
+    applicant: '@buildbot'
+    amount: 8_000
+    token: 'DEVOPS'
+    wallet: 'To be filled by grantee'
+    tx_hash: null
+    status: 'pending'
+    approved_on: '2025-10-19'
+    reviewed_by: 'RootSignal'
+    notes: 'Selected for Q4 grant pilot — pending Solana distribution script.'
+---
+summary:
+  total_projects: 2
+  total_allocated: 20_500
+  total_disbursed: 0
+  remaining_balance: 'TBD — depends on Ship-It Fund wallet state'
+---
+signoff:
+  signed_by: 'RootSignal'
+  role: 'Maintainer / DevOpsCoin LLC'
+  signature_hash: 'to_be_generated_after_tx' # (use SHA256 of ledger after commit for proof of integrity)
+

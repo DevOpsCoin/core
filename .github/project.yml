@@ -1,0 +1,57 @@
+# .github/project.yml
+# DevOpsCoin — GitHub Project Automation
+# Auto-add new issues to roadmap project and sync state transitions.
+
+version: 1
+project:
+  # 👇 Change this to your actual project name or ID (from URL)
+  name: 'Core Roadmap'
+
+  # Automatically add issues or PRs to this project
+  auto_add:
+    issues: true
+    pull_requests: true
+
+  # Column mapping — matches your roadmap columns
+  columns:
+    - name: 'Todo'
+      triggers:
+        - event: issue_opened
+        - event: reopened
+    - name: 'In Progress'
+      triggers:
+        - event: issue_assigned
+        - event: labeled
+          labels: ['in-progress']
+    - name: 'Review'
+      triggers:
+        - event: pull_request_opened
+        - event: labeled
+          labels: ['review']
+    - name: 'Done'
+      triggers:
+        - event: issue_closed
+        - event: pull_request_closed
+
+  # Optional: exclude housekeeping labels
+  exclude_labels:
+    - question
+    - wontfix
+    - duplicate
+    - invalid
+    - meta
+
+  # Optional: automatically close related issues when PR merged
+  auto_close:
+    pull_requests: true
+
+  # Optional: maintain label sync when issue moves columns
+  label_sync:
+    Todo: ['todo']
+    In Progress: ['in-progress']
+    Review: ['review']
+    Done: ['done']
+
+  # Optional automation for milestone completion
+  milestones:
+    auto_complete: true

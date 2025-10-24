@@ -56,11 +56,18 @@ export default function HowToBuyPage() {
         </p>
         <p className="text-gray-400 text-sm">
           Each trade contributes to the <strong>TreasuryOps wallet</strong> via{' '}
-          <strong>creator rewards</strong>. TreasuryOps (SOL) funds project
-          operations, liquidity, and periodic top-ups of the{' '}
-          <span className="text-cyan-400 font-semibold">Ship-It Fund</span> —
-          the DEVOPS grant treasury supporting open-source builders and
-          community contributors.
+          <strong>creator rewards</strong>. TreasuryOps is a SOL-based
+          operations fund initially bootstrapped with 2% DEVOPS and SOL for
+          airdrops, marketing, and liquidity. It does not hold $DEVOPS long-term
+          — tokens only accumulate later through <strong>buybacks</strong> or{' '}
+          <strong>community purchases</strong>.
+          <br />
+          <br />
+          TreasuryOps supports ongoing operations and periodic top-ups of the{' '}
+          <span className="text-cyan-400 font-semibold">Ship-It Fund</span> — a
+          transparent 5% bootstrap pool dedicated to open-source builders and
+          contributors. The Ship-It Fund’s balance can vary post-launch based on
+          grants issued and TreasuryOps refills.
         </p>
       </div>
 
@@ -189,10 +196,10 @@ export default function HowToBuyPage() {
             </h3>
             <p>
               Creator rewards from trading volume are collected in SOL within
-              the TreasuryOps wallet. TreasuryOps funds operations and provides
-              top-ups to the Ship-It Fund, which issues verified monthly grants
-              to open-source builders and contributors who keep the ecosystem
-              growing.
+              the TreasuryOps wallet. 50% are retained to fund operations and
+              Ship-It top-ups, while 50% are withdrawn for business operations.
+              The Ship-It Fund issues transparent monthly grants to open-source
+              builders, developers, and contributors.
             </p>
           </div>
         </div>

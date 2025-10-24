@@ -136,8 +136,11 @@ export default function RoadmapPage() {
               <p>
                 Private contributor recruitment and alignment. Deployment of the{' '}
                 <strong>TreasuryOps</strong> and <strong>Ship-It Fund</strong>{' '}
-                wallets. Website v2 release with live buy/swap interface and
-                transparency dashboard prototype.
+                wallets. TreasuryOps is a SOL-based wallet bootstrapped with 2%
+                DEVOPS and SOL for early operations, liquidity, and marketing.
+                The Ship-It Fund begins with a 5% DEVOPS bootstrap allocation,
+                remaining variable post-launch based on TreasuryOps top-ups and
+                monthly grant activity.
               </p>
             </div>
 
@@ -160,8 +163,9 @@ export default function RoadmapPage() {
               <p>
                 The <strong>Ship-It Fund</strong> officially launches, issuing
                 its first open-source micro-grants. TreasuryOps wallet begins
-                periodic refills based on trading volume. Public dashboards
-                display wallet flow and funding history.
+                periodic refills based on trading volume, using 50% of creator
+                rewards to sustain Ship-It grants and operations. Public
+                dashboards display wallet flow and funding history.
               </p>
             </div>
 

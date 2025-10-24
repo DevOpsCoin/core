@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import MainContent from '../components/MainContent';
@@ -85,6 +86,44 @@ export default function LegalPage() {
             </svg>
             View DevOpsCoin LLC Certificate (PDF)
           </a>
+        </section>
+
+        {/* Creator Rewards Policy */}
+        <section className="mt-10 text-sm text-gray-400 border-t border-gray-700 pt-4 leading-relaxed">
+          <h2 className="text-lg font-semibold text-cyan-400 mb-2">
+            Creator Reward Allocation & Adjustment Policy
+          </h2>
+          <p>
+            Creator rewards generated from trading activity are divided between
+            the <strong>TreasuryOps wallet</strong> (operations, marketing,
+            liquidity) and the <strong>Ship-It Fund</strong> (open-source grants
+            and community support). The current standard allocation is a
+            <strong> 50 / 50 split</strong>.
+          </p>
+          <p className="mt-3">
+            To ensure financial sustainability while maintaining transparency,
+            the allocation may only be adjusted within a defined range of{' '}
+            <strong>no less than 40% and no more than 60%</strong> to either
+            side. Any change outside this range is prohibited without public
+            governance approval.
+          </p>
+          <p className="mt-3">
+            All adjustments, along with justification and effective date, will
+            be documented in the public{' '}
+            <a
+              href="https://github.com/DevOpsCoin-LLC/treasuryops-ledger"
+              target="_blank"
+              className="text-cyan-400 underline"
+            >
+              TreasuryOps ledger
+            </a>{' '}
+            prior to implementation.
+          </p>
+          <p className="mt-3 italic text-gray-500">
+            This policy provides limited operational flexibility while ensuring
+            consistent funding for open-source grants, without altering token
+            supply or vesting mechanics.
+          </p>
         </section>
 
         {/* Disclaimers */}

@@ -21,18 +21,23 @@ All market, buyback, and operational activity is handled separately by the **Tre
 Funding activity depends on trading volume.  
 If volume or creator rewards are low in a given month, grant disbursements are **deferred and rolled forward** to the next active period — ensuring long-term sustainability without forced selling or dilution.
 
+> **Creator Reward Context:**  
+> TreasuryOps receives roughly **50 % of creator rewards** in SOL to fund operations and Ship-It top-ups.  
+> The remaining 50 % supports DevOpsCoin LLC operations and development, ensuring both ecosystem and business sustainability.  
+> Any variation (±10 %) is disclosed monthly in the transparency ledger.
+
 ---
 
 ## 📊 Transparency
 
 Every Ship-It Fund disbursement is **publicly logged and verifiable**.
 
-| Channel                 | Purpose                                                                                                                   |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Ledger**              | All allocations recorded in YAML under [`/ledger/`](https://github.com/DevOpsCoin/shipit-fund/tree/main/ledger)           |
-| **Verification Script** | [`verify-ledger.sh`](https://github.com/DevOpsCoin/shipit-fund/blob/main/verify-ledger.sh) validates hashes and integrity |
-| **Project Board**       | [View Funded Projects →](https://github.com/orgs/DevOpsCoin/projects/1)                                                   |
-| **Public Repo**         | [Ship-It Fund GitHub →](https://github.com/DevOpsCoin/shipit-fund)                                                        |
+| Channel                 | Purpose                                                                                         |
+| ----------------------- | ----------------------------------------------------------------------------------------------- |
+| **Ledger**              | All allocations recorded in YAML under [`/shipit-fund/ledger/`](../../shipit-fund/ledger/)      |
+| **Verification Script** | [`verify-ledger.sh`](../../shipit-fund/scripts/verify-ledger.sh) validates integrity and hashes |
+| **Project Board**       | [View Funded Projects →](https://github.com/orgs/DevOpsCoin/projects/1)                         |
+| **Public Repo**         | [Core Repository →](https://github.com/DevOpsCoin/core)                                         |
 
 Each ledger entry includes:
 
@@ -44,18 +49,27 @@ Each ledger entry includes:
 
 No private disbursements or off-chain accounting are ever performed.
 
+### 🔍 Verification & Ledger Access
+
+All grants and fund transfers are permanently recorded in the  
+[**Ship-It Fund Ledger →**](../../shipit-fund/ledger/).
+
+Each ledger file can be locally verified using the  
+[`verify-ledger.sh`](../../shipit-fund/scripts/verify-ledger.sh) script, which checks for SHA256 integrity, duplicate transaction hashes, and missing entries.
+
+> Transparency isn’t optional — it’s infrastructure.
+
 ---
 
 ## 🧰 How to Apply
 
-1. Visit the [Ship-It Fund repository](https://github.com/DevOpsCoin/shipit-fund).
-2. Click **New Project Submission** to open the structured issue form.
-3. Provide project details, roadmap, and contact information.
-4. Review occurs publicly in the issue thread.
-5. Approved projects are added to the [DevOpsCoin Project Board](https://github.com/orgs/DevOpsCoin/projects/1).
+1. Open a new issue in the [DevOpsCoin/core repository](https://github.com/DevOpsCoin/core/issues/new?assignees=&labels=shipit-fund,submission&template=project_submission.yml).
+2. Provide project details, roadmap, and contact information.
+3. Review occurs publicly in the issue thread.
+4. Approved projects are added to the [DevOpsCoin Roadmap](https://github.com/orgs/DevOpsCoin/projects/1).
 
 👉 **Submit a Project:**  
-[Create Submission →](https://github.com/DevOpsCoin/shipit-fund/issues/new?assignees=&labels=submission&template=project_submission.yml)
+[Create Submission →](https://github.com/DevOpsCoin/core/issues/new?assignees=&labels=shipit-fund,submission&template=project_submission.yml)
 
 ---
 
@@ -65,11 +79,11 @@ The Ship-It Fund operates under **DevOpsCoin LLC** governance and adheres to the
 
 > **Ship → Show → Verify**
 
-1. **Ship** — Prepare the proposal or transaction.
-2. **Show** — Publish rationale and record in the ledger.
-3. **Verify** — Execute on-chain and confirm transaction hash.
+1. **Ship** — Prepare the proposal or transaction
+2. **Show** — Publish rationale and record in the ledger
+3. **Verify** — Execute on-chain and confirm transaction hash
 
-All activity aligns with the broader [Governance Framework](../operations/GOVERNANCE.md) and [Transparency Policy](../project/TRANSPARENCY.md).
+All activity aligns with the broader [Governance Framework](../operations/GOVERNANCE.md) and [Transparency Policy](../operations/TRANSPARENCY.md).
 
 ---
 
@@ -87,14 +101,14 @@ This separation ensures clarity for tax reporting, governance, and on-chain veri
 
 ## 🧭 Key Links
 
-| Resource                                                                                        | Description                                 |
-| ----------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| 🌐 [Ship-It Fund Website](https://devopscoin.ai/shipit.html)                                    | Public-facing overview                      |
-| 🧠 [Core DevOpsCoin Docs](https://github.com/DevOpsCoin/core/tree/main/docs)                    | Tokenomics, governance, and technical specs |
-| 📜 [Ship-It Fund Repo](https://github.com/DevOpsCoin/shipit-fund)                               | Grant management and ledger                 |
-| 📊 [Project Board](https://github.com/orgs/DevOpsCoin/projects/1)                               | Active and past grants                      |
-| 🪙 [Transparency Ledger](https://github.com/DevOpsCoin/shipit-fund/tree/main/ledger)            | Funding records                             |
-| 🧩 [Review Process](https://github.com/DevOpsCoin/shipit-fund/blob/main/docs/REVIEW_PROCESS.md) | Maintainer review flow                      |
+| Resource                                                          | Description                                 |
+| ----------------------------------------------------------------- | ------------------------------------------- |
+| 🌐 [Ship-It Fund Website](https://devopscoin.ai/)                 | Public-facing overview                      |
+| 🧠 [Core DevOpsCoin Docs](../README.md)                           | Tokenomics, governance, and technical specs |
+| 📜 [Ship-It Fund Directory](../../shipit-fund/)                   | Grant management and ledger                 |
+| 📊 [Project Board](https://github.com/orgs/DevOpsCoin/projects/1) | Active and past grants                      |
+| 🪙 [Transparency Ledger](../../shipit-fund/ledger/)               | Funding records (canonical source)          |
+| 🧩 [Review Process](../../shipit-fund/REVIEW_PROCESS.md)          | Maintainer review flow                      |
 
 ---
 
@@ -107,5 +121,5 @@ It’s transparent, data-driven, and sustainable by design.
 
 ---
 
-_Last updated: October 2025 — Three-Wallet Alignment_  
+_Last updated: October 2025 — Integrated into `/core/shipit-fund` directory for unified governance and transparency._  
 _Maintainer: RootSignal (DevOpsCoin LLC)_

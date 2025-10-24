@@ -1,0 +1,51 @@
+name: Ship It Fund Project Submission
+description: Submit your open-source DevOps project for funding consideration
+title: '[Ship-It Submission]: '
+labels: ['shipit-fund-submission']
+projects: ['DevOpsCoin/shipit-fund']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting your project to the **Ship-It Fund** 🚀
+        Please complete the sections below to help us understand what you're building and why it matters.
+        💸 **Funding amounts are discretionary at this stage — focus on your idea and impact.**
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      placeholder: e.g., "Pipeline Generator"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      placeholder: What are you building? Why is it awesome?
+      description: Be concise but informative.
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repository URL
+      placeholder: https://github.com/yourname/yourproject
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact / Telegram / X handle
+      placeholder: '@yourhandle'
+
+  - type: textarea
+    id: roadmap
+    attributes:
+      label: Project Roadmap / Deliverables
+      placeholder: What do you plan to deliver and on what timeline?
+
+  - type: checkboxes
+    id: agree
+    attributes:
+      label: Agreement
+      options:
+        - label: I understand that Ship-It Fund grants are discretionary and not guaranteed.
+          required: true

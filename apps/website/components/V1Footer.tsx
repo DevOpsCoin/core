@@ -52,10 +52,34 @@ export default function V1Footer() {
       </p>
 
       {/* Tagline */}
-      <p className="text-xs text-gray-500 italic">
+      <p className="text-xs text-gray-500 italic mb-2">
         Where pipelines meet protocols.&nbsp;Built on Solana.&nbsp;Sustained by
         TreasuryOps and the Ship-It Fund.
       </p>
+
+      {/* Transparency Links */}
+      <div className="text-xs text-gray-500 mt-2">
+        <span className="font-semibold text-cyan-300">
+          Transparency & Ledger:
+        </span>{' '}
+        <a
+          href="https://github.com/DevOpsCoin-LLC/shipit-fund/tree/main/ledger"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-cyan-400 hover:text-cyan-300"
+        >
+          Ship-It Fund Ledger
+        </a>{' '}
+        &nbsp;·&nbsp;
+        <a
+          href="https://github.com/DevOpsCoin/core/blob/main/docs/ledger/TRANSPARENCY_LOG.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline text-cyan-400 hover:text-cyan-300"
+        >
+          TreasuryOps Log
+        </a>
+      </div>
     </footer>
   );
 }

@@ -66,15 +66,26 @@ export default function DevOpsBuyCard() {
               <span className="text-cyan-400 font-semibold">Pump.fun</span>{' '}
               during its launch phase. Trading volume from early supporters
               generates <strong>creator rewards</strong> that flow into the{' '}
-              <strong>TreasuryOps wallet</strong> — the SOL-based operations
-              fund that periodically tops up the{' '}
-              <span className="text-cyan-400 font-semibold">Ship-It Fund</span>.
+              <strong>TreasuryOps wallet</strong> — a SOL-based operations fund
+              initially bootstrapped with 2% DEVOPS and SOL for airdrops,
+              marketing, and liquidity operations. TreasuryOps does not hold
+              $DEVOPS long-term and only accumulates tokens from{' '}
+              <strong>buybacks or purchases</strong> used for community
+              programs.
               <br />
               <br />
-              The Ship-It Fund distributes{' '}
-              <strong>monthly open-source grants</strong> to DevOps builders and
-              contributors. If volume dips, grants simply roll over to the next
-              active month.
+              50% of creator rewards remain in TreasuryOps to sustain operations
+              and Ship-It Fund top-ups, while the remaining 50% are withdrawn
+              for business operations and real-world expenses.
+              <br />
+              <br />
+              The{' '}
+              <span className="text-cyan-400 font-semibold">
+                Ship-It Fund
+              </span>{' '}
+              distributes <strong>monthly open-source grants</strong> to DevOps
+              builders and contributors. If volume dips, grants simply roll over
+              to the next active month.
             </p>
             <a
               href={PUMPFUN_URL}

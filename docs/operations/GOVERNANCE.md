@@ -27,7 +27,7 @@ Governance is treated like infrastructure: predictable, testable, and open.
 | **TreasuryOps (SOL)**     | Receives Pump.fun creator rewards in SOL. Funds marketing, exchange liquidity, operations, and buybacks. Tops up the Ship-It Fund when reserves run low.   | DevOpsCoin LLC                             | On-chain SOL transactions + monthly ledger entries       |
 | **Founder Vesting**       | Founder allocation (10%) with 3-month cliff and 20-month linear vesting.                                                                                   | Smart-contract vesting program             | On-chain vesting record + verified repo source           |
 
-> All prior combined “Ship-It / Operations” or “Community” wallets have been **deprecated** in favor of this two-wallet model for clearer accounting and transparent grant governance.
+> All prior combined “Ship-It / Operations” or “Community” wallets have been **deprecated** in favor of this three-wallet model for clearer accounting and transparent grant governance.
 
 ---
 
@@ -45,7 +45,7 @@ Every governance event leaves a traceable record both on-chain and in-repo.
 
 ## 🪙 Ship-It Fund Governance
 
-The **Ship-It Fund** operates as a transparent grant treasury focused solely on **open-source projects**.
+The **Ship-It Fund** operates as a transparent grant treasury focused solely on **open-source and creative projects** that contribute to the broader DevOps, software, or open-internet ecosystem.
 
 - Grants are issued **monthly**, contingent on trading volume and available reserves.
 - If volume drops below the operational threshold, the grant is **deferred and rolled forward** to the following month.
@@ -63,6 +63,10 @@ The **TreasuryOps wallet** manages all SOL-based ecosystem operations:
 - Receives **creator rewards** in SOL from Pump.fun and PumpSwap trading activity
 - Funds **marketing, liquidity provisioning, operations, and buybacks**
 - Periodically **tops up the Ship-It Fund** when reserves run low
+- **Holds an initial 2% DEVOPS allocation** for bootstrap operations and early airdrops
+
+> **Creator Reward Policy:** 50% of all creator rewards are directed to TreasuryOps by default, with the remainder retained by DevOpsCoin LLC for business operations.  
+> This split may vary modestly in the future (±10%) based on operational and market conditions but will always be transparently reported in the monthly ledger and legal disclosures.
 
 All SOL inflows and outflows are logged monthly in the transparency ledger and subject to on-chain verification.
 
@@ -108,7 +112,8 @@ Tokens unlock trustlessly through the vesting contract and can be claimed only b
 The **Ship-It Fund** and **TreasuryOps Wallet** are powered by creator rewards generated from the [$DEVOPS token on Pump.fun](https://pump.fun/).  
 There are **no transaction taxes or embedded fees** in the token contract.
 
-Grant issuance depends on ecosystem volume — when activity slows, the next grant cycle is **rolled forward** until reserves recover, ensuring fiscal stability and transparent accounting.
+Grant issuance depends on ecosystem volume — when activity slows, the next grant cycle is **rolled forward** until reserves recover, ensuring fiscal stability and transparent accounting.  
+TreasuryOps top-ups and allocations are published monthly for full community visibility.
 
 For detailed governance, funding cycles, and verified disbursements, see:  
 ➡ [Ship-It Fund Documentation →](../docs/SHIPIT_FUND.md)  

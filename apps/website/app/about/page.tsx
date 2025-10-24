@@ -59,19 +59,24 @@ export default function AboutPage() {
               a 3-month cliff and 20-month linear release.
             </li>
             <li>
-              <strong>Ship-It Fund:</strong> 5% DEVOPS treasury supporting
-              open-source builders and contributors — never sells tokens.
+              <strong>Ship-It Fund:</strong> 5% bootstrap allocation for
+              open-source grants and DevOps tooling. Post-launch, this wallet
+              remains dedicated entirely to grants and may receive periodic
+              top-ups from TreasuryOps based on available resources.
             </li>
             <li>
-              <strong>TreasuryOps:</strong> SOL-based wallet for operations,
-              marketing, liquidity, and Ship-It top-ups.
+              <strong>TreasuryOps:</strong> Initially funded with 2% DEVOPS and
+              SOL to support airdrops, marketing, liquidity, and operational
+              costs (including founder compensation). Post-launch, this wallet’s
+              balance will vary based on buybacks, creator reward inflows, and
+              market conditions.
             </li>
           </ul>
           <br />
           Creator rewards earned from <strong>pump.fun</strong> flow into
-          TreasuryOps, which periodically tops up the Ship-It Fund to keep
-          monthly open-source grants flowing — or rolling forward when volume
-          dips.
+          TreasuryOps, where 50% are retained to sustain operations and fund
+          Ship-It top-ups, while the remaining 50% are withdrawn for business
+          operations.
         </p>
 
         <a

@@ -30,7 +30,7 @@ export default function SecurityPage() {
           the <strong>DevOpsCoin</strong> namespace
         </li>
         <li>
-          APIs, hosted services, and GitHub automation under DevOpsCoin-LLC
+          APIs, hosted services, and GitHub automation under DevOpsCoin LLC
         </li>
       </ul>
 
@@ -58,7 +58,7 @@ export default function SecurityPage() {
         <li>
           Or submit privately through{' '}
           <a
-            href="https://github.com/DevOpsCoin-LLC/devopscoin/security/advisories"
+            href="https://github.com/DevOpsCoin/core/security/advisories"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cyan-400 underline"
@@ -96,29 +96,34 @@ export default function SecurityPage() {
         <strong>Ship-It Fund</strong>.
       </p>
       <p className="text-gray-300 mb-6">
-        The Ship-It Fund is initially allocated{' '}
-        <strong>5 % of total supply (50 million DEVOPS)</strong> and sustained
-        by periodic top-ups from the <strong>TreasuryOps wallet</strong>.
-        Funding supports open-source tools, audits, and community security
-        contributions. In months where market activity is below threshold,
-        grants may be <strong>deferred and rolled forward</strong> to maintain
-        fiscal transparency.
+        The <strong>Ship-It Fund</strong> is initially bootstrapped with{' '}
+        <strong>5% of total supply (50 million DEVOPS)</strong> and becomes
+        variable post-launch depending on TreasuryOps top-ups and market
+        conditions. The <strong>TreasuryOps wallet</strong> is SOL-based and
+        initially funded with <strong>2% DEVOPS</strong> for operations,
+        liquidity, and marketing. TreasuryOps sustains the Ship-It Fund and
+        other open-source initiatives using 50% of ongoing creator rewards,
+        while the remaining 50% supports operational expenses. Funding supports
+        open-source tools, audits, and community security contributions. In
+        months where trading activity falls below target thresholds, grants may
+        be <strong>deferred and rolled forward</strong> to maintain fiscal
+        transparency.
       </p>
 
       <p className="text-gray-300 mb-6">
         All grants, transactions, and ledger entries are published publicly in
         the{' '}
         <a
-          href="https://github.com/DevOpsCoin-LLC/shipit-fund"
+          href="https://github.com/DevOpsCoin/core/tree/main/shipit-fund"
           target="_blank"
           rel="noopener noreferrer"
           className="text-cyan-400 underline"
         >
-          Ship-It Fund repository
+          Ship-It Fund directory
         </a>{' '}
         and its{' '}
         <a
-          href="https://github.com/DevOpsCoin-LLC/shipit-fund/tree/main/ledger"
+          href="https://github.com/DevOpsCoin/core/tree/main/shipit-fund/ledger"
           target="_blank"
           rel="noopener noreferrer"
           className="text-cyan-400 underline"

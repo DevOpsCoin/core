@@ -1,0 +1,42 @@
+# .github/workflows/verify-ledger.yml
+name: Verify Ship-It Fund Ledger Integrity
+
+on:
+  push:
+    paths:
+      - 'shipit-fund/ledger/**'
+      - 'shipit-fund/scripts/verify-ledger.sh'
+  pull_request:
+    paths:
+      - 'shipit-fund/ledger/**'
+      - 'shipit-fund/scripts/verify-ledger.sh'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-ledger:
+    name: Ledger Integrity Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛠️ Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🔧 Set execute permission
+        working-directory: shipit-fund/scripts
+        run: chmod +x verify-ledger.sh
+
+      - name: 🔍 Verify ledgers
+        working-directory: shipit-fund/scripts
+        run: ./verify-ledger.sh
+
+      - name: ✅ Summary
+        if: success()
+        run: echo "✅ All Ship-It Fund ledger files verified successfully."
+
+      - name: ❌ Report Failure
+        if: failure()
+        run: |
+          echo "❌ Ledger verification failed — please review mismatched hashes or duplicate tx_hash entries in shipit-fund/ledger."
+          exit 1

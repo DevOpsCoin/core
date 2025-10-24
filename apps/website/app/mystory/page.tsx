@@ -68,10 +68,13 @@ export default function MyStoryPage() {
         open-source community built the tools that made my entire career
         possible. DevOpsCoin exists to give something back. That’s the purpose
         behind the <strong>Ship-It Fund</strong> — a transparent mechanism that
-        channels creator rewards from trading volume (through the{' '}
-        <strong>TreasuryOps wallet</strong>) into grants for open-source
-        builders, maintainers, and contributors. Every trade helps fund the
-        people who keep the internet running quietly behind the curtain.
+        channels a portion of <strong>creator rewards</strong> (collected in SOL
+        within the <strong>TreasuryOps wallet</strong>) into grants for
+        open-source builders, maintainers, and contributors. TreasuryOps starts
+        as a SOL-based operations fund bootstrapped with a small DEVOPS portion,
+        using 50% of creator rewards to sustain Ship-It grants and operations.
+        Every trade helps fund the people who keep the internet running quietly
+        behind the curtain.
       </p>
 
       <p className="mb-4">
@@ -87,9 +90,12 @@ export default function MyStoryPage() {
         company, no marketing machine — just a belief that a token can have
         purpose. Over time, I hope this grows into more than a coin: a
         self-sustaining fund for tools, contributors, and new projects that keep
-        open-source culture alive. If it stays small, that’s fine. If it scales,
-        that’s even better. The goal is simple: keep shipping, keep improving,
-        and keep supporting the builders who make all of this possible.
+        open-source culture alive. The <strong>Ship-It Fund</strong> began with
+        a 5% bootstrap allocation, but its growth and cadence are variable —
+        maintained transparently through TreasuryOps top-ups as volume allows.
+        If it stays small, that’s fine. If it scales, that’s even better. The
+        goal is simple: keep shipping, keep improving, and keep supporting the
+        builders who make all of this possible.
       </p>
 
       <p className="mb-4">

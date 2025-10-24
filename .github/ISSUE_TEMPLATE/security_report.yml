@@ -1,0 +1,28 @@
+name: 🔒 Security Report
+description: Privately disclose a potential security vulnerability
+title: '[Security]: '
+labels: ['security']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Do not publicly disclose vulnerabilities.**
+        For sensitive findings, email **security@devopscoin.ai** or open a private advisory at  
+        [DevOpsCoin Security Advisories →](https://github.com/DevOpsCoin/core/security/advisories).
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Issue
+      placeholder: 'Describe the vulnerability and how it can be reproduced.'
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Info
+      placeholder: 'Email or Telegram handle (optional)'
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I will not disclose this issue publicly until remediation.
+          required: true

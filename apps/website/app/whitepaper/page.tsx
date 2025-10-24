@@ -8,7 +8,6 @@ export default function WhitepaperPage() {
     <MainContent className="text-left">
       {/* Background Layer */}
       <div className="absolute inset-0">
-        {/* Slightly translucent overlay so image shows through */}
         <div className="absolute inset-0 bg-transparent" />
         <img
           src="/whitepaper/image1.png"
@@ -73,9 +72,9 @@ export default function WhitepaperPage() {
         </h2>
         <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
           <li>
-            <strong>Founder Wallet (10%):</strong> Locked under{' '}
-            <code>FounderVesting.sol</code> with a 3-month cliff and 20-month
-            linear release.
+            <strong>Founder Wallet (10%):</strong> Locked under a vesting
+            contract with a 3-month cliff and 20-month linear release. Ensures
+            long-term alignment and transparent on-chain accountability.
           </li>
 
           <li>
@@ -87,28 +86,51 @@ export default function WhitepaperPage() {
             periodically by the TreasuryOps wallet. All grants and disbursements
             are recorded in the{' '}
             <a
-              href="https://github.com/DevOpsCoin-LLC/shipit-fund"
+              href="https://github.com/DevOpsCoin/core/tree/main/shipit-fund"
               target="_blank"
               rel="noopener noreferrer"
               className="text-cyan-400 underline"
             >
-              Ship-It Fund repository
+              Ship-It Fund directory
             </a>{' '}
             under the <code>/ledger</code> directory.
           </li>
 
           <li>
-            <strong>TreasuryOps Wallet (10%):</strong> Used for liquidity,
-            exchange listings, operations, marketing, and{' '}
-            <strong>buybacks</strong> when justified by market conditions.
-            TreasuryOps may also top up the Ship-It Fund to maintain regular
-            grant cycles. This wallet operates transparently under a
-            “refill-when-needed” policy.
+            <strong>TreasuryOps Wallet (SOL-based, 2% allocation):</strong>{' '}
+            Initially funded with <strong>2% of total supply in DEVOPS</strong>{' '}
+            for operational stability. TreasuryOps manages operations,
+            marketing, liquidity support, and{' '}
+            <strong>buybacks when justified by volume or demand</strong>. It may
+            also top up the Ship-It Fund as needed to maintain monthly grant
+            cadence. TreasuryOps never holds pre-allocated $DEVOPS beyond its 2%
+            bootstrap — any future balance growth comes from market activity or
+            buybacks. All SOL inflows and disbursements are tracked publicly
+            under a refill-when-needed model.
           </li>
 
           <li>
-            <strong>Public Supply (75%):</strong> Distributed through the
-            Pump.fun launch curve and Raydium liquidity migration.
+            <strong>Creator Reward Flow:</strong> Creator rewards generated from
+            trading volume are divided between the TreasuryOps wallet and the
+            Ship-It Fund. The current allocation is a{' '}
+            <strong>50 / 50 split</strong>, adjustable only within a{' '}
+            <strong>40–60%</strong> range to either side. Any future adjustment
+            must be disclosed and documented in the public{' '}
+            <a
+              href="https://github.com/DevOpsCoin/core/tree/main/shipit-fund/ledger"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 underline"
+            >
+              TreasuryOps ledger
+            </a>{' '}
+            prior to implementation. These adjustments never alter total token
+            supply or vesting mechanics.
+          </li>
+
+          <li>
+            <strong>Public Supply (83%):</strong> Distributed through the
+            Pump.fun launch curve and subsequent Raydium liquidity migration.
           </li>
         </ul>
 
@@ -118,17 +140,16 @@ export default function WhitepaperPage() {
         </h2>
         <p className="text-gray-300 mb-6">
           The <strong>Ship-It Fund</strong> fuels open-source innovation of all
-          kinds — from automation frameworks and open DevOps tooling to AI
-          utilities, creative applications, and educational resources. It
-          operates entirely on-chain, with every inflow and disbursement
-          publicly recorded.
+          kinds — from automation frameworks and DevOps tooling to AI utilities,
+          creative applications, and educational resources. It operates entirely
+          on-chain, with every inflow and disbursement publicly recorded.
         </p>
 
         <p className="text-gray-300 mb-6">
-          Ship-It Fund grants are issued on a monthly cadence when volume and
-          TreasuryOps resources allow. If trading activity or inflows drop,
-          payouts are deferred and rolled forward transparently to maintain
-          sustainability.
+          Ship-It Fund grants are issued on a monthly cadence when trading
+          volume and TreasuryOps resources allow. If inflows are below
+          threshold, payouts are deferred and rolled forward transparently to
+          maintain sustainability.
         </p>
 
         <p className="text-gray-300 mb-6">
@@ -174,8 +195,8 @@ export default function WhitepaperPage() {
             website.
           </li>
           <li>
-            All contracts are verified on Solana explorers and open-sourced on
-            GitHub.
+            All programs and contracts are verified on Solana explorers and
+            open-sourced on GitHub.
           </li>
           <li>No presale, no VC allocations, and no private rounds.</li>
         </ul>
