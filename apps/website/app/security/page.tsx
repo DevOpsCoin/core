@@ -145,9 +145,9 @@ export default function SecurityPage() {
         Transparency & Security Ethos
       </h2>
       <p className="text-gray-300 leading-relaxed mb-6">
-        DevOpsCoin practices <strong>open security</strong> — merging DevOps
-        culture with blockchain transparency. All Solana programs are verified
-        and auditable via{' '}
+        DevOpsCoin practices <strong>open security</strong> — combining standard
+        DevOps discipline with on-chain transparency. All Solana programs are
+        verified and auditable via{' '}
         <a
           href="https://solscan.io"
           className="text-cyan-400 underline"

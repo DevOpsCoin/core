@@ -34,7 +34,8 @@ export default function WhitepaperPage() {
           <strong>$DEVOPS</strong> is where <strong>DevOps culture</strong> and
           <strong> open-source collaboration</strong> meet tokenized
           transparency. It fuses the pragmatism of engineering with the creative
-          chaos of crypto — a project designed to fund reality, not dreams.
+          chaos of crypto — a project built to channel funding toward real,
+          open-source work.
         </p>
 
         {/* PURPOSE */}
@@ -43,9 +44,9 @@ export default function WhitepaperPage() {
           DevOpsCoin is more than a memecoin — it’s a cultural token for the
           people who build and automate. Built on <strong>Solana</strong>, it
           supports open-source maintainers, developers, creators, and innovators
-          across all domains. Each transaction and initiative is{' '}
-          <strong>intended to</strong> sustain open-source development through
-          transparent, community-driven funding.
+          across all domains. Each transaction and initiative contributes to a
+          broader effort to sustain open-source development through transparent,
+          community-driven funding.
         </p>
 
         {/* TOKEN OVERVIEW */}
@@ -205,7 +206,7 @@ export default function WhitepaperPage() {
 
         <p className="text-gray-400 mt-8 italic border-t border-cyan-900 pt-6">
           DevOpsCoin merges humor, discipline, and transparency — not a promise
-          of riches, but a movement to fund the builders who actually ship.
+          of riches, but a framework to support the builders who actually ship.
           <br />
           <span className="text-cyan-300 font-semibold">
             “Ship it. Don’t hype it.”

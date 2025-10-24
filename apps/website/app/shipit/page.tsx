@@ -62,7 +62,8 @@ export default function ShipItFundPage() {
             that fuels open-source innovation — from DevOps automation and
             developer tools to creative software, AI utilities, and educational
             projects. It exists solely to provide <strong>micro-grants</strong>{' '}
-            and sponsorships to builders who make the open internet better.
+            and sponsorships to builders whose work strengthens the open-source
+            ecosystem.
           </p>
           <p className="text-gray-400 italic">
             One fund. One purpose — empower the open-source builders who ship.

@@ -40,8 +40,8 @@ export default function RoadmapPage() {
 
         {/* Preface */}
         <p className="text-gray-300 mb-3 text-base">
-          The roadmap isn’t marketing. It’s a delivery plan — an engineering
-          schedule tied to real GitHub milestones, commits, and ledger entries.
+          The roadmap isn’t a pitch — it’s an engineering plan tied to real
+          GitHub milestones, commits, and ledger entries.
         </p>
 
         <p className="text-gray-300 mb-6 text-lg leading-relaxed">

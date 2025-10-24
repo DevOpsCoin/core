@@ -73,10 +73,10 @@ export default function HomePage() {
             Ship It. Don’t Hype It.
           </h2>
           <p className="text-gray-300 mb-6">
-            DevOpsCoin began as a reaction to the noise — a statement that memes
-            can have meaning when they’re backed by builders. It’s not about
-            speculation; it’s about sustaining the people who make the internet
-            work.
+            DevOpsCoin began as a reaction to the noise — proof that memes can
+            carry purpose when builders lead. It’s not about speculation; it’s
+            about sustaining the open-source builders whose tools power real
+            development.
           </p>
 
           <h2 className="text-2xl font-bold text-cyan-400 mb-3">
