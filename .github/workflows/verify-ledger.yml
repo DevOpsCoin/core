@@ -27,7 +27,7 @@ jobs:
         run: chmod +x shipit-fund/ledger/verify-ledger.sh
 
       - name: 🔍 Verify ledgers
-        run: ./shipit-fund/verify-ledger.sh
+        run: ./shipit-fund/ledger/verify-ledger.sh
 
       - name: ✅ Summary
         if: success()

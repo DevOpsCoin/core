@@ -8,7 +8,7 @@
 #   - complete: transaction executed and verified
 #   - rejected: proposal reviewed but not funded
 #
-# All entries are immutable once marked "complete."
+# All entries are immutable once marked "complete".
 
 # example_ledger.yml
 # Template showing format and expected fields for future Ship-It Fund ledger entries.
