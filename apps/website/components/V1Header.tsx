@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import NavMoreDropdown from '@/components/NavMoreDropdown';
 import NavInvestorsDropdown from '@/components/NavInvestorsDropdown';
-import Image from 'next/image';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
@@ -29,25 +28,17 @@ export default function V1Header() {
   };
 
   return (
-    <header className="relative w-full mt-4">
-      {/* Sticky Mobile Header */}
-      <div className="md:hidden sticky top-0 z-50 bg-gray-950 flex items-center justify-between pl-16 pr-4 py-2 border-b border-cyan-800 shadow-lg">
-        <div className="flex items-center">
-          <img
-            src="/mobile_logo.png"
-            alt="$DEVOPS Mobile Logo"
-            className="h-8 w-auto max-w-[150px] object-contain"
-            loading="lazy"
-          />
+    <header className="relative w-full">
+      {/* Mobile Banner (primary hero) */}
+      <div className="md:hidden relative w-full mx-auto overflow-hidden shadow-lg">
+        {/* Hamburger floating over banner */}
+        <div className="absolute top-4 left-4 z-50">
+          <MobileNav />
         </div>
-        <MobileNav />
-      </div>
 
-      {/* Mobile Banner */}
-      <div className="md:hidden relative w-full mx-auto rounded-lg overflow-hidden shadow-lg mt-2">
         {/* Background */}
         <div
-          className="w-full h-[240px] bg-cover bg-center"
+          className="w-full h-[175px] bg-cover bg-center rounded-lg"
           style={{
             backgroundImage: "url('/banner.png')",
             backgroundBlendMode: 'overlay',
@@ -59,10 +50,10 @@ export default function V1Header() {
           <img
             src="/main_logo_transparent.png"
             alt="$DEVOPS Coin"
-            className="h-24 w-auto mb-3 drop-shadow-[0_0_20px_rgba(0,183,179,0.25)]"
+            className="h-36 w-auto mb-1 drop-shadow-[7px_7px_12px_rgba(0,0,0,0.65),_-2px_-2px_6px_rgba(0,183,179,0.25)]"
             loading="lazy"
           />
-          <h1 className="text-xl font-extrabold tracking-tight text-cyan-100 drop-shadow-md">
+          <h1 className="text-lg font-extrabold tracking-tight text-cyan-100 drop-shadow-md leading-snug">
             SHIP IT. DON’T SHILL IT.
           </h1>
         </div>
@@ -76,6 +67,9 @@ export default function V1Header() {
           style={{
             backgroundImage: "url('/banner.png')",
             backgroundBlendMode: 'overlay',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            boxShadow: 'inset 0 0 80px rgba(0,0,0,0.4)',
           }}
         />
 
@@ -85,10 +79,7 @@ export default function V1Header() {
           <img
             src="/main_logo_transparent.png"
             alt="$DEVOPS Coin"
-            className="h-60 w-auto
-             drop-shadow-[6px_6px_12px_rgba(0,0,0,0.6)]
-             drop-shadow-[-2px_-2px_6px_rgba(0,183,179,0.25)]
-             transition-transform duration-500 ease-out hover:translate-y-[-2px]"
+            className="h-64 w-auto drop-shadow-[7px_7px_12px_rgba(0,0,0,0.65),_-2px_-2px_6px_rgba(0,183,179,0.25)] transition-transform duration-500 ease-out hover:translate-y-[-2px]"
             loading="lazy"
           />
 
@@ -129,7 +120,7 @@ export default function V1Header() {
         </p>
       </div>
 
-      {/* Main Navigation (desktop) */}
+      {/* Main Navigation (desktop only) */}
       <div className="hidden md:flex w-full max-w-5xl mx-auto flex-row items-start justify-center mt-6 px-2 gap-4 relative">
         <nav className="flex gap-3 items-center justify-center">
           <Link href="/" className={desktopLinkClass('/')}>
@@ -154,32 +145,30 @@ export default function V1Header() {
     </header>
   );
 
-  // ✅ Mobile Navigation
+  // ✅ Mobile Navigation (floats over banner)
   function MobileNav() {
     const [open, setOpen] = useState(false);
     return (
       <>
-        {!open && (
-          <button
-            className="md:hidden fixed top-4 left-4 z-50 p-2 rounded border border-cyan-400 bg-gray-900 text-cyan-200 hover:text-white hover:bg-cyan-700 focus:outline-none shadow-lg"
-            onClick={() => setOpen(true)}
-            aria-label="Open navigation menu"
+        <button
+          className="md:hidden p-2 rounded border border-cyan-400 bg-gray-900/80 text-cyan-200 hover:text-white hover:bg-cyan-700 focus:outline-none shadow-lg backdrop-blur-sm"
+          onClick={() => setOpen(true)}
+          aria-label="Open navigation menu"
+        >
+          <svg
+            className="h-7 w-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
           >
-            <svg
-              className="h-7 w-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        )}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
 
         {open && (
           <>

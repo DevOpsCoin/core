@@ -21,17 +21,20 @@ export default function WhitepaperPage() {
 
       {/* Foreground Content */}
       <div className="relative z-10">
-        {/* Title */}
         <h1 className="text-4xl font-extrabold text-cyan-300 mb-6">
           DevOpsCoin Whitepaper
         </h1>
 
+        <p className="text-gray-400 italic mb-4">
+          DevOpsCoin isn’t another “me me” coin — it’s what happens when dev
+          culture meets degen energy. Built for builders, not hype.
+        </p>
+
         <p className="text-gray-300 mb-8 leading-relaxed">
-          <strong>$DEVOPS</strong> is where{' '}
-          <strong>pipelines meet protocols</strong> — a token that blends DevOps
-          culture, open-source collaboration, and Solana’s speed into one
-          mission: funding the builders who keep the internet running and
-          expanding what open-source can become.
+          <strong>$DEVOPS</strong> is where <strong>DevOps culture</strong> and
+          <strong> open-source collaboration</strong> meet tokenized
+          transparency. It fuses the pragmatism of engineering with the creative
+          chaos of crypto — a project designed to fund reality, not dreams.
         </p>
 
         {/* PURPOSE */}
@@ -40,8 +43,9 @@ export default function WhitepaperPage() {
           DevOpsCoin is more than a memecoin — it’s a cultural token for the
           people who build and automate. Built on <strong>Solana</strong>, it
           supports open-source maintainers, developers, creators, and innovators
-          across all domains. Every transaction and initiative helps sustain
-          open-source development through transparent, community-driven funding.
+          across all domains. Each transaction and initiative is{' '}
+          <strong>intended to</strong> sustain open-source development through
+          transparent, community-driven funding.
         </p>
 
         {/* TOKEN OVERVIEW */}
@@ -93,29 +97,28 @@ export default function WhitepaperPage() {
             >
               Ship-It Fund directory
             </a>{' '}
-            under the <code>/ledger</code> directory.
+            under the <code>/ledger</code> path.
           </li>
 
           <li>
-            <strong>TreasuryOps Wallet (SOL-based, 2% allocation):</strong>{' '}
-            Initially funded with <strong>2% of total supply in DEVOPS</strong>{' '}
+            <strong>TreasuryOps Wallet (SOL-based, 2 % allocation):</strong>{' '}
+            Initially funded with <strong>2 % of total supply in DEVOPS</strong>{' '}
             for operational stability. TreasuryOps manages operations,
-            marketing, liquidity support, and{' '}
-            <strong>buybacks when justified by volume or demand</strong>. It may
-            also top up the Ship-It Fund as needed to maintain monthly grant
-            cadence. TreasuryOps never holds pre-allocated $DEVOPS beyond its 2%
-            bootstrap — any future balance growth comes from market activity or
-            buybacks. All SOL inflows and disbursements are tracked publicly
-            under a refill-when-needed model.
+            marketing, and liquidity support, and may conduct limited buybacks
+            when sustainable market conditions allow. It can also top up the
+            Ship-It Fund to help maintain grant cadence. TreasuryOps never holds
+            pre-allocated $DEVOPS beyond its bootstrap — any future balance
+            growth comes from creator-reward inflows or buybacks. All SOL
+            movements are tracked publicly under a refill-when-needed model.
           </li>
 
           <li>
-            <strong>Creator Reward Flow:</strong> Creator rewards generated from
-            trading volume are divided between the TreasuryOps wallet and the
-            Ship-It Fund. The current allocation is a{' '}
+            <strong>Creator Reward Flow:</strong> Creator rewards from trading
+            activity are shared between the TreasuryOps wallet and the Ship-It
+            Fund. The current distribution target is a{' '}
             <strong>50 / 50 split</strong>, adjustable only within a{' '}
-            <strong>40–60%</strong> range to either side. Any future adjustment
-            must be disclosed and documented in the public{' '}
+            <strong>40 – 60 %</strong> range. Any adjustment must be disclosed
+            and documented in the public{' '}
             <a
               href="https://github.com/DevOpsCoin/core/tree/main/shipit-fund/ledger"
               target="_blank"
@@ -124,12 +127,12 @@ export default function WhitepaperPage() {
             >
               TreasuryOps ledger
             </a>{' '}
-            prior to implementation. These adjustments never alter total token
-            supply or vesting mechanics.
+            before implementation. These updates never affect total token supply
+            or vesting mechanics.
           </li>
 
           <li>
-            <strong>Public Supply (83%):</strong> Distributed through the
+            <strong>Public Supply (83 %):</strong> Distributed through the
             Pump.fun launch curve and subsequent Raydium liquidity migration.
           </li>
         </ul>
@@ -139,27 +142,27 @@ export default function WhitepaperPage() {
           Ship-It Fund
         </h2>
         <p className="text-gray-300 mb-6">
-          The <strong>Ship-It Fund</strong> fuels open-source innovation of all
-          kinds — from automation frameworks and DevOps tooling to AI utilities,
+          The <strong>Ship-It Fund</strong> supports open-source innovation —
+          from automation frameworks and DevOps tooling to AI utilities,
           creative applications, and educational resources. It operates entirely
-          on-chain, with every inflow and disbursement publicly recorded.
+          on-chain, with all inflows and disbursements publicly recorded.
         </p>
 
         <p className="text-gray-300 mb-6">
-          Ship-It Fund grants are issued on a monthly cadence when trading
-          volume and TreasuryOps resources allow. If inflows are below
-          threshold, payouts are deferred and rolled forward transparently to
-          maintain sustainability.
+          Grants are reviewed and issued on a monthly cadence when trading
+          volume and TreasuryOps reserves permit. If inflows fall below target,
+          payouts are deferred and rolled forward transparently to preserve
+          sustainability.
         </p>
 
         <p className="text-gray-300 mb-6">
-          No Ship-It Fund tokens are ever sold or used for liquidity.{' '}
+          Ship-It Fund tokens are never sold or used for liquidity.{' '}
           <strong>
-            Buybacks and market operations are handled exclusively by
+            Buybacks or market operations are performed only through
             TreasuryOps.
           </strong>{' '}
-          The Ship-It Fund remains 100 % dedicated to open-source grants and
-          community programs.
+          The Ship-It Fund remains focused on open-source grants and community
+          programs.
         </p>
 
         {/* LAUNCH PLAN */}
@@ -179,8 +182,8 @@ export default function WhitepaperPage() {
         </ul>
 
         <p className="text-gray-300 mb-6">
-          The Pump.fun launch ensures a fair, transparent bonding-curve entry
-          where early liquidity bootstraps Raydium trading. Once migrated,
+          The Pump.fun launch provides a fair, transparent bonding-curve entry
+          where early liquidity transitions into Raydium trading. Once migrated,
           $DEVOPS becomes tradable through <strong>Jupiter</strong> and other
           Solana DEXs.
         </p>
@@ -191,23 +194,25 @@ export default function WhitepaperPage() {
         </h2>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
           <li>
-            All wallet addresses are published publicly on the DevOpsCoin
-            website.
+            All core wallet addresses are published on the DevOpsCoin website.
           </li>
           <li>
             All programs and contracts are verified on Solana explorers and
             open-sourced on GitHub.
           </li>
-          <li>No presale, no VC allocations, and no private rounds.</li>
+          <li>No presale. No VC allocations. No private rounds.</li>
         </ul>
 
-        {/* FOOTER QUOTE */}
         <p className="text-gray-400 mt-8 italic border-t border-cyan-900 pt-6">
-          DevOpsCoin merges humor, hustle, and open-source transparency — not a
-          promise of riches, but a shared experiment in community-driven impact.
+          DevOpsCoin merges humor, discipline, and transparency — not a promise
+          of riches, but a movement to fund the builders who actually ship.
           <br />
           <span className="text-cyan-300 font-semibold">
-            “Where pipelines meet protocols.”
+            “Ship it. Don’t hype it.”
+          </span>
+          <br />
+          <span className="text-gray-500 text-xs italic">
+            Built to fund work — not hype.
           </span>
         </p>
 

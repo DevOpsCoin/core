@@ -19,13 +19,14 @@ export default function HomePage() {
 
       {/* Foreground Content */}
       <div className="relative z-10">
+        {/* Hero Section */}
         <h1 className="text-4xl sm:text-5xl font-extrabold text-cyan-300 mb-4">
-          $DEVOPS — Where Pipelines Meet Protocols
+          $DEVOPS — Built for Builders, Not Hype
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Where Dev culture meets crypto — fueling open-source builders who
-          ship.
+          Where <strong>dev culture meets degen energy</strong>. A transparent,
+          open-source token funding the people who actually ship.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
@@ -55,28 +56,27 @@ export default function HomePage() {
             A Token for Builders
           </h2>
           <p className="text-gray-300 mb-6">
-            <strong>$DEVOPS</strong> bridges the world of developer culture and
-            decentralized finance. Built on <strong>Solana</strong>, it powers a
-            transparent ecosystem of community-funded innovation. Every
-            transaction supports open-source creation through the{' '}
+            <strong>$DEVOPS</strong> bridges developer culture and decentralized
+            finance. Built on <strong>Solana</strong>, it powers a transparent
+            ecosystem where every transaction helps fund open-source work
+            through the{' '}
             <Link
               href="/shipit"
               className="text-cyan-400 underline hover:text-cyan-300"
             >
               Ship-It Fund
             </Link>
-            — a dedicated grant pool for projects that make technology more
-            open, automated, and creative.
+            — a grant pool dedicated to automators, creators, and maintainers.
           </p>
 
           <h2 className="text-2xl font-bold text-cyan-400 mb-3">
-            Culture Meets Utility
+            Ship It. Don’t Hype It.
           </h2>
           <p className="text-gray-300 mb-6">
-            DevOpsCoin started as a meme with a mission — to turn the builder
-            mindset into a self-sustaining force for the open-source world. It’s
-            not just a token; it’s a movement to reward the people who automate,
-            ship, and improve the infrastructure everyone relies on.
+            DevOpsCoin began as a reaction to the noise — a statement that memes
+            can have meaning when they’re backed by builders. It’s not about
+            speculation; it’s about sustaining the people who make the internet
+            work.
           </p>
 
           <h2 className="text-2xl font-bold text-cyan-400 mb-3">
@@ -84,13 +84,18 @@ export default function HomePage() {
           </h2>
           <ul className="list-disc list-inside text-gray-300 space-y-2 mb-8">
             <li>All wallets and contracts are public and verified.</li>
-            <li>No presale, no private allocations, no VC rounds.</li>
-            <li>Grants and disbursements are fully on-chain and auditable.</li>
+            <li>No presale. No private allocations. No VC rounds.</li>
+            <li>All grants and disbursements are on-chain and auditable.</li>
           </ul>
 
           <p className="text-gray-400 italic border-t border-cyan-900 pt-6 mt-10">
-            <strong>$DEVOPS</strong> — a cultural experiment in funding
-            open-source builders through transparency, automation, and trust.
+            <strong>$DEVOPS</strong> — the no-bullshit token for open-source
+            builders. Where transparency funds creativity and community replaces
+            speculation.
+            <br />
+            <span className="text-gray-500 text-xs italic">
+              Built to fund work — not hype.
+            </span>
           </p>
         </section>
 

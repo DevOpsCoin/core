@@ -2,73 +2,77 @@
 
 **Maintained By:** DevOpsCoin LLC  
 **Network:** Solana  
-**Last Updated:** October 2025 — Three-Wallet Model + 2 % Bootstrap Revision
+**Last Updated:** October 2025 — Three-Wallet Model + 2% Bootstrap Revision
 
 ---
 
 ## Purpose
 
-This policy defines how the **TreasuryOps wallet** manages liquidity, operations, and refills to the **Ship-It Fund**.  
-It ensures that grants remain sustainable without endangering ecosystem stability or liquidity.
+This policy defines how the **TreasuryOps wallet** manages liquidity, operations, and Ship-It Fund top-ups.  
+Its purpose is to maintain consistent funding for open-source grants while keeping liquidity stable and fully auditable.
 
 ---
 
 ## Structure & Funding Sources
 
-| Source                                | Description                                                                        |
-| ------------------------------------- | ---------------------------------------------------------------------------------- |
-| **2 % Bootstrap Allocation (DEVOPS)** | Initial 20 M DEVOPS allocated to TreasuryOps for market liquidity and buybacks.    |
-| **Creator Reward Inflows (SOL)**      | Continuous funding from pump.fun trading activity.                                 |
-| **LLC Operational Share (SOL)**       | ≈ 50 % of creator rewards retained by DevOpsCoin LLC for business and development. |
+| Source                               | Description                                                                        |
+| ------------------------------------ | ---------------------------------------------------------------------------------- |
+| **2% Bootstrap Allocation (DEVOPS)** | Initial 20M DEVOPS allocated to TreasuryOps for liquidity management and buybacks. |
+| **Creator Reward Inflows (SOL)**     | Ongoing inflows from Pump.fun trading activity.                                    |
+| **LLC Operational Share (SOL)**      | ~50% of creator rewards retained by DevOpsCoin LLC for business operations.        |
 
 ---
 
 ## Top-Up Triggers & Guidelines
 
-| Condition                                               | TreasuryOps Action                                                     |
-| ------------------------------------------------------- | ---------------------------------------------------------------------- |
-| **Ship-It Fund Reserve < Target (5 % of Total Supply)** | Initiate DEVOPS top-up from TreasuryOps within 7 days.                 |
-| **Monthly Grant Cycle Deferment**                       | Roll funds forward; no forced sales or liquidity moves.                |
-| **High Trading Volume Month**                           | Optionally increase top-up or allocate additional grants.              |
-| **Sustained Low Volume (> 2 months)**                   | Pause new top-ups; maintain liquidity buffer until conditions improve. |
+| Condition                                              | TreasuryOps Action                                         |
+| ------------------------------------------------------ | ---------------------------------------------------------- |
+| **Ship-It Fund Reserve < Target (5% of Total Supply)** | Execute a DEVOPS top-up within 7 days.                     |
+| **Monthly Grant Cycle Deferred**                       | Roll funds forward; no forced sales or liquidity changes.  |
+| **Sustained Elevated Volume (≥ 1 month)**              | Evaluate additional top-ups or expanded grant allocations. |
+| **Sustained Low Volume (≥ 2 months)**                  | Pause top-ups and preserve liquidity until recovery.       |
 
 ---
 
 ## Liquidity & Buyback Policy
 
-- Buybacks occur **only** from TreasuryOps when market conditions support it.
-- Buyback volume never exceeds **10 % of SOL reserves** per month.
-- All buybacks are announced post-execution with transaction hash disclosure.
-- DEVOPS acquired via buybacks may be burned or held for liquidity seeding, not re-sold.
+- All buybacks are executed **only by TreasuryOps** when reserves and market conditions support them.
+- Monthly buyback activity may not exceed **10% of SOL reserves**.
+- Each buyback must be disclosed post-execution with its Solana transaction hash and signature.
+- DEVOPS acquired through buybacks may be **burned or redeployed** for liquidity — never resold.
 
 ---
 
 ## Reporting & Verification
 
-Each top-up or operational transfer must be logged with:
+Every top-up, transfer, or buyback must record:
 
 - Date and purpose
-- Token amount (DEVOPS or SOL)
-- Wallet addresses
-- Transaction hash
+- Amount (DEVOPS or SOL)
+- Source and destination wallets
+- Solana transaction hash
 - Verification signature
 
-Reports are published monthly in:  
+All entries are published monthly under:  
 `/docs/ledger/TREASURY_LOG.md`
 
 ---
 
-## Sustainability Principles
+## Sustainability Rules
 
-- No forced sales for liquidity or grants.
-- Refills must preserve at least **50 % of SOL reserves** after execution.
-- Changes to allocation percentages require public disclosure and ledger amendment.
-- All funding actions are reproducible via on-chain proof and time-stamped commit.
-
----
-
-> **Refill what’s earned — never what’s hyped.**
+- Refills must **not reduce SOL reserves below 50%** of TreasuryOps total holdings.
+- No forced sales to meet Ship-It cycles or grant demand.
+- Any change to allocation ratios requires prior disclosure and ledger confirmation.
+- All actions must be verifiable via on-chain transaction and timestamped commit.
 
 ---
 
-**Maintainer:** RootSignal (DevOpsCoin LLC)
+## Principle
+
+Refill what’s **earned**, not what’s **expected.**  
+DevOpsCoin funds work — not hype.
+
+---
+
+**Maintainer:** RootSignal (DevOpsCoin LLC)  
+**Last Updated:** October 2025 — Treasury Policy Alignment

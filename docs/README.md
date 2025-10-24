@@ -1,32 +1,36 @@
 # DevOpsCoin Documentation
 
-This repository is the single source of truth for everything related to **DevOpsCoin ($DEVOPS)** — including token details, governance, and operational transparency.
+**Single source of truth** for everything related to **DevOpsCoin ($DEVOPS)** — from token mechanics to governance and transparency.
+
+> **Ship it. Don’t shill it.**
 
 ---
 
-## 📘 Token Documentation (`docs/token/`)
+## Token Documentation (`/docs/token`)
 
-Defines how the $DEVOPS token functions — its supply, wallets, vesting, and economic mechanisms.
+Defines how **$DEVOPS** operates — its supply, wallet structure, vesting logic, and economic mechanisms.
 
-- [Branding Identity](./token/BRANDING_IDENTITY.md) — Defines visual identity, tone, and brand pillars for $DEVOPS.
-- [Creator Rewards](./token/CREATOR_REWARDS.md) — Explains how pump.fun creator rewards fund TreasuryOps and Ship-It operations.
-- [Founder Vesting](./token/FOUNDER_VESTING.md) — Outlines the trustless vesting schedule and founder alignment model.
-- [Ship-It Fund](./token/SHIPIT_FUND.md) — Details the open-source grant treasury, funding cycles, and eligibility process.
-- [Tokenomics](./token/TOKENOMICS.md) — Provides the full token distribution, fee structure, and economic model.
-- [Wallet Structure](./token/WALLET_STRUCTURE.md) — Documents the three-wallet design (Founder, Ship-It, TreasuryOps) and on-chain separation of duties.
-- [Treasury Refill Policy](./token/TREASURY_REFILL_POLICY.md) — Defines how TreasuryOps manages liquidity, reserves, and Ship-It Fund top-ups.
+- [**Brand Identity**](./token/BRANDING_IDENTITY.md) — Defines visual identity, tone, and brand pillars.
+- [**Creator Rewards**](./token/CREATOR_REWARDS.md) — Explains how Pump.fun creator rewards power TreasuryOps and the Ship-It Fund.
+- [**Founder Vesting**](./token/FOUNDER_VESTING.md) — Documents the trustless vesting schedule that aligns founders with the ecosystem.
+- [**Ship-It Fund**](./token/SHIPIT_FUND.md) — Details the open-source grant treasury, monthly cycles, and eligibility process.
+- [**Tokenomics**](./token/TOKENOMICS.md) — Provides the full token distribution, burn structure, and economic rationale.
+- [**Wallet Structure**](./token/WALLET_STRUCTURE.md) — Describes the three-wallet model (Founder, Ship-It, TreasuryOps) and on-chain separation of duties.
+- [**Treasury Refill Policy**](./token/TREASURY_REFILL_POLICY.md) — Defines how TreasuryOps manages liquidity, reserves, and Ship-It Fund top-ups.
 
----
-
-## ⚙️ Operational Documentation (`docs/operations/`)
-
-Outlines how DevOpsCoin LLC operates — governance, transparency, and contributor practices.
-
-- [Internal Contributing Standards](./operations/CONTRIBUTING_INTERNAL.md) — Maintainer and commit policies for code quality, CI, and branching.
-- [Development](./operations/DEVELOPMENT.md) — Build, testing, and deployment guidelines for the website and app.
-- [Governance](./operations/GOVERNANCE.md) — Explains how DevOpsCoin LLC manages on-chain funds and community oversight.
-- [Transparency Policy](./operations/TRANSPARENCY.md) — Defines public auditability and on-chain verification for all wallet operations.
+> **Built. Not begged.**
 
 ---
 
-> “Where pipelines meet protocols.”
+## Operational Documentation (`/docs/operations`)
+
+Outlines how **DevOpsCoin LLC** operates — governance, transparency, and contributor discipline.
+
+- [**Contributing Standards**](./operations/CONTRIBUTING_INTERNAL.md) — Maintainer rules for commits, CI, and branching hygiene.
+- [**Development**](./operations/DEVELOPMENT.md) — Build, testing, and deployment guidelines for the web and contract layers.
+- [**Governance**](./operations/GOVERNANCE.md) — Defines fund management, approval processes, and community oversight.
+- [**Transparency Policy**](./operations/TRANSPARENCY.md) — Establishes public auditability and on-chain verification for all wallet activity.
+
+---
+
+> **Fund reality — not fantasy.**

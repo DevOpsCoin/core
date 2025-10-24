@@ -32,7 +32,9 @@ export default function DevOpsBuyCard() {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-48">
-        <p className="text-gray-400 text-sm">Checking token status...</p>
+        <p className="text-gray-400 text-sm">
+          Verifying token listing on Jupiter...
+        </p>
       </div>
     );
   }
@@ -45,12 +47,13 @@ export default function DevOpsBuyCard() {
         {isListed ? (
           <>
             <p className="text-gray-400 mb-4 text-sm leading-relaxed">
-              $DEVOPS has graduated from Pump.fun and is now trading on{' '}
+              $DEVOPS has graduated from Pump.fun and is now actively trading on{' '}
               <span className="text-cyan-400 font-semibold">Raydium</span>. You
-              can buy or swap directly using the embedded Jupiter interface
+              can buy or swap directly through the embedded Jupiter interface
               below.
             </p>
-            <div className="h-[460px] overflow-hidden rounded-xl border border-cyan-800 shadow-inner">
+
+            <div className="overflow-hidden rounded-xl border border-cyan-800 shadow-inner aspect-[5/6] max-h-[480px]">
               <iframe
                 src={JUPITER_IFRAME_URL}
                 title="Jupiter Swap"
@@ -67,25 +70,30 @@ export default function DevOpsBuyCard() {
               during its launch phase. Trading volume from early supporters
               generates <strong>creator rewards</strong> that flow into the{' '}
               <strong>TreasuryOps wallet</strong> — a SOL-based operations fund
-              initially bootstrapped with 2% DEVOPS and SOL for airdrops,
-              marketing, and liquidity operations. TreasuryOps does not hold
-              $DEVOPS long-term and only accumulates tokens from{' '}
-              <strong>buybacks or purchases</strong> used for community
-              programs.
+              seeded with 2% DEVOPS and SOL for liquidity, marketing, and
+              operational support.
               <br />
               <br />
-              50% of creator rewards remain in TreasuryOps to sustain operations
-              and Ship-It Fund top-ups, while the remaining 50% are withdrawn
-              for business operations and real-world expenses.
+              The TreasuryOps wallet holds DEVOPS temporarily only for{' '}
+              <strong>buybacks or Ship-It top-ups</strong>. It manages
+              liquidity, executes buybacks, and funds ecosystem growth — all
+              publicly logged in the transparency ledger.
+              <br />
+              <br />
+              Creator rewards from <strong>Pump.fun</strong> are allocated
+              approximately 50/50: half retained by TreasuryOps to sustain
+              operations and Ship-It top-ups, and half directed to DevOpsCoin
+              LLC for business operations. Every transaction is disclosed in the
+              public transparency ledger.
               <br />
               <br />
               The{' '}
               <span className="text-cyan-400 font-semibold">
                 Ship-It Fund
               </span>{' '}
-              distributes <strong>monthly open-source grants</strong> to DevOps
-              builders and contributors. If volume dips, grants simply roll over
-              to the next active month.
+              issues <strong>monthly open-source grants</strong> to DevOps
+              builders and contributors. When volume slows, grants roll forward
+              automatically — no forced sales or dilution.
             </p>
             <a
               href={PUMPFUN_URL}

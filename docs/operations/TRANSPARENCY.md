@@ -1,141 +1,135 @@
 # Transparency & Public Verification
 
-DevOpsCoin operates under the belief that **transparency is infrastructure**.  
-This document explains how the **Ship-It Fund**, **TreasuryOps Wallet**, and **Founder Vesting Program** are verified, logged, and auditable across both on-chain and repository records.
+DevOpsCoin operates on one non-negotiable principle: **transparency is built into the system.**  
+This document defines how the **Ship-It Fund**, **TreasuryOps Wallet**, and **Founder Vesting Program** are verified, logged, and made publicly auditable — both on-chain and in this repository.
 
 ---
 
-## 🧭 Transparency Philosophy
+## Transparency Philosophy
 
 DevOpsCoin applies DevOps principles — **automation, observability, and accountability** — to blockchain governance.  
-Every action is measurable, reproducible, and reviewable — just like a CI/CD pipeline.
+Every operation is measurable, reproducible, and reviewable.
 
 We believe in:
 
 - **Automation over discretion**
 - **Verification over assumption**
-- **Transparency over hype**
+- **Execution over expectation**
 
-All fund operations are executed by **DevOpsCoin LLC** and recorded on-chain (Solana) or in this repository for public review.
-
----
-
-## 💧 Core Transparency Components
-
-| Wallet / Program                   | Purpose                                                                                                                                                                     | Transparency Mechanism                                                |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| **Ship-It Fund (DEVOPS)**          | Dedicated to open-source grants and community sponsorships. Issues monthly grants; rolls over if volume falls short. Never sells DEVOPS.                                    | Public Solana wallet + on-chain transactions + monthly ledger reports |
-| **TreasuryOps (SOL + 2 % DEVOPS)** | Holds SOL from creator rewards and a 2 % DEVOPS bootstrap allocation. Funds marketing, liquidity, operations, and buybacks. Provides Ship-It top-ups when reserves run low. | On-chain SOL transactions + transparency ledger + periodic summaries  |
-| **Founder Vesting**                | 10 % founder allocation with 3-month cliff and 20-month linear vesting. Ensures long-term alignment and trust.                                                              | On-chain vesting contract + public vesting log                        |
+All fund operations are handled by **DevOpsCoin LLC** and recorded either on-chain (Solana) or in this repository for full public review.
 
 ---
 
-## 🪙 Ship-It Fund Transparency
+## Core Transparency Components
 
-The **Ship-It Fund** operates as a dedicated grant treasury for open-source innovation.
+| Wallet / Program                   | Purpose                                                                                                                                                                     | Transparency Mechanism                                                 |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Ship-It Fund (DEVOPS)**          | Transparent grant treasury for open-source sponsorships. Issues monthly grants; rolls forward if volume falls short. Never sells DEVOPS.                                    | Public Solana wallet, on-chain transactions, and monthly ledger logs.  |
+| **TreasuryOps (SOL + 2 % DEVOPS)** | Holds SOL from creator rewards and a 2 % DEVOPS bootstrap allocation. Funds marketing, liquidity, operations, and buybacks. Provides Ship-It top-ups when reserves decline. | On-chain SOL transactions, transparency ledger, and monthly summaries. |
+| **Founder Vesting**                | 10 % founder allocation with a 3-month cliff and 20-month linear vesting schedule to ensure long-term alignment and public trust.                                           | On-chain vesting contract and public vesting logs.                     |
 
-- Issues **monthly grants** when ecosystem trading volume supports it
-- Rolls grants forward when volume dips below threshold
-- Holds only DEVOPS tokens (never sold or swapped)
-- May receive top-ups from the TreasuryOps wallet to sustain grants
+---
+
+## Ship-It Fund Transparency
+
+The **Ship-It Fund** serves as a transparent, auditable grant pool for open-source development.
+
+- Issues **monthly grants** when ecosystem volume supports it.
+- Rolls forward when activity slows.
+- Holds only DEVOPS tokens — never sold or swapped.
+- May receive SOL top-ups from TreasuryOps as needed.
 
 All movements are verifiable through:
 
 - **On-chain Solana transactions**
-- **Monthly ledger reports** in the [`shipit-fund`](../../shipit-fund/) directory
-- **Time-stamped commits and signatures** for every disbursement
+- **Monthly ledger reports** in [`shipit-fund`](../../shipit-fund/)
+- **Signed commits** for every disbursement or modification
 
-For full policy and grant details, see:  
-➡ [Ship-It Fund Documentation →](../token/SHIPIT_FUND.md)
+For detailed policy and structure, see [**Ship-It Fund Documentation →**](../token/SHIPIT_FUND.md)
 
-### 🔍 Ledger Verification & Access
+### Ledger Verification
 
-The canonical record of all Ship-It Fund transactions lives in the  
-[**Ship-It Fund Ledger →**](../../shipit-fund/ledger/).  
-Each ledger file is written in YAML and includes project details, grant amounts, Solana transaction hashes, and reviewer signatures.
+The canonical record of all Ship-It Fund transactions lives in  
+[`shipit-fund/ledger`](../../shipit-fund/ledger/).
 
-Verification is performed using the  
-[`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh) script, which checks:
+Each YAML entry includes project details, grant amounts, Solana transaction hashes, and reviewer signatures.  
+Verification is automated via [`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh), which checks:
 
-- SHA256 integrity of each ledger file
-- Duplicate or missing transaction hashes
-- Valid declared signature hashes
+- SHA-256 integrity of all ledger files
+- Missing or duplicate transaction hashes
+- Signature consistency and authenticity
 
-All results are auditable via the public repository and on-chain validation.
+All results are verifiable both in-repo and on-chain.
 
-> Transparency isn’t optional — it’s infrastructure.
+> Accountability isn’t marketing — it’s measurable.
 
 ---
 
-## 🧾 TreasuryOps Transparency
+## TreasuryOps Transparency
 
-The **TreasuryOps wallet** is the operational engine behind DevOpsCoin’s ecosystem.
+The **TreasuryOps wallet** manages all SOL-based ecosystem operations.
 
-It manages all SOL-based liquidity and funding operations:
+- Begins with a **2 % DEVOPS allocation (20 M tokens)** for bootstrap liquidity.
+- Receives **creator-reward inflows in SOL** from Pump.fun and PumpSwap.
+- Funds **marketing, liquidity, operations, and buybacks.**
+- Provides **SOL top-ups** to the Ship-It Fund as needed.
 
-- Begins with a **2 % DEVOPS bootstrap allocation (20 M tokens)** for initial liquidity and buyback capacity
-- Receives **creator-reward inflows in SOL** from Pump.fun and PumpSwap
-- Funds **marketing, operations, liquidity, and buybacks**
-- Provides **SOL top-ups** to the Ship-It Fund when grant reserves decline
+Activity is fully verifiable through:
 
-All transactions are transparent and auditable via:
+- **Public Solana wallet history**
+- **Monthly ledger entries** in `/docs/ledger/TREASURY_LOG.md`
+- **Cross-referenced transaction hashes** linked to signed commits
 
-- **Public Solana wallet activity**
-- **Ledger entries** published monthly in `/docs/ledger/TREASURY_LOG.md`
-- **Cross-referenced transaction hashes** in verified repo commits
-
-See also:  
-➡ [Treasury Refill Policy →](../token/TREASURY_REFILL_POLICY.md)
+For additional details, see [**Treasury Refill Policy →**](../token/TREASURY_REFILL_POLICY.md)
 
 ---
 
-## 👤 Founder Vesting Transparency
+## Founder Vesting Transparency
 
 | Parameter          | Value                          |
 | ------------------ | ------------------------------ |
 | **Allocation**     | 10 % (100 M DEVOPS)            |
-| **Cliff**          | 3 months (no release)          |
+| **Cliff**          | 3 months                       |
 | **Vesting Period** | 20 months linear (5 % / month) |
 | **Network**        | Solana                         |
 | **Beneficiary**    | RootSignal (Founder)           |
 
-Tokens unlock trustlessly through an immutable vesting contract.  
-All events are visible on-chain and summarized quarterly in the transparency logs.
+Tokens unlock automatically through an immutable on-chain contract.  
+All vesting events are visible on Solana and summarized quarterly in transparency logs.
 
 ---
 
-## 🔎 Verification Methods
+## Verification Methods
 
-Unified verification workflow across all wallets:
+A unified verification workflow applies across all programs:
 
-- **Solana explorer links (Solscan)** for every transaction
-- **Signed ledger entries** under `/docs/ledger/` or in `../../shipit-fund/ledger/`
-- **Time-stamped commits** for each movement or top-up
-- **Public discussions** for major grant or operational actions
+- **On-chain explorer links (Solscan)** for every transaction.
+- **Signed ledger entries** under `/docs/ledger/` and `../../shipit-fund/ledger/`.
+- **Time-stamped commits** for each top-up or grant disbursement.
+- **Public records** for every material governance action.
 
-Each ledger entry includes:  
-_date, purpose, amount, wallets, hash, signature._  
-No hidden transfers. No off-ledger movements.
-
----
-
-## 📢 Community Oversight
-
-- **Verify** — audit wallet transactions on-chain
-- **Review** — cross-check ledger entries with explorers
-- **Discuss** — participate via GitHub or Telegram
-- **Contribute** — propose open-source projects eligible for funding
+Each entry includes: _date, purpose, amount, wallet addresses, transaction hash, and signature._  
+No hidden transfers. No off-ledger activity.
 
 ---
 
-## 🧱 Guiding Principle
+## Community Oversight
 
-DevOpsCoin is built on **pipelines, proof, and public accountability**.  
-Every transaction should be as traceable as a CI pipeline run.
+- **Verify** — audit transactions directly on-chain.
+- **Review** — compare ledger entries against Solana records.
+- **Contribute** — propose or support open-source projects eligible for funding.
+- **Discuss** — engage via GitHub Discussions or Telegram.
 
-> **“Pipelines, not politics. Verify before you trust.”**
+Transparency is only complete when the community verifies it.
+
+---
+
+## Guiding Principle
+
+DevOpsCoin exists to **fund reality, not speculation.**  
+Transparency isn’t a feature — it’s the foundation.
 
 ---
 
 **Maintainer:** RootSignal (DevOpsCoin LLC)  
-**Last Updated:** October 2025 — Ledger Verification Integration + Cross-Repository Alignment
+**Last Updated:** October 2025 — Transparency and Verification Alignment

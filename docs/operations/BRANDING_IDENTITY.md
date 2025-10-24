@@ -7,9 +7,9 @@
 
 ## Core Brand Positioning
 
-> **DevOpsCoin ($DEVOPS)** — the purpose-driven memecoin built by engineers, not marketers.  
-> It rejects the hype, hopium, and hollow promises that dominate crypto culture.  
-> Every wallet, every grant, and every commit is public — fueling **The Ship-It Fund**, which funds real open-source builders, not speculation.
+> **DevOpsCoin ($DEVOPS)** — a memecoin built by engineers, not marketers.  
+> It rejects hype and empty promises.  
+> Every wallet, every grant, and every commit is public — funding **The Ship-It Fund**, which supports real open-source work.
 
 ---
 
@@ -19,22 +19,21 @@
 
 **SHIP IT. DON’T SHILL IT.**
 
-> The defining line between builders and believers.
+> The line between building and selling.
 
-### Secondary (for documentation and marketing)
+### Secondary (for documentation and reference)
 
 **BUILT. NOT BEGGED.**  
 **Hope is not a strategy.**
 
-### Supporting Variants (for campaigns or creative use)
+### Supporting Variants (for limited use)
 
-- We don’t sell dreams; we fund reality.
+- We don’t sell dreams; we fund work.
 - Every wallet, every grant, every commit — public.
 - The meme with a changelog.
 - Code > Copium.
 
-> Use these selectively across content, choosing tone by context:  
-> **Primary = ethos**, **Secondary = conviction**, **Variants = creativity.**
+> Use sparingly: **Primary = ethos**, **Secondary = conviction**, **Variants = context.**
 
 ---
 
@@ -42,40 +41,40 @@
 
 ### One-liner
 
-> Fund reality — not fantasy.
+> Fund real builders — not fantasies.
 
-### Three-liner (for site, press, and investor decks)
+### Three-liner
 
-> DevOpsCoin is an engineer-founded memecoin that applies DevOps discipline to crypto.  
-> The Ship-It Fund fuels open-source projects, while TreasuryOps sustains transparency and growth.  
-> We don’t chase pumps — we ship releases.
+> DevOpsCoin applies DevOps discipline to crypto.  
+> The Ship-It Fund supports open-source projects, while TreasuryOps maintains operational clarity.  
+> We don’t chase charts — we ship code.
 
 ---
 
 ## Tone & Style Guide
 
-| Category     | Description                                                                                           | Example                                                             |
-| ------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| **Voice**    | Confident, technical, anti-hype. Built on facts, not fantasy.                                         | “Every wallet, every grant, every commit — public.”                 |
-| **Tone**     | Dry, direct, irreverent toward hype. Sarcasm welcome; dishonesty isn’t.                               | “We deploy. They pray.”                                             |
-| **Language** | Minimal, Markdown-native. No emojis, no exclamation marks unless quoting the absurd.                  | “Hope is not a strategy.”                                           |
-| **Audience** | Builders, maintainers, and open-source contributors who understand systems and skepticism.            | “We’re not here to promise gains — we’re here to fund maintainers.” |
-| **Visuals**  | Mechanical precision: dark UI tones, teal + silver palette, clean geometry. No ‘moon’ or meme tropes. | Infinity loop + gear mark only.                                     |
-| **Format**   | Prefer Markdown or plaintext. Every artifact should render clearly in a repo.                         | `README.md`, `WHITEPAPER.md`, `/docs/` pages.                       |
+| Category     | Description                                                                                            | Example                                             |
+| ------------ | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
+| **Voice**    | Technical, direct, honest. Built on facts, not slogans.                                                | “Every wallet, every grant, every commit — public.” |
+| **Tone**     | Dry and concise. Skeptical of hype. Sarcasm okay; spin is not.                                         | “We deploy. They pray.”                             |
+| **Language** | Markdown-native. No emojis or exclamation marks.                                                       | “Hope is not a strategy.”                           |
+| **Audience** | Builders, maintainers, and open-source contributors who value proof over pitch.                        | “We fund maintainers, not marketing.”               |
+| **Visuals**  | Industrial feel: teal and silver palette, dark background. No mascots or glossy “to the moon” imagery. | Infinity loop + gear mark only.                     |
+| **Format**   | Prefer Markdown or plaintext. Everything should render cleanly in a repo.                              | `README.md`, `WHITEPAPER.md`, `/docs/` pages.       |
 
 ---
 
 ## Visual Identity
 
-| Element             | Specification                                                                                              |
-| ------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Primary Color**   | `#00B7B3` (Teal from infinity loop logo)                                                                   |
-| **Secondary Color** | `#CCCCCC` (Soft silver for typography)                                                                     |
-| **Background**      | `#0F1117` (Charcoal)                                                                                       |
-| **Typography**      | Sans-serif (Inter, Space Grotesk, or system default); uppercase for $DEVOPS mark                           |
-| **Logo Usage**      | Gear + infinity loop mark + `$DEVOPS` text. Rim text: `SHIP IT. DON’T SHILL IT.`                           |
-| **Imagery**         | Dev culture visuals — terminals, CI/CD dashboards, commits, build logs. Avoid any “moon” or mascot themes. |
-| **Layout Feel**     | Clean, grid-based, industrial. No gradients or excessive shine.                                            |
+| Element             | Specification                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------- |
+| **Primary Color**   | `#00B7B3` (Teal from infinity loop logo)                                                          |
+| **Secondary Color** | `#CCCCCC` (Soft silver for typography)                                                            |
+| **Background**      | `#0F1117` (Charcoal)                                                                              |
+| **Typography**      | Sans-serif (Inter, Space Grotesk, or system default); `$DEVOPS` in uppercase when used as a mark. |
+| **Logo Usage**      | Gear + infinity loop + `$DEVOPS`. Rim text: `SHIP IT. DON’T SHILL IT.`                            |
+| **Imagery**         | Developer environments: terminals, CI/CD dashboards, commits, logs. No mascots or hype visuals.   |
+| **Layout Feel**     | Clean, grid-based, industrial. No gradients or gloss.                                             |
 
 ---
 
@@ -84,21 +83,21 @@
 | Pillar                      | Description                                                   |
 | --------------------------- | ------------------------------------------------------------- |
 | **Transparency by Default** | Every wallet, grant, and transaction is public and auditable. |
-| **Open-Source Alignment**   | Funds real contributors — not influencers.                    |
-| **Operational Discipline**  | DevOps principles over marketing promises.                    |
-| **Anti-Hype Realism**       | No moonshots, no miracles. Execution > expectation.           |
-| **Engineer Credibility**    | Founded by those who actually ship code.                      |
+| **Open-Source Alignment**   | Funding contributors over influencers.                        |
+| **Operational Discipline**  | DevOps principles over marketing.                             |
+| **Anti-Hype Realism**       | No moonshots, no promises. Execution over expectation.        |
+| **Engineer Credibility**    | Built by people who actually ship.                            |
 
 ---
 
 ## Brand Philosophy
 
 > Other memecoins sell hope.  
-> DevOpsCoin funds reality.  
-> We’re not chasing speculation — we’re building infrastructure for open-source builders.  
+> DevOpsCoin funds real work.  
+> We’re not promising revolutions — we’re building a small, transparent system that funds open-source builders.  
 > **Ship it. Don’t shill it.**
 
 ---
 
 **Maintainer:** RootSignal (DevOpsCoin LLC)  
-**Last Updated:** October 2025 — Anti-Hype Identity Revision
+**Last Updated:** October 2025 — Grounded Identity Revision

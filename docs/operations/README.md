@@ -1,68 +1,67 @@
 # DevOpsCoin Contributor Handbook
 
-Welcome to the **DevOpsCoin Handbook** — the operating guide for contributors, developers, and maintainers of the $DEVOPS ecosystem.
-
-This section documents how the project is governed, developed, and maintained with transparency and accountability.
-
----
-
-## 🧭 Purpose
-
-The Handbook defines _how_ DevOpsCoin operates — not just the codebase, but the culture.  
-It reflects our commitment to open contribution, responsible governance, and technical rigor.
-
-If the [Tokenomics](../token/TOKENOMICS.md) explain _what_ DevOpsCoin is, the Handbook explains _how we run it_.
+The **DevOpsCoin Handbook** defines how contributors, developers, and maintainers operate within the $DEVOPS ecosystem.  
+It sets expectations for collaboration, development, and governance — grounded in **transparency, automation, and accountability.**
 
 ---
 
-## 📘 Sections
+## Purpose
+
+The Handbook outlines **how** DevOpsCoin operates — not just the codebase, but the culture behind it.  
+It reflects a commitment to open contribution, responsible governance, and engineering discipline.
+
+If [Tokenomics](../token/TOKENOMICS.md) explains **what** DevOpsCoin is, the Handbook defines **how it’s run** and maintained day-to-day.
+
+---
+
+## Sections
 
 ### [Governance](./GOVERNANCE.md)
 
-Describes the project’s decision-making structure, including the roles of the Founder, Community Wallet, and Ship-It Fund.  
-Outlines how proposals, audits, and community decisions are handled post-launch.
+Defines how decisions are made and how funds move.  
+Covers the operational structure of the **Ship-It Fund**, **TreasuryOps Wallet**, and **Founder Vesting Program**, along with transparency and oversight practices.
 
 ---
 
 ### [Development Process](./DEVELOPMENT.md)
 
-Documents how the codebase is maintained — branching, testing, deployment, and versioning guidelines for both smart contracts and the website.
+Outlines codebase management — branching, testing, deployment, and versioning standards for both the website and Solana programs.  
+Focuses on predictability, consistency, and quality enforcement through automation.
 
 ---
 
 ### [Transparency Policy](./TRANSPARENCY.md)
 
-Outlines how project wallets, vesting, and fund flows are publicly verified.  
-Explains what’s visible on-chain, what’s published to GitHub, and how DevOpsCoin maintains its “no surprises” ethos.
+Documents how wallets, vesting schedules, and fund movements are publicly verified.  
+Explains what’s visible on-chain, what’s logged in GitHub, and how DevOpsCoin enforces a transparency-first framework.
 
 ---
 
 ### [Internal Contribution Guide](./CONTRIBUTING_INTERNAL.md)
 
-Defines contributor expectations, coding standards, and review workflow.  
-Intended for developers working under DevOpsCoin LLC or verified contributors.
+Details contributor expectations, review flow, and internal CI/CD standards.  
+Intended for maintainers and verified contributors operating under DevOpsCoin LLC.
 
 ---
 
-## ⚙️ Contribution Workflow
+## Contribution Workflow
 
-1. **Fork the Repository** → Start from `main`, create feature branches per scope.
-2. **Run Tests and Linters** → `pnpm lint && pnpm test` ensures uniform code quality.
-3. **Submit a Pull Request** → PRs trigger automated checks and review by maintainers.
-4. **Transparency Tagging** → All merges that affect tokenomics or vesting must include the `#transparency` tag for audit visibility.
-
----
-
-## 🛡️ Principles
-
-- **Open Source First** — All core contracts and site code remain public.
-- **Immutable Fairness** — Smart contract logic is transparent and renounced post-launch.
-- **Ship-It Culture** — A portion of token fees supports real DevOps projects through grants and NFT rewards.
-- **No Speculation without Substance** — Memecoin energy, but developer integrity.
+1. **Fork the Repository** — Start from `main`; create feature branches per change scope.
+2. **Run Tests and Linters** — Use `pnpm lint && pnpm test` to validate before commit.
+3. **Submit a Pull Request** — Every PR triggers automated checks and mandatory review.
+4. **Transparency Tagging** — Any PR affecting tokenomics, vesting, or fund flow must include a `#transparency` tag for audit visibility.
 
 ---
 
-**Next:**  
-➡ [View Governance →](./GOVERNANCE.md)  
-➡ [Review Development Process →](./DEVELOPMENT.md)  
-➡ [See Transparency Policy →](./TRANSPARENCY.md)
+## Principles
+
+- **Open Source First** — All core contracts and app code remain public and auditable.
+- **Predictable Governance** — Rules are procedural, not political; decisions leave proof.
+- **Ship-It Ethos** — Token-funded grants support open-source DevOps and real builders.
+- **Accountability by Design** — Automation replaces assumption; ledgers replace promises.
+- **No Empty Hype** — The project invites excitement, but always anchored in substance.
+
+---
+
+**Maintainer:** RootSignal (DevOpsCoin LLC)  
+**Last Updated:** October 2025 — Contributor Alignment Revision

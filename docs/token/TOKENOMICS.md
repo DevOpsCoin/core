@@ -7,69 +7,70 @@
 **Launch Path:** Pump.fun → Raydium → Jupiter  
 **Creator Authority:** Revoked post-launch (no adjustable parameters)
 
-_Last updated: October 2025_
+_Last Updated: October 2025 — Ledger & Three-Wallet Integration_
 
 ---
 
 ## 1) Design Principles
 
-- **No transfer taxes / reflections.** DevOpsCoin does **not** impose transaction taxes or on-chain fees.
-- **Single-purpose wallets.** Ship-It for grants, TreasuryOps for ops/liquidity, Founder under a vesting program.
-- **Transparent by default.** All inflows/outflows are verifiable on Solana and mirrored in the repo ledgers.
+- **No transaction taxes or reflections.** $DEVOPS imposes no embedded fees or hidden redirections.
+- **Dedicated wallets with clear purpose.** Ship-It for grants, TreasuryOps for operations and liquidity, Founder under immutable vesting.
+- **Transparency by default.** Every inflow and outflow is verifiable on-chain and mirrored in public ledgers.
 
 ---
 
 ## 2) Fixed Supply & Allocation
 
-Total supply is **1,000,000,000 DEVOPS** and is fixed at deployment.
+The total supply of **1,000,000,000 DEVOPS** is permanently fixed at deployment.
 
-| Allocation                           | Percent | Amount (DEVOPS) | Purpose                                                                                               |
-| ------------------------------------ | :-----: | --------------: | ----------------------------------------------------------------------------------------------------- |
-| **Founder Vesting**                  |   10%   |     100,000,000 | Long-term alignment; 3-month cliff + 20-month linear vesting                                          |
-| **Ship-It Fund**                     |   5%    |      50,000,000 | Dedicated grant treasury for open-source projects; never sells DEVOPS                                 |
-| **TreasuryOps (bootstrap DEVOPS)**   |   2%    |      20,000,000 | Operational buffer for liquidity support and market operations; pairs with SOL creator-reward inflows |
-| **Public Supply (circulating + LP)** |   83%   |     830,000,000 | Distributed via Pump.fun launch curve and subsequent Raydium/Jupiter liquidity                        |
+| Allocation                           | Percent | Amount (DEVOPS) | Purpose                                                                                        |
+| ------------------------------------ | :-----: | --------------: | ---------------------------------------------------------------------------------------------- |
+| **Founder Vesting**                  |   10%   |     100,000,000 | Long-term alignment — 3-month cliff + 20-month linear vesting                                  |
+| **Ship-It Fund**                     |   5%    |      50,000,000 | Transparent grant treasury for open-source projects; never sells DEVOPS                        |
+| **TreasuryOps (bootstrap DEVOPS)**   |   2%    |      20,000,000 | Operational buffer for liquidity support and market stability; paired with SOL creator inflows |
+| **Public Supply (circulating + LP)** |   83%   |     830,000,000 | Distributed via Pump.fun launch curve and subsequent Raydium/Jupiter liquidity                 |
 
-> The Ship-It Fund holds DEVOPS only and does not perform market operations. Buybacks/liquidity are handled exclusively by **TreasuryOps**.
+> The Ship-It Fund holds DEVOPS only and performs no market operations.  
+> All liquidity and buyback activity occurs exclusively through **TreasuryOps**.
 
 ---
 
 ## 3) Wallet Model
 
-- **Founder Vesting (10%)** — Trustless vesting with **3-month cliff** then **5%/mo** for **20 months**.
-- **Ship-It Fund (5%)** — Single-purpose grants wallet; monthly grants when volume allows; defers and rolls forward otherwise.
-- **TreasuryOps (2% DEVOPS + SOL inflows)** — Operations, liquidity support, marketing, and **buybacks when justified by volume**; also provides Ship-It top-ups.
+- **Founder Vesting (10%)** — Trustless vesting with a 3-month cliff, releasing 5% monthly over 20 months.
+- **Ship-It Fund (5%)** — DEVOPS grant treasury disbursing monthly awards when volume supports it; rolls forward otherwise.
+- **TreasuryOps (2% DEVOPS + SOL inflows)** — Operates in SOL, managing liquidity, buybacks, and marketing; tops up Ship-It as required.
 
-See detailed structure: [Wallet Structure](./WALLET_STRUCTURE.md)
+Detailed structure: [Wallet Structure](./WALLET_STRUCTURE.md)
 
 ---
 
 ## 4) Vesting Parameters (Founder)
 
-| Parameter   | Value                           |
-| ----------- | ------------------------------- |
-| Cliff       | 3 months                        |
-| Linear      | 20 months at ~5%/month          |
-| Network     | Solana                          |
-| Beneficiary | RootSignal (DevOpsCoin Founder) |
+| Parameter   | Value                  |
+| ----------- | ---------------------- |
+| Cliff       | 3 months               |
+| Linear      | 20 months at ~5%/month |
+| Network     | Solana                 |
+| Beneficiary | RootSignal (Founder)   |
 
-> Tokens unlock trustlessly via the vesting program and are claimable only by the registered wallet.
+> Tokens unlock automatically via immutable contract logic and are claimable only by the founder’s wallet.
 
 ---
 
-## 5) Creator Rewards — Funding Mechanics
+## 5) Creator Rewards — Funding Flow
 
-DevOpsCoin sustainability is funded by **creator rewards** from Pump.fun trading activity (in **SOL**), not by on-chain transfer taxes.
+DevOpsCoin’s sustainability relies on **creator rewards (SOL)** from Pump.fun activity — not inflation, not fees.
 
-**Flow (conceptual):**
+**Reward Flow:**
 
-```
+```text
 Pump.fun Creator Rewards (SOL)
            │
            ▼
       TreasuryOps (SOL + 2% DEVOPS)
-      ├─ Ops, liquidity support, marketing
-      ├─ Buybacks (as warranted)
+      ├─ Operations, liquidity, and buybacks
+      ├─ Marketing and ecosystem support
       └─ Top-ups to Ship-It Fund (DEVOPS grants)
                 │
                 ▼
@@ -78,64 +79,71 @@ Pump.fun Creator Rewards (SOL)
            └─ Rolls forward when volume is low
 ```
 
-**Split guidance:**
+**Allocation Policy:**
 
-- Creator rewards are **currently targeted ~50/50** between TreasuryOps operations and DevOpsCoin LLC business activities.
-- Adjustments **within 40–60% bands** may occur based on market conditions and are disclosed in the transparency ledger prior to implementation.
-- No changes to total supply or vesting mechanics arise from these adjustments.
+- Creator rewards are roughly **split 50/50** between TreasuryOps operations and DevOpsCoin LLC business functions.
+- Variations of **±10%** are permitted for operational needs but must be documented in the transparency ledger before execution.
+- No changes to total supply, vesting, or wallet allocations occur under this model.
 
-Policy link: [Treasury Refill Policy](./TREASURY_REFILL_POLICY.md)
+See: [Treasury Refill Policy](./TREASURY_REFILL_POLICY.md)
 
 ---
 
-## 6) Liquidity & Launch
+## 6) Liquidity & Market Operations
 
-- **Pump.fun** bonding-curve launch provides fair initial distribution.
-- Liquidity migrates to **Raydium**, with routing via **Jupiter** thereafter.
-- TreasuryOps may deploy liquidity support and conduct buybacks when justified by observed volume and market health.
+- **Pump.fun** provides the initial distribution and launch curve.
+- Liquidity transitions to **Raydium**, then routes through **Jupiter** for aggregation.
+- TreasuryOps may add liquidity or perform buybacks based solely on transparent reserve data and ledger entries.
 
 ---
 
 ## 7) Transparency & Verification
 
-All material movements are publicly auditable:
+All key wallet activity is publicly verifiable:
 
-- **Ship-It Fund ledger (canonical):** [`/shipit-fund/ledger/`](../../shipit-fund/ledger/)
-- **Ledger verification script:** [`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh)
-- **Transparency logs (repo):** `/docs/ledger/TRANSPARENCY_LOG.md`
-- **Governance policy:** [Governance & Oversight](../operations/GOVERNANCE.md)
-- **Ship-It Fund doc:** [SHIPIT_FUND.md](./SHIPIT_FUND.md)
+- **Ship-It Fund Ledger:** [`/shipit-fund/ledger/`](../../shipit-fund/ledger/)
+- **Verification Script:** [`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh)
+- **Transparency Logs:** `/docs/ledger/TRANSPARENCY_LOG.md`
+- **Governance Policy:** [Governance & Oversight](../operations/GOVERNANCE.md)
+- **Ship-It Fund Docs:** [SHIPIT_FUND.md](./SHIPIT_FUND.md)
 
-Each ledger entry captures: date, purpose, amount, wallets, Solana tx hash, and signature.  
-No private/off-ledger transfers are permitted.
-
----
-
-## 8) Risk, Constraints, and Invariants
-
-- **No transaction taxes.** Transfers of DEVOPS are not taxed or redirected.
-- **No hidden/side wallets.** All wallets are publicly declared and verifiable.
-- **No adjustable supply.** Fixed supply; no mint after initialization.
-- **Operational discipline.** Ship-It never sells DEVOPS; market actions occur via TreasuryOps only.
+Each ledger record includes date, purpose, amount, wallet addresses, Solana transaction hash, and signature.  
+No off-ledger or discretionary transfers.
 
 ---
 
-## 9) Roadmap Alignment (high level)
+## 8) Invariants and Controls
 
-- **Dev Onboarding:** Mid-November 2025
-- **Stealth Phase:** December 2025
-- **Public Launch:** January 1, 2026
+- **No embedded taxes.** DEVOPS transfers are clean at the protocol level.
+- **No hidden wallets.** All addresses are declared and linked to purpose.
+- **Fixed supply.** No minting, burning, or redistribution after deployment.
+- **Operational discipline.** Ship-It Fund manages grants; TreasuryOps manages liquidity and operations.
 
-These milestones do not alter tokenomics; they describe rollout timing for ecosystem growth.
+---
+
+## 9) Roadmap Alignment
+
+| Phase                    | Description                           | Timing            |
+| ------------------------ | ------------------------------------- | ----------------- |
+| **Developer Onboarding** | Initial contributor engagement        | Mid-November 2025 |
+| **Stealth Phase**        | Internal stabilization period         | December 2025     |
+| **Public Launch**        | Open trading and transparency rollout | January 1 2026    |
+
+These milestones affect **execution**, not tokenomics or allocation structure.
 
 ---
 
-## Appendix — Quick Math
+## Appendix — Quick Reference
 
-- **1% of supply** = 10,000,000 DEVOPS
-- **0.1% of supply** = 1,000,000 DEVOPS
-- **5% Ship-It** = 50,000,000 DEVOPS
-- **10% Founder** = 100,000,000 DEVOPS
-- **2% TreasuryOps bootstrap** = 20,000,000 DEVOPS
+| Metric              | Value              | Notes              |
+| ------------------- | ------------------ | ------------------ |
+| **5% Ship-It Fund** | 50,000,000 DEVOPS  | Grant treasury     |
+| **10% Founder**     | 100,000,000 DEVOPS | Vesting allocation |
+| **2% TreasuryOps**  | 20,000,000 DEVOPS  | Bootstrap reserve  |
 
 ---
+
+## Principle
+
+DevOpsCoin funds **work, not hype.**  
+Every wallet, ledger, and transaction exists to prove it — not to promise it.

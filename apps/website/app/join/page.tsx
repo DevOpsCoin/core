@@ -17,7 +17,6 @@ export default function JoinPage() {
         />
       </div>
 
-      {/* Foreground text content */}
       <main
         className="max-w-2xl mx-auto px-4 py-12 text-gray-100 text-left relative"
         style={{ zIndex: 3 }}
@@ -40,11 +39,12 @@ export default function JoinPage() {
           Join the DevOpsCoin Builder Collective
         </h1>
 
-        <p className="mb-8 text-lg text-gray-300">
-          We’re assembling a collective of builders, meme engineers, and
-          open-source contributors defining the future of DevOps culture on the{' '}
+        <p className="mb-8 text-lg text-gray-300 leading-relaxed">
+          We’re assembling a collective of builders, engineers, and open-source
+          contributors shaping the next chapter of DevOps culture on the{' '}
           <strong>Solana blockchain</strong>. If you can ship code, design
-          memes, or craft systems that scale — this is where you belong.
+          systems, or automate what others overcomplicate — this is where you
+          belong.
         </p>
 
         {/* What We Need */}
@@ -68,33 +68,32 @@ export default function JoinPage() {
           </h2>
           <ul className="list-disc pl-6 text-gray-300 space-y-2">
             <li>
-              <strong>DevOps Engineers</strong> — experts in CI/CD, automation,
-              or observability who want to apply real DevOps principles to
+              <strong>DevOps Engineers</strong> — specialists in CI/CD,
+              automation, and observability who can bring DevOps discipline to
               decentralized ecosystems.
             </li>
             <li>
-              <strong>Solana Developers</strong> — builders fluent in Rust,
-              Anchor, and TypeScript SDKs to extend our smart programs, bots,
-              and telemetry tooling.
+              <strong>Solana Developers</strong> — fluent in Rust, Anchor, and
+              TypeScript SDKs to extend our smart programs, bots, and telemetry
+              tooling.
             </li>
             <li>
-              <strong>Marketing & Growth Strategists</strong> — storytellers who
-              can grow communities and shape a sustainable ecosystem with data,
-              integrity, and authenticity.
+              <strong>Marketing &amp; Growth Strategists</strong> — storytellers
+              who can grow communities with data, integrity, and authenticity.
             </li>
             <li>
-              <strong>Technical Copywriters</strong> — writers who can merge
-              engineering precision with meme-driven storytelling.
+              <strong>Technical Copywriters</strong> — writers who merge
+              engineering precision with clear, human communication.
             </li>
             <li>
               <strong>Strategic Builders</strong> — people who understand both
               open-source culture and tokenized ecosystems, helping guide the{' '}
-              <strong>Ship-It Fund</strong> toward long-term community impact.
+              <strong>Ship-It Fund</strong> toward measurable impact.
             </li>
             <li>
-              <strong>Community Builders</strong> — moderators, curators, and
-              contributors who can maintain high-signal, low-noise communities
-              rooted in trust and transparency.
+              <strong>Community Builders</strong> — moderators and contributors
+              who maintain high-signal, low-noise spaces built on trust and
+              transparency.
             </li>
           </ul>
         </section>
@@ -116,25 +115,26 @@ export default function JoinPage() {
                 d="M12 8v4l3 3M4 12a8 8 0 1116 0 8 8 0 01-16 0z"
               />
             </svg>
-            The Ship-It Fund & Open-Source Grants
+            The Ship-It Fund &amp; Open-Source Grants
           </h2>
-          <p className="text-gray-300">
-            The <strong>Ship-It Fund</strong> is a 5% bootstrap allocation of
-            DEVOPS reserved for open-source grants and DevOps tooling. After
-            launch, its balance becomes variable — sustained through periodic
-            top-ups from the <strong>TreasuryOps wallet</strong>.
+          <p className="text-gray-300 leading-relaxed">
+            The <strong>Ship-It Fund</strong> is a 5% DEVOPS grant treasury
+            dedicated to open-source projects and DevOps tooling. Its reserves
+            are sustained through periodic top-ups from the{' '}
+            <strong>TreasuryOps wallet</strong>, a SOL-based operations wallet
+            seeded with 2% DEVOPS and SOL for liquidity, marketing, and
+            operational support.
             <br />
             <br />
-            TreasuryOps is a SOL-based operations fund initially seeded with 2%
-            DEVOPS and SOL for liquidity, marketing, and operations. It receives
-            ongoing inflows from <strong>creator rewards</strong> — 50% are
-            retained to fund operations and Ship-It grants, while 50% are
-            withdrawn for business operations.
+            TreasuryOps receives continuous inflows from{' '}
+            <strong>creator rewards</strong>: roughly half fund operations and
+            Ship-It grants, while the other half supports DevOpsCoin LLC’s
+            business operations. Every transaction is published in the public
+            transparency ledger and verifiable on-chain.
             <br />
             <br />
-            Ship-It grants are distributed monthly (or rolled forward) depending
-            on trading volume, with all disbursements transparently logged
-            on-chain.
+            Grants are issued monthly — or rolled forward — based on ecosystem
+            activity and available reserves.
           </p>
         </section>
 
@@ -158,15 +158,15 @@ export default function JoinPage() {
             What We’re Not Looking For
           </h2>
           <ul className="list-disc pl-6 text-gray-300 space-y-2">
-            <li>People chasing short-term profits or hype cycles.</li>
-            <li>Low-effort meme farming or airdrop hunters.</li>
+            <li>Short-term speculators or hype chasers.</li>
+            <li>Low-effort meme farming or engagement baiting.</li>
             <li>
-              Speculators focused solely on token price, not the open-source
-              mission or culture.
+              Anyone focused purely on price action instead of progress and
+              open-source value.
             </li>
             <li>
-              Anyone unwilling to work transparently or collaborate in open
-              repositories and public discussions.
+              Contributors unwilling to build transparently or collaborate in
+              public discussions.
             </li>
           </ul>
         </section>
@@ -192,8 +192,8 @@ export default function JoinPage() {
           </h2>
           <p className="text-gray-300 mb-4">
             Whether you’re an engineer, creative, or strategist, you can help
-            shape a token that fuels real open-source innovation. Join early.
-            Build transparently. Ship constantly.
+            build a transparent token economy that funds real open-source
+            innovation. Join early. Build openly. Ship it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -219,6 +219,10 @@ export default function JoinPage() {
         >
           Back to Home
         </Link>
+
+        <p className="text-gray-500 text-xs mt-6 text-center italic">
+          Built to fund work — not hype.
+        </p>
       </main>
     </MainContent>
   );

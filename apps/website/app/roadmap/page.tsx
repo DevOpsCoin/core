@@ -1,3 +1,4 @@
+// app/roadmap/page.tsx — Public Overview for Solana Relaunch & Three-Wallet Model
 'use client';
 import React from 'react';
 import Link from 'next/link';
@@ -5,7 +6,7 @@ import MainContent from '../components/MainContent';
 
 export default function RoadmapPage() {
   return (
-    <MainContent className="text-left">
+    <MainContent className="text-left relative">
       {/* Background layer */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-transparent" />
@@ -37,22 +38,28 @@ export default function RoadmapPage() {
           Project Roadmap
         </h1>
 
-        <p className="text-gray-300 mb-6 text-lg">
+        {/* Preface */}
+        <p className="text-gray-300 mb-3 text-base">
+          The roadmap isn’t marketing. It’s a delivery plan — an engineering
+          schedule tied to real GitHub milestones, commits, and ledger entries.
+        </p>
+
+        <p className="text-gray-300 mb-6 text-lg leading-relaxed">
           <strong>$DEVOPS</strong> isn’t another flash-launch token — it’s
-          structured like a real DevOps product. Every phase follows the same
-          versioned, incremental discipline used in production engineering.
-          Progress is tracked publicly on{' '}
+          structured like a DevOps product. Each phase is iterative and
+          versioned, following the same discipline used in production
+          engineering. The live, canonical roadmap is maintained publicly on{' '}
           <a
             href="https://github.com/orgs/DevOpsCoin/projects/3"
             target="_blank"
-            className="text-cyan-400 hover:underline"
+            className="text-cyan-400 hover:underline font-semibold"
           >
             GitHub Projects
-          </a>
-          , so anyone can follow commits, raise issues, or contribute.
+          </a>{' '}
+          — where anyone can track commits, raise issues, or contribute.
         </p>
 
-        {/* How We're Building */}
+        {/* How We Build */}
         <section className="mb-10">
           <h2 className="text-2xl font-semibold text-cyan-300 mb-2 flex items-center gap-2">
             <svg
@@ -71,27 +78,26 @@ export default function RoadmapPage() {
             </svg>
             How We Build
           </h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-300">
+          <ul className="list-disc pl-6 space-y-2 text-gray-300 leading-relaxed">
             <li>
               Built on <strong>Solana</strong> for scalability, low fees, and
               transparent on-chain visibility.
             </li>
             <li>
-              <strong>Roadmap managed on GitHub</strong> — community can propose
-              milestones, PRs, or grants.
+              <strong>Roadmap managed on GitHub</strong> — all milestones
+              tracked in public repositories.
             </li>
             <li>
               <strong>Iterative lifecycle:</strong> Concept → Testnet → Launch →
               Fund Activation → Governance.
             </li>
             <li>
-              <strong>CI/CD-inspired delivery:</strong> plan → build → test →
-              ship → measure → iterate.
+              <strong>CI/CD mindset:</strong> plan → build → test → ship →
+              measure → iterate.
             </li>
             <li>
               <strong>Ship-It Fund</strong> and <strong>TreasuryOps</strong>{' '}
-              wallets operate transparently, with periodic reporting and
-              verifiable transactions.
+              wallets operate transparently with verifiable on-chain records.
             </li>
           </ul>
         </section>
@@ -113,19 +119,19 @@ export default function RoadmapPage() {
                 d="M12 8v4l3 3"
               />
             </svg>
-            Roadmap Phases
+            Roadmap Phases (Summary)
           </h2>
 
-          <div className="space-y-5 text-gray-300">
+          <div className="bg-gray-900/40 border border-cyan-800 rounded-xl p-6 space-y-5 text-gray-300 shadow-inner leading-relaxed">
             <div>
               <h3 className="text-cyan-400 font-semibold text-lg mb-1">
-                Phase 1 — Foundation (Q3–Q4 2025)
+                Phase 1 — Foundation (Q3 – Q4 2025)
               </h3>
               <p>
-                Brand identity, contract creation, and initial Solana launch via{' '}
-                <strong>Pump.fun</strong>. Establish base liquidity, community
-                wallet transparency, and founder vesting schedule. Begin
-                internal builder onboarding and repo setup.
+                Establish brand identity, token contracts, and initial Solana
+                launch via <strong>Pump.fun</strong>. Deploy the transparent
+                wallet structure and <strong>Founder Vesting</strong> contract.
+                Begin contributor onboarding and repository setup.
               </p>
             </div>
 
@@ -134,13 +140,11 @@ export default function RoadmapPage() {
                 Phase 2 — Stealth Builder Period (Late 2025)
               </h3>
               <p>
-                Private contributor recruitment and alignment. Deployment of the{' '}
+                Recruit contributors and align technical direction. Deploy the{' '}
                 <strong>TreasuryOps</strong> and <strong>Ship-It Fund</strong>{' '}
-                wallets. TreasuryOps is a SOL-based wallet bootstrapped with 2%
-                DEVOPS and SOL for early operations, liquidity, and marketing.
-                The Ship-It Fund begins with a 5% DEVOPS bootstrap allocation,
-                remaining variable post-launch based on TreasuryOps top-ups and
-                monthly grant activity.
+                wallets. The TreasuryOps wallet (2 % DEVOPS + SOL) manages
+                liquidity and operations; the Ship-It Fund (5 % DEVOPS) issues
+                monthly grants funded by TreasuryOps top-ups.
               </p>
             </div>
 
@@ -149,10 +153,10 @@ export default function RoadmapPage() {
                 Phase 3 — Public Launch (January 2026)
               </h3>
               <p>
-                Token graduates from Pump.fun to Solana DEXs (
+                Token graduates from <strong>Pump.fun</strong> to Solana DEXs (
                 <strong>Raydium</strong>, <strong>Jupiter</strong>). Public
-                roadmap and contributor programs go live. Ecosystem partnerships
-                and awareness campaigns begin.
+                roadmap and contributor programs go live. Ecosystem outreach
+                begins.
               </p>
             </div>
 
@@ -161,27 +165,38 @@ export default function RoadmapPage() {
                 Phase 4 — Ship-It Fund Activation (Q1 2026)
               </h3>
               <p>
-                The <strong>Ship-It Fund</strong> officially launches, issuing
-                its first open-source micro-grants. TreasuryOps wallet begins
-                periodic refills based on trading volume, using 50% of creator
-                rewards to sustain Ship-It grants and operations. Public
-                dashboards display wallet flow and funding history.
+                The <strong>Ship-It Fund</strong> begins issuing open-source
+                micro-grants. TreasuryOps provides top-ups based on trading
+                volume and creator reward inflows. Public dashboards display
+                historical funding and wallet movement.
               </p>
             </div>
 
             <div>
               <h3 className="text-cyan-400 font-semibold text-lg mb-1">
-                Phase 5 — Growth & Governance (Mid–Late 2026)
+                Phase 5 — Growth & Governance (Mid – Late 2026)
               </h3>
               <p>
-                NFT-based <strong>Ship-It Badges</strong> debut as reputation
-                and reward tokens. Community proposal system and lightweight
-                governance model tested. Future cross-chain expansion to{' '}
-                <strong>BNB Smart Chain</strong> evaluated for liquidity scaling
-                and additional grant channels.
+                <strong>Ship-It Badge NFTs</strong> launch as proof-of-impact
+                collectibles for contributors. A lightweight governance model
+                and proposal system emerge. Cross-chain deployment to{' '}
+                <strong>BNB Smart Chain</strong> is evaluated for liquidity
+                expansion and new grant pathways.
               </p>
             </div>
           </div>
+
+          <p className="text-xs text-gray-500 mt-3 italic">
+            This summary is informational. The canonical roadmap lives in the{' '}
+            <a
+              href="https://github.com/orgs/DevOpsCoin/projects/3"
+              target="_blank"
+              className="text-cyan-400 underline"
+            >
+              GitHub Projects board
+            </a>
+            , reflecting real progress, priorities, and version tags.
+          </p>
         </section>
 
         {/* GitHub CTA */}
@@ -218,6 +233,9 @@ export default function RoadmapPage() {
           <p className="text-gray-500 text-sm mt-4 italic">
             Updated October 2025 · Solana mainline build · Ship-It Fund +
             TreasuryOps rollout
+          </p>
+          <p className="text-gray-500 text-sm italic mt-2">
+            Built to fund work — not hype.
           </p>
         </div>
 

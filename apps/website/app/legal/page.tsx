@@ -45,12 +45,12 @@ export default function LegalPage() {
           <p>State of Formation: New Mexico, USA</p>
           <p>Entity ID / Record #: 0008053527</p>
           <p>Effective Date: October 3, 2025</p>
-          <p className="mt-2">
+          <p className="mt-2 leading-relaxed">
             DevOpsCoin LLC is a registered business entity under the New Mexico
             Limited Liability Company Act (Chapter 53, Article 19, NMSA 1978).
-            It operates transparently as the organizing entity behind the
-            <strong> $DEVOPS</strong> token and the{' '}
-            <strong>Ship-It Fund</strong>.
+            It operates transparently as the organizing entity behind the{' '}
+            <strong>$DEVOPS</strong> token and the <strong>Ship-It Fund</strong>
+            .
           </p>
         </section>
 
@@ -59,11 +59,11 @@ export default function LegalPage() {
           <h2 className="text-xl font-semibold text-cyan-400 mb-2">
             Certificate of Organization
           </h2>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 mb-4 leading-relaxed">
             The official Certificate of Organization issued by the New Mexico
             Secretary of State is available below. All documents within the{' '}
-            <code>/assets</code> directory are authentic files hosted directly
-            by DevOpsCoin LLC.
+            <code>/assets</code> directory are authentic and hosted directly by
+            DevOpsCoin LLC.
           </p>
           <a
             href="/assets/devopscoin_llc.pdf"
@@ -95,21 +95,20 @@ export default function LegalPage() {
           </h2>
           <p>
             Creator rewards generated from trading activity are divided between
-            the <strong>TreasuryOps wallet</strong> (operations, marketing,
-            liquidity) and the <strong>Ship-It Fund</strong> (open-source grants
-            and community support). The current standard allocation is a
-            <strong> 50 / 50 split</strong>.
+            the <strong>TreasuryOps wallet</strong> (for operations, liquidity,
+            and marketing) and the <strong>Ship-It Fund</strong> (for
+            open-source grants and community support). The current target
+            allocation is a <strong>50 / 50 split</strong>.
           </p>
           <p className="mt-3">
-            To ensure financial sustainability while maintaining transparency,
-            the allocation may only be adjusted within a defined range of{' '}
-            <strong>no less than 40% and no more than 60%</strong> to either
-            side. Any change outside this range is prohibited without public
-            governance approval.
+            To maintain sustainability and transparency, allocations may only be
+            adjusted within a defined range of <strong>40% – 60%</strong> to
+            either side. Any change outside this range requires public
+            disclosure and governance review before implementation.
           </p>
           <p className="mt-3">
-            All adjustments, along with justification and effective date, will
-            be documented in the public{' '}
+            All allocation adjustments, along with rationale and effective date,
+            will be recorded in the public{' '}
             <a
               href="https://github.com/DevOpsCoin/treasuryops-ledger"
               target="_blank"
@@ -117,12 +116,12 @@ export default function LegalPage() {
             >
               TreasuryOps ledger
             </a>{' '}
-            prior to implementation.
+            prior to enactment.
           </p>
           <p className="mt-3 italic text-gray-500">
             This policy provides limited operational flexibility while ensuring
-            consistent funding for open-source grants, without altering token
-            supply or vesting mechanics.
+            continued support for open-source initiatives — without altering
+            total token supply or vesting schedules.
           </p>
         </section>
 
@@ -132,29 +131,29 @@ export default function LegalPage() {
             Legal Disclaimers
           </h2>
           <p>
-            The information provided on this website and in linked documentation
-            is for informational and educational purposes only. Nothing
-            contained herein constitutes financial, investment, legal, or tax
+            The information provided on this website and in related
+            documentation is for informational and educational purposes only.
+            Nothing herein constitutes financial, investment, legal, or tax
             advice.
           </p>
           <p className="mt-3">
             The <strong>$DEVOPS</strong> token is a fixed-supply Solana SPL
             token. It does not represent equity, ownership, voting rights,
-            profit-sharing arrangements, or any financial interest in DevOpsCoin
-            LLC or its affiliates. Tokens are a utility and cultural asset used
-            to support the open-source <strong>Ship-It Fund</strong>.
+            profit-sharing, or any financial interest in DevOpsCoin LLC or its
+            affiliates. Tokens function solely as a cultural and community asset
+            supporting the open-source <strong>Ship-It Fund</strong>.
           </p>
           <p className="mt-3">
             The <strong>Ship-It Fund</strong> and <strong>TreasuryOps</strong>{' '}
-            wallets are operational accounts used to distribute transparent
-            community grants, marketing resources, and liquidity support. They
-            are not custodial, pooled investment vehicles, or yield-bearing
+            wallets are operational accounts used for transparent distribution
+            of community grants, marketing resources, and liquidity support.
+            They are not custodial, pooled investment vehicles, or yield-bearing
             accounts.
           </p>
           <p className="mt-3">
             DevOpsCoin LLC is not a financial institution, broker, or investment
-            advisor. No regulatory agency has reviewed or endorsed any part of
-            this project or documentation.
+            advisor. No regulatory agency has reviewed, approved, or endorsed
+            any portion of this project or its documentation.
           </p>
           <p className="mt-3">
             By using this website or interacting with the $DEVOPS token, you
@@ -162,35 +161,35 @@ export default function LegalPage() {
             are immutable and non-reversible.
           </p>
           <p className="mt-3 italic text-yellow-300">
-            The official network for $DEVOPS is currently{' '}
-            <strong>Solana (SPL)</strong>. A future cross-chain deployment to{' '}
-            <strong>BNB Smart Chain</strong> may occur for liquidity expansion,
-            but the Solana contract remains the primary and authoritative
-            version.
+            The official network for $DEVOPS is <strong>Solana (SPL)</strong>. A
+            potential future cross-chain deployment to{' '}
+            <strong>BNB Smart Chain</strong> may occur to expand liquidity and
+            accessibility, but the Solana contract remains the primary and
+            authoritative implementation.
           </p>
         </section>
 
         {/* Trademarks */}
-        <section className="mt-8 text-sm text-gray-400 border-t border-gray-700 pt-4">
+        <section className="mt-8 text-sm text-gray-400 border-t border-gray-700 pt-4 leading-relaxed">
           <h2 className="text-lg font-semibold text-cyan-400 mb-2">
             Trademarks & Intellectual Property
           </h2>
           <p>
             “$DEVOPS,” “DevOpsCoin,” “Ship-It Fund,” and associated logos,
-            wordmarks, and taglines (“Dev Culture Meets Degen,” “Where Pipelines
-            Meet Protocols”) are trademarks of DevOpsCoin LLC. Unauthorized use
-            or misrepresentation of these materials is prohibited.
+            wordmarks, and taglines (“Ship It. Don’t Hype It.” and “Fund Work,
+            Not Hype.”) are trademarks of DevOpsCoin LLC. Unauthorized use,
+            misrepresentation, or misleading affiliation claims are prohibited.
           </p>
         </section>
 
         {/* Contact */}
-        <section className="mt-8 text-sm text-gray-400 border-t border-gray-700 pt-4">
+        <section className="mt-8 text-sm text-gray-400 border-t border-gray-700 pt-4 leading-relaxed">
           <h2 className="text-lg font-semibold text-cyan-400 mb-2">
             Contact & Verification
           </h2>
           <p>
-            To verify any official materials or wallet addresses, contact
-            DevOpsCoin LLC via our{' '}
+            To verify official materials or wallet addresses, contact DevOpsCoin
+            LLC via our{' '}
             <a
               href="https://x.com/DevOpsCoin"
               target="_blank"
@@ -198,7 +197,7 @@ export default function LegalPage() {
             >
               official X account
             </a>{' '}
-            or through our{' '}
+            or our{' '}
             <a
               href="https://github.com/DevOpsCoin"
               target="_blank"
@@ -220,6 +219,9 @@ export default function LegalPage() {
 
         <p className="text-xs text-gray-500 mt-6 text-center">
           Last Updated: October 2025 · Jurisdiction: State of New Mexico, USA
+        </p>
+        <p className="text-gray-500 text-xs mt-3 text-center italic">
+          Built to fund work — not hype.
         </p>
 
         {/* Back to Home */}

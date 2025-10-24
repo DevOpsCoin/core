@@ -1,11 +1,11 @@
-# CONTRIBUTING_INTERNAL.md
+# Internal Contributor Standards
 
-This guide defines internal contributor standards for the **DevOpsCoin DApp (website-v2)** repository.  
-All maintainers and core collaborators should follow these rules to keep the repo stable, clean, and CI-compliant.
+This guide defines contributor and maintainer standards for the **DevOpsCoin DApp (`website-v2`)** repository.  
+All collaborators should follow these rules to keep the codebase stable, consistent, and easy to maintain.
 
 ---
 
-## 🧰 Local Setup
+## Local Setup
 
 - **Node.js:** v22.x
 - **pnpm:** v10+ (`corepack enable && corepack prepare pnpm@latest --activate`)
@@ -16,21 +16,23 @@ pnpm install
 pnpm run dev
 ```
 
+Use the same toolchain versions defined in `.nvmrc` and `package.json` to avoid dependency drift.
+
 ---
 
-## 🧹 Code Quality & Hygiene
+## Code Quality & Hygiene
 
 ### Linting
 
-Uses **ESLint v9 (Flat Config)** with:
+The project uses **ESLint v9 (Flat Config)** with the following plugins:
 
-- `typescript-eslint`
+- `@typescript-eslint/eslint-plugin`
 - `eslint-plugin-react`
 - `eslint-plugin-react-hooks`
 - `eslint-plugin-jsx-a11y`
 - `eslint-plugin-prettier`
 
-Run manually:
+Run checks manually:
 
 ```bash
 pnpm run lint
@@ -39,30 +41,32 @@ pnpm run lint -- --fix
 
 ### Formatting
 
-Handled by **Prettier** with a unified config.  
-To format everything:
+All source files follow the unified **Prettier** configuration for formatting consistency:
 
 ```bash
 pnpm run format
 ```
 
+Linting and formatting must pass before merging to `main`.
+
 ---
 
-## 🧩 Pre-commit Hooks (Husky v10)
+## Pre-Commit Hooks (Husky v10)
 
-All commits trigger **Husky + lint-staged**:
+Commits are automatically validated through **Husky + lint-staged**.  
+Each staged change triggers:
 
-- Runs ESLint autofix on staged TS/JS/React files
-- Runs Prettier on Markdown, JSON, and YAML
-- Skips large report files and build artifacts
+- ESLint autofix on `.ts`, `.tsx`, and `.js` files
+- Prettier formatting on `.md`, `.json`, and `.yaml` files
+- Build outputs and generated assets are skipped
 
-Manually run:
+To run manually:
 
 ```bash
 pnpm exec lint-staged
 ```
 
-If Husky isn’t running:
+If Husky isn’t triggering correctly:
 
 ```bash
 pnpm run prepare
@@ -71,20 +75,20 @@ chmod +x .husky/pre-commit .husky/husky.sh
 
 ---
 
-## 🧱 Branching & Commits
+## Branching & Commits
 
 ### Branch Naming
 
-| Type    | Format Example               |
-| ------- | ---------------------------- |
-| Feature | `feature/shipit-ui-update`   |
-| Fix     | `fix/wallet-connect-timeout` |
-| Chore   | `chore/update-husky-v10`     |
-| Docs    | `docs/update-readme`         |
+| Type    | Example                      | Purpose                |
+| ------- | ---------------------------- | ---------------------- |
+| Feature | `feature/shipit-ui-update`   | New functionality      |
+| Fix     | `fix/wallet-connect-timeout` | Bug fix                |
+| Chore   | `chore/update-husky-v10`     | Tooling or maintenance |
+| Docs    | `docs/update-readme`         | Documentation updates  |
 
 ### Commit Format
 
-Follow **Conventional Commits**:
+Follow **Conventional Commits** to maintain semantic consistency:
 
 | Type        | Description               |
 | ----------- | ------------------------- |
@@ -104,9 +108,9 @@ git commit -m "feat: add Ship-It Fund dashboard section"
 
 ---
 
-## 🧪 CI Verification
+## CI Verification
 
-Before pushing:
+Before pushing changes:
 
 ```bash
 pnpm run verify
@@ -114,47 +118,46 @@ pnpm run verify
 
 This runs:
 
-- `eslint` with `--max-warnings=0`
-- `prettier --check .`
-- `next build`
+- ESLint with `--max-warnings=0`
+- Prettier formatting check
+- Next.js build verification
 
-In CI (Vercel or GitHub Actions):
+### In Continuous Integration
 
-- Warnings are ignored only for stylistic rules
-- Errors always block deployment
-
----
-
-## 🧭 Review Guidelines
-
-Every PR must:
-
-- Be small and atomic (≤300 LOC preferred)
-- Pass all local checks
-- Include a clear title and description
-- Follow Conventional Commit message rules
-- Reference related issues or tickets
-
-Use **squash merges** to keep `main` history clean.
+- **Stylistic warnings** are tolerated; functional errors block deployment.
+- **CI workflows** mirror local `verify` commands for consistent enforcement.
 
 ---
 
-## 🔧 Troubleshooting
+## Review Guidelines
 
-| Problem                        | Solution                                               |
-| ------------------------------ | ------------------------------------------------------ |
-| “husky – DEPRECATED”           | Ensure `husky.sh` path is `.husky/husky.sh`, not `._/` |
-| ESLint cache weirdness         | `rm -rf node_modules/.cache/eslint`                    |
-| “no-undef” for console/process | Confirm globals in `eslint.config.js`                  |
-| Prettier not auto-fixing       | Run `pnpm exec prettier --write .` manually            |
-| Hook not firing                | `chmod +x .husky/pre-commit`                           |
+All pull requests should:
+
+- Be **small and atomic** (≤300 LOC recommended)
+- Pass all local checks before submission
+- Include a clear title and purpose statement
+- Follow **Conventional Commit** rules
+- Reference any related issues or proposals
+
+All merges use **squash merging** to keep the `main` branch history clean and linear.
+
+---
+
+## Troubleshooting
+
+| Problem                        | Solution                                 |
+| ------------------------------ | ---------------------------------------- |
+| Husky deprecated warning       | Verify `.husky/husky.sh` path is correct |
+| ESLint cache issues            | `rm -rf node_modules/.cache/eslint`      |
+| `no-undef` for console/process | Confirm globals in `eslint.config.js`    |
+| Prettier not formatting        | `pnpm exec prettier --write .`           |
+| Hook not running               | `chmod +x .husky/pre-commit`             |
 
 ---
 
 **Maintainer Note:**  
-This internal guide extends the public [CONTRIBUTING.md](../../.github/CONTRIBUTING.md) and [DEVELOPMENT.md](./DEVELOPMENT.md).  
-It defines the enforcement layer that keeps the DevOpsCoin codebase production-ready.
+This internal guide extends [CONTRIBUTING.md](../../.github/CONTRIBUTING.md) and [DEVELOPMENT.md](./DEVELOPMENT.md).  
+It defines the **engineering standards** that keep the DevOpsCoin codebase production-ready — pragmatic, predictable, and consistent.
 
-Maintained by **RootSignal / DevOpsCoin Engineering**
-
-_Last updated: October 2025_
+Maintained by **RootSignal / DevOpsCoin Engineering**  
+_Last Updated: October 2025 — Engineering Standards Refinement_
