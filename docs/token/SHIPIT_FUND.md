@@ -55,7 +55,7 @@ All grants and fund transfers are permanently recorded in the
 [**Ship-It Fund Ledger →**](../../shipit-fund/ledger/).
 
 Each ledger file can be locally verified using the  
-[`verify-ledger.sh`](../../shipit-fund/scripts/verify-ledger.sh) script, which checks for SHA256 integrity, duplicate transaction hashes, and missing entries.
+[`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh) script, which checks for SHA256 integrity, duplicate transaction hashes, and missing entries.
 
 > Transparency isn’t optional — it’s infrastructure.
 

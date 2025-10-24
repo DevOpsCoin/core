@@ -94,7 +94,7 @@ Pull requests are reviewed for clarity, maintainability, and alignment with the 
 ## 📄 License
 
 By contributing, you agree that your work is licensed under the **MIT License**.  
-See [LICENSE](./LICENSE) for details.
+See [LICENSE](../LICENSE) for details.
 
 ---
 

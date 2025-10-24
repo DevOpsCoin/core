@@ -1,0 +1,9 @@
+[programs.devnet]
+founder_vesting = "DevopsVesting11111111111111111111111111111111"
+
+[provider]
+cluster = "devnet"
+wallet = "/app/id.json"
+
+[scripts]
+deploy = "anchor build && anchor deploy"
