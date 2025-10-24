@@ -1,6 +1,6 @@
 // Simple deployment + initialize script for your founder vesting contract
 
-const anchor = require("@coral-xyz/anchor");
+const anchor = require('@coral-xyz/anchor');
 const { SystemProgram } = anchor.web3;
 
 module.exports = async function (provider) {
@@ -25,5 +25,5 @@ module.exports = async function (provider) {
     .signers([vesting])
     .rpc();
 
-  console.log("Founder vesting account created:", vesting.publicKey.toBase58());
+  console.log('Founder vesting account created:', vesting.publicKey.toBase58());
 };

@@ -1,4 +1,3 @@
-```makefile
 # ======================================================
 # DevOpsCoin Founder Vesting - Makefile
 # ------------------------------------------------------
@@ -69,5 +68,3 @@ localnet:
 clean:
 	@echo "=== Cleaning Docker artifacts ==="
 	docker system prune -f
-```
-

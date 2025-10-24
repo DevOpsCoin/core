@@ -43,16 +43,66 @@ export default function V1Header() {
         <MobileNav />
       </div>
 
-      {/* Desktop Banner */}
-      <div className="hidden md:block w-full max-w-5xl mx-auto relative">
-        <Image
-          src="/banner.png"
-          alt="$DEVOPS Banner"
-          width={1200}
-          height={300}
-          className="mx-auto rounded-lg shadow-lg w-full max-w-5xl h-auto transition-shadow duration-700 hover:shadow-cyan-400/60"
-          priority
+      {/* Mobile Banner */}
+      <div className="md:hidden relative w-full mx-auto rounded-lg overflow-hidden shadow-lg mt-2">
+        {/* Background */}
+        <div
+          className="w-full h-[240px] bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/banner.png')",
+            backgroundBlendMode: 'overlay',
+          }}
         />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
+          <img
+            src="/main_logo_transparent.png"
+            alt="$DEVOPS Coin"
+            className="h-24 w-auto mb-3 drop-shadow-[0_0_20px_rgba(0,183,179,0.25)]"
+            loading="lazy"
+          />
+          <h1 className="text-xl font-extrabold tracking-tight text-cyan-100 drop-shadow-md">
+            SHIP IT. DON’T SHILL IT.
+          </h1>
+        </div>
+      </div>
+
+      {/* Desktop Banner */}
+      <div className="hidden md:block relative w-full max-w-5xl mx-auto rounded-lg overflow-hidden shadow-lg">
+        {/* Background Banner */}
+        <div
+          className="w-full h-[200px] bg-cover bg-center transition-all duration-700 hover:shadow-cyan-400/40"
+          style={{
+            backgroundImage: "url('/banner.png')",
+            backgroundBlendMode: 'overlay',
+          }}
+        />
+
+        {/* Overlay Elements */}
+        <div className="absolute inset-0 flex items-center justify-between px-10">
+          {/* Coin on Left */}
+          <img
+            src="/main_logo_transparent.png"
+            alt="$DEVOPS Coin"
+            className="h-60 w-auto
+             drop-shadow-[6px_6px_12px_rgba(0,0,0,0.6)]
+             drop-shadow-[-2px_-2px_6px_rgba(0,183,179,0.25)]
+             transition-transform duration-500 ease-out hover:translate-y-[-2px]"
+            loading="lazy"
+          />
+
+          {/* Tagline on Right */}
+          <div className="text-right text-slate-200 pr-2">
+            <h1 className="text-4xl font-extrabold tracking-tight text-cyan-100 drop-shadow-md leading-tight">
+              SHIP IT.
+              <br className="hidden lg:block" /> DON’T SHILL IT.
+            </h1>
+            <p className="text-cyan-300 text-lg font-semibold mt-2 opacity-90">
+              We don’t sell dreams; we fund reality.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Launch Banner / Phase Notice */}
