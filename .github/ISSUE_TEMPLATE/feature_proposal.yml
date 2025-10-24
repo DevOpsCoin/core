@@ -1,0 +1,44 @@
+name: 💡 Ecosystem Feature Proposal
+description: Suggest an improvement or idea for DevOpsCoin (not a roadmap item)
+title: '[Proposal]: '
+labels: ['proposal']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing your ideas to the **DevOpsCoin** ecosystem!
+
+        🧠 This form is for *community suggestions* — not direct roadmap additions.
+        Maintainers will review proposals and promote accepted ideas to the official roadmap.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: 'Briefly describe your idea.'
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Description & Rationale
+      placeholder: 'Explain what the idea is and why it matters to DevOpsCoin.'
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Potential Impact
+      placeholder: 'Who benefits from this? How could it improve transparency or open-source DevOps?'
+
+  - type: input
+    id: contact
+    attributes:
+      label: Optional Contact (GitHub / Telegram / X)
+      placeholder: '@yourhandle'
+
+  - type: checkboxes
+    id: agree
+    attributes:
+      label: Agreement
+      options:
+        - label: I understand this is a proposal and not a guaranteed roadmap item.
+          required: true

@@ -12,7 +12,7 @@
 
 # example_ledger.yml
 # Template showing format and expected fields for future Ship-It Fund ledger entries.
-# This file is excluded from automated verification.
+# This file is excluded from an automated verification scriptt
 
 meta:
   quarter: 'YYYYQX'
