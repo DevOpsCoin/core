@@ -63,7 +63,7 @@ export default function V1Footer() {
           Transparency & Ledger:
         </span>{' '}
         <a
-          href="https://github.com/DevOpsCoin-LLC/shipit-fund/tree/main/ledger"
+          href="https://github.com/DevOpsCoin/core/tree/main/shipit-fund/ledger"
           target="_blank"
           rel="noopener noreferrer"
           className="underline text-cyan-400 hover:text-cyan-300"

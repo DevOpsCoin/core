@@ -68,9 +68,11 @@ Each ledger is cryptographically sealed using a **SHA256 signature hash**.
 ### Steps
 
 1. After finalizing a quarterly ledger, run:
+
    ```bash
    shasum -a 256 ledger/2025Q4.yml
    ```
+
 2. Copy the resulting hash and paste it into the `signoff.signature_hash` field.
 3. Commit the file with a signed Git commit (GPG or SSH preferred).
 
@@ -91,7 +93,7 @@ https://solscan.io/tx/<tx_hash>
 
 ## 🧠 Governance Context
 
-Ledger entries correspond to **approved project submissions** from the Ship-It Fund’s [Project Submission form](../../.github/ISSUE_TEMPLATE/project_submission.yml).
+Ledger entries correspond to **approved project submissions** from the Ship-It Fund’s [Project Submission form](../../.github/ISSUE_TEMPLATE/shipit_fund_project_submission.yml).
 
 The evaluation and approval process is defined in:
 

@@ -133,7 +133,7 @@ export default function AboutPage() {
             Join Telegram
           </a>
           <a
-            href="https://github.com/DevOpsCoin-LLC"
+            href="https://github.com/DevOpsCoin"
             target="_blank"
             rel="noopener"
             className="inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-lg bg-cyan-700 text-white shadow hover:bg-cyan-400 transition ring-2 ring-cyan-400/40 hover:ring-cyan-300"

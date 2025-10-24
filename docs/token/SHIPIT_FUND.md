@@ -32,12 +32,12 @@ If volume or creator rewards are low in a given month, grant disbursements are *
 
 Every Ship-It Fund disbursement is **publicly logged and verifiable**.
 
-| Channel                 | Purpose                                                                                         |
-| ----------------------- | ----------------------------------------------------------------------------------------------- |
-| **Ledger**              | All allocations recorded in YAML under [`/shipit-fund/ledger/`](../../shipit-fund/ledger/)      |
-| **Verification Script** | [`verify-ledger.sh`](../../shipit-fund/scripts/verify-ledger.sh) validates integrity and hashes |
-| **Project Board**       | [View Funded Projects →](https://github.com/orgs/DevOpsCoin/projects/1)                         |
-| **Public Repo**         | [Core Repository →](https://github.com/DevOpsCoin/core)                                         |
+| Channel                 | Purpose                                                                                        |
+| ----------------------- | ---------------------------------------------------------------------------------------------- |
+| **Ledger**              | All allocations recorded in YAML under [`/shipit-fund/ledger/`](../../shipit-fund/ledger/)     |
+| **Verification Script** | [`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh) validates integrity and hashes |
+| **Project Board**       | [View Funded Projects →](https://github.com/orgs/DevOpsCoin/projects/1)                        |
+| **Public Repo**         | [Core Repository →](https://github.com/DevOpsCoin/core)                                        |
 
 Each ledger entry includes:
 
@@ -63,7 +63,7 @@ Each ledger file can be locally verified using the
 
 ## 🧰 How to Apply
 
-1. Open a new issue in the [DevOpsCoin/core repository](https://github.com/DevOpsCoin/core/issues/new?assignees=&labels=shipit-fund,submission&template=project_submission.yml).
+1. Open a new issue in the [DevOpsCoin/core repository](https://github.com/DevOpsCoin/core/issues/new?assignees=&labels=shipit-fund,submission&template=shipit_fund_project_submission.yml).
 2. Provide project details, roadmap, and contact information.
 3. Review occurs publicly in the issue thread.
 4. Approved projects are added to the [DevOpsCoin Roadmap](https://github.com/orgs/DevOpsCoin/projects/1).
@@ -108,7 +108,7 @@ This separation ensures clarity for tax reporting, governance, and on-chain veri
 | 📜 [Ship-It Fund Directory](../../shipit-fund/)                   | Grant management and ledger                 |
 | 📊 [Project Board](https://github.com/orgs/DevOpsCoin/projects/1) | Active and past grants                      |
 | 🪙 [Transparency Ledger](../../shipit-fund/ledger/)               | Funding records (canonical source)          |
-| 🧩 [Review Process](../../shipit-fund/REVIEW_PROCESS.md)          | Maintainer review flow                      |
+| 🧩 [Review Process](../../shipit-fund/docs/REVIEW_PROCESS.md)     | Maintainer review flow                      |
 
 ---
 

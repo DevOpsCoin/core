@@ -55,7 +55,7 @@ The canonical record of all Ship-It Fund transactions lives in the
 Each ledger file is written in YAML and includes project details, grant amounts, Solana transaction hashes, and reviewer signatures.
 
 Verification is performed using the  
-[`verify-ledger.sh`](../../shipit-fund/verify-ledger.sh) script, which checks:
+[`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh) script, which checks:
 
 - SHA256 integrity of each ledger file
 - Duplicate or missing transaction hashes

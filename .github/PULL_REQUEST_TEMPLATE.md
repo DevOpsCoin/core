@@ -61,6 +61,6 @@ Example output:
 ---
 
 **Maintainers:**  
-Verify this PR passes CI checks and follows the internal contributor standards outlined in [`CONTRIBUTING_INTERNAL.md`](../docs/handbook/CONTRIBUTING_INTERNAL.md).
+Verify this PR passes CI checks and follows the internal contributor standards outlined in [`CONTRIBUTING_INTERNAL.md`](../docs/operations/CONTRIBUTING_INTERNAL.md).
 
 _Maintained by RootSignal / DevOpsCoin Engineering_

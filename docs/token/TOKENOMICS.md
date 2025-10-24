@@ -84,7 +84,7 @@ Pump.fun Creator Rewards (SOL)
 - Adjustments **within 40–60% bands** may occur based on market conditions and are disclosed in the transparency ledger prior to implementation.
 - No changes to total supply or vesting mechanics arise from these adjustments.
 
-Policy link: [Treasury Refill Policy](../operations/TREASURY_REFILL_POLICY.md)
+Policy link: [Treasury Refill Policy](./TREASURY_REFILL_POLICY.md)
 
 ---
 
@@ -101,7 +101,7 @@ Policy link: [Treasury Refill Policy](../operations/TREASURY_REFILL_POLICY.md)
 All material movements are publicly auditable:
 
 - **Ship-It Fund ledger (canonical):** [`/shipit-fund/ledger/`](../../shipit-fund/ledger/)
-- **Ledger verification script:** [`verify-ledger.sh`](../../shipit-fund/scripts/verify-ledger.sh)
+- **Ledger verification script:** [`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh)
 - **Transparency logs (repo):** `/docs/ledger/TRANSPARENCY_LOG.md`
 - **Governance policy:** [Governance & Oversight](../operations/GOVERNANCE.md)
 - **Ship-It Fund doc:** [SHIPIT_FUND.md](./SHIPIT_FUND.md)

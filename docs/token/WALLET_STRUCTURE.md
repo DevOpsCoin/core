@@ -87,7 +87,7 @@ All Ship-It Fund disbursements and grant cycles are recorded in the canonical
 
 Each YAML ledger entry includes the project name, allocation amount, recipient wallet, Solana transaction hash, and signature.  
 Integrity can be verified using the companion  
-[`verify-ledger.sh`](../../shipit-fund/verify-ledger.sh) script, which checks SHA256 signatures, duplicate transaction hashes, and declared sign-offs.
+[`verify-ledger.sh`](../../shipit-fund/ledger/verify-ledger.sh) script, which checks SHA256 signatures, duplicate transaction hashes, and declared sign-offs.
 
 > The ledger in the `shipit-fund` directory within the core repo is the **single source of truth** for all grant movements.  
 > TreasuryOps and vesting records remain logged here under `/docs/ledger/`.

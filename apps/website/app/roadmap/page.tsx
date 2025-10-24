@@ -43,7 +43,7 @@ export default function RoadmapPage() {
           versioned, incremental discipline used in production engineering.
           Progress is tracked publicly on{' '}
           <a
-            href="https://github.com/orgs/DevOpsCoin-LLC/projects/2"
+            href="https://github.com/orgs/DevOpsCoin/projects/3"
             target="_blank"
             className="text-cyan-400 hover:underline"
           >
@@ -187,7 +187,7 @@ export default function RoadmapPage() {
         {/* GitHub CTA */}
         <div className="text-center mt-10">
           <a
-            href="https://github.com/orgs/DevOpsCoin-LLC/projects/2"
+            href="https://github.com/orgs/DevOpsCoin/projects/3"
             target="_blank"
             className="inline-flex items-center px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow hover:bg-cyan-400 transition"
           >

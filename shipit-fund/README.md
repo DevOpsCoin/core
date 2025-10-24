@@ -64,7 +64,7 @@ No grants are ever made off-ledger. All actions are traceable through signed com
 The Ship-It Fund maintains full transparency across both **DEVOPS** and **SOL** flows using a public ledger system.
 
 - Each transaction (grant, top-up, or transfer) is recorded in the [`/ledger/`](./ledger) directory.
-- The [`verify-ledger.sh`](./verify-ledger.sh) script validates both **DEVOPS** and **SOL** entries via hash integrity checks.
+- The [`verify-ledger.sh`](./ledger/verify-ledger.sh) script validates both **DEVOPS** and **SOL** entries via hash integrity checks.
 - All transactions include:
   - Date and purpose
   - Amount and token type (DEVOPS or SOL)
@@ -81,7 +81,7 @@ Transparency is also reinforced by the [core project’s policy](https://github.
 ## How to Apply
 
 1. **Star or watch** this repository to follow updates.
-2. Open a [New Project Submission](../../issues/new?assignees=&labels=submission&template=project_submission.yml).
+2. Open a [New Project Submission](https://github.com/DevOpsCoin/core/issues/new?assignees=&labels=submission&template=shipit_fund_project_submission.yml).
 3. Complete the form (project details, repo link, roadmap, contact info).
 4. Submissions are reviewed publicly via issue discussions.
 5. Approved projects are labeled `funded` and added to the [Project Board](https://github.com/orgs/DevOpsCoin/projects/1).
@@ -136,13 +136,13 @@ shipit-fund/
 
 ## Resources
 
-| Resource                                                                                          | Description                            |
-| ------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| [DevOpsCoin Website](https://devopscoin.ai)                                                       | Core project and ecosystem overview    |
-| [Core Repository](https://github.com/DevOpsCoin/core)                                             | Tokenomics, governance, and operations |
-| [Ledger Directory](./ledger)                                                                      | All verified disbursements and grants  |
-| [Project Board](https://github.com/orgs/DevOpsCoin/projects/1)                                    | Active and completed grants            |
-| [Submit a Project](../../issues/new?assignees=&labels=submission&template=project_submission.yml) | Apply for Ship-It Fund support         |
+| Resource                                                                                                                                   | Description                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
+| [DevOpsCoin Website](https://devopscoin.ai)                                                                                                | Core project and ecosystem overview    |
+| [Core Repository](https://github.com/DevOpsCoin/core)                                                                                      | Tokenomics, governance, and operations |
+| [Ledger Directory](./ledger)                                                                                                               | All verified disbursements and grants  |
+| [Project Board](https://github.com/orgs/DevOpsCoin/projects/1)                                                                             | Active and completed grants            |
+| [Submit a Project](https://github.com/DevOpsCoin/core/issues/new?assignees=&labels=submission&template=shipit_fund_project_submission.yml) | Apply for Ship-It Fund support         |
 
 ---
 

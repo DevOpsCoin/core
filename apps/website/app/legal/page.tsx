@@ -111,7 +111,7 @@ export default function LegalPage() {
             All adjustments, along with justification and effective date, will
             be documented in the public{' '}
             <a
-              href="https://github.com/DevOpsCoin-LLC/treasuryops-ledger"
+              href="https://github.com/DevOpsCoin/treasuryops-ledger"
               target="_blank"
               className="text-cyan-400 underline"
             >
@@ -200,7 +200,7 @@ export default function LegalPage() {
             </a>{' '}
             or through our{' '}
             <a
-              href="https://github.com/DevOpsCoin-LLC"
+              href="https://github.com/DevOpsCoin"
               target="_blank"
               className="text-cyan-400 hover:underline"
             >
@@ -208,11 +208,11 @@ export default function LegalPage() {
             </a>
             . You may also open a verification issue at{' '}
             <a
-              href="https://github.com/DevOpsCoin-LLC/devopscoin/issues"
+              href="https://github.com/DevOpsCoin/core/issues"
               target="_blank"
               className="text-cyan-400 hover:underline"
             >
-              github.com/DevOpsCoin-LLC/devopscoin
+              github.com/DevOpsCoin/core/issues
             </a>
             .
           </p>

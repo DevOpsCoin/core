@@ -11,22 +11,27 @@
     "format": "pnpm exec prettier --write .",
     "build:contracts": "cd contracts && cargo build-bpf",
     "test:contracts": "cd contracts && cargo test",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "check:links:docs": "find . -name '*.md' -not -path './node_modules/*' -exec npx markdown-link-check {} \\;",
+    "check:links:site": "pnpm run build && pnpm exec linkinator http://localhost:3000 --recurse --silent --skip 'mailto:,data:,tel:'",
+    "check:links": "pnpm run check:links:docs && pnpm run check:links:site"
   },
   "engines": {
     "node": ">=22 <23"
   },
   "devDependencies": {
-    "typescript": "^5.9.3",
-    "prettier": "^3.6.2",
-    "eslint": "^9.38.0",
     "@next/eslint-plugin-next": "^15.5.6",
-    "@typescript-eslint/parser": "^8.46.1",
     "@typescript-eslint/eslint-plugin": "^8.46.1",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.0",
+    "@typescript-eslint/parser": "^8.46.1",
+    "eslint": "^9.38.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.5.4",
-    "husky": "^8.0.0"
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "husky": "^8.0.0",
+    "linkinator": "^7.2.0",
+    "markdown-link-check": "^3.14.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
   }
 }

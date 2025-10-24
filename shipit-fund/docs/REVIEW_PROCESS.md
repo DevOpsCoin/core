@@ -7,13 +7,13 @@ It ensures consistent evaluation, transparent decision-making, and accurate ledg
 
 ## Review Stages
 
-| Stage                       | Description                                                                                                      | Reviewer Action                                     |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| **1. Submission**           | Builder opens an issue using the [Project Submission Template](../.github/ISSUE_TEMPLATE/project_submission.yml) | Verify format, tag `review:pending`                 |
-| **2. Initial Triage**       | Maintainers validate repository access, license, and open-source eligibility                                     | Add `review:eligible` or `review:needs-info`        |
-| **3. Technical Evaluation** | Reviewer examines code quality, roadmap, and deliverables                                                        | Add `review:approved` or `review:changes-requested` |
-| **4. Final Sign-Off**       | Lead maintainer (RootSignal) or LLC reviewer confirms funding decision                                           | Add `funding:approved` or `funding:rejected`        |
-| **5. Ledger Entry**         | Approved projects are recorded in `/ledger` and announced publicly                                               | Include amount, transaction hash, and date          |
+| Stage                       | Description                                                                                                                     | Reviewer Action                                     |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| **1. Submission**           | Builder opens an issue using the [Project Submission Template](../../.github/ISSUE_TEMPLATE/shipit_fund_project_submission.yml) | Verify format, tag `review:pending`                 |
+| **2. Initial Triage**       | Maintainers validate repository access, license, and open-source eligibility                                                    | Add `review:eligible` or `review:needs-info`        |
+| **3. Technical Evaluation** | Reviewer examines code quality, roadmap, and deliverables                                                                       | Add `review:approved` or `review:changes-requested` |
+| **4. Final Sign-Off**       | Lead maintainer (RootSignal) or LLC reviewer confirms funding decision                                                          | Add `funding:approved` or `funding:rejected`        |
+| **5. Ledger Entry**         | Approved projects are recorded in `/ledger` and announced publicly                                                              | Include amount, transaction hash, and date          |
 
 All review labels are managed through the GitHub issue workflow for full public traceability.
 

@@ -1,35 +1,23 @@
-<p align="center">
-  <img src="https://devopscoin.ai/banner.png" alt="DevOpsCoin Banner" width="100%" />
-</p>
+# DevOpsCoin — Core Website
 
-<p align="center">
-  <a href="https://solana.com/">
-    <img src="https://img.shields.io/badge/Chain-Solana-9945FF?logo=solana" alt="Solana">
-  </a>
-  <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
-  </a>
-  <a href="https://github.com/DevOpsCoin-LLC/core">
-    <img src="https://img.shields.io/badge/Repo-core-blue.svg" alt="core repo">
-  </a>
-  <a href=".github/SECURITY.md">
-    <img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-orange.svg" alt="Security Policy">
-  </a>
-</p>
+![DevOpsCoin Banner](https://devopscoin.ai/banner.png)
+
+[![Chain](https://img.shields.io/badge/Chain-Solana-9945FF?logo=solana)](https://solana.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](../../LICENSE)
+[![Repository](https://img.shields.io/badge/Repo-core-blue.svg)](https://github.com/DevOpsCoin/core)
+[![Security Policy](https://img.shields.io/badge/Security-Responsible%20Disclosure-orange.svg)](../../.github/SECURITY.md)
 
 ---
 
-<p align="center">
-  <strong>Where Pipelines Meet Protocols</strong><br/>
-  Transparent engineering culture meets on-chain verification.
-</p>
+**Where pipelines meet protocols.**  
+Transparent engineering culture meets on-chain verification.
 
 ---
 
-# DevOpsCoin — Core
+## Overview
 
-This is the **core repository** for DevOpsCoin — the canonical home for all official documentation, transparency policies, and governance definitions.  
-It defines how the project operates across wallets, grants, and public reporting on the **Solana blockchain**.
+This is the **core website** for **DevOpsCoin ($DEVOPS)** — the canonical front-end for project documentation, transparency dashboards, and community access.  
+It’s built with **Next.js 15**, hosted on **Vercel**, and integrated directly with the monorepo’s transparency and governance structures.
 
 ---
 
@@ -37,9 +25,9 @@ It defines how the project operates across wallets, grants, and public reporting
 
 All primary documentation — including tokenomics, vesting, wallet structure, Ship-It Fund policy, and governance — lives in:
 
-👉 [`docs/README.md`](./docs/README.md)
+➡️ [`/docs/README.md`](../../docs/README.md)
 
-That file serves as your single entry point to the full DevOpsCoin documentation suite.
+That file serves as the single entry point to the full DevOpsCoin documentation suite.
 
 ---
 
@@ -47,10 +35,10 @@ That file serves as your single entry point to the full DevOpsCoin documentation
 
 Please report vulnerabilities responsibly via:
 
-- [`SECURITY.md`](.github/SECURITY.md) — general security policy
-- [`SECURITY_DISCLOSURE.md`](.github/SECURITY_DISCLOSURE.md) — coordinated disclosure and contact process
+- [`.github/SECURITY.md`](../../.github/SECURITY.md) — general security policy
+- [`.github/SECURITY_DISCLOSURE.md`](../../.github/SECURITY_DISCLOSURE.md) — coordinated disclosure and contact process
 
-GitHub’s “Security Advisories” workflow is also enabled for private coordination.
+GitHub Security Advisories are enabled for private coordination.
 
 ---
 
@@ -58,17 +46,24 @@ GitHub’s “Security Advisories” workflow is also enabled for private coordi
 
 We welcome pull requests that improve documentation, automation, or transparency.
 
-- Contribution guidelines: [`CONTRIBUTING.md`](.github/CONTRIBUTING.md)
-- Issue templates: `.github/ISSUE_TEMPLATE/`
-- Pull request template: [`PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md)
+- Contribution guidelines: [`.github/CONTRIBUTING.md`](../../.github/CONTRIBUTING.md)
+- Issue templates: [`.github/ISSUE_TEMPLATE/`](../../.github/ISSUE_TEMPLATE/)
+- Pull request template: [`.github/PULL_REQUEST_TEMPLATE.md`](../../.github/PULL_REQUEST_TEMPLATE.md)
+
+To get started:
 
 ```bash
-git clone https://github.com/DevOpsCoin-LLC/core.git
+git clone https://github.com/DevOpsCoin/core.git
 cd core
-# edit docs or open governance proposals
+pnpm install
+pnpm run dev --filter ./apps/website
+```
+
+Then visit [http://localhost:3000](http://localhost:3000).
+
+---
 
 ## 🧾 License
 
-MIT License © 2025 DevOpsCoin LLC
-Where pipelines meet protocols.
-```
+**MIT License © 2025 DevOpsCoin LLC**  
+_Where pipelines meet protocols._

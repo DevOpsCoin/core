@@ -116,8 +116,8 @@ Grant issuance depends on ecosystem volume — when activity slows, the next gra
 TreasuryOps top-ups and allocations are published monthly for full community visibility.
 
 For detailed governance, funding cycles, and verified disbursements, see:  
-➡ [Ship-It Fund Documentation →](../docs/SHIPIT_FUND.md)  
-➡ [Treasury Refill Policy →](../docs/TREASURY_REFILL_POLICY.md)
+➡ [Ship-It Fund Documentation →](../token/SHIPIT_FUND.md)  
+➡ [Treasury Refill Policy →](../token/TREASURY_REFILL_POLICY.md)
 
 ---
 

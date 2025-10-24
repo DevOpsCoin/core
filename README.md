@@ -83,7 +83,7 @@ root/
 
 - **Labels & Templates**  
   Ship-It Fund submissions use  
-  [`project_submission.yml`](./.github/ISSUE_TEMPLATE/project_submission.yml) and automatically route to the funding board.
+  [`project_submission.yml`](./.github/ISSUE_TEMPLATE/shipit_fund_project_submission.yml) and automatically route to the funding board.
 
 [![Ledger Verification](https://github.com/DevOpsCoin/core/actions/workflows/verify-ledger.yml/badge.svg)](https://github.com/DevOpsCoin/core/actions/workflows/verify-ledger.yml)
 
@@ -136,7 +136,7 @@ Visit [http://localhost:3000](http://localhost:3000) to preview the site.
 ## 📍 Roadmap
 
 Follow planned & in-progress milestones here:  
-➡ [DevOpsCoin Roadmap →](https://github.com/orgs/DevOpsCoin/projects/roadmap)  
+➡ [DevOpsCoin Roadmap →](https://github.com/orgs/DevOpsCoin/projects/3)  
 Publicly viewable for transparency.  
 Community ideas can be submitted via [Feature Proposals](https://github.com/DevOpsCoin/core/issues/new?template=feature_proposal.yml).
 

@@ -152,7 +152,7 @@ Use **squash merges** to keep `main` history clean.
 ---
 
 **Maintainer Note:**  
-This internal guide extends the public [CONTRIBUTING.md](../../.github/CONTRIBUTING.md) and [DEVELOPMENT.md](../../docs/DEVELOPMENT.md).  
+This internal guide extends the public [CONTRIBUTING.md](../../.github/CONTRIBUTING.md) and [DEVELOPMENT.md](./DEVELOPMENT.md).  
 It defines the enforcement layer that keeps the DevOpsCoin codebase production-ready.
 
 Maintained by **RootSignal / DevOpsCoin Engineering**

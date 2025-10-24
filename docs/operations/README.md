@@ -11,7 +11,7 @@ This section documents how the project is governed, developed, and maintained wi
 The Handbook defines _how_ DevOpsCoin operates — not just the codebase, but the culture.  
 It reflects our commitment to open contribution, responsible governance, and technical rigor.
 
-If the [Tokenomics](../project/TOKENOMICS.md) explain _what_ DevOpsCoin is, the Handbook explains _how we run it_.
+If the [Tokenomics](../token/TOKENOMICS.md) explain _what_ DevOpsCoin is, the Handbook explains _how we run it_.
 
 ---
 
